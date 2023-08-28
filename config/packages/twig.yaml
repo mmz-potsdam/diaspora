@@ -1,0 +1,17 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        siteName: '%app.site.name%'
+        siteTagline: '%app.site.byline%'
+        sitePublisher: '%app.site.publisher%'
+        siteEmail: '%app.site.email%'
+        locales: '%app.locales%'
+        slugify: "@cocur_slugify"
+        public_dir: '%app.public_dir%'
+        webDir: '%app.public_dir%'  # global expected by TeiEditionBundle
+        site_matomo_id: '%app.site.matomo.id%'
+    form_themes: ['bootstrap_4_horizontal_layout.html.twig']
+
+when@test:
+    twig:
+        strict_variables: true

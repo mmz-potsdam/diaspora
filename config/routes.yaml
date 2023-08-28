@@ -1,0 +1,7 @@
+app_logout:
+    path: /logout
+    methods: GET
+
+tei-edition-bundle:
+    resource: '@TeiEditionBundle/Controller/'
+    type: annotation

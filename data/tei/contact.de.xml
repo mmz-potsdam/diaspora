@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Kontakt</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="2">
+                <p> Bei Fragen und Anregungen <ref target="ueber">zum Projekt</ref> freuen wir uns
+                    über Ihre E-Mail an <ref target="mailto:moses@mmz.uni-potsdam.de"
+                        >moses@mmz.uni-potsdam.de</ref>.<lb/>
+                </p>
+
+                <div n="3">
+                    <head>Impressum</head>
+                    <lb/>
+                    <p><lb/>
+                         Moses Mendelssohn Zentrum für europäisch-jüdische Studien e. V.<lb/>
+                         Am Neuen Markt 8<lb/>
+                         D-14467 Potsdam<lb/>
+                    </p>
+
+                    <p>
+                        <lb/>
+                         Tel. +49 (0)331 - 280 94 - 0<lb/>
+                         Fax +49 (0)331 - 280 94 - 50<lb/>
+                         E-Mail: <ref target="mailto:moses@mmz.uni-potsdam.de"
+                            >moses@mmz.uni-potsdam.de</ref><lb/>
+                         Internet: <ref target="https://www.mmz-potsdam.de"
+                        >www.mmz-potsdam.de</ref></p>
+
+                    <p><lb/>
+                         Vertretungsberechtigter Vorstand:<lb/>
+                         Prof. Dr. Miriam Rürup</p>
+
+                    <p>
+                        <lb/>
+                         Registergericht: Amtsgericht Potsdam<lb/>
+                         Registernummer: VR 1074</p>
+
+                    <p><lb/>
+                         Inhaltlich Verantwortliche gemäß § 6 MDStV: <lb/>
+                         Dr. Lisa Sophie Gebhard </p>
+
+                    <p>
+                        <lb/>
+                         Technische Betreuung:<lb/>
+                         Daniel Burckhardt</p>
+                </div>
+
+                <div n="3">
+                    <head>Datenschutz</head>
+                    <lb/>
+                    <p>
+                        <lb/>
+                         Dies ist ein Online-Angebot des Moses Mendelssohn Zentrums für
+                        europäisch-jüdische Studien e. V. (MMZ). Für die Verarbeitung aller
+                        personenbezogenen Daten, die im Zuge des Betriebs dieses Angebots anfallen,
+                        gilt die <ref target="https://www.mmz-potsdam.de/kontakt/datenschutz"
+                            >allgemeine Datenschutzerklärung des MMZ</ref>. </p>
+                </div>
+
+                <div n="3">
+                    <head>Haftungshinweis</head>
+                    <lb/>
+                    <p><lb/>
+                         Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
+                        Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden
+                        Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten
+                        ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+                        Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche
+                        Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+                        Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der
+                        verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
+                        Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen
+                        werden wir derartige Links umgehend entfernen. </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

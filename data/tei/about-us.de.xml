@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Über uns</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="3">
+                <head>Team</head>
+                <lb/>
+                <p>Das Online-Quellenportal «Geschichte der deutsch-jüdischen Diaspora« wird vom
+                    Moses Mendelssohn Zentrum für europäisch-jüdische Studien (MMZ) in Potsdam
+                    herausgegeben und vom dortigen Projektteam betreut. Das digitale Portal ist Teil
+                    einer größeren, vom MMZ und dem Institut für die Geschichte der deutschen Juden
+                    (IGdJ) gemeinsam geplanten Plattform zur europäisch-jüdischen Geschichte. Dieses
+                    am MMZ angesiedelte neue Angebot mit dem Diaspora-Quellenportal als einem
+                    Kernmodul soll zu einer zentralen Plattform für das Fach Jüdische Geschichte
+                    ausgebaut werden. Weitere Informationen zur Umsetzung der modular aufgebauten
+                    Plattform «Jüdische Geschichte Online« finden Sie zeitnah unter <ref
+                        target="https://portal.juedische-geschichte-online.net/"
+                        >portal.juedische-geschichte-online.net</ref>.</p>
+
+                <p><hi rendition="#b">Prof. Dr. Miriam Rürup (MMZ, Projektleitung)</hi>
+                    <lb/>
+                     ist seit 2020 Direktorin des Moses Mendelssohn Zentrums für europäisch-jüdische
+                    Studien in Potsdam. Als Vorsitzende der Wissenschaftlichen Arbeitsgemeinschaft
+                    des Leo Baeck Instituts leitet sie die konzeptionelle Ausgestaltung des
+                    Buchprojekts und Online-Quellenportals «Geschichte der deutsch-jüdischen
+                    Diaspora«. Davor war sie Direktorin des Instituts für die Geschichte der
+                    deutschen Juden in Hamburg. In dieser Funktion war sie Initiatorin und
+                    konzeptverantwortliche Herausgeberin der «Hamburger Schlüsseldokumente zur
+                    deutsch-jüdischen Geschichte«. Ihre Forschungsinteressen umfassen die
+                    deutsch-jüdische Geschichte, Zeitgeschichte, Geschichte des Nationalsozialismus,
+                    Gedenkpolitik, Geschlechtergeschichte sowie die Geschichte von Migration,
+                    Staatsbürgerschaft und Staatenlosigkeit. </p>
+
+                <p><hi rendition="#b">Dr. Sheer Ganor (University of Minnesota,
+                        Mitherausgeberin)</hi>
+                    <lb/>
+                     ist Historikerin und Assistant Professor am College of Liberal Arts an der
+                    University of Minnesota in Minneapolis. Sie ist Mitherausgeberin des geplanten
+                    Sammelbands im hybriden Forschungsvorhaben «Geschichte der deutsch-jüdischen
+                    Diaspora«. Sie hat in Berkeley, Berlin und Tel Aviv studiert und wurde 2019 an
+                    der University of Southern California promoviert. In ihrer Forschung befasst sie
+                    sich mit Themen der erzwungenen Migration, Erinnerung und kulturellen
+                    Identitäten. Ihre Dissertation thematisiert die transnationale Geschichte
+                    diasporischer Netzwerke deutschsprachiger Jüdinnen und Juden im 20. Jahrhundert.
+                    Sie hat u.a. am Deutschen Historischen Institut in Washington D.C. gearbeitet.
+                    Ihre Forschung wurde von verschiedenen Institutionen unterstützt, darunter der
+                    Central European History Society und der Studienstiftung des deutschen
+                    Volkes.</p>
+                <p>
+                    <hi rendition="#b">Dr. Lisa Sophie Gebhard (MMZ, Koordination)</hi>
+                    <lb/>
+                     ist seit 2023 wissenschaftliche Mitarbeiterin am Moses Mendelssohn Zentrum für
+                    europäisch-jüdische Studien in Potsdam und dort für die Koordination des
+                    hybriden Publikationsprojekts «Geschichte der deutsch-jüdischen Diaspora«
+                    zuständig. Sie hat in Berlin, Jerusalem, Kiel und Mailand studiert und wurde
+                    2022 an der Freien Universität Berlin mit einer biografischen Studie zum
+                    Frühzionismus promoviert. Ihre Dissertation, die u.a. von der Studienstiftung
+                    des deutschen Volkes gefördert wurde, ist in der Schriftenreihe
+                    wissenschaftlicher Abhandlungen des LBI erschienen. Zuvor hat sie im
+                    Wissenschaftszentrum Berlin für Sozialforschung, im Deutschen Historischen
+                    Museum und im Hentrich&amp;Hentrich Verlag für jüdische Kultur und
+                    Zeitgeschichte gearbeitet. Sie lebt mit ihrer Familie in Berlin. </p>
+                <p>
+                    <hi rendition="#b">Daniel Burckhardt (MMZ, technische Umsetzung)</hi>
+                    <lb/>
+                     ist seit 2021 wissenschaftlicher Mitarbeiter am Moses Mendelssohn Zentrum für
+                    europäisch-jüdische Studien in Potsdam und dort u.a. für die technische
+                    Umsetzung des Online-Quellenportals «Geschichte der deutsch-jüdischen Diaspora«
+                    verantwortlich. Zuvor hat er am Institut für die Geschichte der deutschen Juden
+                    die «Hamburger Schlüsseldokumente zur deutsch-jüdischen Geschichte« technisch
+                    betreut. Er hat in Zürich und Berlin Mathematik und Wissenschaftsgeschichte
+                    studiert und war als wissenschaftlicher Mitarbeiter am Institut für
+                    Geschichtswissenschaften der Humboldt-Universität zu Berlin, am Zentrum für
+                    Zeithistorische Forschung Potsdam sowie am Deutschen Historischen Institut in
+                    Washington, D.C. tätig. Er ist außerdem Mitglied der Redaktion und
+                    Steuerungsgruppe von H-Soz-Kult. </p>
+            </div>
+            <div n="3">
+                <head>Wissenschaftlicher Beirat</head><lb/>
+                <list>
+                    <item>                Ofer Ashkenazi, Direktor des Koebner Minerva Research Center for German History an der Hebrew University of Jerusalem
+                    </item>
+                    <item>
+                        Atina Grossmann, Professorin für Geschichte an der Faculty of Humanities and Social Sciences der Cooper Union in New York City                         
+                    </item>
+                    <item>
+                        Simone Lässig, Direktorin des Deutschen Historischen Instituts in Washington, D.C.               
+                    </item>
+                    <item>
+                        Jeffrey Lesser, Samuel Candler Dobbs Professor und Direktor des Halle Institute for Global Research and Learning an der Emory University, Atlanta                        
+                    </item>
+                    <item>
+                        Michael A. Meyer, Adolph S. Ochs Professor Emeritus für Jüdische Geschichte am Hebrew Union College in Cincinnati                        
+                    </item>
+                    <item>
+                        David Rechter, Professor für Jüdische Geschichte an der Faculty of Asian and Middle Eastern Studies, University of Oxford                        
+                    </item>
+                    <item>
+                        Katrin Steffen, Professorin für europäische und jüdische Geschichte an der University of Sussex                      </item>
+                </list>
+            </div>
+            <div n="3">
+                <head>Förderer und Partner</head><lb/>
+                <p>Die <ref target="https://www.volkswagenstiftung.de/de">VolkswagenStiftung</ref> fördert seit 2023 die Realisierung des hybriden Publikationsprojekts der Wissenschaftlichen Arbeitsgemeinschaft des Leo Baeck Instituts (LBI) unter Federführung ihrer Vorsitzenden Prof. Dr. Miriam Rürup am Moses Mendelssohn Zentrum für europäisch-jüdische Studien in Potsdam.</p>
+                <p>Das Forschungsvorhaben  wird in Kooperation mit verschiedenen internationalen Einrichtungen, darunter Archive, Bibliotheken und Museen, durchgeführt:</p>
+                <list>
+                    <item>
+                        Centro de Documentación de la Inmigración de Habla Alemana en la Argentina | Dokumentationszentrum der deutschsprachigen Immigration in Argentinien, Buenos Aires
+                    </item>                    
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

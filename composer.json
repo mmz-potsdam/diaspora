@@ -1,0 +1,150 @@
+{
+    "type": "project",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "symfony/flex": true,
+            "symfony/runtime": true
+        },
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.3.0"
+        },
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Donkfather/zotero-api"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gjuric/JMSI18nRoutingBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/tei-edition-bundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/igdj/lod-service"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/converter"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/LibRIS"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/SolrBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/LiipUrlAutoConverterBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/OaiPmh"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/jtl-software/connector-iso-639"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "citation-style-language/styles-distribution",
+                "version": "1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/citation-style-language/styles-distribution",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.1",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "ext-intl": "*",
+        "armin/scssphp-bundle": "^1.2",
+        "cocur/slugify": "^4.3",
+        "doctrine/annotations": "^1.4|^2.0",
+        "eko/feedbundle": "dev-master",
+        "gmo/iso-639": "dev-master#4834357 as 1.0",
+        "igdj/tei-edition-bundle": "dev-solarium-6",
+        "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
+        "liip/url-auto-converter-bundle": "dev-master",
+        "presta/sitemap-bundle": "^3.3",
+        "saidatom/oai-pmh": "dev-master#ba88a1f62e5a333a8936a7991b2bb1738cf59d9c as 0.1",
+        "sensio/framework-extra-bundle": "^6.2",
+        "symfony/apache-pack": "^1.0",
+        "symfony/console": "5.4.*",
+        "symfony/css-selector": "5.4.*",
+        "symfony/dom-crawler": "5.4.*",
+        "symfony/dotenv": "5.4.*",
+        "symfony/flex": "^1.17|^2",
+        "symfony/form": "5.4.*",
+        "symfony/framework-bundle": "5.4.*",
+        "symfony/http-client": "5.4.*",
+        "symfony/runtime": "5.4.*",
+        "symfony/security-bundle": "5.4.*",
+        "symfony/translation": "5.4.*",
+        "symfony/twig-bundle": "5.4.*",
+        "symfony/yaml": "5.4.*",
+        "twig/extra-bundle": "^3.6",
+        "twig/intl-extra": "^3.6"
+    },
+    "require-dev": {
+        "symfony/debug-bundle": "5.4.*",
+        "symfony/maker-bundle": "^1.43",
+        "symfony/stopwatch": "5.4.*",
+        "symfony/web-profiler-bundle": "5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.4.*"
+        }
+    }
+}

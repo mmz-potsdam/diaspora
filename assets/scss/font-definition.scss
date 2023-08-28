@@ -1,0 +1,14 @@
+/*
+ * Here you can import web-fonts and define the scss variables
+ * used defining text fonts
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+$font-stack-display-typeface: 'Jost', Arial, sans-serif;
+$font-stack-sans: 'Jost', Arial, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-stack-book-typeface: 'Jost', serif;
+$font-stack-serif: 'Jost', serif;

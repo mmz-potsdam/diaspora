@@ -1,0 +1,12 @@
+scssphp:
+    enabled: '%kernel.debug%'
+    autoUpdate: '%kernel.debug%'
+    
+    # site specific
+    assets:
+        "css/base.css":
+            src: "assets/scss/base.scss"
+            sourceMap: true
+            # Array of import paths, relative to Symfony's project directory.
+            importPaths:
+                - "assets/scss"                        # main directory

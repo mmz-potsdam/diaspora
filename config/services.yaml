@@ -1,0 +1,115 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+parameters:
+    app.locales: [de, 'en']
+    app.default_locale: 'de'
+    default_locale: 'de' # without app. prefix for TeiEditionBundle
+    app.site.name: "History of the German-Jewish Diaspora"
+    app.site.byline: "A Publication Project" # "An Online Source Portal"
+    app.site.publisher: "Moses Mendelssohn Zentrum für europäisch-jüdische Studien"
+    app.site.email: 'info@juedische-geschichte-online.net'
+    app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"
+    app.site_theme: null
+    app.public_dir: '%kernel.project_dir%/public'
+    app.zotero.options:
+        api-key: "%env(string:ZOTERO_API_KEY)%"
+    app.xsl_converter.saxonc_enable: "%env(bool:SAXONC_ENABLE)%"
+    app.xsl_converter_adapter.arguments: "%env(string:JAVA_BIN)% -jar %kernel.project_dir%/bin/saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
+    app.pdf-generator.arguments:
+        tempDir: "%kernel.project_dir%/var/cache/mpdf"
+        fontDir: [ "%kernel.project_dir%/data/font" ]
+        fontdata:
+            book_typeface:
+                R: 'NotoSerif-Regular.ttf'
+                B: 'NotoSerif-Bold.ttf'
+                I: 'NotoSerif-Italic.ttf'
+                BI: 'NotoSerif-BoldItalic.ttf'
+        default_font: book_typeface
+    # for testing (https://doi.test.datacite.org/), use
+    app.datacite.url: "https://mds.test.datacite.org/" # see https://support.datacite.org/docs/testing-guide
+    # app.datacite.url: " https://mds.datacite.org/" # production
+    app.datacite.user: SUBGOE.IGDJ
+    app.datacite.password: ~
+    app.datacite.prefix: 10.23691
+
+    #app.wordpress.url: 'https://diaspora.juedische-geschichte-online.net/cms/'
+
+    jms_i18n_routing.hosts.de: "%env(string:SITE_HOST)%"
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        bind:
+            $projectDir: '%kernel.project_dir%'
+            $publicDir: '%app.public_dir%'
+            $siteTheme: '%app.site_theme%'
+            #$wordpressBaseUrl: '%app.wordpress.url%'
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    # makes classes in TeiEditionBundle available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    # TODO: expose this in bundle configuration: https://symfony.com/doc/current/bundles/extension.html
+    TeiEditionBundle\:
+        resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle'
+        exclude: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/{Entity,Migrations,Tests}'
+
+    # override command in bundle, see https://stackoverflow.com/a/57107379
+    App\Command\ArticleRefreshCommand:
+        decorates: TeiEditionBundle\Command\ArticleRefreshCommand
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+
+    # The following is now registered by twig/extra-bundle
+    # Twig\Extra\String\StringExtension:
+    #    tags:
+    #        - { name: twig.extension }
+
+    Armin\ScssphpBundle\Twig\AssetExtension:
+        arguments:
+            $scssParser: '@scssphp.parser'
+        tags:
+            - { name: twig.extension }
+
+    # So we can inject @solr.client, see https://github.com/floriansemm/SolrBundle/issues/191#issuecomment-466101623
+    FS\SolrBundle\SolrInterface: '@solr.client'
+
+    App\Service\ZoteroApiService:
+        arguments:
+            $options: "%app.zotero.options%"
+
+    app.xsl_converter.commandline_adapter:
+        class: TeiEditionBundle\Utils\Xsl\XsltCommandlineAdapter
+        arguments: [ '%app.xsl_converter_adapter.arguments%', { xslpath: '%kernel.project_dir%/data/styles' } ]
+
+    app.xsl_converter.saxonc_adapter:
+        class: TeiEditionBundle\Utils\Xsl\XsltSaxonProcessorAdapter
+
+    TeiEditionBundle\Utils\Xsl\XsltProcessor:
+        calls:
+            - [ setAdapter, [ "@= parameter('app.xsl_converter.saxonc_enable') ? service('app.xsl_converter.saxonc_adapter') : service('app.xsl_converter.commandline_adapter')" ]]
+
+    TeiEditionBundle\Utils\PdfGenerator:
+        arguments: [ "%app.pdf-generator.arguments%" ]
+
+    App\Menu\Builder:
+        arguments: [ "@knp_menu.factory", "@translator.default", "@request_stack", "@router"  ]
+        tags:
+            # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createTopMenu, alias: top }
+            - { name: knp_menu.menu_builder, method: createMainMenu, alias: main }
+            - { name: knp_menu.menu_builder, method: createBreadcrumbMenu, alias: breadcrumb }
+            - { name: knp_menu.menu_builder, method: createFooterMainMenu, alias: footer-main }

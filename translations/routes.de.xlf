@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2023-08-28T16:24:00Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2023-09-05T13:15:22Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -16,27 +16,27 @@
       </trans-unit>
       <trans-unit id="6a9fe8402faeb1f85ebb59a46eff09ba385a128d" resname="about-board">
         <source>/about/board</source>
-        <target state="new">/ueber/beirat</target>
+        <target>/ueber/beirat</target>
       </trans-unit>
       <trans-unit id="1fc4f6592da8dd75c47370a29c6a4e9eae87d266" resname="about-cfp">
         <source>/about/cfp</source>
-        <target state="new">/ueber/cfp</target>
+        <target>/ueber/cfp</target>
       </trans-unit>
       <trans-unit id="1d2f96887a3692c00043fc7c72c292ad11cb8c01" resname="about-editors">
         <source>/about/editors</source>
-        <target state="new">/ueber/herausgeber_innen</target>
+        <target>/ueber/herausgeber_innen</target>
       </trans-unit>
       <trans-unit id="4325ad54eb5c30738fd299324a9ed374ea5d84c1" resname="about-sponsors">
         <source>/about/sponsors</source>
-        <target state="new">/ueber/foerderer</target>
+        <target>/ueber/foerderer</target>
       </trans-unit>
       <trans-unit id="859a410c14055c11f8c93e4ed850d44ed1b820f4" resname="about-us">
         <source>/about/team</source>
-        <target state="new">/ueber/team</target>
+        <target>/ueber/team</target>
       </trans-unit>
       <trans-unit id="7703b140b6951e94df4160683b9f1c593f305465" resname="app_logout">
         <source>/logout</source>
-        <target state="new">/logout</target>
+        <target>/logout</target>
       </trans-unit>
       <trans-unit id="565cecd7e8f5c6063935b41db41797aa37d53b04" resname="article">
         <source>/article/{slug}</source>

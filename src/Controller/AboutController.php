@@ -65,7 +65,7 @@ extends \TeiEditionBundle\Controller\RenderTeiController
 
     /**
      * @Route("/about", name="about")
-     * @Route("/terms", name="terms")
+     * xRoute("/terms", name="terms")
      * @Route("/contact", name="contact")
      */
     public function renderAbout(Request $request,
@@ -77,10 +77,10 @@ extends \TeiEditionBundle\Controller\RenderTeiController
 
     /**
      * @Route("/about/team", name="about-us")
-     * @Route("/about/editors", name="about-editors")
-     * @Route("/about/board", name="about-board")
-     * @Route("/about/sponsors", name="about-sponsors")
-     * @Route("/about/cfp", name="about-cfp")
+     * xRoute("/about/editors", name="about-editors")
+     * xRoute("/about/board", name="about-board")
+     * xRoute("/about/sponsors", name="about-sponsors")
+     * xRoute("/about/cfp", name="about-cfp")
      */
     public function renderAboutUs(Request $request, $title = null)
     {

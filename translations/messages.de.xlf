@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2023-08-28T16:24:00Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2023-09-05T13:15:22Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -13,12 +13,12 @@
       </trans-unit>
       <trans-unit id="3ffb811f9be63cf3e71f2e2b71599ba2b7721405" resname="About us">
         <source>About us</source>
-        <target state="new">Über uns</target>
+        <target>Über uns</target>
         <jms:reference-file line="60">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="6ace5fe393eb5f02afd657b64031ed2032f3d051" resname="All Places mentioned">
         <source>All Places mentioned</source>
-        <target state="new">Alle erwähnten Orte</target>
+        <target>Alle erwähnten Orte</target>
         <jms:reference-file line="13">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Place\map.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="4360c2dcd4af965377499b10a52640af435c9258" resname="Article">
@@ -87,6 +87,11 @@
         <target>Organisationen</target>
         <jms:reference-file line="127">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="bc3023b36063a7681db24681472b54fa11f0d4ec" resname="Page not found">
+        <source>Page not found</source>
+        <target state="new">Seite nicht gefunden</target>
+        <jms:reference-file line="13">\..\..\..\..\..\..\./templates\bundles\TwigBundle\Exception\error404.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="f3cf96e919766ef2354bbbddd56e9cbb5f2792e8" resname="Persons">
         <source>Persons</source>
         <target>Personen</target>
@@ -126,7 +131,7 @@
       </trans-unit>
       <trans-unit id="ababcd2092c790cd48094defea5bb6fa5036c0d6" resname="The Project">
         <source>The Project</source>
-        <target state="new">Das Projekt</target>
+        <target>Das Projekt</target>
         <jms:reference-file line="54">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="02a46dd8b4f86ba87d571007f77a384df3bbb4eb" resname="View Fullscreen">

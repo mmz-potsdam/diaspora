@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">About us</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Center for European-Jewish Studies</orgName>
+                    <email>diaspora@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-20</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="3">
+                <head>Team</head>
+                <lb/>
+                <p>The online source portal “History of the German-Jewish Diaspora” is published by the Moses Mendelssohn Center for European-Jewish Studies (MMZ) in Potsdam and maintained by the project team there. It is part of a larger platform on European Jewish history realized jointly by the MMZ and the Institute for the History of German Jews (IGdJ). This new service, located at the MMZ with the Diaspora Source Portal as one of its core modules, is to be expanded into a central platform within the field of Jewish history. Further information on the portal Jewish History online is available at <ref
+                        target="https://portal.jewish-history-online.net/"
+                    >portal.jewish-history-online.net</ref>.</p>
+
+                <p><hi rendition="#b">Prof. Dr. Miriam Rürup (MMZ, Project Leader)</hi>
+                    <lb/>
+                    has been Director of the Moses Mendelssohn Center for European-Jewish Studies in Potsdam since 2020. As Head of the Academic Working Group of the Leo Baeck Institute in Germany (WAG), she leads the conceptual design of the hybrid publication project “History of the German-Jewish Diaspora.” Before moving to Potsdam, she worked as a Research Fellow at the German Historical Institute in Washington, DC and was the Director of the Institute for the History of the German Jews in Hamburg (IGdJ). In this capacity, she was the initiator and publisher of the “Key Documents on German-Jewish History.” Her research interests include German-Jewish history, contemporary history, the history of National Socialism, the politics of commemoration, gender history, as well as as the history of migration, citizenship, and statelessness. </p>
+
+                <p><hi rendition="#b">Sheer Ganor, PhD (University of Minnesota,
+                        Co-editor)</hi>
+                    <lb/>
+                    is a historian of German-speaking Jewry and Assistant Professor at the University of Minnesota in Minneapolis. She is co-editor of the planned volume “History of the German Jewish Diaspora.” She studied at Berkeley, Berlin, and Tel Aviv, and received her PhD from the University of California in 2019. Her research focuses on the nexus of forced migration, memory, and cultural identity. Her dissertation addresses the history of a transnational diasporic network of German-speaking Jews in the 20th century. Prior to joining the University of Minnesota, she held a postdoctoral research fellowship at the German Historical Institute in Washington, DC. Her research has been supported by various institutions, including the Central European History Society and the Studienstiftung des deutschen Volkes.</p>
+                <p>
+                    <hi rendition="#b">Dr. Lisa Sophie Gebhard (MMZ, Coordination)</hi>
+                    <lb/>
+                    has been a Research Associate at the Moses Mendelssohn Center for European-Jewish Studies since 2023, where she is responsible for coordinating the hybrid publication project “History of the German-Jewish Diaspora.” She studied in Berlin, Jerusalem, Kiel, and Milan and received her doctorate in 2022 from Freie Universität Berlin (<hi rendition="#i">summa cum laude</hi>). Her dissertation, which focuses on the multifaceted lifework of Davis Trietsch, an early Zionist, was funded by the Studienstiftung des deutschen Volkes and published in the Schriftenreihe wissenschaftlicher Abhandlungen des Leo Baeck Instituts. Prior to joining the MMZ she worked at the WZB Berlin Social Science Center, the German Historical Museum, and Hentrich&amp;Hentrich Verlag für jüdische Kultur und Zeitgeschichte. She lives with her family in Berlin. </p>
+                <p>
+                    <hi rendition="#b">Daniel Burckhardt (MMZ, Technical Implementation)</hi>
+                    <lb/>
+                    has been a Research Associate at the Moses Mendelssohn Center for European-Jewish Studies in Potsdam since 2021, where he is responsible for the technical implementation of the online source portal “History of the German-Jewish Diaspora” among other tasks. Previously, he was the technical developer for the “Key Documents on German-Jewish History” at the Institute for the History of German Jews (IGdJ). He studied in Zurich and Berlin and worked as a Research Associate at the Institute for the Historical Sciences, Humboldt University in Berlin, at the Leibniz Centre for Contemporary History in Potsdam (ZZF), and at the German Historical Institute in Washington, D.C. He also serves on the editorial board and steering committee of H-Soz-Kult.</p>
+            </div>
+            <div n="3">
+                <head>Advisory Board</head><lb/>
+                <list>
+                    <item>                Ofer Ashkenazi, Associate Professor of History and Director of the Koebner Minerva Research Center for German History at Hebrew University of Jerusalem
+                    </item>
+                    <item>
+                        Atina Grossmann, Professor of History in the Faculty of Humanities and Social Sciences at the Cooper Union in New York City
+                    </item>
+                    <item>
+                        Simone Lässig, Director of the German Historical Institute in Washington, DC
+                    </item>
+                    <item>
+                        Jeffrey Lesser, Samuel Candler Dobbs Professor and Director of the Halle Institute for Global Research and Learning at Emory University, Atlanta
+                    </item>
+                    <item>
+                        Michael A. Meyer, Adolph S. Ochs Professor of Jewish History Emeritus at the Hebrew Union College – Jewish Institute of Religion in Cincinnati, Ohio
+                    </item>
+                    <item>
+                        David Rechter, Professor of Modern Jewish History in the Faculty of Asian and Middle Eastern Studies, University of Oxford
+                    </item>
+                    <item>
+                        Katrin Steffen, DAAD Professor of European and Jewish History and Culture at the University of Sussex                  
+                    </item>
+                </list>
+            </div>
+            <div n="3">
+                <head>Sponsors and Partners</head><lb/>
+                <p>The <ref target="https://www.volkswagenstiftung.de/en">Volkswagen Foundation</ref> has been funding the realization of the hybrid publication project since 2023.</p>
+                <p>The research project is carried out in cooperation with various international institutions, including archives, libraries and museums:</p>
+                <list>
+                    <item>
+                        Centro de Documentación de la Inmigración de Habla Alemana en la Argentina | Documentation Center of German-Speaking Immigration in Argentina, Buenos Aires.
+                    </item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

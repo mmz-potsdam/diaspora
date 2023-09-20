@@ -12,7 +12,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <publisher>
                     <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
                         europäisch-jüdische Studien</orgName>
-                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <email>diaspora@juedische-geschichte-online.net</email>
                     <address>
                         <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
                     </address>

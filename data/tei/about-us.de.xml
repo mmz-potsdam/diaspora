@@ -12,13 +12,13 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <publisher>
                     <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
                         europäisch-jüdische Studien</orgName>
-                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <email>diaspora@juedische-geschichte-online.net</email>
                     <address>
                         <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
                     </address>
                 </publisher>
                 <pubPlace>Potsdam</pubPlace>
-                <date type="publication">2023-09-06</date>
+                <date type="publication">2023-09-20</date>
                 <!--
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
@@ -48,12 +48,12 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <p>Das Online-Quellenportal „Geschichte der deutsch-jüdischen Diaspora“ wird vom
                     Moses Mendelssohn Zentrum für europäisch-jüdische Studien (MMZ) in Potsdam
                     herausgegeben und vom dortigen Projektteam betreut. Das digitale Portal ist Teil
-                    einer größeren, vom MMZ und dem Institut für die Geschichte der deutschen Juden
-                    (IGdJ) gemeinsam geplanten Plattform zur europäisch-jüdischen Geschichte. Dieses
+                    der größeren, vom MMZ und dem Institut für die Geschichte der deutschen Juden
+                    (IGdJ) gemeinsam realisierten Plattform zur europäisch-jüdischen Geschichte. Dieses
                     am MMZ angesiedelte neue Angebot mit dem Diaspora-Quellenportal als einem
                     Kernmodul soll zu einer zentralen Plattform für das Fach Jüdische Geschichte
                     ausgebaut werden. Weitere Informationen zur Umsetzung der modular aufgebauten
-                    Plattform „Jüdische Geschichte Online“ finden Sie zeitnah unter <ref
+                    Plattform „Jüdische Geschichte Online“ finden Sie unter <ref
                         target="https://portal.juedische-geschichte-online.net/"
                         >portal.juedische-geschichte-online.net</ref>.</p>
 

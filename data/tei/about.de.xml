@@ -12,7 +12,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <publisher>
                     <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
                         europäisch-jüdische Studien</orgName>
-                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <email>diaspora@juedische-geschichte-online.net</email>
                     <address>
                         <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
                     </address>
@@ -143,7 +143,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     das Portal kontinuierlich anreichern und wachsen lassen. </p>
                 <p> Für das Quellenportal sind insgesamt <hi rendition="#g">drei Textebenen</hi> vorgesehen, die durch
                     gezielte Querverbindungen miteinander in Beziehung gesetzt werden: </p>
-                <p> <hi rendition="#i">Erstens</hi> Einführungstexte, die sich den jeweiligen Regionen einer
+                <p> <hi rendition="#i">Erstens</hi> <hi rendition="#g">Einführungstexte</hi>, die sich den jeweiligen Regionen einer
                     deutsch-jüdischen Zuwanderung (Bsp. Europa, Lateinamerika) widmen. Weitere
                     <hi rendition="#g">Überblickstexte</hi> zu einzelnen Ländern einer Region bilden den zweiten Strang, der
                     den unterschiedlichen nationalen Entwicklungen im Einzelnen Rechnung trägt. Hier

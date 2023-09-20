@@ -17,8 +17,8 @@
                     </div>
                     #}
                     <div class="col-10" style="min-height: 80px">
-                        <a href="https://www.mmz-potsdam.de/" target="_blank">
-                            <img src="{{ app.request.basepath }}/img/mmz-inverse.de.svg" class="img-fluid position-absolute" style="bottom: 16px; max-height: 80px" alt="Moses Mendelssohn Zentrum" />
+                        <a href="https://www.mmz-potsdam.de/{% if 'de' != app.request.locale %}en/{% endif %}" target="_blank">
+                            <img src="{{ app.request.basepath }}/img/mmz-inverse.{{ app.request.locale }}.svg" class="img-fluid position-absolute" style="bottom: 16px; max-height: 80px" alt="{{ 'Moses Mendelssohn Center'|trans }}" />
                         </a>
                     </div>
 

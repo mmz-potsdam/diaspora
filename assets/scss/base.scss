@@ -427,6 +427,8 @@ h3#citation {
         }
     }
 
+    font-family: $font-stack-serif;
+
     @include dta-styles;
 
     .dta-p, span.dta-opener, div.dta-closer,

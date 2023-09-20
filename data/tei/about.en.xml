@@ -61,14 +61,14 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     Studies in Potsdam under its Director Prof. Dr. Miriam Rürup. The project is
                     designed on two different, complementary publication levels: on the one hand, it
                     envisions a volume on the history of the German-Jewish diaspora, and on the
-                    other, an on-line source portal. </p>
+                    other, an online source portal. </p>
 
                 <p> The planned <hi rendition="#g">print publication</hi> is intended as a
                     continuation of the LBI's renowned and successful series of overviews, which
                     were published in five volumes so far between 1996 and 2012 (<hi rendition="#i"
                         >German-Jewish History in Modern Times</hi>, C. H. Beck Munich). While the
                     previous volumes dealt with Jewish life within the German states, the aim now is
-                    to present a standard work on German-Jewish history <hi rendition="#i"
+                    to present a standard work on German-Jewish history <hi rendition="#g"
                         >outside</hi> and <hi rendition="#g">beyond</hi> the German-speaking lands.
                     To this end, the migration movements of jews who belonged to the German
                     linguistic and cultural area and who had to leave it in large numbers,
@@ -79,7 +79,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     well-known sites of German-Jewish emigration and exile. The portal’s focus lies on
                     the fates and lives of Jews, who from the 1840s onwards built up a new existence
                     permanently or temporarily in around 90 (transit) countries countries - from A
-                    for Argentina to Z for Zimbabwe. The German-Jewish diaspora is to be made
+                    for Argentina to Z for <hi rendition="#i">Zypern</hi>. The German-Jewish diaspora is to be made
                     visible via the website as a transnational network that was characterized by
                     dynamic relationships beyond individual places of immigration as well as by
                     return and remigration. <hi rendition="#g">(Interactive) maps</hi> should play a
@@ -96,7 +96,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
             <div n="3">
                 <head>Target Audience</head>
                 <lb/>
-                <p> The on-line source portal is primarily aimed at university students, teachers
+                <p> The online source portal is primarily aimed at university students, teachers
                     and scholars in the field of Jewish history, but also at high school students
                     and interested members of the general public. In keeping with the subject of a
                     German-Jewish diaspora and its transnational ties, the website is planned to be

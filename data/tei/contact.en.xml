@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Contact</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Center for
+                        European-Jewish Studies</orgName>
+                    <email>diaspora@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-20</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="2">
+                <p> If you have any questions, comments or suggestions regarding <ref target="about"
+                        >the project</ref> freuen wir uns you can contact us via e-mail to <ref
+                        target="mailto:diaspora@juedische-geschichte-online.net"
+                        >diaspora@juedische-geschichte-online.net</ref>.<lb/>
+                </p>
+
+                <div n="3">
+                    <head>Imprint</head>
+                    <lb/>
+                    <p><lb/>
+                         Moses Mendelssohn Center for European-Jewish Studies e. V.<lb/>
+                         Am Neuen Markt 8<lb/>
+                         D-14467 Potsdam<lb/>
+                    </p>
+
+                    <p>
+                        <lb/>
+                        Phone: +49 (0)331 - 280 94 - 0<lb/>
+                         Fax: +49 (0)331 - 280 94 - 50<lb/>
+                         E-Mail: <ref target="mailto:moses@mmz.uni-potsdam.de"
+                            >moses@mmz.uni-potsdam.de</ref><lb/>
+                         Internet: <ref target="https://www.mmz-potsdam.de"
+                        >www.mmz-potsdam.de</ref></p>
+
+                    <p><lb/>
+                         Authorized Representative of the Board:<lb/>
+                         Prof. Dr. Miriam Rürup</p>
+
+                    <p>
+                        <lb/>
+                         Register Court: Amtsgericht Potsdam<lb/>
+                         Registration Number: VR 1074</p>
+
+                    <p><lb/>
+                         Responsible for content according to § 6 MDStV: <lb/>
+                         Dr. Lisa Sophie Gebhard </p>
+
+                    <p>
+                        <lb/>
+                         Technical support:<lb/>
+                         Daniel Burckhardt</p>
+                </div>
+
+                <div n="3">
+                    <head>Data Protection</head>
+                    <lb/>
+                    <p>
+                        <lb/>
+                        This is an online service of the Moses Mendelssohn Center for European-Jewish Studies e. V. (MMZ). The <ref target="https://www.mmz-potsdam.de/en/contact/privacy"
+                            >MMZ general data privacy policy</ref> applies to the processing of all personal data that is generated when using this service. 
+                    </p>
+                </div>
+
+                <div n="3">
+                    <head>Liability for Links</head>
+                    <lb/>
+                    <p><lb/>
+                        Our site contains links to external websites, over which we have no influence. Therefore we can not accept any liability for this external content. The respective provider or operator of the websites is always responsible for the content of these pages. The linked pages were inspected for possible violations of law at the time of the placing of the link. Illegal contents were not apparent when the link was created. Continuous monitoring of the contents of the linked web pages is not plausible where there is no actual indication of an infringement of the law. Upon notification of violations, we will remove such links immediately.  </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

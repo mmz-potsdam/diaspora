@@ -78,7 +78,7 @@
         "ext-iconv": "*",
         "ext-intl": "*",
         "armin/scssphp-bundle": "^1.2",
-        "cocur/slugify": "4.4.*",
+        "cocur/slugify": "^4.4",
         "doctrine/annotations": "^1.4|^2.0",
         "eko/feedbundle": "dev-master",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
@@ -139,7 +139,8 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "*"
+        "symfony/symfony": "*",
+        "cocur/slugify": "4.5.0"
     },
     "extra": {
         "symfony": {

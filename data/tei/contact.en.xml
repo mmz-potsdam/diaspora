@@ -34,7 +34,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
         <body>
             <div n="2">
                 <p> If you have any questions, comments or suggestions regarding <ref target="about"
-                        >the project</ref> freuen wir uns you can contact us via e-mail to <ref
+                        >the project</ref>, you can contact us via e-mail to <ref
                         target="mailto:diaspora@juedische-geschichte-online.net"
                         >diaspora@juedische-geschichte-online.net</ref>.<lb/>
                 </p>
@@ -82,7 +82,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <p>
                         <lb/>
                         This is an online service of the Moses Mendelssohn Center for European-Jewish Studies e. V. (MMZ). The <ref target="https://www.mmz-potsdam.de/en/contact/privacy"
-                            >MMZ general data privacy policy</ref> applies to the processing of all personal data that is generated when using this service. 
+                            >MMZ general data privacy policy</ref> applies to the processing of all personal data that is generated when using this service.
                     </p>
                 </div>
 
@@ -90,7 +90,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <head>Liability for Links</head>
                     <lb/>
                     <p><lb/>
-                        Our site contains links to external websites, over which we have no influence. Therefore we can not accept any liability for this external content. The respective provider or operator of the websites is always responsible for the content of these pages. The linked pages were inspected for possible violations of law at the time of the placing of the link. Illegal contents were not apparent when the link was created. Continuous monitoring of the contents of the linked web pages is not plausible where there is no actual indication of an infringement of the law. Upon notification of violations, we will remove such links immediately.  </p>
+                        Our site contains links to external websites, over which we have no influence. Therefore we can not accept any liability for this external content. The respective provider or operator of the websites is always responsible for the content of these pages. The linked pages were inspected for possible violations of law at the time of the placing of the link. Illegal contents were not apparent when the link was created. Continuous monitoring of the contents of the linked web pages is not plausible where there is no actual indication of an infringement of the law. Upon notification of violations, we will remove such links immediately.
+                    </p>
                 </div>
             </div>
         </body>

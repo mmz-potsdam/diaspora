@@ -53,6 +53,9 @@
             "./config/packages/eko_feed.yaml"
         ]
     },
+    "gjuric/i18n-routing-bundle": {
+        "version": "3.2.2"
+    },
     "igdj/tei-edition-bundle": {
         "version": "dev-verbrannte-buecher.de"
     },

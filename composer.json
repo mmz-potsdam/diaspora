@@ -25,10 +25,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/gjuric/JMSI18nRoutingBundle"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/burki/tei-edition-bundle"
         },
         {
@@ -50,10 +46,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/burki/LiipUrlAutoConverterBundle"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/burki/OaiPmh"
         },
         {
             "type": "vcs",
@@ -82,8 +74,8 @@
         "doctrine/annotations": "^1.4|^2.0",
         "eko/feedbundle": "dev-master",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
-        "igdj/tei-edition-bundle": "dev-symfony-6",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
+        "igdj/tei-edition-bundle": "dev-symfony-6",
         "liip/url-auto-converter-bundle": "dev-master",
         "presta/sitemap-bundle": "^3.3",
         "sensio/framework-extra-bundle": "^6.2",
@@ -138,8 +130,7 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "*",
-        "cocur/slugify": "4.5.0"
+        "symfony/symfony": "*"
     },
     "extra": {
         "symfony": {

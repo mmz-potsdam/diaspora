@@ -16,7 +16,7 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 
 use Cocur\Slugify\SlugifyInterface;
-use phpDocumentor\Reflection\DocBlock\Tags\Var_;
+
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Service\UrlContainerInterface;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
@@ -79,7 +79,7 @@ implements EventSubscriberInterface
     public static function getSubscribedEvents()
     {
         return [
-            SitemapPopulateEvent::ON_SITEMAP_POPULATE => 'populate',
+            SitemapPopulateEvent::class => 'populate',
         ];
     }
 
@@ -158,7 +158,6 @@ implements EventSubscriberInterface
                 // omit certain routes from sitemap
                 continue;
             }
-
 
             if (preg_match('/\{.*?\}/', $route->getPath())) {
                 // handle the ones with parameters

@@ -78,7 +78,6 @@
         "igdj/tei-edition-bundle": "dev-symfony-6",
         "liip/url-auto-converter-bundle": "dev-master",
         "presta/sitemap-bundle": "^4.0",
-        "sensio/framework-extra-bundle": "^6.2",
         "symfony/apache-pack": "^1.0",
         "symfony/console": "6.4.*",
         "symfony/css-selector": "6.4.*",

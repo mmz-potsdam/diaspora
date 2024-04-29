@@ -1,9 +1,12 @@
 # Full configuration: https://github.com/eko/FeedBundle
 eko_feed:
+    translation_domain: additional
     feeds:
         article:
-            title:       'My articles/posts'
-            description: 'Latest articles'
-            link:        'http://vincent.composieux.fr'
+            # Translate the following two in additional.de.yaml
+            title:       'History of the German-Jewish Diaspora - Articles'
+            description: 'Latest Articles from the Online Source Portal'
+            link:
+                route_name: article-index-date
             encoding:    'utf-8'
-            author:      'Vincent Composieux' # Only required for Atom feeds
+            #author:      'Institute for the History of the German Jews'

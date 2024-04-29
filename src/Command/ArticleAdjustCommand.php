@@ -119,6 +119,7 @@ extends BaseCommand
                         $topics[] = $this->translator->trans(\TeiEditionBundle\Controller\TopicController::lookupLocalizedTopic($term['name'], $this->translator, 'de')); // The admin-database stores the terms in German, so look them up from this locale
                     }
 
+                    $responsible = []; // we currently don't have section editors
                     usort($topics, function ($a, $b) use ($responsible) {
                         if ($a == $b) {
                             return 0;

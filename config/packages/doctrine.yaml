@@ -4,13 +4,21 @@ doctrine:
 
         # IMPORTANT: You MUST configure your server version,
         # either here or in the DATABASE_URL env var (see .env file)
-        #server_version: '15'
+        #server_version: '16'
+        use_savepoints: true
+        profiling_collect_backtrace: '%kernel.debug%'
     orm:
         auto_generate_proxy_classes: true
+        enable_lazy_ghost_objects: true
         naming_strategy: doctrine.orm.naming_strategy.default
+        report_fields_where_declared: true
+        controller_resolver:
+            auto_mapping: false # see https://symfony.com/doc/current/doctrine.html#fetch-automatically
+        validate_xml_mapping: true
         auto_mapping: true
         mappings:
             App:
+                type: annotation # TODO: switch to attribute
                 is_bundle: false
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
@@ -19,6 +27,10 @@ doctrine:
             string_functions:
                 REPLACE: DoctrineExtensions\Query\Mysql\Replace
                 CAST:       Oro\ORM\Query\AST\Functions\Cast
+                # https://packagist.org/packages/scienta/doctrine-json-functions
+                JSON_EXTRACT: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonExtract
+                JSON_CONTAINS: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonContains
+                JSON_UNQUOTE: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonUnquote
             datetime_functions:
                 YEAR:       DoctrineExtensions\Query\Mysql\Year
 

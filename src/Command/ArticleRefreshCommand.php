@@ -39,7 +39,7 @@ extends BaseCommand
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output) : int
     {
         $fnameInput = $input->getArgument('file');
         $quiet = $input->getOption('quiet');
@@ -62,6 +62,44 @@ extends BaseCommand
         $langIso2 = $matches[1];
 
         $ext = pathinfo($fnameInput, PATHINFO_EXTENSION);
+        if ('tei' == $ext) {
+            // refresh .xml as well
+            $fnameOutput = preg_replace('/\.' . preg_quote($ext, '/') . '$/', '.xml', $fnameInput);
+
+            $command = $this->getApplication()->find('article:adjust');
+
+            $arguments = [
+                'command' => 'article:adjust',
+                'file' => $fnameInput,
+                '--tidy' => null,
+            ];
+
+            $adjustInput = new ArrayInput($arguments);
+            // we want to catch output
+            $bufferedOutput = new BufferedOutput();
+
+            $output->write(sprintf('<info>Running article:adjust %s > %s</info>',
+                                   $fnameInput, $fnameOutput));
+
+            $returnCode = $command->run($adjustInput, $bufferedOutput);
+
+            if (0 != $returnCode) {
+                $output->writeln('<info> [FAIL]</info>');
+                $output->writeln(sprintf('<error>article:adjust on %s failed</error>', $fnameInput));
+
+                return 2;
+            }
+
+            $output->writeln('<info> [OK]</info>');
+
+            $outputText = $bufferedOutput->fetch();
+            file_put_contents($fnameOutput, $outputText);
+
+            // use .xml for all of the following
+            $fnameInput = $fnameOutput;
+        }
+
+        $ext = pathinfo($fnameInput, PATHINFO_EXTENSION);
         if ('xml' != $ext) {
             $output->writeln(sprintf('<error>Invalid file extension for %s (must be .xml)</error>',
                                      $fnameInput));
@@ -76,11 +114,12 @@ extends BaseCommand
         }
 
         $commands = [
-            'article:author' => [],
+            'article:author' => [ '--update' ],
             'article:header' => $input->getOption('publish')
                 ? [ '--update', '--publish' ] : [ '--update' ],
             'article:content' => [ '--update' ],
             'article:entity' => [ '--insert-missing', '--set-references' ],
+            // 'article:bibliodb' => [ '--insert-missing' ],
             'article:biblio' => [ '--set-references' ],
         ];
 

@@ -38,11 +38,9 @@ parameters:
                 I: 'NotoSerif-Italic.ttf'
                 BI: 'NotoSerif-BoldItalic.ttf'
         default_font: book_typeface
-    # for testing (https://doi.test.datacite.org/), use
-    app.datacite.url: "https://mds.test.datacite.org/" # see https://support.datacite.org/docs/testing-guide
-    # app.datacite.url: " https://mds.datacite.org/" # production
+    app.datacite.url: "%env(string:DATACITE_URL)%"
     app.datacite.user: SUBGOE.IGDJ
-    app.datacite.password: ~
+    app.datacite.password: "%env(string:DATACITE_PASSWORD)%"
     app.datacite.prefix: 10.23691
     app.datacite.funding: '
         <fundingReferences>

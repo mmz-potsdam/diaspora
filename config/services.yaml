@@ -8,6 +8,7 @@ parameters:
     locales: ['de', 'en']        # without app. prefix for TeiEditionBundle
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
+    app.site.key: 'gjd'
     app.site.name: "History of the German-Jewish Diaspora"
     app.site.byline: "A Publication Project" # "An Online Source Portal"
     app.site.publisher: "Moses Mendelssohn Zentrum für europäisch-jüdische Studien"
@@ -42,6 +43,16 @@ parameters:
     app.datacite.user: SUBGOE.IGDJ
     app.datacite.password: ~
     app.datacite.prefix: 10.23691
+    app.datacite.funding: '
+        <fundingReferences>
+          <fundingReference>
+            <funderName>VolkswagenStiftung</funderName>
+            <funderIdentifier funderIdentifierType="Crossref Funder ID">http://dx.doi.org/10.13039/501100001663</funderIdentifier>
+            <awardNumber awardURI="https://portal.volkswagenstiftung.de/search/projectPDF.do?projectId=10373">10373</awardNumber>
+            <awardTitle>Buchprojekt Geschichte der deutschen Juden außerhalb Deutschlands (deutsch-jüdische Diaspora)</awardTitle>
+          </fundingReference>
+        </fundingReferences>'
+    app.datacite.url_production_adjust: '%env(json:DATACITE_URL_PRODUCTION_ADJUST)%'
 
     #app.wordpress.url: 'https://diaspora.juedische-geschichte-online.net/cms/'
 

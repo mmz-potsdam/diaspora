@@ -413,12 +413,11 @@ extends BaseCommand
         // set the publisher - needs to be localized
         $this->translator->setLocale(\TeiEditionBundle\Utils\Iso639::code3To1($data['lang']));
 
-        // TODO: get from config
         $data['publisher'] = [
-            'orgName' => $this->translator->trans('Institute for the History of the German Jews'),
-            'email' => 'redaktion@juedische-geschichte-online.net',
+            'orgName' => $this->translator->trans($this->getParameter('app.site.publisher')),
+            'email' => $this->getParameter('app.site.email'),
             'address' => [
-                'addrLine' => 'Beim Schlump 83, 20144 Hamburg',
+                'addrLine' => $this->getParameter('app.site.publisher.address'),
             ],
         ];
 

@@ -80,40 +80,152 @@ extends BaseCommand
 
         $output->writeln($this->jsonPrettyPrint($persons));
 
-        if ($input->getOption('insert-missing')) {
+        if ($input->getOption('insert-missing') || $input->getOption('update')) {
             foreach ($persons as $author) {
                 $person = null;
 
                 $slug = $author->getSlug();
-                if (empty($slug)) {
-                    // check if we have gnd
-                    $gnd = $author->getGnd();
-                    if (!empty($gnd)) {
-                        $uri = 'https://d-nb.info/gnd/' . $gnd;
-                        $this->insertMissingPerson($uri);
+                $gnd = $author->getGnd();
+
+                if (empty($slug) && empty($gnd)) {
+                    $output->writeln(sprintf('<info>Skip author with empty slug and gnd in %s</info>', $fname));
+                    continue;
+                }
+
+                if (!empty($slug)) {
+                    $person = $this->findPersonBySlug($slug);
+                }
+
+                if (!empty($gnd)) {
+                    $uri = 'https://d-nb.info/gnd/' . $gnd;
+                    if (is_null($person)) {
                         $person = $this->findPersonByUri($uri);
                     }
+                }
 
-                    if (is_null($person)) {
-                        $output->writeln(sprintf('<info>Skip author with empty slug and gnd in %s</info>', $fname));
+                if (!is_null($person) && !$input->getOption('update')) {
+                    // person already exists and we are not updating, so we are done
+                    continue;
+                }
+
+                // either insert or update
+                $user = !empty($slug)
+                    ? $this->findUserFromAdminBySlug($slug, $output)
+                    : $this->findUserFromAdminByGnd($gnd, $output);
+
+                if (is_null($user)) {
+                    if (!empty($gnd) && !$input->getOption('update')) {
+                        // try to create missing person from gnd
+                        $this->insertMissingPerson($uri);
+                        $person = $this->findPersonByUri($uri);
+
+                        if (!is_null($person)) {
+                            if (!empty($slug)) {
+                                $person->setSlug($slug);
+                                $this->em->persist($person);
+                                $this->flushEm($this->em);
+                            }
+                        }
+                    }
+
+                    // can't insert or update
+                    if (is_null($person) || $input->getOption('update')) {
+                        $value = !empty($slug) ? $slug : $gnd;
+                        $output->writeln(sprintf('<error>No user found for %s</error>',
+                                                 trim($value)));
                         continue;
                     }
                 }
                 else {
-                    $person = $this->findPersonBySlug($slug);
-                }
+                    // set from $user
+                    if (is_null($person)) {
+                        $person = new \TeiEditionBundle\Entity\Person();
+                    }
 
-                // either insert or update
-                if (is_null($person)) {
-                    $value = !empty($slug) ? $slug : $gnd;
-                    $output->writeln(sprintf('<error>No user found for %s</error>',
-                                             trim($value)));
-                    continue;
+                    if (!empty($slug)) {
+                        $person->setSlug($slug);
+                    }
+
+                    foreach ([
+                            'title' => 'honoricPrefix',
+                            'firstname' => 'givenName',
+                            'lastname' => 'familyName',
+                            'position' => 'jobTitle',
+                            'sex' => 'gender',
+                            'url' => 'url',
+                            'gnd' => 'gnd',
+                        ] as $src => $target)
+                    {
+                        if (!empty($user[$src])) {
+                            if ('url' == $src && preg_match('/^keine/i', $user[$src])) {
+                               $user[$src] = null;
+                            }
+
+                            $methodName = 'set' . ucfirst($target);
+                            $person->$methodName($user[$src]);
+                        }
+                        else if ('url' == $target) {
+                            // clear url
+                            $methodName = 'set' . ucfirst($target);
+                            $person->$methodName(null);
+                        }
+                    }
+
+                    $description = [];
+                    if (!empty($user['description_de'])) {
+                        $description['de'] = $user['description_de'];
+                    }
+
+                    if (!empty($user['description'])) {
+                        $description['en'] = $user['description'];
+                    }
+
+                    $person->setDescription($description);
+
+                    // var_dump(json_encode($person));
+                    $this->em->persist($person);
+                    $this->flushEm($this->em);
                 }
             }
         }
 
         return 0;
+    }
+
+    protected function findUserFromAdminBySlug($slug, $output)
+    {
+        $sql = "SELECT * FROM User WHERE slug = :slug AND status <> -100";
+
+        $users = $this->dbconnAdmin->fetchAllAssociative($sql, [ 'slug' => $slug ]);
+        if (empty($users)) {
+            return;
+        }
+
+        if (count($users) > 1) {
+            $output->writeln(sprintf('<error>More than one user found for %s (IDs %s)</error>',
+                                     trim($slug),
+                                     join(', ', array_map(function ($user) { return $user['id']; }, $users))));
+        }
+
+        return $users[0];
+    }
+
+    protected function findUserFromAdminByGnd($gnd, $output)
+    {
+        $sql = "SELECT * FROM User WHERE gnd = :gnd AND status <> -100";
+
+        $users = $this->dbconnAdmin->fetchAllAssociative($sql, [ 'gnd' => $gnd ]);
+        if (empty($users)) {
+            return;
+        }
+
+        if (count($users) > 1) {
+            $output->writeln(sprintf('<error>More than one user found for %s (IDs %s)</error>',
+                                     trim($slug),
+                                     join(', ', array_map(function ($user) { return $user['id']; }, $users))));
+        }
+
+        return $users[0];
     }
 
     protected function findPersonBySlug($slug)

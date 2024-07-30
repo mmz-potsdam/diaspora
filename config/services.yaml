@@ -9,10 +9,11 @@ parameters:
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
     app.site.key: 'gjd'
-    app.site.name: "History of the German-Jewish Diaspora"
-    app.site.byline: "A Publication Project" # "An Online Source Portal"
-    app.site.publisher: "Moses Mendelssohn Zentrum für europäisch-jüdische Studien"
-    app.site.email: 'info@juedische-geschichte-online.net'
+    app.site.name: 'History of the German-Jewish Diaspora'
+    app.site.byline: 'A Publication Project' # "An Online Source Portal"
+    app.site.publisher: 'Moses Mendelssohn Center for European-Jewish Studies'
+    app.site.publisher.address: 'Am Neuen Markt 8, 14467 Potsdam'
+    app.site.email: 'diaspora@juedische-geschichte-online.net'
     app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"
     app.site_theme: null
     app.public_dir: '%kernel.project_dir%/public'

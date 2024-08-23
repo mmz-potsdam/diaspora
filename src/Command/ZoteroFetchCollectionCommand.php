@@ -28,7 +28,7 @@ extends Command
         $this->zoteroApiService = $zoteroApiService;
     }
 
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('zotero:fetch-collection')
@@ -42,7 +42,7 @@ extends Command
             ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : int
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $api = $this->zoteroApiService->getInstance($groupId = '4750799');
         // $groupId = $this->zoteroApiService->getGroupId(); if it is set in options

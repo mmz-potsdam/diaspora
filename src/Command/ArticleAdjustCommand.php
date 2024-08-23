@@ -16,7 +16,7 @@ use Symfony\Component\Filesystem\Filesystem;
 class ArticleAdjustCommand
 extends BaseCommand
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('article:adjust')
@@ -374,7 +374,7 @@ extends BaseCommand
         return $data;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $fname = $input->getArgument('file');
 

@@ -17,7 +17,7 @@ use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 class ArticleAuthorCommand
 extends BaseCommand
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('article:author')
@@ -42,7 +42,7 @@ extends BaseCommand
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $fname = $input->getArgument('file');
 

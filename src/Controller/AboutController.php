@@ -63,11 +63,9 @@ extends \TeiEditionBundle\Controller\RenderTeiController
         ]);
     }
 
-    /**
-     * @Route("/about", name="about")
-     * xRoute("/terms", name="terms")
-     * @Route("/contact", name="contact")
-     */
+    #[Route(path: '/about', name: 'about')]
+    // #[Route(path: '/terms', name: 'terms')]
+    #[Route(path: '/contact', name: 'contact')]
     public function renderAbout(Request $request,
                                 TranslatorInterface $translator,
                                 $title = null)
@@ -75,13 +73,8 @@ extends \TeiEditionBundle\Controller\RenderTeiController
         return $this->renderTitleContent($request, 'About/sitetext.html.twig', $title);
     }
 
-    /**
-     * @Route("/about/team", name="about-us")
-     * xRoute("/about/editors", name="about-editors")
-     * xRoute("/about/board", name="about-board")
-     * xRoute("/about/sponsors", name="about-sponsors")
-     * xRoute("/about/cfp", name="about-cfp")
-     */
+    #[Route(path: '/about/team', name: 'about-us')]
+    // #[Route(path: '/about/editors', name: 'about-editors')]
     public function renderAboutUs(Request $request, $title = null)
     {
         return $this->renderTitleContent($request, 'About/sitetext.html.twig', $title);

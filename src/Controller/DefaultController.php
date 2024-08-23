@@ -18,9 +18,7 @@ extends \TeiEditionBundle\Controller\TopicController
     /* shared code with PlaceController */
     use \TeiEditionBundle\Controller\MapHelperTrait;
 
-    /**
-     * @Route("/", name="home")
-     */
+    #[Route(path: '/', name: 'home')]
     public function indexAction(Request $request,
                                 EntityManagerInterface $entityManager,
                                 TranslatorInterface $translator)

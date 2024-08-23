@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "657d9b1075000bf9bd650a822c3ebca5",
+    "content-hash": "cf4d762b94d2ed719f89310a2f87fb62",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -170,34 +170,35 @@
         },
         {
             "name": "boppy/solr-bundle",
-            "version": "dev-solarium-6",
+            "version": "dev-attributes",
             "target-dir": "FS/SolrBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/SolrBundle.git",
-                "reference": "cf1bb9b7d4afab51a55be603eed2a9f0ea501412"
+                "reference": "ae9efe2523add3ac7e8a11faa62be18fb76a3942"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/SolrBundle/zipball/cf1bb9b7d4afab51a55be603eed2a9f0ea501412",
-                "reference": "cf1bb9b7d4afab51a55be603eed2a9f0ea501412",
+                "url": "https://api.github.com/repos/burki/SolrBundle/zipball/ae9efe2523add3ac7e8a11faa62be18fb76a3942",
+                "reference": "ae9efe2523add3ac7e8a11faa62be18fb76a3942",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "^1.4",
+                "doctrine/annotations": "^1.7",
                 "minimalcode/search": "^1.0",
                 "myclabs/deep-copy": "^1.6",
-                "php": "^7.2 || ^8.0",
-                "ramsey/uuid": "^3.5",
+                "php": "^8.0",
+                "ramsey/uuid": "^3.5|^4.1",
                 "solarium/solarium": "^6.0",
-                "symfony/config": "^4.0|^5.0|^6.0",
-                "symfony/dependency-injection": "^4.0|^5.0|^6.0",
-                "symfony/doctrine-bridge": "^4.0|^5.0|^6.0",
-                "symfony/http-kernel": "^4.0|^5.0|^6.0"
+                "symfony/config": "^5.4|^6.4|^7.0",
+                "symfony/dependency-injection": "^5.4|^6.4|^7.0",
+                "symfony/doctrine-bridge": "^5.4|^6.4|^7.0",
+                "symfony/http-kernel": "^5.4|^6.4|^7.0"
             },
             "require-dev": {
-                "doctrine/orm": "^2.3",
-                "phpunit/phpunit": "^7.0"
+                "doctrine/mongodb-odm-bundle": "^4.2",
+                "doctrine/orm": "^2.9",
+                "phpunit/phpunit": "^9.0"
             },
             "suggest": {
                 "doctrine/orm": "Required if you want to use the Doctrine ORM"
@@ -208,10 +209,15 @@
                     "FS\\SolrBundle": ""
                 }
             },
+            "autoload-dev": {
+                "psr-4": {
+                    "Doctrine\\ODM\\MongoDB\\": "vendor/doctrine/mongodb-odm/lib/Doctrine/ODM/MongoDB/"
+                }
+            },
             "license": [
                 "MIT"
             ],
-            "description": "Forked from floriansemm/solr-bundle - Symfony >= 4.3 Solr integration bundle",
+            "description": "Forked from floriansemm/solr-bundle - Symfony >= 5.4 Solr integration bundle",
             "homepage": "https://github.com/boppy/SolrBundle",
             "keywords": [
                 "index",
@@ -220,9 +226,69 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/burki/SolrBundle/tree/solarium-6"
+                "source": "https://github.com/burki/SolrBundle/tree/attributes"
             },
-            "time": "2023-08-16T11:19:51+00:00"
+            "time": "2024-08-19T09:31:45+00:00"
+        },
+        {
+            "name": "brick/math",
+            "version": "0.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/math.git",
+                "reference": "f510c0a40911935b77b86859eb5223d58d660df1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/math/zipball/f510c0a40911935b77b86859eb5223d58d660df1",
+                "reference": "f510c0a40911935b77b86859eb5223d58d660df1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^10.1",
+                "vimeo/psalm": "5.16.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Math\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Arbitrary-precision arithmetic library",
+            "keywords": [
+                "Arbitrary-precision",
+                "BigInteger",
+                "BigRational",
+                "arithmetic",
+                "bigdecimal",
+                "bignum",
+                "bignumber",
+                "brick",
+                "decimal",
+                "integer",
+                "math",
+                "mathematics",
+                "rational"
+            ],
+            "support": {
+                "issues": "https://github.com/brick/math/issues",
+                "source": "https://github.com/brick/math/tree/0.12.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/BenMorel",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-29T23:19:16+00:00"
         },
         {
             "name": "citation-style-language/locales",
@@ -2649,21 +2715,21 @@
         },
         {
             "name": "igdj/tei-edition-bundle",
-            "version": "dev-symfony-6",
+            "version": "dev-attributes",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "130397adc1c3d06196ca56af5ced1fd656c86bc2"
+                "reference": "0435cdabe9f50095e21540cbef2b04c73ae8dce5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/130397adc1c3d06196ca56af5ced1fd656c86bc2",
-                "reference": "130397adc1c3d06196ca56af5ced1fd656c86bc2",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/0435cdabe9f50095e21540cbef2b04c73ae8dce5",
+                "reference": "0435cdabe9f50095e21540cbef2b04c73ae8dce5",
                 "shasum": ""
             },
             "require": {
                 "beberlei/doctrineextensions": "^1.5",
-                "boppy/solr-bundle": "dev-solarium-6",
+                "boppy/solr-bundle": "dev-attributes",
                 "cocur/slugify": "^4.5",
                 "ddeboer/data-import": "0.20.*",
                 "doctrine/annotations": "^1.4|^2.0",
@@ -2674,7 +2740,7 @@
                 "fale/isbn": "^3.1",
                 "fluentdom/fluentdom": "^8.0",
                 "geissler/converter": "dev-master",
-                "gjuric/i18n-routing-bundle": "3.2.2",
+                "gjuric/i18n-routing-bundle": "^3.2",
                 "gmo/iso-639": "^1.0",
                 "guzzlehttp/guzzle": "^6.5|^7.5",
                 "html2text/html2text": "^4.3",
@@ -2696,26 +2762,26 @@
                 "square-bit/oai-pmh": "^0.3",
                 "stof/doctrine-extensions-bundle": "^1.12",
                 "sylius/theme-bundle": "^2.4",
-                "symfony/asset": "^6.4",
-                "symfony/config": "^6.4",
-                "symfony/console": "^6.4",
-                "symfony/css-selector": "^6.4",
-                "symfony/dom-crawler": "^6.4",
-                "symfony/expression-language": "^6.4",
-                "symfony/framework-bundle": "^6.4",
-                "symfony/http-foundation": "^6.4",
-                "symfony/intl": "^6.4",
-                "symfony/mime": "^6.4",
-                "symfony/psr-http-message-bridge": "^6.4",
-                "symfony/routing": "^6.4",
-                "symfony/security-core": "^6.4",
-                "symfony/serializer": "^6.4",
-                "symfony/translation": "^6.4",
-                "symfony/twig-bridge": "^6.4",
-                "symfony/twig-bundle": "^6.4",
-                "symfony/var-dumper": "^6.4",
-                "symfony/var-exporter": "^6.4",
-                "symfony/yaml": "^6.4",
+                "symfony/asset": "^6.4|^7.1",
+                "symfony/config": "^6.4|^7.1",
+                "symfony/console": "^6.4|^7.1",
+                "symfony/css-selector": "^6.4|^7.1",
+                "symfony/dom-crawler": "^6.4|^7.1",
+                "symfony/expression-language": "^6.4|^7.1",
+                "symfony/framework-bundle": "^6.4|^7.1",
+                "symfony/http-foundation": "^6.4|^7.1",
+                "symfony/intl": "^6.4|^7.1",
+                "symfony/mime": "^6.4|^7.1",
+                "symfony/psr-http-message-bridge": "^6.4|^7.1",
+                "symfony/routing": "^6.4|^7.1",
+                "symfony/security-core": "^6.4|^7.1",
+                "symfony/serializer": "^6.4|^7.1",
+                "symfony/translation": "^6.4|^7.1",
+                "symfony/twig-bridge": "^6.4|^7.1",
+                "symfony/twig-bundle": "^6.4|^7.1",
+                "symfony/var-dumper": "^6.4|^7.1",
+                "symfony/var-exporter": "^6.4|^7.1",
+                "symfony/yaml": "^6.4|^7.1",
                 "technosophos/libris": "dev-master",
                 "twig/extra-bundle": "^3.11",
                 "twig/intl-extra": "^3.11",
@@ -2732,9 +2798,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/burki/tei-edition-bundle/tree/symfony-6"
+                "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2024-08-17T14:34:36+00:00"
+            "time": "2024-08-18T11:39:40+00:00"
         },
         {
             "name": "jms/translation-bundle",
@@ -4860,53 +4926,152 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "ramsey/uuid",
-            "version": "3.9.7",
+            "name": "ramsey/collection",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ramsey/uuid.git",
-                "reference": "dc75aa439eb4c1b77f5379fd958b3dc0e6014178"
+                "url": "https://github.com/ramsey/collection.git",
+                "reference": "a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/dc75aa439eb4c1b77f5379fd958b3dc0e6014178",
-                "reference": "dc75aa439eb4c1b77f5379fd958b3dc0e6014178",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5",
+                "reference": "a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5",
                 "shasum": ""
             },
             "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "captainhook/plugin-composer": "^5.3",
+                "ergebnis/composer-normalize": "^2.28.3",
+                "fakerphp/faker": "^1.21",
+                "hamcrest/hamcrest-php": "^2.0",
+                "jangregor/phpstan-prophecy": "^1.0",
+                "mockery/mockery": "^1.5",
+                "php-parallel-lint/php-console-highlighter": "^1.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3",
+                "phpcsstandards/phpcsutils": "^1.0.0-rc1",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "^1.9",
+                "phpstan/phpstan-mockery": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-mockery": "^1.1",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "ramsey/coding-standard": "^2.0.3",
+                "ramsey/conventional-commits": "^1.3",
+                "vimeo/psalm": "^5.4"
+            },
+            "type": "library",
+            "extra": {
+                "captainhook": {
+                    "force-install": true
+                },
+                "ramsey/conventional-commits": {
+                    "configFile": "conventional-commits.json"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ramsey\\Collection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                }
+            ],
+            "description": "A PHP library for representing and manipulating collections.",
+            "keywords": [
+                "array",
+                "collection",
+                "hash",
+                "map",
+                "queue",
+                "set"
+            ],
+            "support": {
+                "issues": "https://github.com/ramsey/collection/issues",
+                "source": "https://github.com/ramsey/collection/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/ramsey/collection",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-12-31T21:50:55+00:00"
+        },
+        {
+            "name": "ramsey/uuid",
+            "version": "4.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "91039bc1faa45ba123c4328958e620d382ec7088"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/91039bc1faa45ba123c4328958e620d382ec7088",
+                "reference": "91039bc1faa45ba123c4328958e620d382ec7088",
+                "shasum": ""
+            },
+            "require": {
+                "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11 || ^0.12",
                 "ext-json": "*",
-                "paragonie/random_compat": "^1 | ^2 | ^9.99.99",
-                "php": "^5.4 | ^7.0 | ^8.0",
-                "symfony/polyfill-ctype": "^1.8"
+                "php": "^8.0",
+                "ramsey/collection": "^1.2 || ^2.0"
             },
             "replace": {
                 "rhumsaa/uuid": "self.version"
             },
             "require-dev": {
-                "codeception/aspect-mock": "^1 | ^2",
-                "doctrine/annotations": "^1.2",
-                "goaop/framework": "1.0.0-alpha.2 | ^1 | >=2.1.0 <=2.3.2",
-                "mockery/mockery": "^0.9.11 | ^1",
-                "moontoast/math": "^1.1",
-                "nikic/php-parser": "<=4.5.0",
+                "captainhook/captainhook": "^5.10",
+                "captainhook/plugin-composer": "^5.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "doctrine/annotations": "^1.8",
+                "ergebnis/composer-normalize": "^2.15",
+                "mockery/mockery": "^1.3",
                 "paragonie/random-lib": "^2",
-                "php-mock/php-mock-phpunit": "^0.3 | ^1.1 | ^2.6",
-                "php-parallel-lint/php-parallel-lint": "^1.3",
-                "phpunit/phpunit": ">=4.8.36 <9.0.0 | >=9.3.0",
+                "php-mock/php-mock": "^2.2",
+                "php-mock/php-mock-mockery": "^1.3",
+                "php-parallel-lint/php-parallel-lint": "^1.1",
+                "phpbench/phpbench": "^1.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-mockery": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpunit/phpunit": "^8.5 || ^9",
+                "ramsey/composer-repl": "^1.4",
+                "slevomat/coding-standard": "^8.4",
                 "squizlabs/php_codesniffer": "^3.5",
-                "yoast/phpunit-polyfills": "^1.0"
+                "vimeo/psalm": "^4.9"
             },
             "suggest": {
-                "ext-ctype": "Provides support for PHP Ctype functions",
-                "ext-libsodium": "Provides the PECL libsodium extension for use with the SodiumRandomGenerator",
-                "ext-openssl": "Provides the OpenSSL extension for use with the OpenSslGenerator",
-                "ext-uuid": "Provides the PECL UUID extension for use with the PeclUuidTimeGenerator and PeclUuidRandomGenerator",
-                "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
+                "ext-bcmath": "Enables faster math with arbitrary-precision integers using BCMath.",
+                "ext-gmp": "Enables faster math with arbitrary-precision integers using GMP.",
+                "ext-uuid": "Enables the use of PeclUuidTimeGenerator and PeclUuidRandomGenerator.",
                 "paragonie/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
-                "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
                 "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
             },
             "type": "library",
+            "extra": {
+                "captainhook": {
+                    "force-install": true
+                }
+            },
             "autoload": {
                 "files": [
                     "src/functions.php"
@@ -4919,23 +5084,7 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
-                },
-                {
-                    "name": "Marijn Huizendveld",
-                    "email": "marijn.huizendveld@gmail.com"
-                },
-                {
-                    "name": "Thibaud Fabre",
-                    "email": "thibaud@aztech.io"
-                }
-            ],
-            "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
-            "homepage": "https://github.com/ramsey/uuid",
+            "description": "A PHP library for generating and working with universally unique identifiers (UUIDs).",
             "keywords": [
                 "guid",
                 "identifier",
@@ -4943,9 +5092,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "rss": "https://github.com/ramsey/uuid/releases.atom",
-                "source": "https://github.com/ramsey/uuid",
-                "wiki": "https://github.com/ramsey/uuid/wiki"
+                "source": "https://github.com/ramsey/uuid/tree/4.7.6"
             },
             "funding": [
                 {
@@ -4957,7 +5104,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-19T21:55:10+00:00"
+            "time": "2024-04-27T21:32:50+00:00"
         },
         {
             "name": "sabre/uri",

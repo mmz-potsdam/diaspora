@@ -113,6 +113,14 @@ services:
     # So we can inject @solr.client, see https://github.com/floriansemm/SolrBundle/issues/191#issuecomment-466101623
     FS\SolrBundle\SolrInterface: '@solr.client'
 
+    # Switch to attributes
+    solr.doctrine.annotation.attribute_reader:
+        class: FS\SolrBundle\Doctrine\Annotation\AttributeReader
+
+    solr.meta.information.factory:
+        class: FS\SolrBundle\Doctrine\Mapper\MetaInformationFactory
+        arguments: [ '@solr.doctrine.annotation.attribute_reader' ]
+
     # language-specific layout in 404
     App\EventListener\LanguageListener:
        arguments: [ '%jms_i18n_routing.default_locale%', '%jms_i18n_routing.locales%', '@jms_i18n_routing.locale_resolver' ]

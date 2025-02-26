@@ -238,8 +238,9 @@ extends BaseCommand
                 $stmt = $this->dbconnAdmin->executeQuery($sql, [ $result['id'] ]);
                 $articles = $stmt->fetchAll();
                 $seriesStmt = [];
+                $siteKey = $this->getParameter('app.site.key');
                 foreach ($articles as $article) {
-                    $corresp = sprintf('jgo:article-%d', $article['id']);
+                    $corresp = sprintf('%s:article-%d', $siteKey, $article['id']);
                     $seriesStmt[$corresp] = $article['subject']; // TODO: get actual title from TEI, not the one from db
                 }
 

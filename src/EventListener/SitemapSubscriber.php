@@ -10,19 +10,14 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
-
 use Symfony\Contracts\Translation\TranslatorInterface;
-
 use Doctrine\ORM\EntityManagerInterface;
-
 use Cocur\Slugify\SlugifyInterface;
-
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Service\UrlContainerInterface;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
 
-class SitemapSubscriber
-implements EventSubscriberInterface
+class SitemapSubscriber implements EventSubscriberInterface
 {
     /**
      * @var EntityManagerInterface
@@ -58,13 +53,14 @@ implements EventSubscriberInterface
      * @param UrlGeneratorInterface $urlGenerator
      * @param EntityManagerInterface $entityManager
      */
-    public function __construct(EntityManagerInterface $entityManager,
-                                RouterInterface $router,
-                                UrlGeneratorInterface $urlGenerator,
-                                TranslatorInterface $translator,
-                                SlugifyInterface $slugify,
-                                ParameterBagInterface $params)
-    {
+    public function __construct(
+        EntityManagerInterface $entityManager,
+        RouterInterface $router,
+        UrlGeneratorInterface $urlGenerator,
+        TranslatorInterface $translator,
+        SlugifyInterface $slugify,
+        ParameterBagInterface $params
+    ) {
         $this->entityManager = $entityManager;
         $this->router = $router;
         $this->urlGenerator = $urlGenerator;
@@ -119,8 +115,7 @@ implements EventSubscriberInterface
 
             if (!array_key_exists('_controller', $defaults)
                 || !($this->startsWith($defaults['_controller'], 'TeiEditionBundle')
-                    || $this->startsWith($defaults['_controller'], 'App')))
-            {
+                    || $this->startsWith($defaults['_controller'], 'App'))) {
                 // skip routes from other bundles
                 continue;
             }
@@ -135,9 +130,9 @@ implements EventSubscriberInterface
             $routeName = $parts[count($parts) - 1];
 
             if (in_array($routeName, [
-                    'bibliography-unapi',
-                    'date-chronology-partial',
-                ])
+                'bibliography-unapi',
+                'date-chronology-partial',
+            ])
                 // the following are not yet implemented on this site
                 || preg_match('/^about\-authors/', $routeName)
                 || preg_match('/^article/', $routeName)
@@ -153,8 +148,7 @@ implements EventSubscriberInterface
                 || preg_match('/^source/', $routeName)
                 || preg_match('/^topic/', $routeName)
                 // login and admin
-                || preg_match('/^app_/', $routeName))
-            {
+                || preg_match('/^app_/', $routeName)) {
                 // omit certain routes from sitemap
                 continue;
             }
@@ -172,19 +166,25 @@ implements EventSubscriberInterface
                         $qb->select([ 'E' ])
                             ->from('\TeiEditionBundle\Entity\\' . ucfirst($routeName), 'E')
                             ->where('E.status IN (0,1)')
-                            ;
+                        ;
 
                         $query = $qb->getQuery();
                         $entities = $query->getResult();
                         foreach ($entities as $entity) {
                             $gnd = $entity->getGnd();
                             if (!empty($gnd)) {
-                                $url = $this->router->generate($routeName . '-by-gnd', [ 'gnd' => $gnd, '_locale' => $defaults['_locale'] ],
-                                                               UrlGeneratorInterface::ABSOLUTE_URL);
+                                $url = $this->router->generate(
+                                    $routeName . '-by-gnd',
+                                    [ 'gnd' => $gnd, '_locale' => $defaults['_locale'] ],
+                                    UrlGeneratorInterface::ABSOLUTE_URL
+                                );
                             }
                             else {
-                                $url = $this->router->generate($routeName, [ 'id' => $entity->getId(), '_locale' => $defaults['_locale'] ],
-                                                               UrlGeneratorInterface::ABSOLUTE_URL);
+                                $url = $this->router->generate(
+                                    $routeName,
+                                    [ 'id' => $entity->getId(), '_locale' => $defaults['_locale'] ],
+                                    UrlGeneratorInterface::ABSOLUTE_URL
+                                );
                             }
 
                             $this->addUrlDescription($urlDescriptions, $routeName . $entity->getId(), $defaults['_locale'], [ 'url' => $url, 'urlset' => $urlset ]);
@@ -195,21 +195,29 @@ implements EventSubscriberInterface
                         $urlset = $routeName;
                         $places = $this->entityManager
                                 ->getRepository('\TeiEditionBundle\Entity\Place')
-                                ->findBy([ 'type' => 'inhabited place' ],
-                                         [ 'name' => 'ASC' ]);
+                                ->findBy(
+                                    [ 'type' => 'inhabited place' ],
+                                    [ 'name' => 'ASC' ]
+                                );
 
                         foreach ($places as $entity) {
                             $tgn = $entity->getTgn();
                             if (!empty($tgn)) {
-                                $url = $this->router->generate($routeName . '-by-tgn', [ 'tgn' => $tgn, '_locale' => $defaults['_locale'] ],
-                                                         UrlGeneratorInterface::ABSOLUTE_URL);
+                                $url = $this->router->generate(
+                                    $routeName . '-by-tgn',
+                                    [ 'tgn' => $tgn, '_locale' => $defaults['_locale'] ],
+                                    UrlGeneratorInterface::ABSOLUTE_URL
+                                );
                             }
                             else {
-                                $url = $this->router->generate($routeName, [ 'id' => $entity->getId(), '_locale' => $defaults['_locale'] ],
-                                                         UrlGeneratorInterface::ABSOLUTE_URL);
+                                $url = $this->router->generate(
+                                    $routeName,
+                                    [ 'id' => $entity->getId(), '_locale' => $defaults['_locale'] ],
+                                    UrlGeneratorInterface::ABSOLUTE_URL
+                                );
                             }
 
-                            $this->addUrlDescription($urlDescriptions, $routeName  . $entity->getId(), $defaults['_locale'], [ 'url' => $url, 'urlset' => $urlset ]);
+                            $this->addUrlDescription($urlDescriptions, $routeName . $entity->getId(), $defaults['_locale'], [ 'url' => $url, 'urlset' => $urlset ]);
                         }
                         break;
 
@@ -221,13 +229,16 @@ implements EventSubscriberInterface
                         $qb->select([ 'B' ])
                             ->from('\TeiEditionBundle\Entity\Bibitem', 'B')
                             ->where('B.status IN (0,1)')
-                            ;
+                        ;
                         $query = $qb->getQuery();
                         $bibitems = $query->getResult();
                         foreach ($bibitems as $bibitem) {
-                            $url = $this->router->generate($routeName, [ 'slug' => $bibitem->getSlug(), '_locale' => $defaults['_locale'] ],
-                                                     UrlGeneratorInterface::ABSOLUTE_URL);
-                            $this->addUrlDescription($urlDescriptions, $routeName  . $bibitem->getId(), $defaults['_locale'], [ 'url' => $url, 'urlset' => $urlset ]);
+                            $url = $this->router->generate(
+                                $routeName,
+                                [ 'slug' => $bibitem->getSlug(), '_locale' => $defaults['_locale'] ],
+                                UrlGeneratorInterface::ABSOLUTE_URL
+                            );
+                            $this->addUrlDescription($urlDescriptions, $routeName . $bibitem->getId(), $defaults['_locale'], [ 'url' => $url, 'urlset' => $urlset ]);
                         }
                         break;
 
@@ -245,7 +256,7 @@ implements EventSubscriberInterface
 
                         $qb->select('A')
                                 ->from('\TeiEditionBundle\Entity\Article', 'A')
-                                ;
+                        ;
                         foreach ($criteria as $field => $cond) {
                             $qb->andWhere('A.' . $field
                                                     . (is_array($cond)
@@ -256,12 +267,18 @@ implements EventSubscriberInterface
 
                         foreach ($qb->getQuery()->getResult() as $article) {
                             if ('article' == $routeName) {
-                                $url = $this->router->generate($routeName, [ 'slug' => $article->getSlug(true), '_locale' => $defaults['_locale'] ],
-                                                         UrlGeneratorInterface::ABSOLUTE_URL);
+                                $url = $this->router->generate(
+                                    $routeName,
+                                    [ 'slug' => $article->getSlug(true), '_locale' => $defaults['_locale'] ],
+                                    UrlGeneratorInterface::ABSOLUTE_URL
+                                );
                             }
                             else {
-                                $url = $this->router->generate($routeName, [ 'uid' => $article->getUid(), '_locale' => $defaults['_locale'] ],
-                                                         UrlGeneratorInterface::ABSOLUTE_URL);
+                                $url = $this->router->generate(
+                                    $routeName,
+                                    [ 'uid' => $article->getUid(), '_locale' => $defaults['_locale'] ],
+                                    UrlGeneratorInterface::ABSOLUTE_URL
+                                );
                             }
 
                             $this->addUrlDescription($urlDescriptions, $article->getUid(), $defaults['_locale'], [ 'url' => $url, 'urlset' => $urlset ]);
@@ -275,8 +292,8 @@ implements EventSubscriberInterface
             }
             else {
                 $url = $this->router->generate($routeName, [
-                        '_locale' => $defaults['_locale'],
-                    ], UrlGeneratorInterface::ABSOLUTE_URL);
+                    '_locale' => $defaults['_locale'],
+                ], UrlGeneratorInterface::ABSOLUTE_URL);
 
                 if (!$this->endsWith($url, '/beacon')) {
                     $this->addUrlDescription($urlDescriptions, $routeName, $defaults['_locale'], [ 'url' => $url, 'urlset' => $urlset ]);
@@ -288,13 +305,13 @@ implements EventSubscriberInterface
             if (array_key_exists($locale, $urlDescription)) {
                 $localeUrlDescription = $urlDescription[$locale];
                 $url = new UrlConcrete(
-                        $localeUrlDescription['url']
-                        //,
-                        // TODO: custom settings for lastMod, changeFreq, weight
-                        // new \DateTime(),
-                        // UrlConcrete::CHANGEFREQ_WEEKLY,
-                        // 0.5
-                    );
+                    $localeUrlDescription['url']
+                    //,
+                    // TODO: custom settings for lastMod, changeFreq, weight
+                    // new \DateTime(),
+                    // UrlConcrete::CHANGEFREQ_WEEKLY,
+                    // 0.5
+                );
 
                 $url = new \Presta\SitemapBundle\Sitemap\Url\GoogleMultilangUrlDecorator($url);
 
@@ -305,7 +322,8 @@ implements EventSubscriberInterface
                     }
                 }
 
-                $event->getUrlContainer()->addUrl($url,
+                $event->getUrlContainer()->addUrl(
+                    $url,
                     $localeUrlDescription['urlset']
                 );
             }

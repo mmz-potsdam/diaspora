@@ -1,15 +1,15 @@
 <?php
+
 // src/Menu/Builder.php
 
 // see http://symfony.com/doc/current/bundles/KnpMenuBundle/index.html
+
 namespace App\Menu;
 
 use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
-
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\RouterInterface;
-
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 class Builder
@@ -27,11 +27,12 @@ class Builder
      *
      * Add any other dependency you need
      */
-    public function __construct(FactoryInterface $factory,
-                                TranslatorInterface $translator,
-                                RequestStack $requestStack,
-                                RouterInterface $router)
-    {
+    public function __construct(
+        FactoryInterface $factory,
+        TranslatorInterface $translator,
+        RequestStack $requestStack,
+        RouterInterface $router
+    ) {
         $this->factory = $factory;
         $this->translator = $translator;
         $this->requestStack = $requestStack;
@@ -51,15 +52,15 @@ class Builder
         // add menu items
         if (!array_key_exists('part', $options) || 'left' == $options['part']) {
             $menu->addChild('about', [
-                    'label' => $this->translator->trans('The Project'),
-                    'route' => 'about',
-                ])
+                'label' => $this->translator->trans('The Project'),
+                'route' => 'about',
+            ])
                 ->setAttribute('class', 'list-inline-item');
 
             $menu->addChild('about-us', [
-                    'label' => $this->translator->trans('About us'),
-                    'route' => 'about-us',
-                ])
+                'label' => $this->translator->trans('About us'),
+                'route' => 'about-us',
+            ])
                 ->setAttribute('class', 'list-inline-item');
 
             /*
@@ -70,8 +71,8 @@ class Builder
             */
 
             $menu->addChild('contact', [
-                    'label' => $this->translator->trans('Contact'), 'route' => 'contact',
-                ])
+                'label' => $this->translator->trans('Contact'), 'route' => 'contact',
+            ])
                 ->setAttribute('class', 'list-inline-item');
         }
 
@@ -94,21 +95,21 @@ class Builder
         // $menu->addChild('topic-index', [ 'label' => $this->translator->trans('Topics'), 'route' => 'topic-index' ]);
 
         $menu->addChild('date-chronology', [
-                'label' => $this->translator->trans('Chronology'),
-                'route' => 'date-chronology',
-            ])
+            'label' => $this->translator->trans('Chronology'),
+            'route' => 'date-chronology',
+        ])
             ->setAttribute('class', 'list-inline-item');
 
         $menu->addChild('place-map', [
-                'label' => $this->translator->trans('Map'),
-                'route' => 'place-map',
-            ])
+            'label' => $this->translator->trans('Map'),
+            'route' => 'place-map',
+        ])
             ->setAttribute('class', 'list-inline-item');
 
         $menu->addChild('_lookup', [
-                'label' => $this->translator->trans('Look-up'),
-                'uri' => '#',
-            ])
+            'label' => $this->translator->trans('Look-up'),
+            'uri' => '#',
+        ])
             ->setAttribute('class', 'list-inline-item')
             ->setAttribute('dropdown', true);
 

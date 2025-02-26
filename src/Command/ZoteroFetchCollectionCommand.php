@@ -1,6 +1,7 @@
 <?php
 
 // src/Command/ZoteroFetchCollectionCommand.php
+
 namespace App\Command;
 
 use Symfony\Component\Console\Command\Command;
@@ -11,8 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
-class ZoteroFetchCollectionCommand
-extends Command
+class ZoteroFetchCollectionCommand extends Command
 {
     protected $collections = [
         'library' => 'AD9KXU3Q',
@@ -39,7 +39,7 @@ extends Command
                 InputOption::VALUE_NONE,
                 'If set, Secondary Literature is fetched'
             )
-            ;
+        ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -57,8 +57,11 @@ extends Command
             $response = $request->send();
         }
         catch (\GuzzleHttp\Exception\ClientException $e) {
-            $output->writeln(sprintf('<error>Error requesting collection %s (%s)</error>',
-                                     $key, $e->getResponse()->getStatusCode()));
+            $output->writeln(sprintf(
+                '<error>Error requesting collection %s (%s)</error>',
+                $key,
+                $e->getResponse()->getStatusCode()
+            ));
 
             /*
             if (404 == $e->getResponse()->getStatusCode()) {
@@ -119,10 +122,10 @@ extends Command
 
         if (count($data) > 0) {
             $out = json_encode([
-                    'group-id' => $groupId,
-                    'key' => $key,
-                    'data' => $data,
-                ], JSON_UNESCAPED_SLASHES
+                'group-id' => $groupId,
+                'key' => $key,
+                'data' => $data,
+            ], JSON_UNESCAPED_SLASHES
                    | JSON_PRETTY_PRINT
                    | JSON_UNESCAPED_UNICODE);
 
@@ -134,8 +137,10 @@ extends Command
                 return 0;
             }
 
-            $output->writeln(sprintf('<error>Error writing %s</error>',
-                                     $fnameOut));
+            $output->writeln(sprintf(
+                '<error>Error writing %s</error>',
+                $fnameOut
+            ));
 
             return -2;
         }

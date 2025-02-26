@@ -102,6 +102,7 @@
         "symfony/security-bundle": "6.4.*"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.70",
         "symfony/debug-bundle": "6.4.*",
         "symfony/maker-bundle": "^1.43",
         "symfony/stopwatch": "6.4.*",

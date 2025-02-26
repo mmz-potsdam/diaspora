@@ -1,4 +1,5 @@
 <?php
+
 // src/Command/ArticleAdjustCommand.php
 
 namespace App\Command;
@@ -7,14 +8,12 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
  * Insert information from Admin-Database into manually created TEI.
  */
-class ArticleAdjustCommand
-extends BaseCommand
+class ArticleAdjustCommand extends BaseCommand
 {
     protected function configure(): void
     {
@@ -52,7 +51,7 @@ extends BaseCommand
                      . " LEFT OUTER JOIN User Referee"
                      . " ON Message.referee = Referee.id"
                      . " WHERE Message.id=:id AND Message.status <> -1"
-                     ;
+                ;
                 $params = [ 'id' => $matches[2] ];
                 break;
 
@@ -71,7 +70,7 @@ extends BaseCommand
                      . " LEFT OUTER JOIN Term T1"
                      . " ON Publication.type = T1.id"
                      . " WHERE Publication.id=:id AND Publication.status <> -1"
-                     ;
+                ;
                 $params = [ 'id' => $matches[2] ];
                 break;
         }
@@ -84,8 +83,7 @@ extends BaseCommand
 
         // common stuff
         if (!empty($result['lang'])
-            && ($translatedFrom = \TeiEditionBundle\Utils\Iso639::code2bTo3($result['lang'])) != $data['lang'])
-        {
+            && ($translatedFrom = \TeiEditionBundle\Utils\Iso639::code2bTo3($result['lang'])) != $data['lang']) {
             $translatorSlug = trim(join(' ', [ $result['firstname'], $result['lastname'] ]));
             if (!empty($translatorSlug)) {
                 $data['translator'] = [
@@ -108,9 +106,11 @@ extends BaseCommand
 
                 if (!empty($result['section'])) {
                     $sql = "SELECT name FROM Term WHERE id IN (?) AND status <> -1";
-                    $stmt = $this->dbconnAdmin->executeQuery($sql,
-                                                [ explode(',', $result['section']) ],
-                                                [ \Doctrine\DBAL\Connection::PARAM_INT_ARRAY ]);
+                    $stmt = $this->dbconnAdmin->executeQuery(
+                        $sql,
+                        [ explode(',', $result['section']) ],
+                        [ \Doctrine\DBAL\Connection::PARAM_INT_ARRAY ]
+                    );
                     $terms = $stmt->fetchAll();
 
                     $topics = [];
@@ -295,8 +295,7 @@ extends BaseCommand
                 }
 
                 if (!empty($result['provider_name'])
-                    && $result['provider_name'] != 'unbekannt')
-                {
+                    && $result['provider_name'] != 'unbekannt') {
                     $bibl['orgName'] = [ '@value' => $result['provider_name'] ];
 
                     if (!empty($result['provider_gnd'])) {
@@ -432,14 +431,14 @@ extends BaseCommand
             return 1;
         }
 
-        $xmlAsString = (string)$xml;
+        $xmlAsString = (string) $xml;
 
         if ($input->getOption('tidy')) {
             // first check if it is valid
             $fnameSchema = $this->locateData('basisformat.rng');
 
             // we pass the string as stream_wrapper
-            $stream = fopen('php://memory','r+');
+            $stream = fopen('php://memory', 'r+');
             fwrite($stream, $xmlAsString);
             rewind($stream);
 

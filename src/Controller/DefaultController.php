@@ -4,26 +4,24 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-
 use Symfony\Contracts\Translation\TranslatorInterface;
-
 use Doctrine\ORM\EntityManagerInterface;
 
 /**
  *
  */
-class DefaultController
-extends \TeiEditionBundle\Controller\TopicController
+class DefaultController extends \TeiEditionBundle\Controller\TopicController
 {
     /* shared code with PlaceController */
     use \TeiEditionBundle\Controller\MapHelperTrait;
 
     #[Route(path: '/', name: 'home')]
-    public function indexAction(Request $request,
-                                EntityManagerInterface $entityManager,
-                                TranslatorInterface $translator)
-    {
-        list($markers, $bounds) = $this->buildMap($entityManager, $request->getLocale());
+    public function indexAction(
+        Request $request,
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator
+    ) {
+        [$markers, $bounds] = $this->buildMap($entityManager, $request->getLocale());
 
         $news = [];
 
@@ -34,8 +32,9 @@ extends \TeiEditionBundle\Controller\TopicController
             if (!empty($url)) {
                 try {
                     $client = new \Vnn\WpApiClient\WpClient(
-                                new \Vnn\WpApiClient\Http\GuzzleAdapter(new \GuzzleHttp\Client()),
-                                $url);
+                        new \Vnn\WpApiClient\Http\GuzzleAdapter(new \GuzzleHttp\Client()),
+                        $url
+                    );
                     $client->setCredentials(new \Vnn\WpApiClient\Auth\WpBasicAuth($this->getParameter('app.wp-rest.user'), $this->getParameter('app.wp-rest.password')));
                     $posts = $client->posts()->get(null, [
                         'per_page' => 4,

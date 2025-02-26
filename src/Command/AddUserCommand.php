@@ -14,7 +14,6 @@ namespace App\Command;
 use App\Entity\User;
 use App\Repository\UserRepository;
 use App\Utils\Validator;
-
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -25,6 +24,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+
 use function Symfony\Component\String\u;
 
 /**
@@ -127,8 +127,9 @@ class AddUserCommand extends Command
         // Ask for the email if it's not defined
         $email = $input->getArgument('email');
         if (null !== $email) {
-            $this->io->text(' > <info>Email</info>: '.$email);
-        } else {
+            $this->io->text(' > <info>Email</info>: ' . $email);
+        }
+        else {
             $email = $this->io->ask('Email', null, [$this->validator, 'validateEmail']);
             $input->setArgument('email', $email);
         }
@@ -136,8 +137,9 @@ class AddUserCommand extends Command
         // Ask for the password if it's not defined
         $password = $input->getArgument('password');
         if (null !== $password) {
-            $this->io->text(' > <info>Password</info>: '.u('*')->repeat(u($password)->length()));
-        } else {
+            $this->io->text(' > <info>Password</info>: ' . u('*')->repeat(u($password)->length()));
+        }
+        else {
             $password = $this->io->askHidden('Password (your type will be hidden)', [$this->validator, 'validatePassword']);
             $input->setArgument('password', $password);
         }
@@ -212,23 +214,23 @@ class AddUserCommand extends Command
     private function getCommandHelp(): string
     {
         return <<<'HELP'
-            The <info>%command.name%</info> command creates new users and saves them in the database:
+                        The <info>%command.name%</info> command creates new users and saves them in the database:
 
-              <info>php %command.full_name%</info> <comment>email password</comment>
+                          <info>php %command.full_name%</info> <comment>email password</comment>
 
-            By default the command creates regular users. To create administrator users,
-            add the <comment>--admin</comment> option:
+                        By default the command creates regular users. To create administrator users,
+                        add the <comment>--admin</comment> option:
 
-              <info>php %command.full_name%</info> email password <comment>--admin</comment>
+                          <info>php %command.full_name%</info> email password <comment>--admin</comment>
 
-            If you omit any of the required arguments, the command will ask you to
-            provide the missing values:
+                        If you omit any of the required arguments, the command will ask you to
+                        provide the missing values:
 
-              # command will ask you for the password
-              <info>php %command.full_name%</info> <comment>email</comment>
+                          # command will ask you for the password
+                          <info>php %command.full_name%</info> <comment>email</comment>
 
-              # command will ask you for all arguments
-              <info>php %command.full_name%</info>
-HELP;
+                          # command will ask you for all arguments
+                          <info>php %command.full_name%</info>
+            HELP;
     }
 }

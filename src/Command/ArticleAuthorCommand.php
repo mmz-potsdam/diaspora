@@ -1,4 +1,5 @@
 <?php
+
 // src/Command/ArticleAuthorCommand.php
 
 namespace App\Command;
@@ -7,15 +8,13 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 /**
  * Lookup author(s) and translator and insert/update corresponding Person.
  */
-class ArticleAuthorCommand
-extends BaseCommand
+class ArticleAuthorCommand extends BaseCommand
 {
     protected function configure(): void
     {
@@ -131,8 +130,10 @@ extends BaseCommand
                     // can't insert or update
                     if (is_null($person) || $input->getOption('update')) {
                         $value = !empty($slug) ? $slug : $gnd;
-                        $output->writeln(sprintf('<error>No user found for %s</error>',
-                                                 trim($value)));
+                        $output->writeln(sprintf(
+                            '<error>No user found for %s</error>',
+                            trim($value)
+                        ));
                         continue;
                     }
                 }
@@ -147,18 +148,17 @@ extends BaseCommand
                     }
 
                     foreach ([
-                            'title' => 'honoricPrefix',
-                            'firstname' => 'givenName',
-                            'lastname' => 'familyName',
-                            'position' => 'jobTitle',
-                            'sex' => 'gender',
-                            'url' => 'url',
-                            'gnd' => 'gnd',
-                        ] as $src => $target)
-                    {
+                        'title' => 'honoricPrefix',
+                        'firstname' => 'givenName',
+                        'lastname' => 'familyName',
+                        'position' => 'jobTitle',
+                        'sex' => 'gender',
+                        'url' => 'url',
+                        'gnd' => 'gnd',
+                    ] as $src => $target) {
                         if (!empty($user[$src])) {
                             if ('url' == $src && preg_match('/^keine/i', $user[$src])) {
-                               $user[$src] = null;
+                                $user[$src] = null;
                             }
 
                             $methodName = 'set' . ucfirst($target);
@@ -202,9 +202,11 @@ extends BaseCommand
         }
 
         if (count($users) > 1) {
-            $output->writeln(sprintf('<error>More than one user found for %s (IDs %s)</error>',
-                                     trim($slug),
-                                     join(', ', array_map(function ($user) { return $user['id']; }, $users))));
+            $output->writeln(sprintf(
+                '<error>More than one user found for %s (IDs %s)</error>',
+                trim($slug),
+                join(', ', array_map(function ($user) { return $user['id']; }, $users))
+            ));
         }
 
         return $users[0];
@@ -220,9 +222,11 @@ extends BaseCommand
         }
 
         if (count($users) > 1) {
-            $output->writeln(sprintf('<error>More than one user found for %s (IDs %s)</error>',
-                                     trim($slug),
-                                     join(', ', array_map(function ($user) { return $user['id']; }, $users))));
+            $output->writeln(sprintf(
+                '<error>More than one user found for %s (IDs %s)</error>',
+                trim($slug),
+                join(', ', array_map(function ($user) { return $user['id']; }, $users))
+            ));
         }
 
         return $users[0];

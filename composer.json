@@ -52,6 +52,22 @@
             "url": "https://github.com/jtl-software/connector-iso-639"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/burki/FluentDOM"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/scssphp-bundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/OaiPmh"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/SyliusThemeBundle"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "citation-style-language/styles-distribution",
@@ -69,12 +85,15 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-intl": "*",
-        "armin/scssphp-bundle": "^1.2",
+        "armin/scssphp-bundle": "dev-master",
+        "fluentdom/fluentdom": "dev-master as 8.0",
         "gjuric/i18n-routing-bundle": "3.2.2",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-attributes",
         "presta/sitemap-bundle": "^4.1",
+        "square-bit/oai-pmh": "dev-master as 0.3",
+        "sylius/theme-bundle": "2.4.x-dev as 2.4",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^1.17|^2",

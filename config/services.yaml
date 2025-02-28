@@ -55,6 +55,10 @@ parameters:
 
     #app.wordpress.url: 'https://diaspora.juedische-geschichte-online.net/cms/'
 
+    env(FEATURE_LIMITED_NAVIGATION_ENV): true  # default to limited functionality
+    # except in /vorschau, where FEATURE_LIMITED_NAVIGATION_ENV=0
+    app.limited_navigation: '%env(bool:FEATURE_LIMITED_NAVIGATION_ENV)%'
+
     jms_i18n_routing.hosts.de: "%env(string:SITE_HOST)%"
 
 services:

@@ -1,0 +1,132 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+
+{% block head %}
+    {{ map.head() }}
+    {{ map.head_markercluster() }}
+
+    <script src="{{ app.request.basepath }}/js/blazy.min.js"></script>
+{% endblock %}
+
+{% block contenttop %}
+    {% embed '@TeiEdition/Default/contenttop_skeleton.html.twig' %}
+    {% block carousel %}
+        <div class="row" style="margin-top: -24px; margin-bottom: 24px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="max-height: 120px; overflow-y: hidden">
+                        <img class="d-block w-100" src="{{ app.request.basepath }}/img/carousel/home.jpg" alt="">
+                    </div>
+                </div><!-- .carousel-inner -->
+            </div><!-- .carousel -->
+        </div>
+    {% endblock %}
+    {% endembed %}
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div id="col-main" class="col-sm-8">
+            <div class="container-fluid article">
+                {#<h4>{{ 'Welcome'|trans }}</h4>#}
+                <div class="two-columns-disabled justify-hyphens">
+                    {% if 'en' == app.request.locale %}
+                        <p class="dta-p">
+                        The book project and digital source portal “History of the German-Jewish Diaspora” is for the first time systematically dedicated to the lives of German-speaking jews in the diaspora. As a hybrid research project of the Academic Working Group of the Leo Baeck Institute in
+                    Germany, it is being realized <a href="{{ path('about-us') }}">at the Moses Mendelssohn Center for European-Jewish Studies in Potsdam under the leadership of its Director Prof. Dr. Miriam Rürup</a>.
+                        </p>
+                        <p class="dta-p">
+                        The project, which is supported by an international advisory board and based on latest research, is hybrid in nature. In addition to a classic print publication, an on-line source portal will be launched that will provide in-depth case studies. The Volkswagen Foundation is supporting the realization of the project.
+                        </p>
+                        <p class="dta-p"><a href="{{ path('about') }}">read on...</a></p>
+                    {% else %}
+                        <p class="dta-p">
+                            Das Buchprojekt und digitale Quellenportal „Geschichte der deutsch-jüdischen Diaspora“ widmet sich erstmals systematisch den Lebenswelten deutschsprachiger Jüdinnen und Juden in der Diaspora. Als ein hybrides Forschungsvorhaben der Wissenschaftlichen Arbeitsgemeinschaft des Leo Baeck Instituts (LBI) wird es <a href="{{ path('about-us') }}">unter Federführung ihrer Vorsitzenden Prof. Dr. Miriam Rürup am Moses Mendelssohn Zentrum für europäisch-jüdische Studien in Potsdam</a> realisiert.
+                        </p>
+                        <p>
+                            Das Vorhaben, das von einem internationalen Fachbeirat begleitet und auf Grundlage neuester Forschung erarbeitet wird, ist hybrid angelegt. Neben einer klassischen Printpublikation wird ein Online-Quellenportal ins Leben gerufen, das tiefergehende Fallstudien bereitstellt. Die <ref target="https://www.volkswagenstiftung.de/de">VolkswagenStiftung</ref> fördert die Realisierung des Projekts.
+                        </p>
+                        <p>
+                            <a href="{{ path('about') }}">mehr...</a>
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+
+            {#
+            <div class="container-fluid box">
+                <div class="row box-header map">
+                    <div class="col-sm-12">
+                        <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
+                    </div>
+                </div>
+                <div class="row box-content">
+                    <div class="col-sm-12">
+                        <div id="map-container">
+                            <div id="map" style="width: 100%; min-height: 320px"></div>
+                            <script>
+                            $( document).ready(function () {
+                                showMap();
+                            });
+
+                            {{ map.showMap(bounds, markers) }}
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid box" style="margin-top: 2em">
+                <div class="row box-header chronology">
+                    <div class="col-sm-12">
+                        <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
+                    </div>
+                </div>
+                <div class="row box-content">
+                    <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 320px; overflow-y: scroll; overflow-x: hidden">
+                        {{ 'Loading...' | trans }}
+                        <script>
+                            var chronologyLoaded = false;
+
+                            $( document).ready(function () {
+                                if (!chronologyLoaded) {
+                                    var pane = $( '#chronology' );
+                                    var url = pane.attr("data-url");
+
+                                    // ajax load from data-url
+                                    $( pane ).load(url,function(result){
+                                        chronologyLoaded = true;
+                                    });
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            #}
+        </div>
+
+        <div class="col-sm-4 sidebar">
+            <div class="container-fluid box">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>Nachdenken über Diaspora</h4>
+                    </div>
+                </div>
+                <div class="row box-color-content">
+                    <div class="col-sm-12">
+                        <a href="https://vimeo.com/712768316" target="_blank"><b>Michael Brenner im Gespräch mit Miriam Rürup</b></a><br />
+                        Ein Video der Ad hoc-AG „Zukunftswerte“ der Bayerischen Akademie der Wissenschaften
+                    </div>
+                </div>
+                <!--
+                <div class="row box-color-content border-top">
+                    <div class="col-sm-12">
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+{% endblock %}

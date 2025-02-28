@@ -91,6 +91,7 @@
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-attributes",
+        "novaway/feature-flag-bundle": "^2.7",
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "sylius/theme-bundle": "2.4.x-dev as 2.4",

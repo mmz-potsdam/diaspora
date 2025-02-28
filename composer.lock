@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e93f525c220c05e656ce66d54d3b9ba",
+    "content-hash": "6c4496bafda2cbe5805a521bba7229de",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -2717,12 +2717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "f40b0ca8abdf0bb30c897995e1cd8270a78744ef"
+                "reference": "754115798a76603eaa093c265560dd6b0e2b0419"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/f40b0ca8abdf0bb30c897995e1cd8270a78744ef",
-                "reference": "f40b0ca8abdf0bb30c897995e1cd8270a78744ef",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/754115798a76603eaa093c265560dd6b0e2b0419",
+                "reference": "754115798a76603eaa093c265560dd6b0e2b0419",
                 "shasum": ""
             },
             "require": {
@@ -2798,7 +2798,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-01-29T13:51:00+00:00"
+            "time": "2025-02-27T14:28:04+00:00"
         },
         {
             "name": "jms/translation-bundle",
@@ -2974,16 +2974,16 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "v3.6.0",
+            "version": "v3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "ac96b711cf7b4178747b0ecde79d7e5e05dbcd28"
+                "reference": "328bb430a0afad0b6eae2bd4bfea8e15db616fd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/ac96b711cf7b4178747b0ecde79d7e5e05dbcd28",
-                "reference": "ac96b711cf7b4178747b0ecde79d7e5e05dbcd28",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/328bb430a0afad0b6eae2bd4bfea8e15db616fd6",
+                "reference": "328bb430a0afad0b6eae2bd4bfea8e15db616fd6",
                 "shasum": ""
             },
             "require": {
@@ -3041,9 +3041,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/KnpMenu/issues",
-                "source": "https://github.com/KnpLabs/KnpMenu/tree/v3.6.0"
+                "source": "https://github.com/KnpLabs/KnpMenu/tree/v3.7.0"
             },
-            "time": "2024-12-20T10:10:51+00:00"
+            "time": "2025-02-28T08:21:46+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -4227,6 +4227,74 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
             },
             "time": "2024-12-30T11:07:19+00:00"
+        },
+        {
+            "name": "novaway/feature-flag-bundle",
+            "version": "2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/novaway/NovawayFeatureFlagBundle.git",
+                "reference": "32c84050d8b4a7695e2c999b7d3dfd20ffba883f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/novaway/NovawayFeatureFlagBundle/zipball/32c84050d8b4a7695e2c999b7d3dfd20ffba883f",
+                "reference": "32c84050d8b4a7695e2c999b7d3dfd20ffba883f",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "^1.12|^2.0",
+                "ext-json": "*",
+                "php": ">= 7.3",
+                "symfony/framework-bundle": "~4.4|~5.0|~6.0|~7.0",
+                "symfony/yaml": "~4.4|~5.0|~6.0|~7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.7",
+                "phpunit/phpunit": "^9.5",
+                "symfony/asset": "~3.0|~4.0|~5.0|~6.0|~7.0",
+                "symfony/browser-kit": "~4.0|~5.0|~6.0|~7.0",
+                "symfony/css-selector": "~4.0|~5.0|~6.0|~7.0",
+                "symfony/expression-language": "~4.0|~5.0|~6.0|~7.0",
+                "symfony/templating": "~4.0|~5.0|~6.0|~7.0",
+                "symfony/twig-bundle": "~4.0|~5.0|~6.0|~7.0",
+                "twig/twig": "^2.15|^3.0"
+            },
+            "suggest": {
+                "twig/twig": "To check feature in your Twig templates"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Novaway\\Bundle\\FeatureFlagBundle\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "src/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérémy DECOOL",
+                    "email": "jeremy@novaway.fr"
+                }
+            ],
+            "description": "Very KISS bundle to manage features flag",
+            "keywords": [
+                "feature",
+                "flag",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/novaway/NovawayFeatureFlagBundle/issues",
+                "source": "https://github.com/novaway/NovawayFeatureFlagBundle/tree/2.7.1"
+            },
+            "time": "2025-02-20T15:34:21+00:00"
         },
         {
             "name": "oro/doctrine-extensions",

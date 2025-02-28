@@ -6,6 +6,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
+use Novaway\Bundle\FeatureFlagBundle\Manager\FeatureManager;
 
 /**
  *
@@ -19,7 +20,8 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
     public function indexAction(
         Request $request,
         EntityManagerInterface $entityManager,
-        TranslatorInterface $translator
+        TranslatorInterface $translator,
+        ?FeatureManager $featureManager = null
     ) {
         [$markers, $bounds] = $this->buildMap($entityManager, $request->getLocale());
 
@@ -61,12 +63,17 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
             ; // ignore
         }
 
-        return $this->render('Default/home.html.twig', [
-            'pageTitle' => $translator->trans('Welcome'),
-            'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
-            'markers' => $markers,
-            'bounds' => $bounds,
-            'news' => $news,
-        ]);
+        return $this->render(
+            $featureManager->isEnabled('limited_navigation')
+                ? 'Default/home-limited.html.twig'
+                : 'Default/home.html.twig',
+            [
+                'pageTitle' => $translator->trans('Welcome'),
+                'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
+                'markers' => $markers,
+                'bounds' => $bounds,
+                'news' => $news,
+            ]
+        );
     }
 }

@@ -1,0 +1,4 @@
+# see https://github.com/novaway/NovawayFeatureFlagBundle/tree/2.x
+novaway_feature_flag:
+    features:
+        limited_navigation: '%app.limited_navigation%'

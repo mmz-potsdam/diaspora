@@ -84,6 +84,9 @@
     "liip/url-auto-converter-bundle": {
         "version": "dev-master"
     },
+    "novaway/feature-flag-bundle": {
+        "version": "2.7.1"
+    },
     "presta/sitemap-bundle": {
         "version": "v3.3.1"
     },

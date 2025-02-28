@@ -8,6 +8,9 @@ parameters:
     locales: ['de', 'en']        # without app. prefix for TeiEditionBundle
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
+    app.hosts.de: "%env(string:HOSTS_DE)%"
+    app.hosts.en: "%env(string:HOSTS_EN)%"
+
     app.site.key: 'gjd'
     app.site.name: 'History of the German-Jewish Diaspora'
     app.site.byline: 'A Publication Project' # "An Online Source Portal"

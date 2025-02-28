@@ -1,8 +1,12 @@
 jms_i18n_routing:
     default_locale: '%app.default_locale%'
     locales: '%app.locales%'
-    #strategy: custom
-    #hosts:
-    #    de: '%jms_i18n_routing.hosts.de%'
-    #redirect_to_host: true
     strategy: prefix_except_default
+
+when@prod:
+    jms_i18n_routing:
+        strategy: custom
+        hosts:
+            de: '%app.hosts.de%'
+            en: '%app.hosts.en%'
+        redirect_to_host: true

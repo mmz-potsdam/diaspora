@@ -46,7 +46,7 @@ class ArticleBiblioDbCommand extends BaseCommand
 
         if ('all' == $fname) {
             if (!$input->getOption('update')) {
-                $output->writeln(sprintf('<error>all only works in combination with --update</error>', $fname));
+                $output->writeln(sprintf('<error>all only works in combination with --update</error>'));
 
                 return 1;
             }

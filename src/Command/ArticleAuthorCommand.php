@@ -224,7 +224,7 @@ class ArticleAuthorCommand extends BaseCommand
         if (count($users) > 1) {
             $output->writeln(sprintf(
                 '<error>More than one user found for %s (IDs %s)</error>',
-                trim($slug),
+                trim($gnd),
                 join(', ', array_map(function ($user) { return $user['id']; }, $users))
             ));
         }

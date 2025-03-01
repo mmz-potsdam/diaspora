@@ -185,10 +185,6 @@ class AddUserCommand extends Command
 
         $this->io->success(sprintf('User was successfully created: %s (%s)', $isAdmin ? 'Administrator user' : 'User', $user->getEmail()));
 
-        if ($output->isVerbose()) {
-            $this->io->comment(sprintf('New user database id: %d / Elapsed time: %.2f ms / Consumed memory: %.2f MB', $user->getId(), $event->getDuration(), $event->getMemory() / (1024 ** 2)));
-        }
-
         return Command::SUCCESS;
     }
 

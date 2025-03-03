@@ -142,12 +142,16 @@ services:
         class: TeiEditionBundle\Utils\Xsl\XsltCommandlineAdapter
         arguments: [ '%app.xsl_converter_adapter.arguments%', { xslpath: '%kernel.project_dir%/data/styles' } ]
 
+    app.xsl_converter.cache_commandline_adapter:
+        class: TeiEditionBundle\Utils\Xsl\XsltCacheAdapter
+        arguments:    [ '@app.xsl_converter.commandline_adapter', '@app.xslt_cache_pool' ]
+
     app.xsl_converter.saxonc_adapter:
         class: TeiEditionBundle\Utils\Xsl\XsltSaxonProcessorAdapter
 
     TeiEditionBundle\Utils\Xsl\XsltProcessor:
         calls:
-            - [ setAdapter, [ "@= parameter('app.xsl_converter.saxonc_enable') ? service('app.xsl_converter.saxonc_adapter') : service('app.xsl_converter.commandline_adapter')" ]]
+            - [ setAdapter, [ "@= parameter('app.xsl_converter.saxonc_enable') ? service('app.xsl_converter.saxonc_adapter') : service('app.xsl_converter.cache_commandline_adapter')" ]]
 
     TeiEditionBundle\Utils\ImageMagick\ImageMagickProcessor:
         arguments: [ "%app.imagemagick.processor.arguments%" ]

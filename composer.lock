@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9497196a0754e2ea611133c2129a4773",
+    "content-hash": "3ba89c721812d801cf58099cd50c07bc",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -335,16 +335,16 @@
         },
         {
             "name": "citation-style-language/styles",
-            "version": "v0.0.601",
+            "version": "v0.0.632",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/styles.git",
-                "reference": "892a0eb98a0badf01646817cf30d704ad09fa3f1"
+                "reference": "88cf4433f77c5a580b6daed2dac1adafb67f8269"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/892a0eb98a0badf01646817cf30d704ad09fa3f1",
-                "reference": "892a0eb98a0badf01646817cf30d704ad09fa3f1",
+                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/88cf4433f77c5a580b6daed2dac1adafb67f8269",
+                "reference": "88cf4433f77c5a580b6daed2dac1adafb67f8269",
                 "shasum": ""
             },
             "type": "library",
@@ -362,7 +362,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/styles/issues",
-                "source": "https://github.com/citation-style-language/styles/tree/v0.0.601"
+                "source": "https://github.com/citation-style-language/styles/tree/v0.0.632"
             },
             "funding": [
                 {
@@ -370,7 +370,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-22T04:18:45+00:00"
+            "time": "2025-03-05T01:27:53+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -2676,12 +2676,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/igdj/lod-service.git",
-                "reference": "12c5243f72cd4750ecf863d39be790fcdde24200"
+                "reference": "fbd82dd7271a2c2de3d5feed91d2a0eecb838f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/igdj/lod-service/zipball/12c5243f72cd4750ecf863d39be790fcdde24200",
-                "reference": "12c5243f72cd4750ecf863d39be790fcdde24200",
+                "url": "https://api.github.com/repos/igdj/lod-service/zipball/fbd82dd7271a2c2de3d5feed91d2a0eecb838f2f",
+                "reference": "fbd82dd7271a2c2de3d5feed91d2a0eecb838f2f",
                 "shasum": ""
             },
             "require": {
@@ -2709,7 +2709,7 @@
                 "source": "https://github.com/igdj/lod-service/tree/master",
                 "issues": "https://github.com/igdj/lod-service/issues"
             },
-            "time": "2025-02-05T15:59:57+00:00"
+            "time": "2025-03-08T14:34:27+00:00"
         },
         {
             "name": "igdj/tei-edition-bundle",
@@ -2717,12 +2717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "4172811285903aecc2d0b40fd80236061bb4dcf7"
+                "reference": "32fd3c914a19ae6ebfcd49b136002aff98d8d4e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/4172811285903aecc2d0b40fd80236061bb4dcf7",
-                "reference": "4172811285903aecc2d0b40fd80236061bb4dcf7",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/32fd3c914a19ae6ebfcd49b136002aff98d8d4e9",
+                "reference": "32fd3c914a19ae6ebfcd49b136002aff98d8d4e9",
                 "shasum": ""
             },
             "require": {
@@ -2798,7 +2798,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-03-03T18:46:53+00:00"
+            "time": "2025-03-08T16:05:45+00:00"
         },
         {
             "name": "jms/translation-bundle",
@@ -10731,6 +10731,47 @@
             "time": "2012-03-14T16:36:15+00:00"
         },
         {
+            "name": "textrazor/textrazor-php",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TextRazor/textrazor-php.git",
+                "reference": "c6c0cab6212d74033afed8a355c4897d86463aa4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TextRazor/textrazor-php/zipball/c6c0cab6212d74033afed8a355c4897d86463aa4",
+                "reference": "c6c0cab6212d74033afed8a355c4897d86463aa4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP SDK for the TextRazor Text Analytics API",
+            "homepage": "https://github.com/TextRazor/textrazor-php",
+            "keywords": [
+                "TextRazor",
+                "api",
+                "client"
+            ],
+            "support": {
+                "issues": "https://github.com/TextRazor/textrazor-php/issues",
+                "source": "https://github.com/TextRazor/textrazor-php/tree/1.0.1"
+            },
+            "time": "2022-03-08T11:21:25+00:00"
+        },
+        {
             "name": "twig/extra-bundle",
             "version": "v3.20.0",
             "source": {
@@ -11548,16 +11589,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.70.1",
+            "version": "v3.71.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "add1b3a05256392dbad63875240041b2c0349ceb"
+                "reference": "3825ffdc69501e1c9230291b79f036a0c0d8749d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/add1b3a05256392dbad63875240041b2c0349ceb",
-                "reference": "add1b3a05256392dbad63875240041b2c0349ceb",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3825ffdc69501e1c9230291b79f036a0c0d8749d",
+                "reference": "3825ffdc69501e1c9230291b79f036a0c0d8749d",
                 "shasum": ""
             },
             "require": {
@@ -11639,7 +11680,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.70.1"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.71.0"
             },
             "funding": [
                 {
@@ -11647,20 +11688,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-01T22:05:46+00:00"
+            "time": "2025-03-07T23:06:56+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c"
+                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
-                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/12567f91a74036d56ba0af6d56c8e73ac0e8d850",
+                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850",
                 "shasum": ""
             },
             "require": {
@@ -11705,7 +11746,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-19T15:46:42+00:00"
+            "time": "2025-03-05T13:43:55+00:00"
         },
         {
             "name": "react/cache",
@@ -12783,6 +12824,7 @@
         "igdj/tei-edition-bundle": 20,
         "square-bit/oai-pmh": 20,
         "sylius/theme-bundle": 20,
+        "textrazor/textrazor-php": 20,
         "vnn/wordpress-rest-api-client": 20
     },
     "prefer-stable": true,

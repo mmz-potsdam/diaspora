@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ba89c721812d801cf58099cd50c07bc",
+    "content-hash": "a33fc8c09a0fe4c4624e34b53ad679e7",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -3112,16 +3112,16 @@
         },
         {
             "name": "knplabs/knp-paginator-bundle",
-            "version": "v6.6.1",
+            "version": "v6.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
-                "reference": "1a00f88149d25418bd99d8954eba951f04cc3acf"
+                "reference": "a346431b9f0cddac8cd03d63e70911b6bf70ffde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/1a00f88149d25418bd99d8954eba951f04cc3acf",
-                "reference": "1a00f88149d25418bd99d8954eba951f04cc3acf",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/a346431b9f0cddac8cd03d63e70911b6bf70ffde",
+                "reference": "a346431b9f0cddac8cd03d63e70911b6bf70ffde",
                 "shasum": ""
             },
             "require": {
@@ -3180,9 +3180,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/KnpPaginatorBundle/issues",
-                "source": "https://github.com/KnpLabs/KnpPaginatorBundle/tree/v6.6.1"
+                "source": "https://github.com/KnpLabs/KnpPaginatorBundle/tree/v6.7.0"
             },
-            "time": "2024-10-07T16:11:50+00:00"
+            "time": "2025-03-02T16:36:05+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -6079,16 +6079,16 @@
         },
         {
             "name": "sylius/theme-bundle",
-            "version": "2.4.x-dev",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/burki/SyliusThemeBundle.git",
-                "reference": "1e7940febb2fac919fb61b58d1c99c7c1e15254c"
+                "url": "https://github.com/Sylius/SyliusThemeBundle.git",
+                "reference": "2a2e474f03520a3a8f6a60449e143d5bdcac7857"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/SyliusThemeBundle/zipball/1e7940febb2fac919fb61b58d1c99c7c1e15254c",
-                "reference": "1e7940febb2fac919fb61b58d1c99c7c1e15254c",
+                "url": "https://api.github.com/repos/Sylius/SyliusThemeBundle/zipball/2a2e474f03520a3a8f6a60449e143d5bdcac7857",
+                "reference": "2a2e474f03520a3a8f6a60449e143d5bdcac7857",
                 "shasum": ""
             },
             "require": {
@@ -6122,7 +6122,6 @@
                 "twig/twig": "^2.0 || ^3.0",
                 "vimeo/psalm": "5.20.0"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -6134,31 +6133,7 @@
                     "Sylius\\Bundle\\ThemeBundle\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "spec\\Sylius\\Bundle\\ThemeBundle\\": "spec/",
-                    "Sylius\\Bundle\\ThemeBundle\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "analyse": [
-                    "@composer validate --strict",
-                    "vendor/bin/ecs check spec src tests || true",
-                    "vendor/bin/psalm",
-                    "vendor/bin/rector process --dry-run",
-                    "tests/Application/bin/console lint:container --env dev",
-                    "tests/Application/bin/console lint:container --env prod"
-                ],
-                "fix": [
-                    "vendor/bin/rector process",
-                    "vendor/bin/ecs check spec src tests --fix"
-                ],
-                "test": [
-                    "vendor/bin/phpspec run --ansi --no-interaction",
-                    "vendor/bin/phpunit --colors=always",
-                    "APP_ENV=test_legacy vendor/bin/phpunit --colors=always --exclude-group=none"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6183,9 +6158,16 @@
                 "theming"
             ],
             "support": {
-                "source": "https://github.com/burki/SyliusThemeBundle/tree/2.4"
+                "issues": "https://github.com/Sylius/SyliusThemeBundle/issues",
+                "source": "https://github.com/Sylius/SyliusThemeBundle/tree/v2.4.1"
             },
-            "time": "2025-01-13T11:29:56+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/sylius",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-11T15:11:14+00:00"
         },
         {
             "name": "symfony/apache-pack",
@@ -11692,16 +11674,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850"
+                "reference": "f9adff3b87c03b12cc7e46a30a524648e497758f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/12567f91a74036d56ba0af6d56c8e73ac0e8d850",
-                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f9adff3b87c03b12cc7e46a30a524648e497758f",
+                "reference": "f9adff3b87c03b12cc7e46a30a524648e497758f",
                 "shasum": ""
             },
             "require": {
@@ -11746,7 +11728,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-05T13:43:55+00:00"
+            "time": "2025-03-09T09:30:48+00:00"
         },
         {
             "name": "react/cache",
@@ -12807,12 +12789,6 @@
             "version": "9999999-dev",
             "alias": "0.3",
             "alias_normalized": "0.3.0.0"
-        },
-        {
-            "package": "sylius/theme-bundle",
-            "version": "2.4.9999999.9999999-dev",
-            "alias": "2.4",
-            "alias_normalized": "2.4.0.0"
         }
     ],
     "minimum-stability": "dev",
@@ -12823,7 +12799,6 @@
         "hedii/zotero-api": 20,
         "igdj/tei-edition-bundle": 20,
         "square-bit/oai-pmh": 20,
-        "sylius/theme-bundle": 20,
         "textrazor/textrazor-php": 20,
         "vnn/wordpress-rest-api-client": 20
     },

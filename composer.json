@@ -65,10 +65,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/SyliusThemeBundle"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
@@ -98,7 +94,7 @@
         "novaway/feature-flag-bundle": "^2.7",
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",
-        "sylius/theme-bundle": "2.4.x-dev as 2.4",
+        "sylius/theme-bundle": "^2.4",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^1.17|^2",

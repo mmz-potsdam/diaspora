@@ -133,8 +133,6 @@ class Builder
                 'label' => $this->translator->trans('Epochs and Events'),
                 'route' => 'event-index',
             ]);
-        /*
-        // the following are currently not in use
         $menu['_lookup']
             ->addChild('bibliography-index', [
                 'label' => $this->translator->trans('Bibliography'),
@@ -145,6 +143,9 @@ class Builder
                 'label' => $this->translator->trans('Articles'),
                 'route' => 'article-index',
             ]);
+
+        /*
+        // the following is currently not yet in use
         $menu['_lookup']
             ->addChild('glossary-index', [
                 'label' => $this->translator->trans('Glossary'),

@@ -44,30 +44,6 @@
             {{ source_description|raw }}
         {% endif %}
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-            {{ 'Content'|trans }}
-            </div>
-            <div class="panel-body">
-            {% if section_headers is not empty %}
-                {% for header in section_headers %}
-                    <p><a href="#{{ header['id'] }}">{{ header['text'] }}</a></p>
-                {% endfor %}
-                <hr />
-            {% endif %}
-            {% if authors is not empty %}
-                <p><a href="#author">{{ helper.article_author_aboutlabel(authors) }}</a></p>
-            {% endif %}
-            <p><a href="#citation">{{ 'Recommended Citation and License Statement'|trans }}</a></p>
-            </div>
-            {% if related is not empty %}
-            {% set source = related[0] %}
-            <div class="panel-heading">
-                <a href="{{ path('source', { 'uid' : source.uid }) }}">{{ 'Source'|trans }}</a>
-            </div>
-            {% endif %}
-        </div>
-
         {{ html|raw }}
 
         {{ helper.article_authors(authors) }}
@@ -118,6 +94,28 @@
             {{ helper.keywords_linked(article.keywords|extract_genres, 'genre-index', false) }}
             </div>
             {% endif %}
+
+            <div class="container-fluid box top-buffer">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>{{ 'Content'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="row box-color-content-inverse">
+                    <div class="col-sm-12">
+                    {% if section_headers is not empty %}
+                        {% for header in section_headers %}
+                            <p><a href="#{{ header['id'] }}">{{ header['text'] }}</a></p>
+                        {% endfor %}
+                        <hr />
+                    {% endif %}
+                    {% if authors is not empty %}
+                        <p><a href="#author">{{ helper.article_author_aboutlabel(authors) }}</a></p>
+                    {% endif %}
+                    <p><a href="#citation">{{ 'Recommended Citation and License Statement'|trans }}</a></p>
+                    </div>
+                </div>
+            </div>
 
             {% if article.keywords|extract_topics is not empty %}
             <div class="container-fluid box top-buffer">

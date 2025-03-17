@@ -1,0 +1,62 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
+
+{% block contentcontainer %}
+<div class="container wrapper flex-grow-1 overflow-auto">
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h1>{{ 'Topics'|trans }}</h1>
+        </div>
+    </div><!-- .row -->
+    {% endblock body %}
+</div><!-- .container -->
+
+<div id="keyword-jumbotron" class="jumbotron jumbotron-fluid mt-3 pt-5">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 accordion" id="accordionExample">
+        {% for keyword,articles in articlesByKeyword %}
+            {% set keyword_localized =  keyword|trans({}, 'additional') %}
+            <div class="card topic-{{ keyword|slugify }}" id="{{ keyword_localized|slugify }}">
+                <div class="card-header" id="{{ keyword|slugify }}">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left shadow-none" type="button" data-toggle="collapse" data-target="#collapse{{ keyword|slugify }}"{% if loop.first %} aria-expanded="true"{% endif %}aria-controls="collapse{{ keyword|slugify }}">
+                        {{ keyword_localized }}
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse{{ keyword|slugify }}" class="collapse{% if loop.first %} show{% endif %}" aria-labelledby="{{ keyword|slugify }}" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                            {% for article in articles %}
+                                <div class="article col-md-3 pt-2 pb-2">
+                                    {% if article.author|length > 0 %}
+                                    <div><b>{{ article.authorDisplay(true) }}</b></div>
+                                    {% endif %}
+                                    {% set path = url('article', { 'slug' : article.getSlug(true) }) %}
+                                    <a href="{{ path }}">
+                                        {{ article.name }}
+                                    </a>
+                                </div>
+                            {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .card -->
+        {% endfor %}
+        </div><!-- .col-12 -->
+    </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .jumbotron -->
+<script>
+    // toggle active
+    var hash = $(location).attr('hash');
+    if (hash.length > 1) {
+        $(hash + ' .collapse').collapse('show');
+    }
+</script>
+{% endblock contentcontainer %}

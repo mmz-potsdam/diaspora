@@ -1,0 +1,241 @@
+<?php
+
+// src/Controller/KeywordController.php
+
+namespace App\Controller;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
+use Doctrine\ORM\EntityManagerInterface;
+
+/**
+ *
+ */
+class KeywordController extends \TeiEditionBundle\Controller\TopicController
+{
+    static $GENRES = [
+        'biography',
+        'country',
+        'source',
+    ];
+
+    /* TODO: inject these topics */
+    static $TOPICS = [
+        'Alltag',
+        'Ankommen',
+        'Begegnungen',
+        'Erbe und Erinnern',
+        'Geschlecht und Generation',
+        'Identität und Religiosität',
+        'Kultur- und Wissenstransfer',
+        'Pfade der Diaspora',
+        'Rückkehr',
+        'Sprache',
+        'Transnationale Netzwerke',
+    ];
+
+    public static function fetchActiveKeywords(
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator,
+        $locale,
+        ?array $filter = null,
+        $sortByKeyword = true
+    ) {
+        $language = null;
+        if (!empty($locale)) {
+            $language = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
+        }
+
+        $qb = $entityManager
+                ->createQueryBuilder();
+
+        $qb->select([ 'A.keywords' ])
+            ->distinct()
+            ->from('\TeiEditionBundle\Entity\Article', 'A')
+            ->where('A.status = 1')
+            ->andWhere('A.language = :language')
+            ->andWhere("A.articleSection IN ('interpretation')")
+        ;
+
+        $query = $qb->getQuery();
+        if (!empty($language)) {
+            $query->setParameter('language', $language);
+        }
+
+        $keywords = [];
+        foreach ($query->getResult() as $row) {
+            $keywords = array_unique(array_merge($keywords, $row['keywords']));
+        }
+
+        if (!is_null($filter)) {
+            $keywords = array_values(array_intersect($keywords, $filter));
+        }
+
+        if ($sortByKeyword) {
+            $coll = collator_create($locale);
+            usort($keywords, function ($keywordA, $keywordB) use ($translator, $coll) {
+                return collator_compare(
+                    $coll,
+                    /** @Ignore */
+                    $translator->trans($keywordA, [], 'additional'),
+                    /** @Ignore */
+                    $translator->trans($keywordB, [], 'additional')
+                );
+            });
+        }
+
+        return $keywords;
+    }
+
+    public static function lookupLocalizedTopic($topic, $translator, $locale)
+    {
+        // we need to get from localized to non-localized term
+        $localeTranslator = $translator->getLocale();
+        if ($localeTranslator != $locale) {
+            $translator->setLocale($locale);
+        }
+
+        foreach (self::$GENRES + self::$TOPICS as $label) {
+            if (/** @Ignore */ $translator->trans($label, [], 'additional') == $topic) {
+                $topic = $label;
+                break;
+            }
+        }
+
+        if ($localeTranslator != $locale) {
+            $translator->setLocale($localeTranslator);
+        }
+
+        return $topic;
+    }
+
+    /**
+     * return $keywords reduced to genre
+     */
+    public static function extractGenres($keywords)
+    {
+        return array_values(array_intersect($keywords, \App\Controller\KeywordController::$GENRES));
+    }
+
+    /**
+     * return $keywords reduced to topic
+     */
+    public static function extractTopics($keywords)
+    {
+        return array_values(array_intersect($keywords, \App\Controller\KeywordController::$TOPICS));
+    }
+
+    protected function buildTopicsBySlug(TranslatorInterface $translator, $translateKeys = false)
+    {
+        $topics = [];
+        foreach (self::$GENRES + self::$TOPICS as $label) {
+            $labelTranslated = /** @Ignore */ $translator->trans($label, [], 'additional');
+            $key = $this->slugify($translateKeys ? $labelTranslated : $label);
+            $topics[$key] = $labelTranslated;
+        }
+
+        return $topics;
+    }
+
+    protected function fetchArticlesByKeyword(
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator,
+        $locale,
+        ?array $filter = null,
+        $sortByKeyword = true
+    ) {
+        $language = null;
+        if (!empty($locale)) {
+            $language = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
+        }
+
+        $sort = 'A.creator'; // possibly: A.name
+
+        $qb = $entityManager
+                ->createQueryBuilder();
+
+        $qb->select([ 'A',
+            $sort . ' HIDDEN articleSort',
+        ])
+            ->from('\TeiEditionBundle\Entity\Article', 'A')
+            ->where('A.status = 1')
+            ->andWhere('A.language = :language')
+            ->andWhere("A.articleSection IN ('interpretation')")
+            ->orderBy('articleSort, A.creator, A.name')
+        ;
+
+        $query = $qb->getQuery();
+        if (!empty($language)) {
+            $query->setParameter('language', $language);
+        }
+
+        $articlesByKeyword = [];
+        foreach ($query->getResult() as $article) {
+            foreach ($article->getKeywords() as $keyword) {
+                if (!array_key_exists($keyword, $articlesByKeyword)) {
+                    $articlesByKeyword[$keyword] = [];
+                }
+
+                $articlesByKeyword[$keyword][] = $article;
+            }
+        }
+
+        if (!is_null($filter)) {
+            $articlesByKeyword = array_filter(
+                $articlesByKeyword,
+                function ($keyword) use ($filter) {
+                    return in_array($keyword, $filter);
+                },
+                ARRAY_FILTER_USE_KEY
+            );
+        }
+
+        if ($sortByKeyword) {
+            $coll = collator_create($locale);
+            uksort($articlesByKeyword, function ($keywordA, $keywordB) use ($translator, $coll) {
+                return collator_compare(
+                    $coll,
+                    /** @Ignore */
+                    $translator->trans($keywordA, [], 'additional'),
+                    /** @Ignore */
+                    $translator->trans($keywordB, [], 'additional')
+                );
+            });
+        }
+
+        return $articlesByKeyword;
+    }
+
+    /**
+     */
+    #[Route(path: '/genre', name: 'genre-index')]
+    public function genreAction(
+        Request $request,
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator
+    ) {
+        $articlesByGenre = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$GENRES, false);
+
+        return $this->render('Keyword/genre-index.html.twig', [
+            'pageTitle' => $translator->trans('Genres'),
+            'articlesByKeyword' => $articlesByGenre,
+        ]);
+    }
+
+    /**
+     */
+    #[Route(path: '/topic', name: 'topic-index')]
+    public function indexAction(
+        Request $request,
+        EntityManagerInterface $entityManager,
+        TranslatorInterface $translator
+    ) {
+        $articlesByTopic = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$TOPICS);
+
+        return $this->render('Keyword/topic-index.html.twig', [
+            'pageTitle' => $translator->trans('Topics'),
+            'articlesByKeyword' => $articlesByTopic,
+        ]);
+    }
+}

@@ -105,7 +105,7 @@ class ArticleAdjustCommand extends BaseCommand
                 $data['genre'] = /** @Ignore */ $this->translator->trans($genre);
 
                 if (!empty($result['section'])) {
-                    $sql = "SELECT name FROM Term WHERE id IN (?) AND status <> -1";
+                    $sql = "SELECT name, term_code FROM Term WHERE id IN (?) AND status <> -1";
                     $stmt = $this->dbconnAdmin->executeQuery(
                         $sql,
                         [ explode(',', $result['section']) ],
@@ -116,7 +116,9 @@ class ArticleAdjustCommand extends BaseCommand
                     $topics = [];
                     foreach ($terms as $term) {
                         /** @Ignore */
-                        $topics[] = $this->translator->trans(\TeiEditionBundle\Controller\TopicController::lookupLocalizedTopic($term['name'], $this->translator, 'de')); // The admin-database stores the terms in German, so look them up from this locale
+                        $topics[] = !empty($term['term_code'])
+                            ? $term['term_code']
+                            : /** @Ignore */ $this->translator->trans(\App\Controller\KeywordController::lookupLocalizedTopic($term['name'], $this->translator, 'de')); // The admin-database stores the terms in German, so look them up from this locale
                     }
 
                     $responsible = []; // we currently don't have section editors
@@ -223,7 +225,8 @@ class ArticleAdjustCommand extends BaseCommand
 
                 $data['genre'] = $this->translator->trans('Source')
                                . ':'
-                               . /** @Ignore */ $this->translator->trans($type);
+                               . /** @Ignore */ $this->translator->trans($type)
+                ;
 
                 if (!empty($result['url'])) {
                     $data['URLImages'] = $result['url'];

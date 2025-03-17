@@ -70,6 +70,7 @@ class ArticleEnhanceCommand extends BaseCommand
                 'textRazorApiKey' => $textRazorApiKey,
                 'ignore' => [
                     'Q183' => ['/^deutsch[esnr]*$/i', '/^german[s]*$/i'],
+                    'Q7318' => ['/^deutsch[esnr]*$/i', '/^german[s]*$/i'],
                 ],
             ]);
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a33fc8c09a0fe4c4624e34b53ad679e7",
+    "content-hash": "45fd01a50ef5d4fe4cb960a33cfdf690",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -1729,16 +1729,16 @@
         },
         {
             "name": "eko/feedbundle",
-            "version": "2.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/eko/FeedBundle.git",
-                "reference": "f57ad60a9b7eafbd8b87d4788c015d02bcde643b"
+                "url": "https://github.com/burki/FeedBundle.git",
+                "reference": "4889cee671c11574136e8e95a39b8bc8d9059d60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eko/FeedBundle/zipball/f57ad60a9b7eafbd8b87d4788c015d02bcde643b",
-                "reference": "f57ad60a9b7eafbd8b87d4788c015d02bcde643b",
+                "url": "https://api.github.com/repos/burki/FeedBundle/zipball/4889cee671c11574136e8e95a39b8bc8d9059d60",
+                "reference": "4889cee671c11574136e8e95a39b8bc8d9059d60",
                 "shasum": ""
             },
             "require": {
@@ -1754,13 +1754,13 @@
             "suggest": {
                 "doctrine/orm": "~2.17"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
                     "Eko\\FeedBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1779,10 +1779,9 @@
                 "rss"
             ],
             "support": {
-                "issues": "https://github.com/eko/FeedBundle/issues",
-                "source": "https://github.com/eko/FeedBundle/tree/2.2.0"
+                "source": "https://github.com/burki/FeedBundle/tree/master"
             },
-            "time": "2023-12-29T14:02:20+00:00"
+            "time": "2025-03-17T08:26:02+00:00"
         },
         {
             "name": "fale/isbn",
@@ -11571,16 +11570,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.71.0",
+            "version": "v3.72.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "3825ffdc69501e1c9230291b79f036a0c0d8749d"
+                "reference": "900389362c43d116fee1ffc51f7878145fa61b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3825ffdc69501e1c9230291b79f036a0c0d8749d",
-                "reference": "3825ffdc69501e1c9230291b79f036a0c0d8749d",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/900389362c43d116fee1ffc51f7878145fa61b57",
+                "reference": "900389362c43d116fee1ffc51f7878145fa61b57",
                 "shasum": ""
             },
             "require": {
@@ -11610,18 +11609,18 @@
                 "symfony/stopwatch": "^5.4 || ^6.4 || ^7.0"
             },
             "require-dev": {
-                "facile-it/paraunit": "^1.3.1 || ^2.5",
-                "infection/infection": "^0.29.10",
-                "justinrainbow/json-schema": "^5.3 || ^6.0",
+                "facile-it/paraunit": "^1.3.1 || ^2.6",
+                "infection/infection": "^0.29.14",
+                "justinrainbow/json-schema": "^5.3 || ^6.2",
                 "keradus/cli-executor": "^2.1",
                 "mikey179/vfsstream": "^1.6.12",
                 "php-coveralls/php-coveralls": "^2.7",
                 "php-cs-fixer/accessible-object": "^1.1",
                 "php-cs-fixer/phpunit-constraint-isidenticalstring": "^1.6",
                 "php-cs-fixer/phpunit-constraint-xmlmatchesxsd": "^1.6",
-                "phpunit/phpunit": "^9.6.22 || ^10.5.45 || ^11.5.7",
-                "symfony/var-dumper": "^5.4.48 || ^6.4.18 || ^7.2.0",
-                "symfony/yaml": "^5.4.45 || ^6.4.18 || ^7.2.0"
+                "phpunit/phpunit": "^9.6.22 || ^10.5.45 || ^11.5.12",
+                "symfony/var-dumper": "^5.4.48 || ^6.4.18 || ^7.2.3",
+                "symfony/yaml": "^5.4.45 || ^6.4.18 || ^7.2.3"
             },
             "suggest": {
                 "ext-dom": "For handling output formats in XML",
@@ -11662,7 +11661,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.71.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.72.0"
             },
             "funding": [
                 {
@@ -11670,7 +11669,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-07T23:06:56+00:00"
+            "time": "2025-03-13T11:25:37+00:00"
         },
         {
             "name": "phpstan/phpstan",
@@ -12773,6 +12772,12 @@
     ],
     "aliases": [
         {
+            "package": "eko/feedbundle",
+            "version": "9999999-dev",
+            "alias": "2.2.1",
+            "alias_normalized": "2.2.1.0"
+        },
+        {
             "package": "fluentdom/fluentdom",
             "version": "9999999-dev",
             "alias": "8.0",
@@ -12794,6 +12799,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "armin/scssphp-bundle": 20,
+        "eko/feedbundle": 20,
         "fluentdom/fluentdom": 20,
         "gmo/iso-639": 20,
         "hedii/zotero-api": 20,

@@ -53,6 +53,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/FeedBundle"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/FluentDOM"
         },
         {
@@ -86,6 +90,7 @@
         "ext-iconv": "*",
         "ext-intl": "*",
         "armin/scssphp-bundle": "dev-master",
+        "eko/feedbundle": "dev-master as 2.2.1",
         "fluentdom/fluentdom": "dev-master as 8.0",
         "gjuric/i18n-routing-bundle": "3.2.2",
         "gmo/iso-639": "dev-master#4834357 as 1.0",

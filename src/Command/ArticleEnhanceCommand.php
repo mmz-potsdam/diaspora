@@ -71,6 +71,7 @@ class ArticleEnhanceCommand extends BaseCommand
                 'ignore' => [
                     'Q183' => ['/^deutsch[esnr]*$/i', '/^german[s]*$/i'],
                     'Q7318' => ['/^deutsch[esnr]*$/i', '/^german[s]*$/i'],
+                    'Q52825' => [ '/^Abb$/i'],
                 ],
             ]);
 
@@ -126,8 +127,7 @@ class ArticleEnhanceCommand extends BaseCommand
             foreach ($entitiesOfType as $uri => $count) {
                 if (preg_match('/^'
                             . preg_quote('http://www.wikidata.org/entity/', '/')
-                            . '(Q\d+)$/', $uri, $matches))
-                {
+                            . '(Q\d+)$/', $uri, $matches)) {
                     $uris[$uri] = false;
                 }
             }
@@ -151,16 +151,21 @@ class ArticleEnhanceCommand extends BaseCommand
                         break;
                 }
 
-                if (is_null($entity) ) {
+                if (is_null($entity)) {
                     // lookup sameAs
                     $identifer = \LodService\Identifier\Factory::fromUri($uri);
                     $sameAs = $wikidataService->lookupSameAs($identifer);
                     foreach ($sameAs as $identifer) {
+                        if (array_key_exists($uri, $uris)) {
+                            // so we only pick the first $sameAs
+                            break;
+                        }
+
                         switch ($type) {
                             case 'person':
                             case 'organization':
-                                    if ($identifer instanceof \LodService\Identifier\GndIdentifier) {
-                                    $uris[$uri] = $identifer->toUri();
+                                if ($identifer instanceof \LodService\Identifier\GndIdentifier) {
+                                    $uris[$uri] = str_replace('https://d-nb.info/gnd/', 'http://d-nb.info/gnd/', $identifer->toUri());
                                 }
                                 break;
 

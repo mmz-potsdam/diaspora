@@ -8,7 +8,13 @@ A Publication Project:  Ein Publikationsprojekt
 "History of the German-Jewish Diaspora - Articles": Geschichte der deutsch-jüdischen Diaspora - Beiträge
 # eko_feed.feeds.article.description
 Latest Articles from the Online Source Portal: Neuste Artikel im Online-Quellenportal
+# source types
+Object: Objekt
+Text: Text
+Image: Bild
+Audio: Audio
+Video: Video
 # genre and topic
 "biography": Biografie
 "country": Länderstudie
-"source": Quelle
+"source": Quelleninterpretation

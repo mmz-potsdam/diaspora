@@ -225,7 +225,7 @@ class ArticleAdjustCommand extends BaseCommand
 
                 $data['genre'] = $this->translator->trans('Source')
                                . ':'
-                               . /** @Ignore */ $this->translator->trans($type)
+                               . /** @Ignore */ $this->translator->trans($type, [], 'additional');
                 ;
 
                 if (!empty($result['url'])) {

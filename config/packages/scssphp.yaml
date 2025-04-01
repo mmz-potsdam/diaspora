@@ -1,7 +1,7 @@
 scssphp:
     enabled: '%kernel.debug%'
     autoUpdate: '%kernel.debug%'
-    
+
     # site specific
     assets:
         "css/base.css":
@@ -9,4 +9,12 @@ scssphp:
             sourceMap: true
             # Array of import paths, relative to Symfony's project directory.
             importPaths:
+                - "assets/scss"                        # main directory
+        # for the diaspora theme
+        "css/diaspora.css":
+            src: "sites/diaspora-site/assets/scss/base.scss"
+            sourceMap: true
+            # Array of import paths, relative to Symfony's project directory.
+            importPaths:
+                - "sites/diaspora-site/assets/scss"    # theme-specific settings come first
                 - "assets/scss"                        # main directory

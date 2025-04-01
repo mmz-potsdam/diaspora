@@ -119,6 +119,12 @@ services:
         tags:
             - { name: twig.extension }
 
+    # theme selection
+    App\EventListener\ThemeRequestListener:
+        # arguments: ['@sylius.repository.theme', '@sylius.theme.context.settable']
+        tags:
+        - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+
     # So we can inject @solr.client, see https://github.com/floriansemm/SolrBundle/issues/191#issuecomment-466101623
     FS\SolrBundle\SolrInterface: '@solr.client'
 

@@ -156,7 +156,7 @@ class ArticleEnhanceCommand extends BaseCommand
                     $identifer = \LodService\Identifier\Factory::fromUri($uri);
                     $sameAs = $wikidataService->lookupSameAs($identifer);
                     foreach ($sameAs as $identifer) {
-                        if (array_key_exists($uri, $uris)) {
+                        if (array_key_exists($uri, $uris) && false !== $uris[$uri]) {
                             // so we only pick the first $sameAs
                             break;
                         }

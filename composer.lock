@@ -2718,12 +2718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "219755c9e728cc4223e22eb5510039ece7ef8621"
+                "reference": "b7fadb1774408311138871325a899300076b2049"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/219755c9e728cc4223e22eb5510039ece7ef8621",
-                "reference": "219755c9e728cc4223e22eb5510039ece7ef8621",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/b7fadb1774408311138871325a899300076b2049",
+                "reference": "b7fadb1774408311138871325a899300076b2049",
                 "shasum": ""
             },
             "require": {
@@ -2799,7 +2799,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-04-01T09:46:31+00:00"
+            "time": "2025-04-04T11:13:28+00:00"
         },
         {
             "name": "jms/translation-bundle",

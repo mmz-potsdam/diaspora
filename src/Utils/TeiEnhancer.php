@@ -76,7 +76,7 @@ class TeiEnhancer
                             $fragment->appendChild($before);
                         }
 
-                        $element = $doc->createElement($entities[$matchPosition]['tagName'], $matches[1][0]);
+                        $element = $doc->createElement($entities[$matchPosition]['tagName'], $caller->xmlSpecialchars($matches[1][0]));
                         $element->setAttribute('ref', $entities[$matchPosition]['ref']);
                         $fragment->appendChild($element);
                         $end = $start + strlen($matches[1][0]);
@@ -98,6 +98,11 @@ class TeiEnhancer
         }
 
         return $fluidXml->xml();
+    }
+
+    protected function xmlSpecialchars($txt)
+    {
+        return htmlspecialchars($txt, ENT_XML1, 'UTF-8');
     }
 
     protected function stripWhitespace($txt)

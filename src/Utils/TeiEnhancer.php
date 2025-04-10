@@ -35,20 +35,29 @@ class TeiEnhancer
         $fluidXml->namespace('tei', 'http://www.tei-c.org/ns/1.0', \FluidXml\FluidNamespace::MODE_IMPLICIT);
 
         foreach ([
-            '/tei:TEI/tei:teiHeader/tei:fileDesc/tei:notesStmt/tei:note[@type="remarkDocument"]//text()',
-            '/tei:TEI/tei:text/tei:body//text()',
+            '/tei:TEI/tei:teiHeader/tei:fileDesc/tei:notesStmt/tei:note[@type="remarkDocument"]',
+            '/tei:TEI/tei:text/tei:body',
         ] as $query) {
-            $plainText = $this->extractText($fluidXml, $query);
+            $plainText = $this->extractText($fluidXml, $query . '//text()');
 
             if (empty($plainText)) {
                 continue;
             }
 
+            $xml = $fluidXml->query($query)->xml();
+
             $entities = $this->getEntitiesFromText($plainText);
 
+            // remove entities that don't show in the original xml
+            // this may happen if there are e.g. <hi>-tags in the passage corresponding to matchedText
+            $entities = array_values(array_filter($entities, function ($entity) use ($xml) {
+                return preg_match(
+                    '/(' . preg_quote($this->xmlSpecialchars($entity['matchedText']), '/') . ')/',
+                    $xml);
+                }));
+
             $matchPosition = 0;
-            $caller = & $this;
-            $fluidXml->query($query)
+            $fluidXml->query($query . '//text()')
                 ->each(function ($i, $domnode) use ($entities, &$matchPosition, $caller) {
                     $maxPosition = count($entities);
 

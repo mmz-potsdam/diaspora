@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2025-03-12T21:17:03Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2025-04-16T14:23:20Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -11,10 +11,16 @@
         <target>...weiterlesen</target>
         <jms:reference-file line="161">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\entity-lookup.html.twig\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="6b21fb791ac05170893860c248401cd24a59b732" resname="About">
+        <source>About</source>
+        <target state="new">Über</target>
+        <jms:reference-file line="77">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="3ffb811f9be63cf3e71f2e2b71599ba2b7721405" resname="About us">
         <source>About us</source>
         <target>Über uns</target>
-        <jms:reference-file line="61">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="117">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="69">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="6ace5fe393eb5f02afd657b64031ed2032f3d051" resname="All Places mentioned">
         <source>All Places mentioned</source>
@@ -24,22 +30,27 @@
       <trans-unit id="4360c2dcd4af965377499b10a52640af435c9258" resname="Article">
         <source>Article</source>
         <target>Beitrag</target>
-        <jms:reference-file line="217">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="276">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="7c422841b7e3951946583038790545c4ed38481b" resname="Articles">
         <source>Articles</source>
-        <target state="new">Beiträge</target>
-        <jms:reference-file line="143">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <target>Beiträge</target>
+        <jms:reference-file line="202">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="619d65e1ae1a2704aa306451ac2a75a0cde345a8" resname="Bibliography">
         <source>Bibliography</source>
-        <target state="new">Bibliografie</target>
-        <jms:reference-file line="138">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <target>Bibliografie</target>
+        <jms:reference-file line="197">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="632246d20c3af9e7f4d0110627d37388c3825aca" resname="Browse digitized images in DFG-Viewer">
+        <source>Browse digitized images in DFG-Viewer</source>
+        <target state="new">Digitalisat im DFG-Viewer anzeigen</target>
+        <jms:reference-file line="399">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="070374ff80947b819eb8815e8d492bf0a862577e" resname="Chronology">
         <source>Chronology</source>
         <target>Zeitstrahl</target>
-        <jms:reference-file line="98">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="157">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="501d8e4cff50a66866de111c38d237b508f2a0a7" resname="Click to return to the top of the page">
         <source>Click to return to the top of the page</source>
@@ -49,21 +60,36 @@
       <trans-unit id="b37456c4530be810dc040f50da72eda09addfb0a" resname="Contact">
         <source>Contact</source>
         <target>Kontakt</target>
-        <jms:reference-file line="74">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="133">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="4f9be057f0ea5d2ba72fd2c810e8d7b9aa98b469" resname="Content">
         <source>Content</source>
-        <target state="new">Inhalt</target>
-        <jms:reference-file line="49">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+        <target>Inhalt</target>
+        <jms:reference-file line="101">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="817b79b0af2db11da9523bd5738397ebf823132b" resname="Creator">
+        <source>Creator</source>
+        <target state="new">Urheber</target>
+        <jms:reference-file line="319">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d4988960e82b0125a730ab76a5721405f3831b86" resname="DFG-Viewer">
+        <source>DFG-Viewer</source>
+        <target state="new">DFG-Viewer</target>
+        <jms:reference-file line="396">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="eb9a4bc1c0c153e4e4b042a79113b815b7e3021d" resname="Date">
+        <source>Date</source>
+        <target state="new">Datum</target>
+        <jms:reference-file line="247">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="7c9a7c0610c1bc20abb9c9d07094daa33576a8f8" resname="Detail">
         <source>Detail</source>
         <target>Detail</target>
-        <jms:reference-file line="236">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
-        <jms:reference-file line="247">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
-        <jms:reference-file line="253">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
-        <jms:reference-file line="265">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
-        <jms:reference-file line="270">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="295">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="306">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="312">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="324">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="329">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="93cb21061c70a7a91f19eb79e908ddbf180a139b" resname="Display Layer">
         <source>Display Layer</source>
@@ -72,35 +98,98 @@
       </trans-unit>
       <trans-unit id="f9cb5291a5b7d74308f19dd7686f56fdb94d18f0" resname="Display Source">
         <source>Display Source</source>
-        <target state="new">Quelle anzeigen</target>
-        <jms:reference-file line="78">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+        <target>Quelle anzeigen</target>
+        <jms:reference-file line="54">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a479c9c34e878d07b4d67a73a48f432ad7dc53c8" resname="Download">
+        <source>Download</source>
+        <target state="new">Herunterladen</target>
+        <jms:reference-file line="376">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bc99ea3d5cb3c4da4e2c2ebc3142c2c2a5f7fc00" resname="Download Research Data">
+        <source>Download Research Data</source>
+        <target state="new">Forschungsdaten herunterladen</target>
+        <jms:reference-file line="383">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f9bdba98e9d3a472873a2d6e98f62c79d35cc42b" resname="Download for scholarly or private use">
+        <source>Download for scholarly or private use</source>
+        <target state="new">Für wissenschaftliche oder private Zwecke herunterladen</target>
+        <jms:reference-file line="346">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5b00dab869eaa98ca573b4c271c1df1fb14942a6" resname="Download source">
+        <source>Download source</source>
+        <target state="new">Quelle herunterladen</target>
+        <jms:reference-file line="352">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+        <jms:reference-file line="359">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e6698f8fc656150bdcff28937066a0cb24dfdb69" resname="Download source for non-commercial use">
+        <source>Download source for non-commercial use</source>
+        <target state="new">Quelle für nicht-kommerzielle Nutzung herunterladen</target>
+        <jms:reference-file line="366">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="c3e98f7507fced38ed5c711c203cece4e0b10851" resname="Epochs and Events">
         <source>Epochs and Events</source>
         <target>Epochen und Ereignisse</target>
-        <jms:reference-file line="133">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="192">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="5678489184de27a0fbf7bf33023aded4af57df35" resname="Exit Fullscreen Mode">
         <source>Exit Fullscreen Mode</source>
         <target>Vollbildmodus verlassen</target>
         <jms:reference-file line="47">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\viewer.html.twig\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="b226aad69c677d3aad539e7365be2e847cced54c" resname="F d, Y">
+        <source>F d, Y</source>
+        <target state="new">d.m.Y</target>
+        <jms:reference-file line="222">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+        <jms:reference-file line="87">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="96817ade02e758261256fdfcf062e850b699b8a6" resname="Genres">
+        <source>Genres</source>
+        <target state="new">Genres</target>
+        <jms:reference-file line="221">\..\..\..\..\..\..\./src\Controller\KeywordController.php\</jms:reference-file>
+        <jms:reference-file line="10">\..\..\..\..\..\..\./templates\Keyword\genre-index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="814f2d6fe75152ba8e7ae7454b387cc6841356c4" resname="Geo Coordinates">
+        <source>Geo Coordinates</source>
+        <target state="new">Geo-Koordinaten</target>
+        <jms:reference-file line="269">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="406bfd18a10fb08166ec12f603ec5b1b73fecbc5" resname="German-Jewish Diapora">
+        <source>German-Jewish Diapora</source>
+        <target state="new">Deutsch-jüdische Diaspora</target>
+        <jms:reference-file line="98">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2bb85f0a8dbe6f36708aa5fed8239b1b375c4369" resname="Hide Map">
+        <source>Hide Map</source>
+        <target state="new">Karte ausblenden</target>
+        <jms:reference-file line="308">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="96de6a349142be3b38059b73c133f2346e8db0ab" resname="Holding Institution">
+        <source>Holding Institution</source>
+        <target state="new">Bewahrende Institution</target>
+        <jms:reference-file line="325">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="70f8bb9a8a5393ef080507a89e4b98d139000d65" resname="Home">
         <source>Home</source>
         <target>Startseite</target>
-        <jms:reference-file line="86">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="145">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="0e395bfa3879c6532f36f789e96f80c57030f8f0" resname="Look-up">
         <source>Look-up</source>
         <target>Nachschlagen</target>
-        <jms:reference-file line="110">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="169">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="ab478f3efc840eebab919dff1b9512286f70c10c" resname="Map">
         <source>Map</source>
         <target>Karte</target>
-        <jms:reference-file line="104">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
-        <jms:reference-file line="241">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="163">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="300">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
         <jms:reference-file line="10">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Place\map.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="dc8ad47bdc5bc211d13f24a4aaabf25d77d47042" resname="Mentioned in">
+        <source>Mentioned in</source>
+        <target state="new">Erwähnt in</target>
+        <jms:reference-file line="4">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="ccd57518d82022e4152c36fc20b62801387974c2" resname="Moses Mendelssohn Center">
         <source>Moses Mendelssohn Center</source>
@@ -110,7 +199,7 @@
       <trans-unit id="07605242f7a070b43bdc103189dccf6a5cc43506" resname="Organizations">
         <source>Organizations</source>
         <target>Organisationen</target>
-        <jms:reference-file line="128">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="187">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="bc3023b36063a7681db24681472b54fa11f0d4ec" resname="Page not found">
         <source>Page not found</source>
@@ -120,42 +209,92 @@
       <trans-unit id="f3cf96e919766ef2354bbbddd56e9cbb5f2792e8" resname="Persons">
         <source>Persons</source>
         <target>Personen</target>
-        <jms:reference-file line="118">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="177">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c32a0147f2e47a52e082fe2dd4b6aaa36084a4cb" resname="Place">
+        <source>Place</source>
+        <target state="new">Ort</target>
+        <jms:reference-file line="257">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="0cd3597453ab504a3dbeec3289e21abe922d223a" resname="Places">
         <source>Places</source>
         <target>Orte</target>
-        <jms:reference-file line="123">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="182">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="1f71ae35a0f2a2a902ca300139c7d057d0621448" resname="Print Version">
         <source>Print Version</source>
         <target>Druckansicht</target>
-        <jms:reference-file line="89">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+        <jms:reference-file line="65">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
         <jms:reference-file line="126">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\viewer-layers.html.twig\</jms:reference-file>
         <jms:reference-file line="187">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\viewer.html.twig\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="1de9b5aa8ef2a69cf3b723e9f4dded03396a160c" resname="Read on">
+        <source>Read on</source>
+        <target state="new">Weiterlesen</target>
+        <jms:reference-file line="213">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="49448c08da81c0e7a67bc1aaf3354b7d39421e63" resname="Recommended Citation">
+        <source>Recommended Citation</source>
+        <target state="new">Empfohlene Zitation</target>
+        <jms:reference-file line="219">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+        <jms:reference-file line="417">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="d14ac01fca3f261bfcdfa98ca0ce98d2d96ba604" resname="Recommended Citation and License Statement">
         <source>Recommended Citation and License Statement</source>
-        <target state="new">Zitationsempfehlung und Lizenzhinweis</target>
-        <jms:reference-file line="61">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+        <target>Zitationsempfehlung und Lizenzhinweis</target>
+        <jms:reference-file line="115">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+        <jms:reference-file line="81">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="396afc00b25ee2d1e0ff4b16268c9b306ec219d7" resname="Rights Statements">
+        <source>Rights Statements</source>
+        <target state="new">Rechtenachweis</target>
+        <jms:reference-file line="348">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="bce06414177f72ab70e6387b6af9f8ceef0d6049" resname="Search">
         <source>Search</source>
         <target>Suche</target>
-        <jms:reference-file line="274">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="333">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
         <jms:reference-file line="37">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Default\header.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1a0d4b514b3e6b95da4aecd1f0f57821eec4ff33" resname="Show Map">
+        <source>Show Map</source>
+        <target state="new">Karte einblenden</target>
+        <jms:reference-file line="274">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+        <jms:reference-file line="307">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1e9fb49e4cdeaed616421eaf60900518333504c3" resname="Show Source">
+        <source>Show Source</source>
+        <target state="new">Quelle anzeigen</target>
+        <jms:reference-file line="165">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2f32be1dc74166373c988ec03b0bd86f0a576919" resname="Signature">
+        <source>Signature</source>
+        <target state="new">Signatur</target>
+        <jms:reference-file line="334">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="6da13addb000b67d42a6d66391713819e634149f" resname="Source">
         <source>Source</source>
         <target>Quelle</target>
-        <jms:reference-file line="224">\..\..\..\..\..\..\./src\Command\ArticleAdjustCommand.php\</jms:reference-file>
-        <jms:reference-file line="221">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
-        <jms:reference-file line="66">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+        <jms:reference-file line="226">\..\..\..\..\..\..\./src\Command\ArticleAdjustCommand.php\</jms:reference-file>
+        <jms:reference-file line="280">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="429">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="366ea33cb40167102931845e9d1d9d1fcf384c6a" resname="Source Description">
         <source>Source Description</source>
-        <target state="new">Quellenbeschreibung</target>
+        <target>Quellenbeschreibung</target>
         <jms:reference-file line="42">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\article.html.twig\</jms:reference-file>
+        <jms:reference-file line="210">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+        <jms:reference-file line="415">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d1f311820ac7be0b7cea43b06b72b4838689f564" resname="Source Description and Interpretation">
+        <source>Source Description and Interpretation</source>
+        <target state="new">Quellenbeschreibung und Interpretation</target>
+        <jms:reference-file line="406">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f7d8c9b283c81dd633f1aee6af966b8793e99883" resname="Source Type">
+        <source>Source Type</source>
+        <target state="new">Quellenart</target>
+        <jms:reference-file line="315">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="4d1feed383c46aa0ab5f0a419c1a46d2f88fc26d" resname="Sources by primary Place">
         <source>Sources by primary Place</source>
@@ -170,7 +309,23 @@
       <trans-unit id="ababcd2092c790cd48094defea5bb6fa5036c0d6" resname="The Project">
         <source>The Project</source>
         <target>Das Projekt</target>
-        <jms:reference-file line="55">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="63">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="61759402cb7a82079c45bcfac1b34e480177c357" resname="The project">
+        <source>The project</source>
+        <target state="new">Das Projekt</target>
+        <jms:reference-file line="108">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="07e4f9c27860c8f452d481954e498a807cd27a98" resname="Topics">
+        <source>Topics</source>
+        <target state="new">Themen</target>
+        <jms:reference-file line="237">\..\..\..\..\..\..\./src\Controller\KeywordController.php\</jms:reference-file>
+        <jms:reference-file line="10">\..\..\..\..\..\..\./templates\Keyword\topic-index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0e2d9b0777a485c1276de0803c12a7d76fbc5c39" resname="URL">
+        <source>URL</source>
+        <target state="new">URL</target>
+        <jms:reference-file line="341">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="02a46dd8b4f86ba87d571007f77a384df3bbb4eb" resname="View Fullscreen">
         <source>View Fullscreen</source>
@@ -186,6 +341,28 @@
         <source>Welcome</source>
         <target>Willkommen</target>
         <jms:reference-file line="71">\..\..\..\..\..\..\./src\Controller\DefaultController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="73fa4b1e312d2a9d4404187713838530a6439ba3" resname="as of">
+        <source>as of</source>
+        <target state="new">Stand</target>
+        <jms:reference-file line="45">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+        <jms:reference-file line="86">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c32b4b70c4b59ab77926cbc193503296a13796e4" resname="edited in">
+        <source>edited in</source>
+        <target state="new">edited in</target>
+        <jms:reference-file line="221">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="dbc45ed3b5eb1103cc2eb95f29f7de06f6188376" resname="http://dfg-viewer.de/en/v3/">
+        <source>http://dfg-viewer.de/en/v3/</source>
+        <target state="new">https://dfg-viewer.de/show/</target>
+        <jms:reference-file line="398">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="46caa1d2e05afac27dac5dcb81671fcb0ded1dfc" resname="translated by">
+        <source>translated by</source>
+        <target state="new">übersetzt vo</target>
+        <jms:reference-file line="221">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
+        <jms:reference-file line="85">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
     </body>
   </file>

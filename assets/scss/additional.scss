@@ -95,8 +95,22 @@ header {
     }
 
     #menu-top {
+        .dropdown-menu {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 6px;
+            border-radius: 0;
+            .dropdown-item {
+                background-color:  $color-color-lookup;
+                padding-left: 0.25rem;
+                &:hover {
+                    background-color: inherit;
+                }
+            }
+        }
+
         li:hover .menu_level_1 {
-            background-color: $color-color-medium;
+            background-color: $color-color-lookup;
             white-space: nowrap;
             a {
                 color: $color-color-dark;

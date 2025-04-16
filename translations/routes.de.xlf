@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2023-09-05T13:15:22Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2025-04-16T14:23:20Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
+      <trans-unit id="acf77afa5a58e1b5a8a0ade29cf324f88435cd4c" resname="PrestaSitemapBundle_index">
+        <source>/sitemap.{_format}</source>
+        <target state="new">/sitemap.{_format}</target>
+      </trans-unit>
+      <trans-unit id="6b672d8bf10805d0c6121b40fedbb2492e4e1425" resname="PrestaSitemapBundle_section">
+        <source>/sitemap.{name}.{_format}</source>
+        <target state="new">/sitemap.{name}.{_format}</target>
+      </trans-unit>
       <trans-unit id="5780daf6db0b013dbf82807c9f85abba683b0820" resname="about">
         <source>/about</source>
         <target>/ueber</target>
@@ -14,29 +22,13 @@
         <source>/about/authors</source>
         <target>/ueber/autorinnen</target>
       </trans-unit>
-      <trans-unit id="6a9fe8402faeb1f85ebb59a46eff09ba385a128d" resname="about-board">
-        <source>/about/board</source>
-        <target>/ueber/beirat</target>
-      </trans-unit>
-      <trans-unit id="1fc4f6592da8dd75c47370a29c6a4e9eae87d266" resname="about-cfp">
-        <source>/about/cfp</source>
-        <target>/ueber/cfp</target>
-      </trans-unit>
-      <trans-unit id="1d2f96887a3692c00043fc7c72c292ad11cb8c01" resname="about-editors">
-        <source>/about/editors</source>
-        <target>/ueber/herausgeber_innen</target>
-      </trans-unit>
-      <trans-unit id="4325ad54eb5c30738fd299324a9ed374ea5d84c1" resname="about-sponsors">
-        <source>/about/sponsors</source>
-        <target>/ueber/foerderer</target>
+      <trans-unit id="3f0bc409b2ad8bc2034f21f0386d8358703bfc3f" resname="about-diaspora">
+        <source>/about/diaspora</source>
+        <target state="new">/ueber/diaspora</target>
       </trans-unit>
       <trans-unit id="859a410c14055c11f8c93e4ed850d44ed1b820f4" resname="about-us">
         <source>/about/team</source>
         <target>/ueber/team</target>
-      </trans-unit>
-      <trans-unit id="7703b140b6951e94df4160683b9f1c593f305465" resname="app_logout">
-        <source>/logout</source>
-        <target>/logout</target>
       </trans-unit>
       <trans-unit id="565cecd7e8f5c6063935b41db41797aa37d53b04" resname="article">
         <source>/article/{slug}</source>
@@ -121,6 +113,10 @@
       <trans-unit id="7c2648bb22ab923068b2eb234343208f81cb7b14" resname="event-jsonld">
         <source>/event/{id}.jsonld</source>
         <target>/ereignis/{id}.jsonld</target>
+      </trans-unit>
+      <trans-unit id="82f9f14fd0fae886f1a381689b9f476cd582f585" resname="genre-index">
+        <source>/genre</source>
+        <target state="new">/genre</target>
       </trans-unit>
       <trans-unit id="31febeb1bd09a280b286995d78260c42559c6d5a" resname="glossary-index">
         <source>/glossary</source>
@@ -270,13 +266,13 @@
         <source>/bibliography/{id}</source>
         <target>/bibliografie/{id}</target>
       </trans-unit>
-      <trans-unit id="ce620d6749880d79c700eb0ae2a56646f3a59bc5" resname="terms">
-        <source>/terms</source>
-        <target>/nutzungsbedingungen</target>
-      </trans-unit>
       <trans-unit id="11382b2dc45c0a18f2c1b76687a989ba9c1d1002" resname="topic-background">
         <source>/topic/{slug}</source>
         <target>/thema/{slug}</target>
+      </trans-unit>
+      <trans-unit id="61dfc5130a889cf64db7ca84a893c723117840ca" resname="topic-background-jsonld">
+        <source>/topic/{slug}.jsonld</source>
+        <target state="new">/thema/{slug}.jsonld</target>
       </trans-unit>
       <trans-unit id="176db8bb3eb07c6d739969f6195e15d3633644f2" resname="topic-background-pdf">
         <source>/topic/{slug}.pdf</source>

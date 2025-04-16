@@ -64,7 +64,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
         }
 
         return $this->render(
-            $featureManager->isEnabled('limited_navigation')
+            is_null($featureManager) || $featureManager->isEnabled('limited_navigation')
                 ? 'Default/home-limited.html.twig'
                 : 'Default/home.html.twig',
             [

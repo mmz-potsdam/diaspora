@@ -8,6 +8,7 @@ namespace App\Menu;
 
 use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
+use Novaway\Bundle\FeatureFlagBundle\Manager\FeatureManager;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
@@ -18,12 +19,14 @@ class Builder
     private $translator;
     private $requestStack;
     private $router;
+    private $featureManager;
 
     /**
      * @param FactoryInterface $factory
      * @param TranslatorInterface $translator
      * @param RequestStack $requestStack
      * @param Router $router
+     * @param FeatureManager|null $featureManager
      *
      * Add any other dependency you need
      */
@@ -31,12 +34,14 @@ class Builder
         FactoryInterface $factory,
         TranslatorInterface $translator,
         RequestStack $requestStack,
-        RouterInterface $router
+        RouterInterface $router,
+        ?FeatureManager $featureManager = null
     ) {
         $this->factory = $factory;
         $this->translator = $translator;
         $this->requestStack = $requestStack;
         $this->router = $router;
+        $this->featureManager = $featureManager;
     }
 
     public function createTopMenu(array $options): ItemInterface
@@ -51,17 +56,71 @@ class Builder
 
         // add menu items
         if (!array_key_exists('part', $options) || 'left' == $options['part']) {
-            $menu->addChild('about', [
-                'label' => $this->translator->trans('The Project'),
-                'route' => 'about',
-            ])
-                ->setAttribute('class', 'list-inline-item');
+            if ((is_null($this->featureManager) || $this->featureManager->isEnabled('limited_navigation'))
+                || (array_key_exists('position', $options) && 'footer' == $options['position'])) {
+                // flat about
+                $menu->addChild('about', [
+                    'label' => $this->translator->trans('The Project'),
+                    'route' => 'about',
+                ])
+                    ->setAttribute('class', 'list-inline-item');
 
-            $menu->addChild('about-us', [
-                'label' => $this->translator->trans('About us'),
-                'route' => 'about-us',
-            ])
-                ->setAttribute('class', 'list-inline-item');
+                $menu->addChild('about-us', [
+                    'label' => $this->translator->trans('About us'),
+                    'route' => 'about-us',
+                ])
+                    ->setAttribute('class', 'list-inline-item');
+            }
+            else {
+                // hierarchical about
+                $menu->addChild('about', [
+                    'label' => $this->translator->trans('About'),
+                    'route' => 'about',
+                    'attributes' => [
+                        'id' => 'dropdownAboutMenuButton',
+                        'class' => 'list-inline-item nav-item dropdown',
+                    ],
+                    'linkAttributes' => [
+                        'class' => 'dropdown-toggle', // possibly prepend nav-link
+                        'dropdown' => true,
+                        'role' => 'button',
+                        'data-bs-toggle' => 'dropdown',
+                        'aria-expanded' => 'false',
+                    ],
+                    'childrenAttributes' => [
+                        'class' => 'dropdown-menu dropdown-menu-center',
+                        'aria-labelledby' => 'dropdownAboutMenuButton',
+                    ],
+                ]);
+
+                $menu['about']
+                    ->addChild('about-diaspora', [
+                        'label' => $this->translator->trans('German-Jewish Diapora'),
+                        'route' => 'about-diaspora',
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
+
+
+                $menu['about']
+                    ->addChild('about', [
+                        'label' => $this->translator->trans('The project'),
+                        'route' => 'about',
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
+
+                $menu['about']
+                    ->addChild('about-us', [
+                        'label' => $this->translator->trans('About us'),
+                        'route' => 'about-us',
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
+            }
 
             /*
             $menu->addChild('terms', [

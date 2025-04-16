@@ -53,8 +53,9 @@ class TeiEnhancer
             $entities = array_values(array_filter($entities, function ($entity) use ($xml) {
                 return preg_match(
                     '/(' . preg_quote($this->xmlSpecialchars($entity['matchedText']), '/') . ')/',
-                    $xml);
-                }));
+                    $xml
+                );
+            }));
 
             $matchPosition = 0;
             $fluidXml->query($query . '//text()')

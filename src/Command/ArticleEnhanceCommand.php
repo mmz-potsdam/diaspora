@@ -79,27 +79,27 @@ class ArticleEnhanceCommand extends BaseCommand
 
             // strip added again from <bibl> tags
             $xslAsString = <<<EOT
-                <xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:tei="http://www.tei-c.org/ns/1.0"
-                exclude-result-prefixes="tei">
-                <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-                <xsl:strip-space elements="*"/>
+                    <xsl:stylesheet version="1.0"
+                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                    xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    exclude-result-prefixes="tei">
+                    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+                    <xsl:strip-space elements="*"/>
 
-                <!-- identity transform -->
-                <xsl:template match="@*|node()">
-                    <xsl:copy>
-                        <xsl:apply-templates select="@*|node()"/>
-                    </xsl:copy>
-                </xsl:template>
+                    <!-- identity transform -->
+                    <xsl:template match="@*|node()">
+                        <xsl:copy>
+                            <xsl:apply-templates select="@*|node()"/>
+                        </xsl:copy>
+                    </xsl:template>
 
-                <!-- strip *Name tags -->
-                <xsl:template match="tei:bibl//*[local-name() = 'orgName' or local-name() = 'persName' or local-name()='placeName']">
-                    <xsl:apply-templates/>
-                </xsl:template>
+                    <!-- strip *Name tags -->
+                    <xsl:template match="tei:bibl//*[local-name() = 'orgName' or local-name() = 'persName' or local-name()='placeName']">
+                        <xsl:apply-templates/>
+                    </xsl:template>
 
-                </xsl:stylesheet>
-            EOT;
+                    </xsl:stylesheet>
+                EOT;
 
             $xslt = new \XSLTProcessor();
             $xsltDoc = new \DomDocument();

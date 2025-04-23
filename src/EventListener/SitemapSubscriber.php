@@ -130,8 +130,10 @@ class SitemapSubscriber implements EventSubscriberInterface
             $routeName = $parts[count($parts) - 1];
 
             if (in_array($routeName, [
+                // bundle-routes not to be included in sitemap
                 'bibliography-unapi',
                 'date-chronology-partial',
+                'oai',
             ])
                 // the following are not yet implemented on this site
                 || preg_match('/^about\-authors/', $routeName)

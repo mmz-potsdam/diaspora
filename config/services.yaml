@@ -36,6 +36,9 @@ parameters:
     app.pdf-generator.arguments:
         tempDir: "%kernel.project_dir%/var/cache/mpdf"
         fontDir: [ "%kernel.project_dir%/data/font" ]
+        fonttrans:
+            'lora': book_typeface
+            'jost': book_typeface
         fontdata:
             book_typeface:
                 R: 'WorkSans-Regular.ttf'

@@ -2720,12 +2720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "612fc73da9c8301f826acfb1ae711b8edf9efc11"
+                "reference": "6615b1fe90d1c05a41efd16cc4becf82c477b016"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/612fc73da9c8301f826acfb1ae711b8edf9efc11",
-                "reference": "612fc73da9c8301f826acfb1ae711b8edf9efc11",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/6615b1fe90d1c05a41efd16cc4becf82c477b016",
+                "reference": "6615b1fe90d1c05a41efd16cc4becf82c477b016",
                 "shasum": ""
             },
             "require": {
@@ -2801,7 +2801,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-04-19T14:19:43+00:00"
+            "time": "2025-04-23T18:42:28+00:00"
         },
         {
             "name": "jms/translation-bundle",
@@ -5987,21 +5987,21 @@
         },
         {
             "name": "sweetrdf/rdf-helpers",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sweetrdf/rdfHelpers.git",
-                "reference": "339ff628acad1e52a8088de64b8f614990b7ae35"
+                "reference": "0c6b599cc8e28997cc4336b1d893c16d89ed2508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sweetrdf/rdfHelpers/zipball/339ff628acad1e52a8088de64b8f614990b7ae35",
-                "reference": "339ff628acad1e52a8088de64b8f614990b7ae35",
+                "url": "https://api.github.com/repos/sweetrdf/rdfHelpers/zipball/0c6b599cc8e28997cc4336b1d893c16d89ed2508",
+                "reference": "0c6b599cc8e28997cc4336b1d893c16d89ed2508",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0",
-                "sweetrdf/rdf-interface": "^2",
+                "sweetrdf/rdf-interface": "^2 | ^3",
                 "zozlak/rdf-constants": "^1.1"
             },
             "require-dev": {
@@ -6029,22 +6029,22 @@
             "homepage": "https://github.com/sweetrdf/rdfHelpers",
             "support": {
                 "issues": "https://github.com/sweetrdf/rdfHelpers/issues",
-                "source": "https://github.com/sweetrdf/rdfHelpers/tree/2.1.0"
+                "source": "https://github.com/sweetrdf/rdfHelpers/tree/2.1.1"
             },
-            "time": "2025-04-10T17:53:23+00:00"
+            "time": "2025-04-22T13:42:35+00:00"
         },
         {
             "name": "sweetrdf/rdf-interface",
-            "version": "2.1.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sweetrdf/rdfInterface.git",
-                "reference": "eeee78832fe87c3ee6834df67b5b0cfb73eb503b"
+                "reference": "f9d89e4feac6f1009a0d5ad43763f2b6b57c7476"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sweetrdf/rdfInterface/zipball/eeee78832fe87c3ee6834df67b5b0cfb73eb503b",
-                "reference": "eeee78832fe87c3ee6834df67b5b0cfb73eb503b",
+                "url": "https://api.github.com/repos/sweetrdf/rdfInterface/zipball/f9d89e4feac6f1009a0d5ad43763f2b6b57c7476",
+                "reference": "f9d89e4feac6f1009a0d5ad43763f2b6b57c7476",
                 "shasum": ""
             },
             "require": {
@@ -6076,9 +6076,9 @@
             "homepage": "https://github.com/sweetrdf/rdfInterface",
             "support": {
                 "issues": "https://github.com/sweetrdf/rdfInterface/issues",
-                "source": "https://github.com/sweetrdf/rdfInterface/tree/2.1.0"
+                "source": "https://github.com/sweetrdf/rdfInterface/tree/3.0.0"
             },
-            "time": "2024-11-22T19:09:12+00:00"
+            "time": "2025-04-22T12:58:31+00:00"
         },
         {
             "name": "sylius/theme-bundle",

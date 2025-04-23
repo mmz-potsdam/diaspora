@@ -36,15 +36,21 @@ parameters:
     app.pdf-generator.arguments:
         tempDir: "%kernel.project_dir%/var/cache/mpdf"
         fontDir: [ "%kernel.project_dir%/data/font" ]
-        fonttrans:
-            'lora': book_typeface
-            'jost': book_typeface
         fontdata:
             book_typeface:
                 R: 'WorkSans-Regular.ttf'
                 B: 'WorkSans-Bold.ttf'
                 I: 'WorkSans-Italic.ttf'
                 BI: 'WorkSans-BoldItalic.ttf'
+            # see https://github.com/OdedEzer/heebo/tree/master/compiled_fonts/ttf
+            heebo:
+                R: 'Heebo-Regular.ttf'
+                B: 'Heebo-Bold.ttf'
+                I: 'Heebo-Regular.ttf'
+                BI: 'Heebo-Bold.ttf'
+        fonttrans:
+            'lora': book_typeface
+            'jost': book_typeface
         default_font: book_typeface
     app.datacite.url: "%env(string:DATACITE_URL)%"
     app.datacite.user: SUBGOE.IGDJ

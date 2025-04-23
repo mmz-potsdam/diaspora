@@ -38,10 +38,10 @@ parameters:
         fontDir: [ "%kernel.project_dir%/data/font" ]
         fontdata:
             book_typeface:
-                R: 'NotoSerif-Regular.ttf'
-                B: 'NotoSerif-Bold.ttf'
-                I: 'NotoSerif-Italic.ttf'
-                BI: 'NotoSerif-BoldItalic.ttf'
+                R: 'WorkSans-Regular.ttf'
+                B: 'WorkSans-Bold.ttf'
+                I: 'WorkSans-Italic.ttf'
+                BI: 'WorkSans-BoldItalic.ttf'
         default_font: book_typeface
     app.datacite.url: "%env(string:DATACITE_URL)%"
     app.datacite.user: SUBGOE.IGDJ

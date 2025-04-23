@@ -1,0 +1,18 @@
+/*
+ * Here you can import web-fonts and define the scss variables
+ * used defining text fonts
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+$font-stack-display-typeface: 'Work Sans', Arial, sans-serif;
+$font-stack-sans: 'Work Sans', Arial, sans-serif;
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-stack-book-typeface: 'EB Garamond', serif;
+$font-stack-serif: 'EB Garamond', serif;
+*/
+$font-stack-book-typeface: 'Work Sans', Arial, sans-serif;
+$font-stack-serif: 'Work Sans', Arial, sans-serif;

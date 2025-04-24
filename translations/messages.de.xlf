@@ -350,7 +350,7 @@
       </trans-unit>
       <trans-unit id="c32b4b70c4b59ab77926cbc193503296a13796e4" resname="edited in">
         <source>edited in</source>
-        <target state="new">edited in</target>
+        <target state="new">veröffentlicht in</target>
         <jms:reference-file line="221">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="dbc45ed3b5eb1103cc2eb95f29f7de06f6188376" resname="http://dfg-viewer.de/en/v3/">

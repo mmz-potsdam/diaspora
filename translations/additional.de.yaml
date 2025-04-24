@@ -1,11 +1,11 @@
 # the following are from config.yaml
 # twig.globals.siteName
-History of the German-Jewish Diaspora: Geschichte der deutsch-jüdischen Diaspora
+"[Hi]stories of the German-Jewish Diaspora": Geschichte[n] der deutsch-jüdischen Diaspora
 # twig.globals.siteTagline
 An Online Source Portal: Ein Online-Quellenportal
 A Publication Project:  Ein Publikationsprojekt
 # eko_feed.feeds.article.title
-"History of the German-Jewish Diaspora - Articles": Geschichte der deutsch-jüdischen Diaspora - Beiträge
+"[Hi]stories of the German-Jewish Diaspora - Articles": Geschichte[n] der deutsch-jüdischen Diaspora - Beiträge
 # eko_feed.feeds.article.description
 Latest Articles from the Online Source Portal: Neuste Artikel im Online-Quellenportal
 # source types

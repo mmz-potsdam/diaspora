@@ -50,18 +50,18 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     their development over a longer period of time. However, an overview of the
                     German-Jewish diaspora on a transnational basis that considers earlier and later
                     periods of German-Jewish migration does not yet exist. The publication project
-                    “History of the German-Jewish Diaspora” aims to close this gap. Based on the
+                    “[Hi]stories of the German-Jewish Diaspora” aims to close this gap. Based on the
                     latest research it seeks to present <hi rendition="#g">for the first time an
                         overall history</hi> that takes a closer look at the various historical
                     phases of a German-Jewish diaspora with its wide range of destinations. </p>
                 <p> In pursuit of this objective, the <hi rendition="#g">hybrid publication
-                        project</hi> “History of the German-Jewish Diaspora” commenced in 2023. As a
-                    research project of the Academic Working Group of the Leo Baeck Institute in
-                    Germany (WAG) it is located at the Moses Mendelssohn Center for European-Jewish
-                    Studies in Potsdam under its Director Prof. Dr. Miriam Rürup. The project is
-                    designed on two different, complementary publication levels: on the one hand, it
-                    envisions a volume on the history of the German-Jewish diaspora, and on the
-                    other, an online source portal. </p>
+                        project</hi> “[Hi]stories of the German-Jewish Diaspora” commenced in 2023.
+                    As a research project of the Academic Working Group of the Leo Baeck Institute
+                    in Germany (WAG) it is located at the Moses Mendelssohn Center for
+                    European-Jewish Studies in Potsdam under its Director Prof. Dr. Miriam Rürup.
+                    The project is designed on two different, complementary publication levels: on
+                    the one hand, it envisions a volume on the history of the German-Jewish
+                    diaspora, and on the other, an online source portal. </p>
 
                 <p> The planned <hi rendition="#g">print publication</hi> is intended as a
                     continuation of the LBI's renowned and successful series of overviews, which
@@ -76,15 +76,16 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 
                 <p> In addition to the volume, a <hi rendition="#g">digital source portal</hi> will
                     be launched. It seeks to make an interested public aware of further, less
-                    well-known sites of German-Jewish emigration and exile. The portal’s focus lies on
-                    the fates and lives of Jews, who from the 1840s onwards built up a new existence
-                    permanently or temporarily in around 90 (transit) countries countries - from A
-                    for Argentina to Z for <hi rendition="#i">Zypern</hi>. The German-Jewish diaspora is to be made
-                    visible via the website as a transnational network that was characterized by
-                    dynamic relationships beyond individual places of immigration as well as by
-                    return and remigration. <hi rendition="#g">(Interactive) maps</hi> should play a
-                    central role in illustrating the diversity of this diaspora over the course of
-                    history and the individual migratory movements of German-speaking Jews. </p>
+                    well-known sites of German-Jewish emigration and exile. The portal’s focus lies
+                    on the fates and lives of Jews, who from the 1840s onwards built up a new
+                    existence permanently or temporarily in around 90 (transit) countries countries
+                    - from A for Argentina to Z for <hi rendition="#i">Zypern</hi>. The
+                    German-Jewish diaspora is to be made visible via the website as a transnational
+                    network that was characterized by dynamic relationships beyond individual places
+                    of immigration as well as by return and remigration. <hi rendition="#g"
+                        >(Interactive) maps</hi> should play a central role in illustrating the
+                    diversity of this diaspora over the course of history and the individual
+                    migratory movements of German-speaking Jews. </p>
 
                 <p> The hybrid research project, whose digital content goes beyond a conventional
                     “thinking in printed pages”, ultimately aims to create <hi rendition="#g"
@@ -96,9 +97,9 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
             <div n="3">
                 <head>Target Audience</head>
                 <lb/>
-                <p> The online source portal is primarily aimed at university students, teachers
-                    and scholars in the field of Jewish history, but also at high school students
-                    and interested members of the general public. In keeping with the subject of a
+                <p> The online source portal is primarily aimed at university students, teachers and
+                    scholars in the field of Jewish history, but also at high school students and
+                    interested members of the general public. In keeping with the subject of a
                     German-Jewish diaspora and its transnational ties, the website is planned to be
                     multilingual. Its content will be available in German and English, ideally also
                     in Spanish. In order to reach as many users as possible, an inclusive web design
@@ -125,7 +126,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
             <div n="3">
                 <head>Editorial Model</head>
                 <lb/>
-                <p> The digital source portal “History of the German-Jewish Diaspora” is a <hi
+                <p> The digital source portal “[Hi]stories of the German-Jewish Diaspora” is a <hi
                         rendition="#g">joint project </hi> and collaborative effort. The Moses
                     Mendelssohn Center for European-Jewish Studies is responsible for the editorial
                     supervision and coordination, as well as the technical implementation. However,
@@ -134,21 +135,53 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <p> For the source portal, a total of <hi rendition="#g">three text levels</hi> are
                     planned, which are related to each other through targeted cross-links: </p>
                 <p>
-                    <hi rendition="#i">Firstly</hi> <hi rendition="#g">introductory texts</hi> dedicated to the respective regions of German-Jewish immigration (e.g. Europe, Latin America). Further <hi rendition="#g">survey  texts</hi> on single countries of a region form the second strand, which takes into account the different national developments in detail. In addition, individual cities or communities will be examined in order to address the development of the German-Jewish diaspora not only at the national level, but also at the local level. <lb/>
-                    The third strand of this textual level, in addition to destinations, is finally formed by historical actors. They are to be given space in <hi rendition="#g">individual</hi> and  <hi rendition="#g">group biographies</hi>. The individual life stories of those affected by emigration and exile thus come to the fore, giving the German-Jewish diaspora a face, so to speak. This biographical approach is intended to counteract a “depersonalization” of the migration topic, which is currently proving to be dominant in the media of the Global North.</p>
+                    <hi rendition="#i">Firstly</hi>
+                    <hi rendition="#g">introductory texts</hi> dedicated to the respective regions
+                    of German-Jewish immigration (e.g. Europe, Latin America). Further <hi
+                        rendition="#g">survey texts</hi> on single countries of a region form the
+                    second strand, which takes into account the different national developments in
+                    detail. In addition, individual cities or communities will be examined in order
+                    to address the development of the German-Jewish diaspora not only at the
+                    national level, but also at the local level. <lb/> The third strand of this
+                    textual level, in addition to destinations, is finally formed by historical
+                    actors. They are to be given space in <hi rendition="#g">individual</hi> and <hi
+                        rendition="#g">group biographies</hi>. The individual life stories of those
+                    affected by emigration and exile thus come to the fore, giving the German-Jewish
+                    diaspora a face, so to speak. This biographical approach is intended to
+                    counteract a “depersonalization” of the migration topic, which is currently
+                    proving to be dominant in the media of the Global North.</p>
                 <p>
-                    <hi rendition="#i">Secondly</hi> <hi rendition="#g">sources</hi> will be used for <hi rendition="#g">in-depth research</hi> which as text, image, sound or audiovisual documents will illuminate individual thematic fields in an exemplary manner. Three-dimensional objects are expressly welcome. In accordance with the editorial principles for an accessible reproduction of historical sources, this heterogeneous material is textually prepared by a <hi rendition="#g"
-                        >source description</hi>. It will be supplemented by a transcription and a digital facsimile. </p>
-                <p> <hi rendition="#i">Thirdly</hi>, an <hi rendition="#g"
-                    >interpretive text</hi> will situate the source in its context of origin and use, leaving alternative interpretive possibilities and open questions to be considered.</p>
+                    <hi rendition="#i">Secondly</hi>
+                    <hi rendition="#g">sources</hi> will be used for <hi rendition="#g">in-depth
+                        research</hi> which as text, image, sound or audiovisual documents will
+                    illuminate individual thematic fields in an exemplary manner. Three-dimensional
+                    objects are expressly welcome. In accordance with the editorial principles for
+                    an accessible reproduction of historical sources, this heterogeneous material is
+                    textually prepared by a <hi rendition="#g">source description</hi>. It will be
+                    supplemented by a transcription and a digital facsimile. </p>
                 <p>
-                    The <hi rendition="#g">editors</hi> write the survey texts on single regions and suggest historical actors and sources for their subject area. Together with the editors, they solicit texts for this purpose. All submitted contributions (introductory texts, source descriptions and interpretations) undergo at least a two-stage review process: First, the project editors review the texts; in a second step, the respective editors review them.
-                </p>
-                <p> The survey texts are also first reviewed by the editorial team, then by all other editors. The revised texts are then reviewed again by the editors before being checked for formal guidelines and proofread. </p>
-                <p> The <hi rendition="#g">authors</hi> write the introductory texts on countries, cities and municipalities, as well as the historical actors. They also write the source descriptions and interpretations. The discussion of this content will take place in specially organized workshops.</p>
-                <p> This <hi rendition="#g">multi-stage review process</hi> and the close cooperation between the editorial staff, editors and authors ensure the high scholarly quality of all contributions. In addition to reviewing and editing, the editorial team is responsible for coordinating the translations as well as the procurement and subsequent transcription and markup of the sources. The translations also undergo a review process and proofreading.
-                    
-                </p>
+                    <hi rendition="#i">Thirdly</hi>, an <hi rendition="#g">interpretive text</hi>
+                    will situate the source in its context of origin and use, leaving alternative
+                    interpretive possibilities and open questions to be considered.</p>
+                <p> The <hi rendition="#g">editors</hi> write the survey texts on single regions and
+                    suggest historical actors and sources for their subject area. Together with the
+                    editors, they solicit texts for this purpose. All submitted contributions
+                    (introductory texts, source descriptions and interpretations) undergo at least a
+                    two-stage review process: First, the project editors review the texts; in a
+                    second step, the respective editors review them. </p>
+                <p> The survey texts are also first reviewed by the editorial team, then by all
+                    other editors. The revised texts are then reviewed again by the editors before
+                    being checked for formal guidelines and proofread. </p>
+                <p> The <hi rendition="#g">authors</hi> write the introductory texts on countries,
+                    cities and municipalities, as well as the historical actors. They also write the
+                    source descriptions and interpretations. The discussion of this content will
+                    take place in specially organized workshops.</p>
+                <p> This <hi rendition="#g">multi-stage review process</hi> and the close
+                    cooperation between the editorial staff, editors and authors ensure the high
+                    scholarly quality of all contributions. In addition to reviewing and editing,
+                    the editorial team is responsible for coordinating the translations as well as
+                    the procurement and subsequent transcription and markup of the sources. The
+                    translations also undergo a review process and proofreading. </p>
             </div>
         </body>
     </text>

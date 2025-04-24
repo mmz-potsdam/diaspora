@@ -48,14 +48,14 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <p> Die wichtigsten Zentren einer deutsch-jüdischen Diaspora sind als einzelne Orte
                     und teilweise auch in ihrer jeweiligen Entwicklung über einen längeren Zeitraum
                     hinweg gut erforscht. Eine Überblicksdarstellung zur deutsch-jüdischen Diaspora
-                    existiert bislang allerdings nicht. Das Forschungsvorhaben „Geschichte der
+                    existiert bislang allerdings nicht. Das Forschungsvorhaben „Geschichte[n] der
                     deutsch-jüdischen Diaspora“ möchte diese Lücke schließen und auf Grundlage
                     neuester Forschung <hi rendition="#g">erstmals eine Gesamtgeschichte</hi> vorlegen, die die
                     verschiedenen historischen Phasen einer deutsch-jüdischen Diaspora in den Blick
                     nimmt. Ihre jeweiligen Ausgangspunkte, Kontinuitäten und Brüche sollen darin das
                     erste Mal systematisch herausgearbeitet werden. </p>
                 <p> Mit dieser Zielsetzung wird seit 2023 das <hi rendition="#g">hybride Publikationsprojekt</hi>
-                    „Geschichte der deutsch-jüdischen Diaspora“ realisiert. Als ein
+                    „Geschichte[n] der deutsch-jüdischen Diaspora“ realisiert. Als ein
                     Forschungsvorhaben der Wissenschaftlichen Arbeitsgemeinschaft des Leo Baeck
                     Instituts (LBI) ist es unter Federführung von Prof. Dr. Miriam Rürup als ihrer
                     Vorsitzenden am Moses Mendelssohn Zentrum für europäisch-jüdische Studien in
@@ -63,7 +63,6 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     ergänzenden Publikationsebenen angelegt: Einerseits sieht es einen Sammelband
                     zur Geschichte der deutsch-jüdischen Diaspora vor, andererseits ein digitales
                     Quellenportal. </p>
-
                 <p> Die projektierte <hi rendition="#g">Printpublikation</hi> versteht sich dabei als Fortsetzung der so
                     renommierten wie erfolgreichen Serie von Überblicksdarstellungen des LBI, die
                     bislang – zwischen 1996 und 2012 – in fünf Bänden erschienen ist (<hi
@@ -75,7 +74,6 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     die Migrationsbewegungen von Jüdinnen und Juden in den Blick genommen, die einem
                     deutschen Sprach- und Kulturkreis angehörten und diesen v.a. im Zuge der 1930er
                     Jahre in größerer Zahl verlassen mussten. </p>
-
                 <p> Neben dem Sammelband wird ein <hi rendition="#g">digitales Quellenportal</hi> ins Leben gerufen, das
                     einer interessierten Öffentlichkeit weitere Orte der deutsch-jüdischen
                     Emigration und des Exils jenseits des etablierten historiografischen
@@ -135,7 +133,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
             <div n="3">
                 <head>Redaktionsmodell</head>
                 <lb/>
-                <p> Das Online-Quellenportal „Geschichte der deutsch-jüdischen Diaspora“ ist ein
+                <p> Das Online-Quellenportal „Geschichte[n] der deutsch-jüdischen Diaspora“ ist ein
                     <hi rendition="#g">digitales Gemeinschaftsprojekt</hi>. Zwar werden die redaktionelle Betreuung und
                     Koordination sowie die technische Umsetzung am Moses Mendelssohn Zentrum für
                     europäisch-jüdische Studien realisiert. Allerdings wird das Projekt maßgeblich

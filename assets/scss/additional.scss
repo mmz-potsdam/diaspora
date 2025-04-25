@@ -240,7 +240,7 @@ footer {
     margin-top: 1rem;
     margin-bottom: 0;
 
-    background-color: $color-gray-dark;
+    background-color: $color-background-footer;
 
     font-family: $font-stack-display-typeface;
     a, a:visited {
@@ -267,6 +267,10 @@ footer {
     #footer-navigation {
         padding-top: 2rem;
         padding-bottom: 1rem;
+    }
+
+    #menu-top-footer {
+        text-align: right;
     }
 
     ul {

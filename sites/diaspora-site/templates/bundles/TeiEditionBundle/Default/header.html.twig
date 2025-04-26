@@ -5,7 +5,7 @@
                         <div style="position: absolute; right: 18px; z-index: 100">
                             {{ knp_menu_render('top') }}
                             {% if locales|length > 1  and app.request.attributes.get("_route") is not null %}
-                            <ul id="menu-lang" class="list-inline">
+                            <ul id="menu-lang" class="list-inline small">
                             {% for locale in locales %}
                                 <li class="list-inline-item{% if locale == app.request.locale %} current{% endif %}">
                                     {% if route_params_locale_switch is defined and route_params_locale_switch is not empty and route_params_locale_switch[locale] is defined %}

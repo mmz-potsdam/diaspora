@@ -45,30 +45,42 @@ header {
 
     #menu-top {
         float: left;
-        padding-right: 2rem;
+        padding-right: 0.3rem;
 
-        color: $color-color-medium;
-        a {
+        font-size: 0.875em; /* .small */
+
+        li {
             color: $color-color-medium;
-        }
-        li.current a {
-            color: $color-text;
+            a {
+                color: $color-color-medium;
+            }
+            &.current a {
+                color: $color-text;
+            }
         }
     }
 
     #menu-lang {
-        color: $color-color-medium;
-        a {
-            color: $color-color-medium;
-        }
-        li.current a {
-            font-weight: bold;
-        }
         float: left;
-        text-transform: uppercase;
-        border-left: 1px solid $color-color-medium;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+
+        li {
+            margin-right: 0.3rem;
+
+            text-transform: uppercase;
+            color: $color-color-medium;
+            a {
+                color: $color-color-medium;
+            }
+            &.current a {
+                font-weight: bold;
+            }
+            &:not(:last-child) a::after {
+                margin-left: 0.8rem;
+                font-weight: 100;
+                content: "|";
+            }
+        }
     }
 
     /* css drop-down, see also https://gist.github.com/nateevans/9958390 */
@@ -100,8 +112,9 @@ header {
             margin-bottom: 0;
             padding-top: 6px;
             border-radius: 0;
+            border: none;
             .dropdown-item {
-                background-color:  $color-color-lookup;
+                background-color:  $color-gray-ultralight;
                 padding-left: 0.25rem;
                 &:hover {
                     background-color: inherit;
@@ -110,13 +123,13 @@ header {
         }
 
         li:hover .menu_level_1 {
-            background-color: $color-color-lookup;
+            background-color: $color-gray-ultralight;
             white-space: nowrap;
             a {
-                color: $color-color-dark;
-            }
-            a:hover {
-                color: white;
+                color: $color-color-medium;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

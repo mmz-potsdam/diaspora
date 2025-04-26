@@ -23,12 +23,14 @@
                     </div>
                     <div class="col-md-4" id="site-name">
                         <h1>
-                            <a href="{{ path('home') }}">{{ siteName|trans({}, 'additional') }}</a><br />
+                            <a href="{{ path('home') }}"><img src="{{ app.request.basepath }}/img/mockup/logo.{{ app.request.locale }}.png" alt="{{ siteName|trans({}, 'additional') }}" /></a>
+                            {#
                             <a href="{{ path('home') }}" id="site-tagline">{{ siteTagline|trans({}, 'additional') }}</a>
+                            #}
                         </h1>
                     </div>
                     {% if not isFeatureEnabled('limited_navigation') %}
-                    <div class="col-md-5">
+                    <div class="col-md-5" style="margin-bottom: 9px">
                         {{ knp_menu_render('main') }}
                     </div>
                     <div id="header-search-wrapper" class="col-md-3 hidden-xsd-none d-sm-block">

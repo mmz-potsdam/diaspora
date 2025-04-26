@@ -151,13 +151,19 @@ class Builder
         }
 
         // add menu item
-        // $menu->addChild('topic-index', [ 'label' => $this->translator->trans('Topics'), 'route' => 'topic-index' ]);
+        /*
+        $menu->addChild('topic-index', [
+            'label' => $this->translator->trans('Topics'),
+            'route' => 'topic-index',
+        ])
+            ->setAttribute('class', 'list-inline-item');
 
         $menu->addChild('date-chronology', [
             'label' => $this->translator->trans('Chronology'),
             'route' => 'date-chronology',
         ])
             ->setAttribute('class', 'list-inline-item');
+        */
 
         $menu->addChild('place-map', [
             'label' => $this->translator->trans('Map'),
@@ -217,7 +223,7 @@ class Builder
         else {
             // $menu['topic-index']->setAttribute('id', 'menu-item-topic');
             $menu['place-map']->setAttribute('id', 'menu-item-map');
-            $menu['date-chronology']->setAttribute('id', 'menu-item-chronology');
+            // $menu['date-chronology']->setAttribute('id', 'menu-item-chronology');
             $menu['_lookup']->setAttribute('id', 'menu-item-lookup');
 
             // find the matching parent

@@ -204,6 +204,8 @@ header {
                 background-position: right 6px center;
                 background-color: $color-color-chronology;
                 */
+                font-weight: bold;
+                color: $color-color-medium;
             }
             &:hover, &.current {
                 z-index: 999 !important;

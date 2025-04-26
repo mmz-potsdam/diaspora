@@ -1,6 +1,6 @@
         <header>
             <div class="container">
-                <div class="row">
+                <div class="row align-items-end">
                     <div class="col-md-12" style="position: relative">
                         <div style="position: absolute; right: 18px; z-index: 100">
                             {{ knp_menu_render('top') }}
@@ -28,7 +28,7 @@
                         </h1>
                     </div>
                     {% if not isFeatureEnabled('limited_navigation') %}
-                    <div class="col-md-5" style="margin-top: 2rem">
+                    <div class="col-md-5">
                         {{ knp_menu_render('main') }}
                     </div>
                     <div id="header-search-wrapper" class="col-md-3 hidden-xsd-none d-sm-block">

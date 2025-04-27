@@ -405,6 +405,14 @@ body.route-home {
     }
 }
 
+body.route-place-map {
+    .wrapper {
+        padding-top: 0;
+        border-top: none;
+        background-color: $color-color-map;
+    }
+}
+
 /* don't show tei-license on about-pages */
 body[class*="route-about"], body.route-terms {
     #license {

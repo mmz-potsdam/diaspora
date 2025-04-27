@@ -216,11 +216,11 @@
       </trans-unit>
       <trans-unit id="1c6ae4426cd7c97f574657b4792ec1a446a9aaed" resname="place-map-landmark">
         <source>/map/landmark</source>
-        <target>/karte/landmark</target>
+        <target>/karte/landmarke</target>
       </trans-unit>
       <trans-unit id="e0bcf5c8b1db80bcea717b774c69c55093ace197" resname="place-map-mentioned">
         <source>/map/place</source>
-        <target>/karte/place</target>
+        <target>/karte/ort</target>
       </trans-unit>
       <trans-unit id="67930f23b2c446cf2ec0d6a36f9eb390eb12116c" resname="place-map-popup-content">
         <source>/map/popup-content/{ids}</source>

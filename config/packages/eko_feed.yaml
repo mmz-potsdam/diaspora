@@ -4,8 +4,8 @@ eko_feed:
     feeds:
         article:
             # Translate the following two in additional.de.yaml
-            title:       'History of the German-Jewish Diaspora - Articles'
-            description: 'Latest Articles from the Online Source Portal'
+            title:       '%app.site.name% - Articles'
+            description: 'Latest Articles from the Online Portal'
             link:
                 route_name: article-index-date
             encoding:    'utf-8'

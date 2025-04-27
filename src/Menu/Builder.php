@@ -193,11 +193,13 @@ class Builder
                 'label' => $this->translator->trans('Organizations'),
                 'route' => 'organization-index',
             ]);
+        /*
         $menu['_lookup']
             ->addChild('event-index', [
                 'label' => $this->translator->trans('Epochs and Events'),
                 'route' => 'event-index',
             ]);
+        */
         $menu['_lookup']
             ->addChild('bibliography-index', [
                 'label' => $this->translator->trans('Bibliography'),

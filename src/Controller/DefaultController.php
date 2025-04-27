@@ -23,7 +23,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
         TranslatorInterface $translator,
         ?FeatureManager $featureManager = null
     ) {
-        [$markers, $bounds] = $this->buildMap($entityManager, $request->getLocale());
+        [$markers, $bounds] = $this->buildMap($entityManager, $request->getLocale(), 'mentioned');
 
         $news = [];
 

@@ -25,108 +25,76 @@
     {% endembed %}
 {% endblock %}
 
-{% block body %}
-    <div class="row">
-        <div id="col-main" class="col-sm-8">
-            <div class="container-fluid article">
-                {#<h4>{{ 'Welcome'|trans }}</h4>#}
-                <div class="two-columns-disabled justify-hyphens">
-                    {% if 'en' == app.request.locale %}
-                        <p class="dta-p">
-                        The book project and digital source portal “[Hi]stories of the German-Jewish Diaspora” is for the first time systematically dedicated to the lives of German-speaking jews in the diaspora. As a hybrid research project of the Academic Working Group of the Leo Baeck Institute in
-                    Germany, it is being realized <a href="{{ path('about-us') }}">at the Moses Mendelssohn Center for European-Jewish Studies in Potsdam under the leadership of its Director Prof. Dr. Miriam Rürup</a>.
-                        </p>
-                        <p class="dta-p">
-                        The project, which is supported by an international advisory board and based on latest research, is hybrid in nature. In addition to a classic print publication, an on-line source portal will be launched that will provide in-depth case studies. The Volkswagen Foundation is supporting the realization of the project.
-                        </p>
-                        <p class="dta-p"><a href="{{ path('about') }}">read on...</a></p>
-                    {% else %}
-                        <p class="dta-p">
-                            Das Buchprojekt und digitale Quellenportal „Geschichte[n] der deutsch-jüdischen Diaspora“ widmet sich erstmals systematisch den Lebenswelten deutschsprachiger Jüdinnen und Juden in der Diaspora. Als ein hybrides Forschungsvorhaben der Wissenschaftlichen Arbeitsgemeinschaft des Leo Baeck Instituts (LBI) wird es <a href="{{ path('about-us') }}">unter Federführung ihrer Vorsitzenden Prof. Dr. Miriam Rürup am Moses Mendelssohn Zentrum für europäisch-jüdische Studien in Potsdam</a> realisiert.
-                        </p>
-                        <p>
-                            Das Vorhaben, das von einem internationalen Fachbeirat begleitet und auf Grundlage neuester Forschung erarbeitet wird, ist hybrid angelegt. Neben einer klassischen Printpublikation wird ein Online-Quellenportal ins Leben gerufen, das tiefergehende Fallstudien bereitstellt. Die <ref target="https://www.volkswagenstiftung.de/de">VolkswagenStiftung</ref> fördert die Realisierung des Projekts.
-                        </p>
-                        <p>
-                            <a href="{{ path('about') }}">mehr...</a>
-                        </p>
-                    {% endif %}
-                </div>
-            </div>
-
-            {#
-            <div class="container-fluid box">
-                <div class="row box-header map">
-                    <div class="col-sm-12">
-                        <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
-                    </div>
-                </div>
-                <div class="row box-content">
-                    <div class="col-sm-12">
-                        <div id="map-container">
-                            <div id="map" style="width: 100%; min-height: 320px"></div>
-                            <script>
-                            $( document).ready(function () {
-                                showMap();
-                            });
-
-                            {{ map.showMap(bounds, markers) }}
-                            </script>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid box" style="margin-top: 2em">
-                <div class="row box-header chronology">
-                    <div class="col-sm-12">
-                        <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
-                    </div>
-                </div>
-                <div class="row box-content">
-                    <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 320px; overflow-y: scroll; overflow-x: hidden">
-                        {{ 'Loading...' | trans }}
-                        <script>
-                            var chronologyLoaded = false;
-
-                            $( document).ready(function () {
-                                if (!chronologyLoaded) {
-                                    var pane = $( '#chronology' );
-                                    var url = pane.attr("data-url");
-
-                                    // ajax load from data-url
-                                    $( pane ).load(url,function(result){
-                                        chronologyLoaded = true;
-                                    });
-                                }
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-            #}
+{% block contentcontainer %}
+<div class="container-fluid wrapper flex-grow-1 overflow-auto">
+    {% block body %}
+    <div class="row" id="about">
+        <div class="col-md-6" id="mood">
         </div>
 
-        <div class="col-sm-4 sidebar">
-            <div class="container-fluid box">
-                <div class="row box-color-title">
-                    <div class="col-sm-12">
-                        <h4>Nachdenken über Diaspora</h4>
-                    </div>
-                </div>
-                <div class="row box-color-content">
-                    <div class="col-sm-12">
-                        <a href="https://vimeo.com/712768316" target="_blank"><b>Michael Brenner im Gespräch mit Miriam Rürup</b></a><br />
-                        Ein Video der Ad hoc-AG „Zukunftswerte“ der Bayerischen Akademie der Wissenschaften
-                    </div>
-                </div>
-                <!--
-                <div class="row box-color-content border-top">
-                    <div class="col-sm-12">
-                    </div>
-                </div>
-                -->
+        <div class="col-md-6">
+            <div class="p-5">
+                <h2>{{ siteName|trans({}, 'additional') }}</h2>
+                {% if 'de' == app.request.locale %}
+                <p>
+                    Was passiert, wenn Menschen ihr Zuhause verlassen (müssen) – aber ihre Sprachen, Kulturen und Erinnerungen mitnehmen?
+                </p>
+                <p>
+                    Geschichte[n] der deutsch-jüdischen Diaspora ist ein Portal, das die Wege und Erfahrungen von Jüdinnen und Juden sichtbar macht, die seit dem 19. Jahrhundert – insbesondere ab 1933 – aus dem deutschsprachigen Raum emigrierten oder fliehen mussten.
+                </p>
+                <p>
+                    Statt klassischer Erzählungen von Exil und ersehnter Rückkehr rückt das Portal die Dynamik diasporischer Prozesse über mehrere Generationen in den Mittelpunkt. Es fragt nach Zugehörigkeit(en) – im Alltag, im kulturellen Austausch und im sozialen Miteinander – und eröffnet so neue Perspektiven auf die Lebenswelten von Menschen zwischen Herkunft und Neuanfang.
+                </p>
+                <p>
+                <a href="{{ path('about') }}" class="btn btn-primary btn-md" role="button" aria-pressed="true">
+                    Mehr zum Diaspora-Projekt
+                </a>
+                {% else %}
+                <p>
+                    What happens when people leave (or are forced to leave) their homes – but take their languages, cultures and memories with them?
+                </p>
+                <p>
+                    [Hi]stories of the German-Jewish Diaspora  is a portal that reveals the paths and experiences of Jews who have emigrated or had to flee from German-speaking countries since the 19th century - especially from 1933 onwards.
+                </p>
+                <p>
+                    Instead of classic narratives of exile and longed-for return, the portal focuses on the dynamics of diasporic processes over several generations. It asks about belonging(s) - in everyday life, in cultural exchange and in social interaction - and thus opens up new perspectives on the lives of people between origin and new beginnings.
+                </p>
+                <a href="{{ path('about') }}" class="btn btn-primary btn-md" role="button" aria-pressed="true">
+                    More on the Diaspora project
+                </a>
+            {% endif %}
             </div>
         </div>
     </div>
-{% endblock %}
+    <div class="row" id="diaspora-map">
+        <div class="col-md-6">
+            <div class="p-5">
+                <h2>{{ 'Map'|trans }}</h2>
+                {% if 'de' == app.request.locale %}
+                <p>
+                    Studieren Sie die Geschichte[n] auf unserer interaktiven Karte.
+                    Sie zeigt die u.a. die Lebensorte von Jüdinnen und Juden, die aus dem deutschsprachigen Raum emigrierten oder fliehen mussten.
+                </p>
+                {% else %}
+                <p>
+                    Study the [hi]stories on our interactive map.
+                    It shows, among other things, the places where Jews who emigrated or had to flee from German-speaking countries lived.                 </p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-6 p-0">
+            <div id="map-container">
+                <div id="map" style="width: 100%; min-height: 320px"></div>
+                <script>
+                $( document).ready(function () {
+                    showMap();
+                });
+
+                {{ map.showMap(bounds, markers) }}
+                </script>
+            </div>
+        </div>
+    </div>
+    {% endblock body %}
+</div>
+{% endblock contentcontainer %}

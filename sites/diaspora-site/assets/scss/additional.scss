@@ -5,8 +5,6 @@
 
 header {
     padding-bottom: 8px;
-    border-bottom: 2px solid $color-gray-light;
-    margin-bottom: 24px;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -114,7 +112,7 @@ header {
             border-radius: 0;
             border: none;
             .dropdown-item {
-                background-color: $color-color-ultralight;
+                background-color: $color-gray-ultralight;
                 padding-left: 0.25rem;
                 &:hover {
                     background-color: inherit;
@@ -123,7 +121,7 @@ header {
         }
 
         li:hover .menu_level_1 {
-            background-color: $color-color-ultralight;
+            background-color: $color-gray-ultralight;
             white-space: nowrap;
             a {
                 color: $color-color-medium;
@@ -154,7 +152,7 @@ header {
 
         li:hover .menu_level_1 {
             margin-left: 0px;
-            background-color: $color-color-ultralight;
+            background-color: $color-gray-ultralight;
             a {
                 color: $color-color-medium;
                 &:hover {
@@ -267,7 +265,6 @@ header {
 }
 
 footer {
-    margin-top: 1rem;
     margin-bottom: 0;
 
     background-color: $color-background-footer;
@@ -358,6 +355,53 @@ a[href="#description"]{
 
     .source-description {
         font-style: italic;
+    }
+}
+
+.wrapper {
+    border-top: 2px solid $color-gray-light;
+    padding-top: 24px;
+    &.container {
+       margin-bottom: 1rem;
+    }
+}
+
+/* route-specific styles */
+body.route-home {
+    .wrapper {
+        padding-top: 0;
+        border-top: none;
+        color: $color-color-medium;
+    }
+
+    .row#about {
+        background-color: $color-color-ultralight;
+        #mood {
+            background: url("../img/carousel/aufbau-lbi.jpg") no-repeat;
+            background-position: top center;
+            background-size: cover;
+            min-height: 240px;
+        }
+
+        .btn {
+            background-color: inherit;
+            border-color: $color-color-spot;
+            border-radius: 0;
+            color: $color-color-spot;
+            text-decoration: none;
+            padding-right: 3rem;
+            background: url("../img/icon/arrow-right.svg") no-repeat;
+            background-position: right;
+            background-size: 1.5rem 50%;
+            filter: invert(24%) sepia(77%) saturate(6743%) hue-rotate(327deg) brightness(102%) contrast(94%);
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .row#diaspora-map {
+        background-color: $color-color-map;
     }
 }
 

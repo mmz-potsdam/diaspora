@@ -1,0 +1,15 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
+
+{% block body %}
+    <h1>{{ pageTitle }}</h1>
+    <ul class="list-inline switch">
+        <li class="list-inline-item" id="switch-article-index"><a href="{{ path('article-index') }}">{{ 'Sort by Author'|trans }}</a></li>
+        <li class="list-inline-item" id="switch-article-index-date"><a href="{{ path('article-index-date') }}">{{ 'Sort by Date'|trans }}</a></li>
+    </ul>
+    <div class="row">
+        {% embed '@TeiEdition/Article/index-listing.html.twig' %}{% endembed %}
+        {% embed '@TeiEdition/Article/index-sidebar.html.twig' %}{% endembed %}
+    </div><!-- .row -->
+{% endblock %}

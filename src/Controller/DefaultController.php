@@ -64,9 +64,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
         }
 
         return $this->render(
-            is_null($featureManager) || $featureManager->isEnabled('limited_navigation')
-                ? 'Default/home-limited.html.twig'
-                : 'Default/home.html.twig',
+            'Default/home.html.twig',
             [
                 'pageTitle' => $translator->trans('Welcome'),
                 'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),

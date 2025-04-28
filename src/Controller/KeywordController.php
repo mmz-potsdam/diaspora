@@ -23,13 +23,12 @@ class KeywordController extends \TeiEditionBundle\Controller\TopicController
     /* TODO: inject these topics */
     static $TOPICS = [
         'Alltag',
-        'Ankommen',
         'Begegnungen',
         'Erbe und Erinnern',
         'Geschlecht und Generation',
+        'Institutionen',
         'Identität und Religiosität',
         'Kultur- und Wissenstransfer',
-        'Pfade der Diaspora',
         'Rückkehr',
         'Sprache',
         'Transnationale Netzwerke',

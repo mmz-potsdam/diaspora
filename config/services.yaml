@@ -14,9 +14,11 @@ parameters:
     app.site.key: 'gjd'
     app.site.name: '[Hi]stories of the German-Jewish Diaspora'
     app.site.byline: 'A Publication Project' # "An Online Source Portal"
+    app.site.email: 'diaspora@juedische-geschichte-online.net'
     app.site.publisher: 'Moses Mendelssohn Center for European-Jewish Studies'
     app.site.publisher.address: 'Am Neuen Markt 8, 14467 Potsdam'
-    app.site.email: 'diaspora@juedische-geschichte-online.net'
+    app.site.publisher_url: "https://www.mmz-potsdam.de/"
+    app.site.publisher_logo: "https://www.mmz-potsdam.de/media/logo.de.svg"
     app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"
     app.site_theme: null
     app.public_dir: '%kernel.project_dir%/public'

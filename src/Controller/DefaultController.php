@@ -7,6 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Novaway\Bundle\FeatureFlagBundle\Manager\FeatureManager;
+use App\Repository\ArticleRepository;
 
 /**
  *
@@ -21,6 +22,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
         Request $request,
         EntityManagerInterface $entityManager,
         TranslatorInterface $translator,
+        ?ArticleRepository $repository = null,
         ?FeatureManager $featureManager = null
     ) {
         [$markers, $bounds] = $this->buildMap($entityManager, $request->getLocale(), 'mentioned');
@@ -63,11 +65,15 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
             ; // ignore
         }
 
+        $articles = $repository->findPublished($request->getLocale(), 'newest', 10);
+        shuffle($articles);
+
         return $this->render(
             'Default/home.html.twig',
             [
                 'pageTitle' => $translator->trans('Welcome'),
-                'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
+                // 'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
+                'articles' => $articles,
                 'markers' => $markers,
                 'bounds' => $bounds,
                 'news' => $news,

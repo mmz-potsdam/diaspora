@@ -105,8 +105,26 @@ class Builder
 
                 $menu['about']
                     ->addChild('about', [
-                        'label' => $this->translator->trans('The project'),
+                        'label' => $this->translator->trans('The Project'),
                         'route' => 'about',
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
+
+                $menu['about']
+                    ->addChild('about-website', [
+                        'label' => $this->translator->trans('This Website'),
+                        'route' => 'about-website',
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
+
+                $menu['about']
+                    ->addChild('about-editing', [
+                        'label' => $this->translator->trans('Editorial Model and Guidelines'),
+                        'route' => 'about-editing',
                         'linkAttributes' => [
                             'class' => 'dropdown-item',
                         ],

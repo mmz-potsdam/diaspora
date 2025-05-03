@@ -374,15 +374,7 @@ body.route-home {
         color: $color-color-medium;
     }
 
-    .row#about {
-        background-color: $color-color-ultralight;
-        #mood {
-            background: url("../img/carousel/aufbau-lbi.jpg") no-repeat;
-            background-position: top center;
-            background-size: cover;
-            min-height: 240px;
-        }
-
+    .row {
         .btn {
             background-color: inherit;
             border-color: $color-color-spot;
@@ -400,8 +392,25 @@ body.route-home {
         }
     }
 
+    .row#about {
+        background-color: $color-color-ultralight;
+        #mood {
+            background: url("../img/carousel/aufbau-lbi.jpg") no-repeat;
+            background-position: top center;
+            background-size: cover;
+            min-height: 240px;
+        }
+    }
+
     .row#diaspora-map {
         background-color: $color-color-map;
+    }
+
+    #bring-your-own-story-mood {
+        background: url("../viewer/bring-your-own-story/muehlberger-hochzeitskleid.jpg") no-repeat;
+        background-position: top center;
+        background-size: cover;
+        min-height: 240px;
     }
 }
 

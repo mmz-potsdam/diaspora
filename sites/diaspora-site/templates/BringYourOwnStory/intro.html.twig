@@ -1,0 +1,60 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block contentcontainer %}
+<div class="container-fluid wrapper flex-grow-1 overflow-auto">
+    {% block body %}
+    <div class="row">
+        <div class="col-12 pt-2 pb-2 p-sm-5">
+            <h1><i>{{ 'Bring Your Own Story'|trans }}</i></h1>
+            {% if 'de' == app.request.locale %}
+            <p>
+                In diesem Video erzählt Sonja Mühlberg, geboren 1939 als Sonja Krips,
+                die Geschichte ihres Hochzeitskleides und dessen Zusammenhang mit dem Exil ihrer Familie in Shanghai.
+            </p>
+            {% else %}
+            <p>
+               In this video (in German, English subtitles in preparation), Sonja Mühlberg, born Sonja Krips in 1939,
+                tells the story of her wedding dress and its connection to her family's exile in Shanghai.
+                </p>
+            {% endif %}
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+                <video class="embed-responsive-item"  preload="none" controls poster="{{ app.request.basepath }}/viewer/bring-your-own-story/muehlberger-hochzeitskleid-poster.jpg">
+                    <source src="{{ app.request.basepath }}/viewer/bring-your-own-story/muehlberger-hochzeitskleid.mp4" type="video/mp4">
+                </video>
+            </div>
+            {% if 'de' == app.request.locale %}
+            <h2>Ihre Erinnerung</h2>
+            <p>
+                Haben auch Sie eine Geschichte zu einem besonderen Objekt, das mit Ihrem Leben oder dem Leben Ihrer Familie in der Diaspora verbunden ist?
+                Dann erzählen Sie uns davon! Wir freuen uns sehr über Ihre Nachricht an <a href="mailto:{{ siteEmail }}?subject=Bring%20Your%20Own%20Story">{{ siteEmail }}</a>.
+            </p>
+
+            <h2>Ihre Forschung</h2>
+            <p>
+                Für das Projekt sind wir weiterhin auf der Suche nach Textbeiträgen zu<br/>
+                a) <b>Quellen</b>, oder b) <b>historischen Akteurinnen und Akteuren</b>.
+            </p>
+            <p>
+                Weiterführende Informationen zu diesen beiden Beitragsformaten finden Sie im <a href="https://www.mmz-potsdam.de/aktuelles/meldungen/2023/call-for-proposals-online-quellenportal-geschichte-der-deutsch-juedischen-diaspora" target="_blank">initialen Call for Proposals</a>.
+            </p>
+            {% else %}
+            <h2>Your memories</h2>
+            <p>
+                Do you have a story to share about a special object that is connected to your life or the life of your family in the diaspora? Then tell us about it! We would be delighted to hearing from you at <a href="mailto:{{ siteEmail }}?subject=Bring%20Your%20Own%20Story">{{ siteEmail }}</a>.
+            </p>
+
+            <h2>Your research</h2>
+            <p>
+                For the project, we are still looking for text contributions on<br/>
+                a) <b>Sources</b>, or b) <b>Historical figures</b>.
+            </p>
+            <p>
+                Further information on these two contribution formats can be found in the
+                <a href="https://www.mmz-potsdam.de/en/news/announcements/2023/call-for-proposals-online-source-portal-history-of-the-german-jewish-diaspora" target="_blank">initial Call for Proposals</a>.
+            </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endblock body %}
+</div>
+{% endblock contentcontainer %}

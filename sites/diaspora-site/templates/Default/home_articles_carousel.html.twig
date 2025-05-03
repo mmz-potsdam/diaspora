@@ -1,0 +1,61 @@
+{% block multicarousel %}
+    {% if articles is not empty %}
+    <div class="row" id="current">
+        <div class="col-12">
+            <div class="container">
+                <div class="row w-100 mx-auto">
+                    <div class="col-12 mt-4 mb-1">
+                        {% if 'de' == app.request.locale %}
+                        Aktuelle Beiträge
+                        {% else %}
+                        Current contributions
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="carousel slide multi-item-carousel" id="articlesCarousel">
+                    <div class="carousel-inner row w-100 mx-auto">
+                        {% for article in articles %}
+                        <div class="carousel-item{% if loop.first %} active{%endif %} col-md-4">
+                            {% if article.author|length > 0 %}
+                            {{ article.authorDisplay(true) }}
+                            {% endif %}
+                            <a style="display: block" href="{{ path('article', { 'slug' : article.getSlug(true) }) }}">
+                                {{ article.name }}
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <a class="carousel-control-prev" href="#articlesCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">{{ 'Previous'|trans }}</span>
+                    </a>
+                    <a class="carousel-control-next" href="#articlesCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">{{ 'Next' }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Developed at agap2
+    // Based on:
+    // http://www.codeply.com/go/s3I9ivCBYH/multi-carousel-single-slide-bootstrap-4
+
+    $('.multi-item-carousel').on('slide.bs.carousel', function (e) {
+        let $e = $(e.relatedTarget),
+            itemsPerSlide = 3,
+            totalItems = $('.carousel-item', this).length,
+            $itemsContainer = $('.carousel-inner', this),
+            it = itemsPerSlide - (totalItems - $e.index());
+        if (it > 0) {
+            for (var i = 0; i < it; i++) {
+                $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
+                    // append slides to the end/beginning
+                    appendTo($itemsContainer);
+            }
+        }
+    });
+    </script>
+    {% endif %}
+{% endblock %}

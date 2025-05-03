@@ -6,10 +6,10 @@
     {{ map.head() }}
     {{ map.head_markercluster() }}
 
-    <script src="{{ app.request.basepath }}/js/blazy.min.js"></script>
+    {#<script src="{{ app.request.basepath }}/js/blazy.min.js"></script>#}
 {% endblock %}
 
-{% block contenttop %}
+{#% block contenttop %}
     {% embed '@TeiEdition/Default/contenttop_skeleton.html.twig' %}
     {% block carousel %}
         <div class="row" style="margin-top: -24px; margin-bottom: 24px">
@@ -23,7 +23,7 @@
         </div>
     {% endblock %}
     {% endembed %}
-{% endblock %}
+{% endblock %#}
 
 {% block contentcontainer %}
 <div class="container-fluid wrapper flex-grow-1 overflow-auto">
@@ -66,6 +66,8 @@
             </div>
         </div>
     </div>
+    {#% embed "Default/home_carousel.html.twig" %}
+    {% endembed %#}
     <div class="row" id="diaspora-map">
         <div class="col-md-6">
             <div class="p-5">
@@ -93,6 +95,30 @@
 
                 {{ map.showMap(bounds, markers) }}
                 </script>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="bring-your-own-story-mood" class="col-md-12"></div>
+        <div class="col-md-12">
+            <div class="p-5 text-center">
+            {% if 'de' == app.request.locale %}
+                <h2>Erzählen Sie Ihre Diaspora-Geschichte</h2>
+                <p>
+                Machen Sie mit! Werden Sie mit Ihren Erinnerungen oder Ihrer Forschung Teil des Diaspora-Projekts.
+                </p>
+                <a href="{{ path('bring-your-own-story') }}" class="btn btn-primary btn-md" role="button" aria-pressed="true">
+                    Mitmachen und mehr erfahren
+                </a>
+            {% else %}
+                <h2>Tell your Diaspora Story</h2>
+                <p>
+                    Get involved! Become part of the Diaspora project by sharing your memories or your research.
+                </p>
+                <a href="{{ path('bring-your-own-story') }}" class="btn btn-primary btn-md" role="button" aria-pressed="true">
+                    Take part and find out more
+                </a>
+            {% endif %}
             </div>
         </div>
     </div>

@@ -353,6 +353,22 @@ h2, h3, h4 {
     background-color: $color-color-map;
 }
 
+/* tweak bootstrap pagination */
+.page-item {
+    &.active .page-link {
+      color: white /* $pagination-active-color */;
+      background-color: $color-color-medium /* $pagination-active-bg */;
+      border-color: #dee2e6 /* $pagination-active-border-color */;
+    }
+}
+
+.page-link {
+    color: $color-color-medium /* $pagination-color */;
+    &:hover {
+        color: $color-color-medium /* $pagination-hover-color */;
+    }
+}
+
 /* since we moved the source description before the source */
 
 a[href="#description"]{

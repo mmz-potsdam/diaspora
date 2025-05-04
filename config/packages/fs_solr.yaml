@@ -1,0 +1,15 @@
+fs_solr:
+    endpoints:
+        core_de:
+            host: localhost
+            port: 8983
+            path: ""
+            core: "%app.site.key%_de"
+            timeout: 15
+        core_en:
+            host: localhost
+            port: 8983
+            path: ""
+            core: "%app.site.key%_en"
+            timeout: 15
+

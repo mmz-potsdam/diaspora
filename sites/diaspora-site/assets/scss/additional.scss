@@ -58,6 +58,17 @@ header {
         }
     }
 
+    #search-top {
+        float: left;
+        color: $color-color-medium;
+        input {
+            border: none;
+        }
+        i {
+            font-size: 85%;
+        }
+    }
+
     #menu-lang {
         float: left;
         padding-left: 2rem;

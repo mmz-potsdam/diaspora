@@ -367,7 +367,7 @@
       </trans-unit>
       <trans-unit id="46caa1d2e05afac27dac5dcb81671fcb0ded1dfc" resname="translated by">
         <source>translated by</source>
-        <target>übersetzt vo</target>
+        <target>übersetzt von</target>
         <jms:reference-file line="221">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
         <jms:reference-file line="85">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>

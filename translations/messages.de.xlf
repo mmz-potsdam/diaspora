@@ -124,7 +124,7 @@
       </trans-unit>
       <trans-unit id="05209b03d090a0a41d79445617a3daf7046c793e" resname="Editorial Model and Guidelines">
         <source>Editorial Model and Guidelines</source>
-        <target state="new">Redaktion</target>
+        <target state="new">Redaktionsmodell</target>
         <jms:reference-file line="126">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="5678489184de27a0fbf7bf33023aded4af57df35" resname="Exit Fullscreen Mode">

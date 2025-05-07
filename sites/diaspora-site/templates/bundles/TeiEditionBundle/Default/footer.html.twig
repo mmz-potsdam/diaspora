@@ -13,7 +13,9 @@
                     <div class="col-12 col-sm-8">
                         <p>
                             <a href="https://www.mmz-potsdam.de/{% if 'de' != app.request.locale %}en/{% endif %}" target="_blank">
-                                <img src="{{ app.request.basepath }}/img/mmz-inverse.{{ app.request.locale }}.svg" class="img-fluid" style="max-height: 80px" alt="{{ 'Moses Mendelssohn Center'|trans }}" />
+                                <img src="{{ app.request.basepath }}/img/mmz-inverse.{{ app.request.locale }}.svg" class="img-fluid mb-4 pr-4" style="max-height: 80px" alt="{{ 'Moses Mendelssohn Center'|trans }}" /></a>
+                            <a href="http://wag-leobaeck.de/" target="_blank">
+                                <img src="{{ app.request.basepath }}/img/wag-inverse.svg" class="img-fluid pb-3" style="max-height: 80px;" alt="{{ 'WAG des Leo Baeck Instituts'|trans }}" />
                             </a>
                         </p>
                         <p>

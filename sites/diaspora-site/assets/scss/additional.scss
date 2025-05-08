@@ -369,8 +369,18 @@ h2, h3, h4 {
     }
 }
 
-/* since we moved the source description before the source */
+/* spacing in list-bibl */
+.article {
+    .dta-list-bibl > .dta-bibl {
+        display: block;
+        margin-bottom: 1rem;
 
+        & + br {
+            display: none;
+        }
+    }
+}
+/* since we moved the source description before the source */
 a[href="#description"]{
     display: none;
 }
@@ -380,7 +390,7 @@ a[href="#description"]{
         display: none;
     }
 
-    .source-description {
+    #license {
         font-style: italic;
     }
 }
@@ -560,6 +570,13 @@ body.route-place-map {
         background-color: $color-color-map;
     }
 }
+
+body[class*="route-place"] {
+    .smaller + h1 {
+        margin-top: 1rem;
+    }
+}
+
 
 /* don't show tei-license on about-pages */
 body[class*="route-about"], body.route-terms {

@@ -210,7 +210,7 @@
     <h2 id="description">{{ 'Source Description'|trans }}</h2>
     {{ description.html|raw }}
     {% if description.article is not null %}
-    <a href="{{ path('article', { 'slug' : description.article.getSlug(true) }) }}">{{ 'Read on'|trans }} &gt;</a>
+        <p><a href="{{ path('article', { 'slug' : description.article.getSlug(true) }) }}">{{ 'Read on'|trans }} &gt;</a></p>
     {% endif %}
     {% endif %}
 {% endmacro %}

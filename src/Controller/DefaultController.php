@@ -65,7 +65,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
             ; // ignore
         }
 
-        $articles = $repository->findPublished($request->getLocale(), 'newest', 10);
+        $articles = $repository->findPublished($request->getLocale(), 'newest', 20);
         shuffle($articles);
 
         return $this->render(

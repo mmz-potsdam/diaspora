@@ -7,14 +7,14 @@
         <div class="col-12 pt-2 pb-2 p-sm-5">
             <h1><i>{{ 'Bring Your Own Story'|trans }}</i></h1>
             {% if 'de' == app.request.locale %}
+            <h2>Ein Einzigartiges Erinnerungsstück: Sonja Mühlbergers Hochzeitskleid</h2>
             <p>
-                In diesem Video erzählt Sonja Mühlberg, geboren 1939 als Sonja Krips,
-                die Geschichte ihres Hochzeitskleides und dessen Zusammenhang mit dem Exil ihrer Familie in Shanghai.
+                In diesem persönlichen Interview erzählt Sonja Mühlberger, geboren 1939 in Shanghai als Sonja Krips, die Geschichte ihres Hochzeitskleides. Das Kleid aus chinesischem Brokat setzt sich aus mehreren Erinnerungsschichten zusammen, die auf die besondere Bedeutung ihres Geburtsorts verweisen. Die chinesische Hafenstadt <a href="{{ path('article', { 'slug': 'gjd:article-26'}) }}">Shanghai</a>  zählte zu den letzten Orten, in denen jüdische Flüchtlinge bis 1941 Zuflucht finden konnten – darunter die Eltern von Sonja Mühlberger.
             </p>
             {% else %}
+            <h2>A Unique Memento : Sonja Mühlberger’s Wedding Dress</h2>
             <p>
-               In this video (in German, English subtitles in preparation), Sonja Mühlberg, born Sonja Krips in 1939,
-                tells the story of her wedding dress and its connection to her family's exile in Shanghai.
+            In this personal interview (in German, English subtitles in preparation), Sonja Mühlberger, born Sonja Krips in Shanghai in 1939, tells the story of her wedding dress. The dress, made of Chinese brocade, comprises several layers of memories that refer to the special significance of her birthplace. The Chinese port city of <a href="{{ path('article', { 'slug': 'gjd:article-26'}) }}">Shanghai</a> was one of the last places where Jewish refugees, including Sonja Mühlberger’s parents, were able to find refuge until 1941.
                 </p>
             {% endif %}
             <div class="embed-responsive embed-responsive-16by9 mb-4">
@@ -23,30 +23,43 @@
                 </video>
             </div>
             {% if 'de' == app.request.locale %}
+            <p>
+                Autorin: Lisa Sophie Gebhard<br/>
+                Schnitt: Johannes Dittmar<br/>
+                Kamera: Frank Vieltorf<br/>
+                Musik: <i>Yaribon</i> – arrangiert von R. Raine-Reusch, M. Denburg und dem <i>Orchid Ensemble</i>, <a href="https://www.orchidensemble.com/">www.orchidensemble.com</a>
+            </p>
+
             <h2>Ihre Erinnerung</h2>
             <p>
-                Haben auch Sie eine Geschichte zu einem besonderen Objekt, das mit Ihrem Leben oder dem Leben Ihrer Familie in der Diaspora verbunden ist?
-                Dann erzählen Sie uns davon! Wir freuen uns sehr über Ihre Nachricht an <a href="mailto:{{ siteEmail }}?subject=Bring%20Your%20Own%20Story">{{ siteEmail }}</a>.
+                Möchten auch Sie eine Geschichte zu einem besonderen Objekt teilen, das mit Ihrem Leben oder dem Leben Ihrer Familie in der Diaspora verbunden ist? Dann erzählen Sie uns davon! Wir freuen uns sehr über Ihre Nachricht an <a href="mailto:{{ siteEmail }}?subject=Bring%20Your%20Own%20Story">{{ siteEmail }}</a>.
             </p>
 
             <h2>Ihre Forschung</h2>
             <p>
                 Für das Projekt sind wir weiterhin auf der Suche nach Textbeiträgen zu<br/>
-                a) <b>Quellen</b>, oder b) <b>historischen Akteurinnen und Akteuren</b>.
+                a) <b>Quellen</b> oder b) <b>historischen Akteurinnen und Akteuren</b>.
             </p>
             <p>
                 Weiterführende Informationen zu diesen beiden Beitragsformaten finden Sie im <a href="https://www.mmz-potsdam.de/aktuelles/meldungen/2023/call-for-proposals-online-quellenportal-geschichte-der-deutsch-juedischen-diaspora" target="_blank">initialen Call for Proposals</a>.
             </p>
             {% else %}
-            <h2>Your memories</h2>
             <p>
-                Do you have a story to share about a special object that is connected to your life or the life of your family in the diaspora? Then tell us about it! We would be delighted to hearing from you at <a href="mailto:{{ siteEmail }}?subject=Bring%20Your%20Own%20Story">{{ siteEmail }}</a>.
+                Author: Lisa Sophie Gebhard<br/>
+                Editing: Johannes Dittmar<br/>
+                Camera: Frank Vieltorf<br/>
+                Music: <i>Yaribon</i> – arranged by R. Raine-Reusch, M. Denburg, &amp; <i>Orchid Ensemble</i>, <a href="https://www.orchidensemble.com/">www.orchidensemble.com</a>
             </p>
 
-            <h2>Your research</h2>
+            <h2>Your Memory</h2>
+            <p>
+                Do you also want to share a story about a special object connected to your or your family’s life in the Diaspora? Then tell us about it! We look forward to hearing from you at <a href="mailto:{{ siteEmail }}?subject=Bring%20Your%20Own%20Story">{{ siteEmail }}</a>.
+            </p>
+
+            <h2>Your Research</h2>
             <p>
                 For the project, we are still looking for text contributions on<br/>
-                a) <b>Sources</b>, or b) <b>Historical figures</b>.
+                a) <b>sources</b>, or b) <b>historical figures</b>.
             </p>
             <p>
                 Further information on these two contribution formats can be found in the

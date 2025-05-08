@@ -240,7 +240,7 @@ class KeywordController extends \TeiEditionBundle\Controller\TopicController
         $articlesByGenre = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$GENRES, false);
 
         return $this->render('Keyword/genre-index.html.twig', [
-            'pageTitle' => $translator->trans('Genres'),
+            'pageTitle' => $translator->trans('Textual Genres'),
             'articlesByKeyword' => $articlesByGenre,
         ]);
     }

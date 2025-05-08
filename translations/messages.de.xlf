@@ -138,9 +138,9 @@
         <jms:reference-file line="222">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
         <jms:reference-file line="87">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Shared\helper.html.twig\</jms:reference-file>
       </trans-unit>
-      <trans-unit id="96817ade02e758261256fdfcf062e850b699b8a6" resname="Genres">
-        <source>Genres</source>
-        <target>Genres</target>
+      <trans-unit id="96817ade02e758261256fdfcf062e850b699b8a6" resname="Textual Genres">
+        <source>Textual Genres</source>
+        <target>Textgattungen</target>
         <jms:reference-file line="220">\..\..\..\..\..\..\./src\Controller\KeywordController.php\</jms:reference-file>
         <jms:reference-file line="10">\..\..\..\..\..\..\./templates\Keyword\genre-index.html.twig\</jms:reference-file>
       </trans-unit>

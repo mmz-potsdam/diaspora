@@ -49,7 +49,9 @@ class LanguageListener
 
         $locale = $this->localeResolver->resolveLocale($request, $this->locales) ?: $this->defaultLocale;
 
-        // doesn't seem to work - so check if pathInfo starts with '/locale/'
+        /*
+        // doesn't seem to work for jms_i18n_routing.strategy: prefix_except_default
+        // if that is used, check if pathInfo starts with '/locale/'
         $pathInfo = $request->getPathInfo();
 
         if ($locale != $this->defaultLocale) {
@@ -71,6 +73,7 @@ class LanguageListener
                 }
             }
         }
+        */
 
         $request->setLocale($locale);
     }

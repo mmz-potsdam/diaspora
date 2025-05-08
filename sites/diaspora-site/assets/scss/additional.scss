@@ -577,6 +577,14 @@ body[class*="route-place"] {
     }
 }
 
+body.route-genre-index, body.route-topic-index {
+    .card {
+        border-radius: 0;
+        .btn-link {
+            color: $color-color-medium !important;
+        }
+    }
+}
 
 /* don't show tei-license on about-pages */
 body[class*="route-about"], body.route-terms {
@@ -598,7 +606,7 @@ body[class*="route-about"], body.route-terms {
     }
 }
 
-/* for the moment, hide search */
+/* for the moment, hide search field */
 #header-search-wrapper {
     display: none !important;
 }

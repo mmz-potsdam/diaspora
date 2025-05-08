@@ -15,8 +15,8 @@ use Doctrine\ORM\EntityManagerInterface;
 class KeywordController extends \TeiEditionBundle\Controller\TopicController
 {
     static $GENRES = [
-        'biography',
         'country',
+        'biography',
         'source',
     ];
 
@@ -200,6 +200,29 @@ class KeywordController extends \TeiEditionBundle\Controller\TopicController
                     /** @Ignore */
                     $translator->trans($keywordB, [], 'additional')
                 );
+            });
+        }
+        else if (!is_null($filter)) {
+            // sort by order of filter
+            uksort($articlesByKeyword, function ($keywordA, $keywordB) use ($filter) {
+                if ($keywordA == $keywordB) {
+                    return 0;
+                }
+
+                $indexA = array_search($keywordA, $filter);
+                $indexB = array_search($keywordB, $filter);
+
+                if ($indexA === false && $indexB === false) {
+                    return 0;
+                }
+                else if ($indexA === false) {
+                    return 1;
+                }
+                else if ($indexB === false) {
+                    return -1;
+                }
+
+                return $indexA - $indexB;
             });
         }
 

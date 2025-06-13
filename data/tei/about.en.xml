@@ -47,48 +47,54 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <lb/>
             -->
             <div xml:id="overall-project" n="2">
-                <p> The online portal '[Hi]stories of the German-Jewish Diaspora' is part of a
+                <p> The online portal ‘[Hi]stories of the German-Jewish Diaspora’ is part of a
                     hybrid publication project of the <hi rendition="#i"><ref
-                            target="http://wag-leobaeck.de/">Academic Working Group</ref></hi> of
-                    the <hi rendition="#i">Leo Baeck Institute</hi> (WAG). The beginnings of this
-                    project date back to 2015, when Michael Brenner, as international president of
-                    the <hi rendition="#i">Leo Baeck Institute</hi>, convened a workshop in
-                    Washington D.C. There, Simone Lässig, Director of the <hi rendition="#i">German
-                        Historical Institute</hi>, hosted a discussion on the continuation of the
-                    book series on <hi rendition="#i">German-Jewish History in Modern Times</hi>.
-                    This led to the idea of focusing on German-Jewish history outside Germany as a
-                    new project of the <hi rendition="#i">Leo Baeck Institute</hi>. Michael Brenner
-                    and Miriam Rürup discussed these initial ideas in a <ref
+                        target="http://wag-leobaeck.de/">Academic Working Group</ref></hi> (link in German) of
+                    the <hi rendition="#i">Leo Baeck Institute</hi> (LBI). This project’s origins
+                    trace back to 2015, when Michael Brenner, then president of the international
+                    LBI, invited scholars to a workshop in Washington, DC, hosted by Simone Lässig,
+                    director of the city’s <hi rendition="#i">German Historical Institute</hi>, with
+                    the aim of discussing a successor project to the German-, English- and
+                    Hebrew-language book series <hi rendition="#i">German-Jewish History in Modern
+                        Times</hi>. The workshop gave rise to the idea of creating a new LBI project
+                    focused on German-Jewish history <hi rendition="#i">outside</hi> Germany’s
+                    borders. Michael Brenner and Miriam Rürup discussed the initial conceptual
+                    framework in a <ref
                         target="https://badw.de/die-akademie/presse/videos/video-detail/detail/nachdenken-ueber-die-diaspora.html"
-                        >Video of the ad hoc working group “Future Values” of the Bavarian Academy
-                        of Sciences and Humanities</ref> (in German). </p>
-                <p> Under the direction of Miriam Rürup, the project is being realized at the Moses
-                    Mendelssohn Center for European-Jewish Studies (MMZ) in Potsdam since 2020 and
-                    coordinated by Lisa Sophie Gebhard since 2023. The <hi rendition="#i"><ref
+                        >video by the ad-hoc “Values for the Future” working group at the Bavarian
+                        Academy of Sciences and Humanities</ref> (in German). </p>
+                <p> The project has been in the implementation phase since 2020, at the <hi
+                        rendition="#i">Moses Mendelssohn Center for European-Jewish Studies</hi>
+                    (MMZ) in Potsdam, Germany with Miriam Rürup as principal investigator; Lisa
+                    Sophie Gebhard has served as the project coordinator since 2023. The project is
+                    financed by third-party funding from the <hi rendition="#i"><ref
                             target="https://www.volkswagenstiftung.de/en/"
-                        >VolkswagenStiftung</ref></hi> supports the research project with
-                    third-party funding. The aim is to provide an overview of the German-Jewish
-                    diaspora through a synthesis of previous research and new archival research. The
-                    focus will be on the lives of German-speaking Jews after they fled or emigrated
-                    from their countries of origin. As a hybrid project, this digital portal is
-                    being created together with an anthology that will conclude the renowned series
-                        <hi rendition="#i">German-Jewish History in Modern Times</hi> (C. H. Beck
-                    Munich, 1996-2012). While the previous five volumes focused on Jewish life <hi
-                        rendition="#i">within</hi> the German lands, this project aims to create a
-                    reference work on German-Jewish history <hi rendition="#i">outside</hi> the
-                    German-speaking world. The afterlife of German-speaking Jewry after the Shoah
-                    will be taken into account. </p>
-                <p> In conjunction with the print publication, the <ref target="./about/website"
-                        >online portal</ref> offers the opportunity to present individual places,
-                    historical figures and sources in more detail. At the same time, new entries can
-                    be added as they become available. Through this hybrid approach, we aim to
-                    create synergies and go beyond conventional thinking in terms of printed pages.
-                    In the anthology, some of the portal contributions are linked to the book
-                    chapters, so that both projects are interlinked and form a joint undertaking. </p>
-                <p>The anthology is being written by the historians Michael Brenner, Sheer Ganor,
-                    Marion A. Kaplan, Guy Miron and Miriam Rürup, with Sheer Ganor and Miriam Rürup
-                    serving as the main authors and editors. The volume is expected to be published
-                    in early 2027. </p>
+                        >VolkswagenStiftung</ref></hi>. By synthesizing previous research in tandem
+                    with new archival investigations, the initiative sets out to present an overview
+                    of the German-Jewish diaspora that centers the lived experiences of
+                    German-speaking Jews after they emigrated from or escaped their countries of
+                    origin. In this hybrid project, the digital compendium accompanies an edited
+                    anthology that will serve as the concluding volume of the distinguished book
+                    series <hi rendition="#i">Deutsch-jüdische Geschichte in der Neuzeit</hi> (C. H.
+                    Beck München, ongoing since 1996). Unlike the five preceding volumes, which were
+                    thematically focused on Jewish life <hi rendition="#i">within</hi>
+                    German-speaking countries, this book is intended as a foundational text for the
+                    study of German-Jewish history <hi rendition="#i">outside</hi> these regions of
+                    Europe. Thus, it examines the lifeworlds of German-speaking Jewry after the
+                    Shoah. </p>
+                <p> In conjunction with the printed edition, the <ref target="./about/website"
+                        >digital platform</ref> allows the project to introduce individual
+                    locations, historical individuals, and relevant sources in greater depth. The
+                    format also allows for the publication of additional articles over time. By
+                    pursuing this hybrid approach, we deliberately seek to create synergies and
+                    transcend conventional thinking as manifested on the printed page. The anthology
+                    will incorporate hyperlinks, pairing individual articles from the online
+                    compendium with specific book chapters and thus intertwining the two projects
+                    into a common initiative. </p>
+                <p>The anthology will include essays by the historians Michael Brenner, Sheer Ganor,
+                    Marion A. Kaplan, Guy Miron, and Miriam Rürup, with Sheer Ganor and Miriam Rürup
+                    serving as lead authors and editors. The volume is slated to be published in
+                    early 2027. </p>
             </div>
         </body>
     </text>

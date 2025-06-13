@@ -6,14 +6,18 @@
     {{ map.head_markercluster() }}
 {% endblock %}
 
-{% block body %}
-    <h1>{{ 'Map' | trans }}</h1>
-    <ul class="list-inline switch">
-        <li id="switch-place-map" class="list-inline-item"><a href="{{ path('place-map') }}">{{ 'Sources by primary Place'|trans }}</a></li>
-        <li id="switch-place-map-mentioned" class="list-inline-item"><a href="{{ path('place-map-mentioned') }}">{{ 'All Places mentioned'|trans }}</a></li>
-    </ul>
+{% block contentcontainer %}
+<div class="container-fluid wrapper flex-grow-1 overflow-auto">
+    {% block body %}
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12 pt-2 pb-2 p-sm-5">
+            <h1>{{ 'Map' | trans }}</h1>
+            {#
+            <ul class="list-inline switch">
+                <li id="switch-place-map"><a href="{{ path('place-map') }}">{{ 'Sources by primary Place'|trans }}</a></li>
+                <li id="switch-place-map-mentioned"><a href="{{ path('place-map-mentioned') }}">{{ 'All Places mentioned'|trans }}</a></li>
+            </ul>
+            #}
             <div id="map-container">
                 <div id="map" style="width: 100%; min-height: 480px"></div>
                 <script>
@@ -23,4 +27,6 @@
             </div>
         </div>
     </div>
-{% endblock %}
+    {% endblock body %}
+</div>
+{% endblock contentcontainer %}

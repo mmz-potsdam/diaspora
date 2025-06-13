@@ -42,56 +42,49 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <div n="3">
                     <head>Imprint</head>
                     <lb/>
-                    <p><lb/>
-                         Moses Mendelssohn Center for European-Jewish Studies e. V.<lb/>
-                         Am Neuen Markt 8<lb/>
-                         D-14467 Potsdam<lb/>
+                    <p>Moses Mendelssohn Center for European-Jewish Studies e. V.<lb/> Am Neuen
+                        Markt 8<lb/> D-14467 Potsdam<lb/>
                     </p>
 
-                    <p>
+                    <p> Phone: +49 (0)331 - 280 94 - 0<lb/> Fax: +49 (0)331 - 280 94 - 50<lb/>
+                        E-Mail: <ref target="mailto:moses@mmz.uni-potsdam.de"
+                            >moses@mmz.uni-potsdam.de</ref><lb/> Internet: <ref
+                            target="https://www.mmz-potsdam.de">www.mmz-potsdam.de</ref><lb/></p>
+
+                    <p> Authorized Representative of the Board:<lb/> Prof. Dr. Miriam Rürup<lb/></p>
+
+                    <p> Register Court: Amtsgericht Potsdam<lb/> Registration Number: VR
+                        1074<lb/></p>
+
+                    <p>Responsible for content according to § 6 MDStV: <lb/> Dr. Lisa Sophie Gebhard
                         <lb/>
-                        Phone: +49 (0)331 - 280 94 - 0<lb/>
-                         Fax: +49 (0)331 - 280 94 - 50<lb/>
-                         E-Mail: <ref target="mailto:moses@mmz.uni-potsdam.de"
-                            >moses@mmz.uni-potsdam.de</ref><lb/>
-                         Internet: <ref target="https://www.mmz-potsdam.de"
-                        >www.mmz-potsdam.de</ref></p>
+                    </p>
 
-                    <p><lb/>
-                         Authorized Representative of the Board:<lb/>
-                         Prof. Dr. Miriam Rürup</p>
-
-                    <p>
-                        <lb/>
-                         Register Court: Amtsgericht Potsdam<lb/>
-                         Registration Number: VR 1074</p>
-
-                    <p><lb/>
-                         Responsible for content according to § 6 MDStV: <lb/>
-                         Dr. Lisa Sophie Gebhard </p>
-
-                    <p>
-                        <lb/>
-                         Technical support:<lb/>
-                         Daniel Burckhardt</p>
+                    <p> Technical support:<lb/> Daniel Burckhardt<lb/></p>
                 </div>
 
                 <div n="3">
                     <head>Data Protection</head>
                     <lb/>
-                    <p>
-                        <lb/>
-                        This is an online service of the Moses Mendelssohn Center for European-Jewish Studies e. V. (MMZ). The <ref target="https://www.mmz-potsdam.de/en/contact/privacy"
-                            >MMZ general data privacy policy</ref> applies to the processing of all personal data that is generated when using this service.
-                    </p>
+                    <p> This is an online service of the Moses Mendelssohn Center for
+                        European-Jewish Studies e. V. (MMZ). The <ref
+                            target="https://www.mmz-potsdam.de/en/contact/privacy">MMZ general data
+                            privacy policy</ref> applies to the processing of all personal data that
+                        is generated when using this service. </p>
                 </div>
 
                 <div n="3">
                     <head>Liability for Links</head>
                     <lb/>
-                    <p><lb/>
-                        Our site contains links to external websites, over which we have no influence. Therefore we can not accept any liability for this external content. The respective provider or operator of the websites is always responsible for the content of these pages. The linked pages were inspected for possible violations of law at the time of the placing of the link. Illegal contents were not apparent when the link was created. Continuous monitoring of the contents of the linked web pages is not plausible where there is no actual indication of an infringement of the law. Upon notification of violations, we will remove such links immediately.
-                    </p>
+                    <p> Our site contains links to external websites, over which we have no
+                        influence. Therefore we can not accept any liability for this external
+                        content. The respective provider or operator of the websites is always
+                        responsible for the content of these pages. The linked pages were inspected
+                        for possible violations of law at the time of the placing of the link.
+                        Illegal contents were not apparent when the link was created. Continuous
+                        monitoring of the contents of the linked web pages is not plausible where
+                        there is no actual indication of an infringement of the law. Upon
+                        notification of violations, we will remove such links immediately. </p>
                 </div>
             </div>
         </body>

@@ -6,7 +6,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Über dieses Publikationsprojekt</title>
+                <title type="main">Gesamtprojekt</title>
             </titleStmt>
             <publicationStmt>
                 <publisher>
@@ -18,7 +18,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     </address>
                 </publisher>
                 <pubPlace>Potsdam</pubPlace>
-                <date type="publication">2023-09-06</date>
+                <date type="publication">2025-05-08</date>
                 <!--
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
@@ -42,152 +42,57 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
-            <div n="3">
-                <head>Forschungsvorhaben</head>
+            <!--
+                <head>Gesamtprojekt</head>
                 <lb/>
-                <p> Die wichtigsten Zentren einer deutsch-jüdischen Diaspora sind als einzelne Orte
-                    und teilweise auch in ihrer jeweiligen Entwicklung über einen längeren Zeitraum
-                    hinweg gut erforscht. Eine Überblicksdarstellung zur deutsch-jüdischen Diaspora
-                    existiert bislang allerdings nicht. Das Forschungsvorhaben „Geschichte[n] der
-                    deutsch-jüdischen Diaspora“ möchte diese Lücke schließen und auf Grundlage
-                    neuester Forschung <hi rendition="#g">erstmals eine Gesamtgeschichte</hi> vorlegen, die die
-                    verschiedenen historischen Phasen einer deutsch-jüdischen Diaspora in den Blick
-                    nimmt. Ihre jeweiligen Ausgangspunkte, Kontinuitäten und Brüche sollen darin das
-                    erste Mal systematisch herausgearbeitet werden. </p>
-                <p> Mit dieser Zielsetzung wird seit 2023 das <hi rendition="#g">hybride Publikationsprojekt</hi>
-                    „Geschichte[n] der deutsch-jüdischen Diaspora“ realisiert. Als ein
-                    Forschungsvorhaben der Wissenschaftlichen Arbeitsgemeinschaft des Leo Baeck
-                    Instituts (LBI) ist es unter Federführung von Prof. Dr. Miriam Rürup als ihrer
-                    Vorsitzenden am Moses Mendelssohn Zentrum für europäisch-jüdische Studien in
-                    Potsdam angesiedelt. Das Projekt ist auf zwei unterschiedlichen, sich einander
-                    ergänzenden Publikationsebenen angelegt: Einerseits sieht es einen Sammelband
-                    zur Geschichte der deutsch-jüdischen Diaspora vor, andererseits ein digitales
-                    Quellenportal. </p>
-                <p> Die projektierte <hi rendition="#g">Printpublikation</hi> versteht sich dabei als Fortsetzung der so
-                    renommierten wie erfolgreichen Serie von Überblicksdarstellungen des LBI, die
-                    bislang – zwischen 1996 und 2012 – in fünf Bänden erschienen ist (<hi
-                        rendition="#i">Deutsch-jüdische Geschichte in der Neuzeit</hi>, C. H. Beck
-                    München). Während die Vorgängerbände jüdisches Leben <hi rendition="#i"
-                        >innerhalb</hi> der deutschen Staaten thematisierten, soll nun ein
-                    Standardwerk für die deutsch-jüdische Geschichte <hi rendition="#i"
-                        >außerhalb</hi> des deutschsprachigen Raums vorgelegt werden. Dazu werden
-                    die Migrationsbewegungen von Jüdinnen und Juden in den Blick genommen, die einem
-                    deutschen Sprach- und Kulturkreis angehörten und diesen v.a. im Zuge der 1930er
-                    Jahre in größerer Zahl verlassen mussten. </p>
-                <p> Neben dem Sammelband wird ein <hi rendition="#g">digitales Quellenportal</hi> ins Leben gerufen, das
-                    einer interessierten Öffentlichkeit weitere Orte der deutsch-jüdischen
-                    Emigration und des Exils jenseits des etablierten historiografischen
-                    Schwerpunkts ins Bewusstsein rufen soll. In den Fokus treten dadurch die
-                    Lebensrealitäten emigrierter sowie exilierter Jüdinnen und Juden, die sich ab
-                    den 1840er Jahren permanent oder zeitweise in rund 90 (Transit)Ländern – von A
-                    wie Argentinien bis Z wie Zypern – eine neue Existenz aufbauten. Die
-                    deutsch-jüdische Diaspora soll über die Website als ein transnationales Netzwerk
-                    sichtbar werden, das durch dynamische Beziehungen über einzelne Zuwanderungsorte
-                    hinaus sowie durch Rückbezüge und Remigration(en) geprägt war. Um ihre
-                    Vielseitigkeit im historischen Verlauf bzw. die einzelnen Migrationsbewegungen
-                    deutschsprachiger Jüdinnen und Juden zu illustrieren, sollen <hi rendition="#g">(interaktive)
-                    Karten</hi> eine zentrale Rolle spielen. </p>
-
-                <p> Das hybride Forschungsvorhaben, dessen digitale Inhalte über ein herkömmliches
-                    „Denken in Druckseiten“ hinausgehen, möchte letztlich <hi rendition="#g">Synergien</hi> schaffen. So
-                    werden sich beide Publikationsformen einander ergänzend dem zeiträumlich
-                    weitgefassten Thema einer deutsch-jüdischen Diaspora widmen. Im Sammelband
-                    platzierte QR-Codes etwa, die einen direkten Zugang zum Online-Quellenportal
-                    ermöglichen, sollen dabei unmittelbar wie ein Scharnier wirken. </p>
-            </div>
-            <div n="3">
-                <head>Zielgruppe</head>
-                <lb/>
-                <p> Das Online-Quellenportal richtet sich in erster Linie an Studierende, Forschende
-                    und Lehrende, aber auch an Schülerinnen und Schüler sowie an interessierte
-                    Laien. Dem Sujet einer deutsch-jüdischen Diaspora und ihren transnationalen
-                    Netzwerken entsprechend ist die Website mehrsprachig angelegt. Um möglichst
-                    viele Besucher*innen zu erreichen, soll sie auf Deutsch und Englisch,
-                    idealerweise auch auf Spanisch, ausgespielt werden. Ein barrierefreies,
-                    inklusives Webdesign soll die Usability und Accessibility darüber hinaus noch
-                    erhöhen. </p>
-                <p> Das Portal ist zudem als ein Ort der Vernetzung gedacht. Wie verzweigt sich das
-                    deutsch-jüdische Kulturerbe in der Diaspora gestaltete und wie es dort heute
-                    erinnert und bewahrt wird, soll anhand einer institutionellen Übersicht mit
-                    weiterführenden Links veranschaulicht werden. Ein solches Verzeichnis – bildlich
-                    imaginiert als ein „<hi rendition="#g">Diaspora-Baum</hi>“ – umfasst diverse Archive, Bibliotheken,
-                    Forschungseinrichtungen und Museen, die sich dem Thema in ihrem jeweiligen
-                    nationalen Kontext widmen. Mit seinen vielen Verästelungen soll der Baum ein
-                    virtuelles Netzwerk schaffen, mit dem das Wissen um Archiv- und
-                    Sammlungsbestände gebündelt und im besten Fall weitere Forschungen zur
-                    Geschichte der deutsch-jüdischen Diaspora angestoßen werden. </p>
-                <p> Neben einer historischen Rekonstruktion und Präsentation sollen das Forschen,
-                    Lernen und Sichtbarmachen in einem wachsenden digitalen Lern- und
-                    Erinnerungsraum miteinander verknüpft werden. Das Online-Portal eignet sich mit
-                    seinen interaktiven Karten, der digitalen Präsentation individueller Lebenswege
-                    und institutioneller Ausdrucksformen der deutsch-jüdischen Diaspora ideal für
-                    den <hi rendition="#g">Schulunterricht</hi> und die <hi rendition="#g">außerschulische Bildung</hi>. Vor allem die Lebenswege
-                    einzelner Jüdinnen und Juden bieten einen persönlicheren Einblick in die
-                    verschiedenen historischen, sozialen und politischen Gründe einer Emigration,
-                    während sie gleichzeitig ein Sich-in-Beziehung-Setzen zu den existenziellen
-                    Beschwerlichkeiten und Herausforderungen, der Grenzüberquerung und des
-                    Neuanfangs im Exil anregen. Vor diesem Hintergrund ist vorgesehen, das
-                    Online-Quellenportal auch in die Bildungsarbeit des Moses Mendelssohn Zentrums
-                    miteinzubeziehen. </p>
-            </div>
-            <div n="3">
-                <head>Redaktionsmodell</head>
-                <lb/>
-                <p> Das Online-Quellenportal „Geschichte[n] der deutsch-jüdischen Diaspora“ ist ein
-                    <hi rendition="#g">digitales Gemeinschaftsprojekt</hi>. Zwar werden die redaktionelle Betreuung und
-                    Koordination sowie die technische Umsetzung am Moses Mendelssohn Zentrum für
-                    europäisch-jüdische Studien realisiert. Allerdings wird das Projekt maßgeblich
-                    von mehreren Herausgeber*innen und Autor*innen mitgestaltet, deren Textbeiträge
-                    das Portal kontinuierlich anreichern und wachsen lassen. </p>
-                <p> Für das Quellenportal sind insgesamt <hi rendition="#g">drei Textebenen</hi> vorgesehen, die durch
-                    gezielte Querverbindungen miteinander in Beziehung gesetzt werden: </p>
-                <p> <hi rendition="#i">Erstens</hi> <hi rendition="#g">Einführungstexte</hi>, die sich den jeweiligen Regionen einer
-                    deutsch-jüdischen Zuwanderung (Bsp. Europa, Lateinamerika) widmen. Weitere
-                    <hi rendition="#g">Überblickstexte</hi> zu einzelnen Ländern einer Region bilden den zweiten Strang, der
-                    den unterschiedlichen nationalen Entwicklungen im Einzelnen Rechnung trägt. Hier
-                    sollen zudem einzelne Städte oder Gemeinden beleuchtet werden, um die
-                    Entwicklung der deutsch-jüdischen Diaspora nicht nur auf nationaler Ebene,
-                    sondern auch im Lokalen zu thematisieren. <lb/>
-                     Den dritten Strang dieser Textebene bilden neben Zielorten schließlich einzelne
-                     Personen, denen in <hi rendition="#g">Einzel-</hi> und <hi rendition="#g">Gruppenbiografien</hi> Raum gegeben werden soll. Die
-                    individuellen Lebensgeschichten der Betroffenen treten so in den Vordergrund,
-                    wodurch die deutsch-jüdische Diaspora gewissermaßen ein Gesicht bekommt. Mit
-                    diesem biografischen Zugang soll einer „Entpersönlichung“ der Exil- und
-                    Migrationsthematik entgegengetreten werden, die sich in den Medien des Globalen
-                    Nordens gegenwärtig als dominant erweist. </p>
-                <p> <hi rendition="#i">Zweitens</hi> werden <hi rendition="#g">Quellen für sogenannte Tiefenbohrungen</hi> herangezogen, die als
-                    Text-, Bild-, Ton- oder audiovisuelle Dokumente, aber auch als dreidimensionale
-                    Objekte, einzelne Themenfelder exemplarisch beleuchten und vergegenständlichen.
-                    Gemäß den editionstechnischen Grundsätzen für eine erschließende Wiedergabe
-                    historischer Quellen wird dieses heterogene Material durch eine
-                    <hi rendition="#g">Quellenbeschreibung</hi> textlich aufbereitet. Sie ergänzt neben einer Transkription
-                    ein digitales Faksimile. </p>
-                <p> Schließlich und <hi rendition="#i">drittens</hi> soll ein <hi rendition="#g">Interpretationstext</hi> die Quelle in ihrem
-                    Entstehungs- und Gebrauchskontext verorten, wobei alternative
-                    Interpretationsmöglichkeiten und offene Fragen zu berücksichtigen bleiben. </p>
-                <p> Die <hi rendition="#g">Herausgeberinnern und Herausgeber</hi> verfassen die Überblickstexte zu einzelnen
-                    Regionen und schlagen historische Akteur*innen und Quellen für ihr Themenfeld
-                    vor. Zusammen mit der Redaktion werben sie hierfür Texte ein. Alle eingereichten
-                    Beiträge (Einführungstexte, Quellenbeschreibungen und -interpretationen)
-                    durchlaufen mindestens ein zweistufiges Begutachtungsverfahren: Zunächst prüft
-                    die Projektredaktion die Texte, in einem zweiten Schritt begutachten sie die
-                    jeweiligen Herausgeberinnen und Herausgeber. </p>
-                <p> Die Überblickstexte werden ebenfalls zunächst von der Redaktion gesichtet,
-                    anschließend von allen anderen Herausgeberinnen und Herausgebern. Die
-                    überarbeiteten Texte werden dann erneut von der Redaktion begutachtet, bevor sie
-                    hinsichtlich der formalen Richtlinien überprüft und lektoriert werden. </p>
-                <p> Die <hi rendition="#g">Autorinnen und Autoren</hi> schreiben die Einführungstexte zu den einzelnen
-                    Ländern, Städten und Gemeinden sowie den historischen Akteur*innen. Ebenfalls
-                    von ihnen verfasst werden die Quellenbeschreibungen und -interpretation. Die
-                    Diskussion der inhaltlichen Ausrichtung der Überblicks- und Einführungstexte
-                    sowie der weiteren Beiträge soll in eigens organisierten Workshops erfolgen. </p>
-                <p> Dieses <hi rendition="#g">mehrstufige Begutachtungsverfahren</hi> und die enge Zusammenarbeit von
-                    Redaktion, Herausgeber*innen und Autor*innen sichern die hohe wissenschaftliche
-                    Qualität aller Beiträge. Neben der Begutachtung und dem Lektorat ist die
-                    Redaktion für die Koordination der Übersetzungen sowie die Beschaffung und
-                    anschließende Transkription und Auszeichnung der Quellen verantwortlich. Die
-                    Übersetzungen durchlaufen ebenfalls ein Begutachtungsverfahren und Lektorat.
-                </p>
+            -->
+            <div xml:id="gesamtprojekt" n="2">
+                <p> Das Online-Portal ,Geschichte[n] der deutsch-jüdischen Diaspora‘ ist Teil eines
+                    hybriden Publikationsprojekts der <hi rendition="#i"><ref
+                            target="http://wag-leobaeck.de/">Wissenschaftlichen
+                            Arbeitsgemeinschaft</ref></hi> des <hi rendition="#i">Leo Baeck
+                        Instituts</hi> (LBI). Die Anfänge dieses Projektvorhabens liegen im Jahr
+                    2015. Michael Brenner lud als internationaler Präsident des LBI zu einem
+                    Workshop nach Washington, D.C. ein. Dort fand unter Gastgeberschaft von Simone
+                    Lässig, Direktorin des <hi rendition="#i">Deutschen Historischen Instituts</hi>,
+                    eine Diskussion über die Fortsetzung der Buchreihe zur <hi rendition="#i"
+                        >Deutsch-jüdischen Geschichte in der Neuzeit</hi> statt. Die Idee entstand,
+                    den Fokus nun auf die deutsch-jüdische Geschichte <hi rendition="#i"
+                        >außerhalb</hi> Deutschlands als neues Projekt des LBI zu
+                    legen. Die ersten Ideen hierzu haben Michael Brenner und Miriam Rürup 2022 in einem
+                        <ref
+                        target="https://badw.de/die-akademie/presse/videos/video-detail/detail/nachdenken-ueber-die-diaspora.html"
+                        >Video der Ad hoc-AG „Zukunftswerte“ der Bayerischen Akademie der
+                        Wissenschaften</ref> besprochen. </p>
+                <p> Unter der Federführung von Miriam Rürup wird das Vorhaben seit 2020 am <hi rendition="#i">Moses
+                    Mendelssohn Zentrum für europäisch-jüdische Studien</hi> (MMZ) in Potsdam realisiert
+                    und von Lisa Sophie Gebhard seit 2023 koordiniert. Die <hi rendition="#i"><ref
+                            target="https://www.volkswagenstiftung.de/de/"
+                        >VolkswagenStiftung</ref></hi> fördert das Forschungsvorhaben durch
+                    Drittmittel. Ziel ist es, durch eine Synthese bisheriger Forschung und neue
+                    Archivrecherchen eine Überblicksdarstellung der deutsch-jüdischen Diaspora
+                    vorzulegen. Im Fokus stehen die Lebenswelten deutschsprachiger Jüdinnen und
+                    Juden nach ihrer Flucht oder Emigration aus ihren Herkunftsländern. Als hybrides
+                    Projekt entsteht dieses digitale Portal gemeinsam mit einem Sammelband, der die
+                    renommierte Reihe <hi rendition="#i">Deutsch-jüdische Geschichte in der
+                        Neuzeit</hi> (C. H. Beck München, 1996ff.) beschließen wird. Während die
+                    fünf Vorgängerbände jüdisches Leben <hi rendition="#i">innerhalb</hi> der
+                    deutschen Länder thematisiert haben, soll ein Standardwerk für die
+                    deutsch-jüdische Geschichte <hi rendition="#i">außerhalb</hi> des
+                    deutschsprachigen Raums entstehen. Das Nachleben des deutschsprachigen Judentums
+                    nach der Schoa wird dabei berücksichtigt. </p>
+                <p> In Verbindung mit der Printpublikation bietet das <ref target="./ueber/website"
+                        >Online-Portal</ref> die Möglichkeit, einzelne Orte, historische Personen
+                    und Quellen eingehender vorzustellen. Zugleich lassen sich weitere Einträge
+                    sukzessive ergänzen. Mit diesem hybriden Ansatz wollen wir gezielt Synergien
+                    schaffen und über ein herkömmliches Denken in Druckseiten hinausgehen. Im
+                    Sammelband werden mittels Verlinkungen einige der Portal-Beiträge den
+                    Buchkapiteln zugeordnet, sodass beide Projekte miteinander verschränkt sind und
+                    ein gemeinsames Vorhaben bilden. </p>
+                <p> Den Sammelband verfassen die Historiker:innen Michael Brenner, Sheer Ganor,
+                    Marion A. Kaplan, Guy Miron und Miriam Rürup, wobei Sheer Ganor und Miriam Rürup
+                    hauptverantwortliche Autorinnen und Herausgeberinnen sind. Der Band wird
+                    voraussichtlich Anfang 2027 erscheinen. </p>
             </div>
         </body>
     </text>

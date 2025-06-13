@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Editorial Model and Guidelines</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>diaspora@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2025-05-05</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="redaktionsmodell" n="2">
+                <head><hi rendition="#b">Editorial Model</hi></head>
+                <lb/>
+                <p>The Diaspora Portal is an international and interdisciplinary collaborative
+                    effort. The Moses Mendelssohn Center in Potsdam is responsible for the editorial
+                    oversight and coordination as well as the technical implementation. However, the
+                    project is largely co-created by the currently more than 100 authors of
+                    contributions in various genres. They come from more than 20 countries, with
+                    journalists, writers and academics contributing case studies. In the long term,
+                    the Diaspora Portal is also intended to become a place for international,
+                    interdisciplinary and collaborative networking. Imagined as a 'Diaspora Tree',
+                    we want to bring together different memory institutions in the respective
+                    countries of immigration in order to make their work and collections visible and
+                    to link them with each other in a targeted way.</p>
+                <p>The authors of the country surveys work with the editors to review the
+                    biographies and source presentations to be included in their country section.
+                    The guidelines were discussed and debated at several digital kick-off meetings,
+                    which also served as networking events.</p>
+                <p> In addition to this two-stage review process, external reviewers were also asked
+                    to review individual articles, depending on their expertise. This multi-stage
+                    review process and the close collaboration between editors and authors ensure
+                    the high quality of all contributions.</p>
+                <p>The editorial team at the MMZ is responsible for coordinating the project. It
+                    also checks the legal aspects of the publications and monitors the entire
+                    process.</p>
+            </div>
+            <div xml:id="editorial-guidelines" n="2">
+                <head>Editorial Guidelines</head>
+                <lb/>
+                <p>The various text genres of this portal follow a standardized scheme: A brief
+                    summary at the beginning lists the most important aspects of a country, person
+                    or source in relation to the German-Jewish diaspora. In all texts, names of
+                    persons and organizations as well as place names are linked to standard data
+                    records. This creates a comprehensive index both within the portal and links to
+                    other digital projects. Metadata records have been created for all sources. We
+                    also provide a transcription for sources reproduced as digital facsimiles and a
+                    translation of the respective source for foreign-language texts. This makes it
+                    easier to read handwritten texts, for example, and also makes the sources
+                    searchable.</p>
+                <p>Metadata records have been created for the XML transcripts in the online version,
+                    and all historical documents are provided with metadata.</p>
+                <p><!--Zur Erklärung von möglicherweise unbekannten Begriffen oder erwähnten Organisationen
+                    entsteht zukünftig ein fortlaufend ergänztes Glossar.--> In
+                    addition, all texts offer a small selected bibliography and further resources at
+                    the end. The latter include links to other digital content (articles, online
+                    exhibitions, digital copies, podcasts, films, etc.).</p>
+                <p>The transcriptions were created by the editorial team as faithfully as possible
+                    to the original. This includes preserving most of the original punctuation and
+                    spelling. Spelling mistakes and abbreviations have been corrected. Any
+                    ambiguities are explained in the notes. Emphasis and deletions are left visible,
+                    especially if they have a substantive meaning.</p>
+                <p> The original language of the country surveys, biographies, and source
+                    interpretations is German or English. In the case of English-language
+                    contributions, we have followed the spelling of the respective authors (American
+                    or British English).</p>
+                <p>Both the user interface and the content of the portal are intended to be
+                    bilingual (English and German) throughout. Translations that are currently
+                    missing are being worked on and will be added gradually.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

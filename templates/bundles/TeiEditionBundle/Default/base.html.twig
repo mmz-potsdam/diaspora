@@ -22,7 +22,7 @@
                 and doesn't prepend $this->getBasePath().ltrim($versionedPath, '/')
                 as in Symfony\Component\Asset\PathPackage
             #}
-            <link href="{{ app.request.basepath }}{{ asset('css/base.css') }}" rel="stylesheet">
+            <link href="{{ app.request.basepath }}{{ asset('css/diaspora.css') }}" rel="stylesheet">
 
             {% embed '@TeiEdition/Default/head_style.html.twig' %}{% endembed %}
         {% endblock %}
@@ -41,9 +41,9 @@
             {% embed '@TeiEdition/Default/header.html.twig' %}{% endembed %}
         {% endblock %}
 
-        {% block contenttop %}
+        {#% block contenttop %}
             {% embed '@TeiEdition/Default/contenttop_skeleton.html.twig' %}{% endembed %}
-        {% endblock %}
+        {% endblock %#}
 
         {% block contentcontainer %}
         <div class="container wrapper flex-grow-1 overflow-auto">

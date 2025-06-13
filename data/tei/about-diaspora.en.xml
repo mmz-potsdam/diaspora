@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">German(speaking)-Jewish Diaspora – Introduction</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>diaspora@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2025-05-08</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Few concepts have had as profound an impact on the Jewish experience of history as
+                the word ‘Diaspora’. Ever since the First Temple in Jerusalem was destroyed in the
+                sixth century BCE, experiences of escape, expulsion, and displacement, lost homes,
+                plural geographical affinities, and networks of international relationships have
+                characterized Jewish history, religion, tradition, and imagination. Alongside
+                migration, which is the prerequisite for any diasporic community, Diaspora, from the
+                Ancient Greek for ‘scattering’, lies at the heart of Jewish experience.</p>
+            <p>The Diaspora Portal focuses on historical themes through the lens of individual
+                biographies and contemporary documents linked to Germanophone lifeworlds. The portal
+                is not limited to Jews from Germany, however. More than questions of citizenship or
+                nationality, the portal centers on a multifaceted cultural and linguistic community
+                with shared German(-speaking) heritage as a point of departure. Any attempt to pin
+                down lifeworlds in conceptual terms risks narrowing the diversity of social practice
+                as it is actually lived. The label ‘Jewish’ comes with its own problems, given that
+                a number of the figures discussed here did not identify or define themselves as
+                such. In some cases, they only became ‘Jews’ as a result of their persecution under
+                the imposed classification of <hi rendition="#i">Jude</hi>.</p>
+            <p>Within German-Jewish lifeworlds and historical experiences, the interpretation of
+                that term, ‘German-Jewish’, is a core research question. Beginning in the era of the
+                    <hi rendition="#i">Haskalah</hi>, the Jewish Enlightenment, and then with the
+                nascent legal emancipation during the long nineteenth century, Jews debated their
+                identities as Germans and/or Jews with their contemporaries. The two-pronged term
+                ‘German-Jewish’ arose from that debate. Today, the term is employed less as a
+                normative value statement than as a cultural descriptor – and could be rendered more
+                accurately as ‘Germanophone-Jewish’. For the sake of both readability and continuity
+                with previous scholarship, we nevertheless retain ‘German-Jewish’ in most instances.
+                Still, the hyphenate is clunky – and we are well aware that readers will stumble
+                over it. Through that hyphen, we aim to carve out space for nuance, multiple
+                affiliations, transnationalism, and biographical open-endedness.</p>
+            <p>The Diaspora Portal adopts a broad geographical vantage point and endeavors to
+                remember the heterogenous group of German-speaking Jews whose roots stretch back not
+                only to Germany, but also to Lithuania, Austria, Slovakia, Czechia, Hungary, and
+                elsewhere. In these regions, the German language was often seen as a ‘language of
+                upward mobility’ in the sense of <hi rendition="#i">embourgeoisement</hi>; the
+                language itself frequently proved to be the most enduring marker of a migratory
+                biography that remained visibly or audibly German-Jewish. In many cases, diasporic
+                contexts only emerged by way of the longing for this linguistic homeland.</p>
+            <div xml:id="what-does-diaspora-mean" n="2">
+                <head>What does Diaspora mean?</head><lb/>
+                <p>‘Diaspora’ is both a descriptive term and a scholarly one. As an analytical
+                    concept, it ideally captures the manifold, dynamic, and complex nature of
+                    German-speaking Jews’ migrations and the processes by which they made themselves
+                    at home. The word Diaspora may be employed in two related ways. On the one hand,
+                    it categorizes a set of individuals belonging to the same ethnic and/or
+                    religious group who have been compelled to leave their country of origin yet
+                    maintain a strong and lasting connection to its culture and heritage – sometimes
+                    for multiple generations.</p>
+                <p>On the other, Diaspora also contains an inherent spatial imaginary: it designates
+                    the experiential realms of such a set of individuals from the same ethnic and/or
+                    religious group who are living outside their original center, yet maintain an
+                    attachment to that Old Country, which they were forced to leave under duress,
+                    through traditions and memory. In both variants, Diaspora presupposes the
+                    migration and communal life of a group – held together by real or imagined
+                    ties.</p>
+                <p>According to Jewish tradition, <hi rendition="#i">Eretz Yisrael</hi> – the ‘Land
+                    of Israel’ – is this symbolic center, which has long been the reference point of
+                    religious practice and has assumed a new role since the founding of the State of
+                    Israel. Diaspora is a dynamic and ever-evolving practice, but also a social and
+                    symbolic space.</p>
+                <p>The original Jewish understanding of Diaspora, conveyed through the Hebrew terms
+                        <hi rendition="#i">galut</hi> or <hi rendition="#i">tfutzot</hi> (exile,
+                    dispersion) emerged after the expulsion from ancient Israel and was thus linked
+                    to a continual longing for a return to <hi rendition="#i">Zion</hi>.</p>
+                <p>On 14 May 1948, the founding of the State of Israel seemingly rendered a
+                    conceptually meaningful Jewish Diaspora obsolete. And yet, Jewish life continued
+                    to exist beyond the new state’s borders. Even today, the majority of Jews live
+                    in the United States, not Israel; hence, we must acknowledge the existence of at
+                    least two geographic centers. Notwithstanding, the establishment of a (renewed)
+                    territorial center with sovereign statehood in Israel raised the question of
+                    whether this marked the end of the Jewish Diaspora – long connoted negatively as
+                        <hi rendition="#i">galut</hi> (exile).</p>
+                <p>The ancient Greek concept of Diaspora (διασπορά), roughly meaning ‘dispersion,’
+                    is itself a product of Jewish diasporic communities. It first appears in the <hi
+                        rendition="#i">Septuagint</hi> – the earliest Greek translation of the
+                    Torah, which was created by Jewish scholars, mostly in Alexandria. At the time,
+                    more than 2,200 years ago, the majority of Jews were already living outside <hi
+                        rendition="#i">Eretz Yisrael</hi>, and the term did not yet hold the same
+                    negative associations that would later cling to it. After the destruction of the
+                    Second Temple in 70 CE and the subsequent expulsions of many Jews under the
+                    Roman occupation, the term Diaspora became widespread. It was given a negative
+                    (religious) interpretation, foremost associated with expulsion, displacement,
+                    enslavement, and coercion, with powerlessness and territorial homelessness.</p>
+                <p>In the twentieth century, even before the founding of Israel, the Jewish meaning
+                    of the term Diaspora underwent a further transformation. The historian Simon
+                    Dubnow (1860–1941), born in what is now Belarus, together with other Jewish
+                    intellectuals in Eastern Europe, developed the notion of a ‘Diaspora
+                    nationalism’ that consciously embraced a national project in the Diaspora,
+                    adding political agency to the concept and demonstrating that Jewish identity
+                    can exist without a sovereign state as its center. In this context, Diaspora was
+                    no longer viewed merely as the result of dispersion, but also as a space of
+                    cultural and social agency.</p>
+                <p>The term Diaspora has passed through a range of meanings in academic research,
+                    including the fields of Jewish history and historiography. Since the 1980s, it
+                    has seen a revival across disciplines, not only as a descriptive term but also
+                    as an analytical category, after previously being understood primarily in a
+                    religious and usually negative sense, as a condition of forced exile. Our
+                    approach, too, seeks to move beyond <hi rendition="#i">galut</hi> and exile,
+                    focusing instead on the concrete social practices and dynamic processes of group
+                    formation among historical actors.</p>
+                <p>The historian Steven M. Lowenstein (1945–2020), himself a New York-born child of
+                    Jewish refugees from Germany, coined the phrase ‘German-Jewish Diaspora’<note
+                        type="editorial" place="foot">Steven M. Lowenstein, “Epilogue: The German-Jewish Diaspora,”
+                        in: Michael E. Meyer, ed., <hi rendition="#i">German-Jewish History in
+                            Modern Times</hi>, vol. 4: Renewal and Destruction, 1918-1945, New York:
+                        Columbia UP, 1998, 393–402. Published in German as “Epilog: Die
+                        deutsch-jüdische Diaspora,” Avraham Barkei and Paul Mendes-Flohr, eds., <hi
+                            rendition="#i">Deutsch-Jüdische Geschichte in der Neuzeit</hi>, vol. 4,
+                        Munich: C.H. Beck, 2000, p. 372-381.</note> for the communities that formed
+                    from 1933 onward. We have adopted his articulation from the epilogue to the
+                    fourth volume of <hi rendition="#i">German-Jewish History in Modern Times</hi>
+                    (1997) as a systematic tool for continuing that history in a dual sense.</p>
+                <p>In doing so, we will first seek to broaden the exile-based understanding of
+                    Diaspora by examining how Jewish exiles developed a sort of diasporic
+                    relationship to their German or German-speaking communities of origin. Second,
+                    we will ponder the extent to which German/ophone-Jewish culture remained salient
+                    for these individuals. Thus, we are also preoccupied with the collective
+                    maintenance of a German-Jewish identity outside the German-speaking world. Other
+                    Jewish groups, too, have developed a similar kind of dual Diaspora, notably the
+                    Sephardi Jews, whose community formation and continuing orientation toward the
+                    expulsions from the Iberian Peninsula in 1492 from Spain and in 1496 from
+                    Portugal are still reflected today in a shared language (Ladino) and in
+                    religious customs.</p>
+                <p>Scholarly discussions of diasporic minorities have proposed various definitions
+                    for what constitutes a diasporic identity. Some of the common threads across
+                    these definitions, albeit with differing emphases, include the following.</p>
+                <p>A temporally well-defined starting point, typically associated with the expulsion
+                    or forced displacement of large numbers of people or entire communities,
+                    constitutes the origin of a Diaspora. At the same time, the settlement of this
+                    group outside the region of origin establishes a geographical point of
+                    reference. These aspects are accompanied by efforts to preserve, or even create,
+                    community-building practices in the country of exile – such as through
+                    landsmanshaft-style organizations – alongside a continued, often tense
+                    relationship with the new living environment and a continued emotional
+                    attachment to the ‘lost homeland’. This attachment is often accompanied by a
+                    vague longing for a past inflected by the Old Country, linked to hopes of
+                    transcending the pain of expulsion – even if only in the imagination.</p>
+                <p>This first overview of the German-Jewish <hi rendition="#i">Diaspora</hi> draws
+                    on existing research and new archival findings to investigate the historical
+                    circumstances that led to German-Jewish migration, and the ways in which
+                    Germanophone Jews sought to preserve their cultures of origin and affiliation(s)
+                    in various countries of refuge – and to safeguard them as part of a
+                    German-Jewish cultural heritage. Given the hybrid and often fragmented nature of
+                    the resulting affiliations, we are particularly interested in the extent to
+                    which this group developed shared identities in each ‘New Country’ – identities
+                    shaped not only by distance, homesickness, and loss, but also by proximity,
+                    arrival, and a sense of belonging.</p>
+                <p>Such processes of group formation also bring into focus the relationship to the
+                    majority society and to other minorities (including other Jewish groups). These
+                    relationships were often riven by tensions, which in turn encouraged the
+                    institutionalization of dedicated spaces, organizations, and representative
+                    bodies. Alongside this group-specific multiplicity of cultural affiliation, the
+                    analytical category of Diaspora also makes it possible to trace transnational
+                    networks. The relationships among German-speaking Jews, who viewed themselves as
+                    part of a larger (imagined) intercontinental community, open up doors for an
+                    additional, particularly rich field of analysis. This approach offers two
+                    different avenues to a transnational turn in German-Jewish history, as it also
+                    considers those who remained in the Old Country.</p>
+                <p>We reflect afresh on the concept of Diaspora in each region where significant
+                    numbers of German-speaking Jews settled. A sense of self dominated by
+                    reminiscences and ties to the Old Country did not always emerge. This project
+                    also addresses processes of detachment and decoupling. It also examines
+                    questions of return migration – including migration to one of the two postwar
+                    German states. After the Second World War, no more than five percent of the
+                    roughly 450,000 German-speaking Jews ever returned to their respective Old
+                    Country. Nevertheless, numerous examples attest to how intensely those who had
+                    emigrated wrestled with the possibility of returning to their countries of
+                    origin, often for years. In some cases, they went through with it, temporarily
+                    or on an exploratory basis.<note type="editorial" place="foot">Sheer Ganor, <hi rendition="#i"
+                            >Somewhere from Long Ago:</hi>
+                        <hi rendition="#i">The Global Displacement of German-Speaking Jewry</hi>, 4
+                        (forthcoming).</note></p>
+                <p>Besides examining the political, societal, and social challenges that newcomers
+                    encountered in each destination, this project also explores the opportunities
+                    available to Germanophone Jews and the extent of their participation in the
+                    mainstream societies around them. At the same time, we examine the emergence of
+                    a widely dispersed German-Jewish Diaspora and its transterritorial
+                    connections.</p>
+                <p>By adopting a transnational perspective that takes German-Jewish history outside
+                    the German-speaking region as a premise, we bring new facets of Jewish
+                    experience into view, and can disrupt the methodological fixation on the
+                    nation-state. Understanding the German-Jewish Diaspora, with all its
+                    particularities, as inherently part of the global migration movements that
+                    shaped the twentieth century – and continue to shape our present – also reveals
+                    points of connection with <hi rendition="#i">Diaspora Studies</hi> and (Global)
+                        <hi rendition="#i">Migration Studies</hi>.</p>
+                <p>The topic of Diaspora remains equally relevant today. Since the 7 October 2023
+                    attack by the Hamas terrorist organization and the ensuing war in Gaza, many
+                    Jews in the Diaspora – including descendants of German-speaking refugees – have
+                    been rethinking their Jewish identities with regard to both Israel and their
+                    families’ Old Country. This project highlights the central role of migration and
+                    Diaspora in Jewish history and affirms their continuing relevance for current
+                    developments. Growing antisemitism – which in the past was a major push factor
+                    for migration – is now driving an increase in migration, alongside political
+                    developments such as the rightward shift in Israeli politics and the war in
+                    Ukraine. In 2024, the number of people globally who were forced to leave their
+                    homes as a result to war, conflict, and persecution reached an all-time high.
+                    Migration – often involuntary – is thus pervasive in our own present moment, and
+                    new diasporic communities, both Jewish and non-Jewish, are emerging in its
+                    wake.</p>
+            </div>
+            <div xml:id="what-does-germanspeaking-jewish-mean" n="2">
+                <head>What does ‘German(speaking)-Jewish’ mean?</head><lb/>
+                <p>The term ‘German-Jewish’ calls to mind the idea of a cultural symbiosis in
+                    Germany during the late nineteenth and early twentieth centuries – an idea that
+                    was rattled by Nazis’ taking power in 1933 and then obliterated by the Shoah.
+                    The political theorist and philosopher Hannah Arendt (1906–1975) addressed this
+                    problem in her biography <hi rendition="#i">Rahel Varnhagen</hi> (1938/1957).
+                    Arendt described the notion of a ‘German-Jewish symbiosis’ as an illusion, and
+                    showed how Jewish efforts at assimilation in the nineteenth century ultimately
+                    failed in the face of persistent antisemitism. For Arendt, only the shared
+                    language offered some form of cultural continuity. Many of the individuals
+                    described on this portal did not view themselves primarily as ‘Germans,’ but
+                    rather as part of a Central European, culturally diverse public sphere. The term
+                    ‘Germanophone’ points to this intellectual breadth – between Prague, Vienna,
+                    Breslau (Wrocław), and beyond.</p>
+                <p>In the context of the diasporic lived realities documented by the Diaspora
+                    Portal, this is not so much a matter of the subjects’ identification with a
+                    nationality or a sovereign state. After all, many future émigrés no longer
+                    identified with such affiliations after the First World War, when the borders of
+                    Central Europe were redrawn, or else distanced themselves from these newly
+                    demarcated states following the Nazi rise to power and the <hi rendition="#i"
+                        >Anschluss</hi> (annexation) of Austria. For many, the German language was
+                    less a marker of national identity than a kind of cultural homeland. In the
+                    Diaspora, language, education, religion, and cultural practice became key
+                    elements of identity, although personal experiences and perspectives varied
+                    widely. For the first generation, at least, ‘German’ was often a fixture of
+                    everyday life – in the family, at school, and in religious and cultural
+                    contexts. In many cases, the language was passed down for generations.</p>
+                <p>As seen from a bird’s-eye view, the German-speaking Jewish Diaspora was
+                    characterized by a diversity of biographical backgrounds, experiences of
+                    migration, and self-described identifications. Cities of origin such as
+                    Czernowitz (now Chernivtsi), Lemberg (now Lviv), Vienna, Prague, or Breslau (now
+                    Wrocław) reveal that ‘German’ often signified a cultural rather than a national
+                    belonging – a notion more accurately conveyed by the term ‘Germanophone’. Life
+                    trajectories that moved between these places illustrate the intra-European
+                    entanglements within this diverse community – for example, numerous binational
+                    marriages, often among German speakers, but with sometimes pairing cultures
+                    known in German as <hi rendition="#i">ostjüdisch</hi> (Eastern Jewish, i.e.,
+                    historically Yiddish-speaking) and <hi rendition="#i">westjüdisch</hi> (i.e.,
+                    Germanophone).</p>
+                <p>German-speaking Jews in Mandatory Palestine and later Israel shared a distinct
+                    experience. Many of them, especially those born and raised in Germany, found
+                    refuge in Palestine from 1933 onward, bringing their language and culture with
+                    them – as did all immigrant groups – and contributing to the local public
+                    sphere. The German language often remained a central element of their identity,
+                    although this went along with a particular shame given its status as the
+                    ‘language of the perpetrators.’ Those German-speaking immigrants, nicknamed
+                    ‘Yekkes,’ had in common their experiences of skepticism from other Jewish groups
+                    – who often asked them whether they had moved there “out of Zionist conviction
+                    or out of Germany.”</p>
+                <p>When we use the phrase ‘Germanophone-Jewish’ or ‘German-speaking Jewish,’ then,
+                    we aim to highlight the existence of linguistic-cultural affiliations beyond the
+                    taxonomies of sovereign states. Language functioned as a cultural homeland, and
+                    the hyphenate term <hi rendition="#i">Germanophone</hi>-Jewish reflects the
+                    specific diasporic experience at the heart of this portal. That experience may
+                    also be shared by descendants who neither speak the language nor personally
+                    identify as Jewish.</p>
+            </div>
+            <div xml:id="where-does-a-german-jewish-diaspora-emerge-spatial-scope" n="2">
+                <head>Where does a German-Jewish Diaspora emerge? Spatial scope</head><lb/>
+                <p>The <hi rendition="#i">Diaspora</hi> Portal is devoted to the lifeworlds of
+                    German-speaking Jews who, especially from 1933 onwards, built new lives in a
+                    range of countries, both transit stops and longer-term destinations – from
+                    Argentina to Australia. The most important centers of the German-Jewish
+                    Diaspora, such as the United States and Palestine/Israel, have already been the
+                    subject of extensive research as individual locations, often showing their
+                    development over extended periods. More recently, lesser-known destinations such
+                    as Kenya, Shanghai, the Caribbean, and the Philippines have also been explored
+                    in insightful case studies. However, there has been no comparative study to date
+                    of these highly diverse transit and destination countries. With this Diaspora
+                    Portal, we aim to shed light on the full geographical scope of German-Jewish
+                    dispersion and to present a panorama of its transnational entanglements. In
+                    addition to the ‘conventional’ destinations, in which a German-speaking Jewish
+                    community successfully took root, we also take into account ‘transit countries’
+                    – including waystations such as Shanghai – and the temporary diasporic
+                    structures that developed in such environments. Even in these waystations,
+                    distinct forms of community emerged which continue to exist in collective memory
+                    as a ‘remembered Diaspora,’ even though the exiles themselves have long resided
+                    elsewhere.</p>
+                <p>The chief destinations for German-speaking Jews outside Europe during the period
+                    of the Nazi regime were the United States, the United Kingdom, and Mandatory
+                    Palestine. Of the roughly one hundred countries in which these refugees found
+                    permanent or temporary sanctuary, Argentina also held core significance. Around
+                    75 percent of German-speaking Jews settled in these four diasporic centers
+                    alone. After the outbreak of the Second World War, opportunities to emigrate
+                    grew increasingly scarce, and destinations such as Cuba, Shanghai, Turkey, and
+                    Iran became life-saving havens.<note type="editorial" place="foot">Lowenstein, “Epilogue: The
+                        German-Jewish Diaspora,” 372 in the German edition.</note></p>
+                <p><hi rendition="#b">What about Israel?</hi></p>
+                <p>In addition to the three major centers – the US, the UK, and Argentina – we also
+                    consider Palestine/Israel. Between 1933 and 1945, no territory received as many
+                    immigrants from the German-speaking world, relative to the total population, as
+                    did Palestine under the British Mandate. This differed fundamentally from all
+                    other countries of immigration in that migration to <hi rendition="#i">Eretz
+                        Yisrael</hi>, according to Jewish tradition, was interpreted as an act of
+                    returning. Thus, the concept of Diaspora cannot be readily applied to Israel
+                    without qualification. Nevertheless, the great hardships on the ground and the
+                    loss of a previous life in Europe – which even most Zionists would not have
+                    willingly given up for a life in <hi rendition="#i">Eretz Israel</hi> – left
+                    many Germanophone Jews with feelings of alienation and difference. Tellingly, it
+                    was within a society dominated by Zionism – which exerted particularly strong
+                    pressure on newcomers to assimilate – that a pronounced sense of regional
+                    solidarity emerged, often anchored in a sense of a shared German-Jewish
+                    origin.</p>
+                <p>With the establishment of the State of Israel in 1948, the imagined homeland –
+                    which before had only manifested in Heinrich Heine’s (1797–1856) image of the
+                    Torah as a portable ‘fatherland’ – became a real-existing sovereign state for
+                    Jews. As a result, the concept of Diaspora underwent a Zionization process that
+                    remains a subject of lively debate among Jews. Proponents of the Zionist
+                    worldview spoke of an end to the Diaspora condition – and in some cases,
+                    questioned the very legitimacy of Jewish life outside Israel. Non-Zionist voices
+                    countered this with the argument that an affirmative embrace of the Diaspora
+                    condition could have world-historical significance. Jewish understandings of
+                    Diaspora itself diversified in reaction to its supposed conclusion via the
+                    ‘return to the homeland’ constituted by the establishment of statehood.</p>
+                <p>German Jews, known in Israel as ‘Yekkes’ to this day, left significant lasting
+                    marks on the Jewish society of Mandatory Palestine from the early twentieth
+                    century onward. Major centers of their migration included the port city of
+                    Haifa, the northern town of Nahariya, and the Jerusalem neighborhood of Rehavia
+                    – each of which has been the subject of dedicated research. German-Jewish
+                    influence made itself felt in Tel Aviv, too, perhaps most visibly in the
+                    migration of architecture: the <hi rendition="#i">Bauhaus</hi> style.<note
+                        type="editorial" place="foot"> For the case of Haifa, the comprehensive volume edited by Anja
+                        Siegemund, <hi rendition="#i">Deutsche und zentraleuropäische Juden in
+                            Palästina und Israel.</hi>
+                        <hi rendition="#i">Kulturtransfer, Lebenswelten, Identitäten. Beispiele aus
+                            Haifa</hi> (Berlin: Neofelis, 2016). For Nahariya, see Klaus Kreppel,
+                            <hi rendition="#i">Nahariyya und die deutsche Einwanderung nach Eretz
+                            Israel: Die Geschichte seiner Einwohner von 1935 bis 1941</hi> (Tefen:
+                        Das Offene Museum, 2010), and <hi rendition="#i">Nahariyya – das Dorf der
+                            “Jeckes”: Die Gründung der Mittelstandssiedlung für deutsche Einwanderer
+                            in Eretz Israel 1934/1935</hi> (Tefen: Das Offene Museum, 2005). For
+                        Rehavia, see most recently Thomas Sparr, <hi rendition="#i">Grunewald im
+                            Orient: Das deutsch-jüdische Jerusalem</hi>, 2nd ed. (Berlin: Berenberg,
+                        2018) and Christian Kraft, <hi rendition="#i">Aschkenas in Jerusalem: Die
+                            religiösen Institutionen der Einwanderer aus Deutschland im Jerusalemer
+                            Stadtviertel Rechavia (1933–2004) – Transfer und Transformation</hi>
+                        (Göttingen: Vandenhoeck &amp; Ruprecht, 2014). On the history of Tel Aviv,
+                        and beyond, see research by Joachim Schlör and Ita Heinze-Greenberg, among
+                        others.</note></p>
+            </div>
+            <div xml:id="when-did-the-germanophone-jewish-diaspora-begin-temporal-scope" n="2">
+                <head>When did the Germanophone Jewish Diaspora begin? Temporal scope</head><lb/>
+                <p>The Diaspora Portal strives to paint a holistic picture of the various historical
+                    phases of German-Jewish migration, so as to lend visibility to the historical
+                    points of departure, continuities, and ruptures of the German-Jewish Diaspora
+                    over an extended period.</p>
+                <p>Jews from Germany began migrating to other countries as early as the 1830s – long
+                    before the Nazi seizure of power – primarily to North America. In addition, most
+                    of the more than two million Jews who emigrated from Eastern Europe to the
+                    United States between 1881 and the 1920s also traveled via Germany as a transit
+                    country. As a result, the United States had become the most important center of
+                    Jewish life outside Europe by around 1900. New German Jewish immigrants already
+                    made up a significant proportion of Jewish communities in many places during the
+                    nineteenth century.</p>
+                <p><hi rendition="#b">Exile and emigration: 1933–1945</hi></p>
+                <p>Starting in 1933, the German-Jewish Diaspora ballooned to a never before seen
+                    dimension. After control of Germany was transferred to the Nazi Party, between
+                    250,000 and 300,000 German Jews managed to emigrate – often after losing their
+                    possessions, enduring long waits, and passing through assorted European transit
+                    points. A further 150,000 or so German-speaking Jews followed suit in the wake
+                    of the ‘Anschluss’ of Austria and the German occupation of Czechoslovakia in
+                    1938 amidst the growing radicalisation of Nazi policies of persecution and
+                    forced expulsion.</p>
+                <p>After the war began in September 1939, emigration became increasingly difficult.
+                    Many Jews were caught up in the fighting in the countries where they had sought
+                    a safe haven; in October 1941, the Nazis finally outlawed all emigration.</p>
+                <p>Between 1933 and 1941, around 400,000 to 430,000 Germanophone Jews were forced to
+                    leave their Central European Old Countries due to growing antisemitic
+                    discrimination and persecution. There is still no way of precisely calculating
+                    the total number of women, children, and men who were forced to escape the
+                    countries and regions where they were raised. Estimates suggest that in addition
+                    to the 270,000 to 300,000 Jews from Germany, roughly 130,000 came from Austria
+                    and around 25,000 from the ‘Sudetenland’ and the Protectorate of Bohemia and
+                    Moravia, now in the Czech Republic.<note type="editorial" place="foot">Sheer Ganor, <hi
+                            rendition="#i">Somewhere from Long Ago</hi>, 4.</note> In all of these
+                    regions, they were unprotected and at the mercy of Nazi tyranny, which came to
+                    an end in May 1945 with the unconditional surrender of the Wehrmacht.</p>
+                <p>The role of the Nazi period as a turning point in Jewish history is a visible
+                    focus of the Diaspora Portal, but we do not restrict the project to the period
+                    of Nazi rule. Where it is historically accurate and supported by sources and
+                    research, we also examine German-Jewish lifeworlds beyond the German-speaking
+                    world both before 1933 and after 1945. In doing so, we seek to make productive
+                    use of and draw insights from the intergenerational possibilities of Diaspora by
+                    considering multiple generations in their respective historical developments and
+                    interconnections.</p>
+                <p>This broader time frame cannot be applied equally to all countries. Nevertheless,
+                    we also include places where no German-speaking Jewish community had taken root
+                    before 1933 and where no lasting one developed afterwards. In order to document
+                    the German-Jewish Diaspora – which was shaped in many cases by transmigration,
+                    as a transnational history of entanglements and relationships across time and
+                    space – we also make a point of including diasporic structures that were
+                    short-lived.</p>
+                <p>Miriam Rürup</p>
+            </div>
+        </body>
+    </text>
+</TEI>

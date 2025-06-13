@@ -41,46 +41,42 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <div n="3">
                     <head>Impressum</head>
                     <lb/>
-                    <p><lb/>
-                         Moses Mendelssohn Zentrum für europäisch-jüdische Studien e. V.<lb/>
+                    <p> Moses Mendelssohn Zentrum für europäisch-jüdische Studien e. V.<lb/>
                          Am Neuen Markt 8<lb/>
                          D-14467 Potsdam<lb/>
                     </p>
 
                     <p>
-                        <lb/>
                          Tel. +49 (0)331 - 280 94 - 0<lb/>
                          Fax +49 (0)331 - 280 94 - 50<lb/>
                          E-Mail: <ref target="mailto:moses@mmz.uni-potsdam.de"
                             >moses@mmz.uni-potsdam.de</ref><lb/>
-                         Internet: <ref target="https://www.mmz-potsdam.de"
-                        >www.mmz-potsdam.de</ref></p>
+                         Internet: <ref target="https://www.mmz-potsdam.de/"
+                        >www.mmz-potsdam.de</ref><lb/></p>
 
-                    <p><lb/>
-                         Vertretungsberechtigter Vorstand:<lb/>
-                         Prof. Dr. Miriam Rürup</p>
+                    <p>Vertretungsberechtigter Vorstand:<lb/>
+                        Prof. Dr. Miriam Rürup<lb/>
+                    </p>
 
-                    <p>
-                        <lb/>
+                    <p>                        
                          Registergericht: Amtsgericht Potsdam<lb/>
-                         Registernummer: VR 1074</p>
+                        Registernummer: VR 1074<lb/></p>
 
-                    <p><lb/>
-                         Inhaltlich Verantwortliche gemäß § 6 MDStV: <lb/>
-                         Dr. Lisa Sophie Gebhard </p>
+                    <p>Inhaltlich Verantwortliche gemäß § 6 MDStV: <lb/>
+                        Dr. Lisa Sophie Gebhard <lb/>
+                    </p>
 
                     <p>
-                        <lb/>
+                       
                          Technische Betreuung:<lb/>
-                         Daniel Burckhardt</p>
+                        Daniel Burckhardt <lb/></p>
                 </div>
 
                 <div n="3">
                     <head>Datenschutz</head>
                     <lb/>
                     <p>
-                        <lb/>
-                         Dies ist ein Online-Angebot des Moses Mendelssohn Zentrums für
+                        Dies ist ein Online-Angebot des Moses Mendelssohn Zentrums für
                         europäisch-jüdische Studien e. V. (MMZ). Für die Verarbeitung aller
                         personenbezogenen Daten, die im Zuge des Betriebs dieses Angebots anfallen,
                         gilt die <ref target="https://www.mmz-potsdam.de/kontakt/datenschutz"
@@ -90,8 +86,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <div n="3">
                     <head>Haftungshinweis</head>
                     <lb/>
-                    <p><lb/>
-                         Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
+                    <p> Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
                         Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden
                         Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten
                         ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.

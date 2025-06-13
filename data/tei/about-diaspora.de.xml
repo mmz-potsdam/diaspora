@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Über deutsch(sprachig)-jüdische Diaspora – Einführung</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>diaspora@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2025-05-08</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Es gibt wenige Begriffe, die die jüdische Geschichtserfahrung so sehr prägen wie
+                ,Diaspora‘. Seit dem sechsten Jahrhundert vor unserer Zeitrechnung, mit der
+                Zerstörung des Ersten Tempels in Jerusalem, kennzeichnen Flucht, Vertreibung und
+                Heimatverlust, Mehrfach-Ortsbindungen und länderübergreifende Beziehungsgefüge die
+                Geschichte, Religion, Tradition und Imagination von Jüdinnen und Juden. Neben
+                Migration, die immer die Voraussetzung jeder Diasporagemeinde ist, stellt Diaspora,
+                altgriechisch für ‚Verstreuung‘, den Kern jüdischer Erfahrung dar.</p>
+            <p>Das Diaspora-Portal widmet sich historischen Themen am Beispiel von Biografien und
+                Zeitdokumenten, die den deutschsprachigen Lebenswelten zuzurechnen sind und ist
+                nicht auf deutsche Jüdinnen und Juden beschränkt. Es geht entsprechend weniger um
+                staatsbürgerliche Zugehörigkeit als vielmehr um eine in sich vielschichtige Kultur-
+                und Sprachgemeinschaft, die eine gemeinsame deutschsprachige Herkunft als
+                Ausgangspunkt hat. Der Versuch, Lebenswelten begrifflich zu fassen, läuft immer
+                Gefahr, die Vielfalt sozialer Praxis enger zu beschreiben, als sie real gelebt wird.
+                Auch die Zuschreibung ,jüdisch‘ ist nicht unproblematisch, da sich mehrere der hier
+                behandelten Akteur:innen selbst nicht so definierten, sondern zuweilen erst durch
+                die Verfolgung als ,Juden‘ zu Jüdinnen und Juden wurden.</p>
+            <p>In der deutsch-jüdischen Lebenswelt und Geschichtserfahrung ist die Frage zentral,
+                was unter ,deutsch-jüdisch‘ zu verstehen sei. Historisch stritten jüdische
+                Zeitgenoss:innen seit der jüdischen Aufklärung – <hi rendition="#i">Haskala</hi> –
+                und dem Beginn der rechtlichen Gleichstellung im langen 19. Jahrhundert um die Frage
+                der Zugehörigkeit als Deutsche und/oder Jüdinnen und Juden. Dabei führten sie das
+                Begriffspaar ,deutsch-jüdisch‘ ein. Inzwischen wird der Begriff nicht im normativen
+                Sinne, sondern einem kulturellen Verständnis folgend genutzt und könnte präziser
+                auch als ,deutschsprachig-jüdisch‘ bezeichnet werden – der Lesbarkeit halber und an
+                frühere Forschung anknüpfend nutzen wir hier dennoch zumeist ,deutsch-jüdisch‘.
+                Ohnehin bleibt es eine Bindestrichkonstruktion, über die sich (bewusst) stolpern
+                lässt. Damit wollen wir Raum schaffen für Differenzierung, Mehrfachzugehörigkeiten,
+                Transnationalität und biografische Offenheit.</p>
+            <p>Das Diaspora-Portal ist in einem
+                <!--<ref target="#wo-entsteht-deutsch-jdische-diaspora-rumlicher-rahmen">-->breiten
+                geografischen Sinne<!--</ref>--> angelegt und soll an die heterogene Gruppe Deutsch
+                sprechender Jüdinnen und Juden erinnern. Ihre Herkunftsorte lassen sich so neben
+                Deutschland unter anderem in Litauen, Österreich, der Slowakei, Tschechien oder
+                Ungarn lokalisieren. Die Bedeutung der deutschen Sprache, die dort oft als eine
+                sogenannte Aufstiegssprache im Sinne einer Verbürgerlichung galt, erwies sich dabei
+                häufig als das beständigste Merkmal einer fortwährend sicht- bzw. hörbaren
+                deutsch-jüdischen Herkunftsbiografie. In vielen Fällen entstanden diasporische
+                Zusammenhänge gerade erst über die Sehnsucht nach dieser Sprachheimat.</p>
+            <div xml:id="was-bedeutet-diaspora" n="2">
+                <head>Was bedeutet Diaspora?</head>
+                <lb/>
+                <p>,Diaspora‘ ist sowohl ein beschreibender als auch ein Forschungsbegriff. Als
+                    analytisch genutzter Begriff ist er geeignet, die Vielschichtigkeit, Dynamik und
+                    Komplexität der historischen Migrationsbewegungen und Beheimatungsprozesse
+                    deutschsprachiger Jüdinnen und Juden zu fassen. Diaspora kann dabei in zweierlei
+                    Richtungen gemeint sein: Zum einen bezieht sie sich auf eine Gruppe von
+                    Individuen gleicher ethnischer und/oder religiöser Zugehörigkeit, die sich
+                    gezwungen sieht, ihr Herkunftsland zu verlassen und die zugleich einen starken
+                    Rückbezug auf dessen Kultur und Erbe beibehält – teils über Generationen
+                    hinweg.</p>
+                <p>Zum anderen beinhaltet Diaspora eine räumliche Vorstellung, indem sie die
+                    Erfahrungswelten außerhalb eines Herkunftszentrums bezeichnet, in denen eine
+                    Gruppe von Individuen gleicher ethnischer und/oder religiöser Zugehörigkeit
+                    lebt, sich aber in ihrer Tradition und Erinnerung auf ein Zentrum zurückbezieht,
+                    das zu verlassen sie gezwungen war. In beiden Varianten setzt Diaspora die
+                    Migration und gemeinschaftliche Lebenssituation einer Gruppe voraus – sowohl in
+                    realem wie in einem imaginierten Zusammenhalt.</p>
+                <p>In der jüdischen Tradition bildet <hi rendition="#i">Eretz Israel</hi>, das
+                    sogenannte Land Israel, dieses bedeutungsvolle Zentrum, auf das auch in der
+                    religiösen Praxis immer wieder Bezug genommen wurde und das seit der
+                    Staatsgründung Israels eine neue Rolle in diesem Gefüge einnahm. Diaspora ist
+                    sowohl eine soziale und eine sich ständig wandelnde dynamische Praxis als auch
+                    ein sozialer und symbolischer Raum.</p>
+                <p>Das ursprünglich jüdische Verständnis von Diaspora, das mit den Worten <hi
+                        rendition="#i">galut</hi> oder <hi rendition="#i">tfutzot</hi> (Hebräisch
+                    für <hi rendition="#i">Exil</hi>, <hi rendition="#i">Zerstreuung</hi>) nach der
+                    Vertreibung aus dem alten Israel bezeichnet wird, ist dabei verbunden mit dem
+                    fortwährenden Streben nach einer Rückkehr nach <hi rendition="#i">Zion</hi>.</p>
+                <p>Am 14. Mai 1948 schien mit der Gründung des Staates Israel die Fortdauer einer
+                    ideell bedeutenden jüdischen Diaspora hinfällig geworden zu sein. Doch bestand
+                    auch weiterhin jüdisches Leben außerhalb der neuen Staatsgrenzen. Die Mehrheit
+                    aller Jüdinnen und Juden lebt auch heute nicht in Israel, sondern in den USA,
+                    sodass man mindestens von zwei geografischen Zentren sprechen muss. Und doch:
+                    Die Errichtung eines (alt)neuen und staatlichen territorialen Zentrums in Israel
+                    ließ die Frage laut werden, ob dadurch das Ende der jüdischen Diaspora – negativ
+                    als <hi rendition="#i">galut</hi> (<hi rendition="#i">Exil</hi>) konnotiert –
+                    erreicht sei.</p>
+                <p>Der altgriechische Begriff Diaspora (διασπορά), der so viel wie ,Verstreuung‘
+                    bedeutet, ist selbst ein Produkt jüdischer Diasporagemeinden. Überliefert ist er
+                    das erste Mal in der sogenannten <hi rendition="#i">Septuaginta</hi>, der
+                    ältesten griechischen Übersetzung der Tora durch jüdische Gelehrte vor allem aus
+                    Alexandrien. Damals, vor mehr als 2200 Jahren, lebten die meisten Jüdinnen und
+                    Juden bereits außerhalb von <hi rendition="#i">Eretz Israel</hi> und der Begriff
+                    war – anders als in späteren Jahrhunderten – nicht negativ besetzt. Nach der
+                    Zerstörung des Zweiten Tempels im Jahr 70 nach unserer Zeitrechnung und der
+                    Vertreibung vieler Jüdinnen und Juden infolge der römischen Besatzung wurde
+                    Diaspora weithin angewandt. Der Begriff erfuhr eine negative (religiöse)
+                    Deutung, die in erster Linie mit Vertreibung, Versklavung und Zwang, mit Macht-
+                    und Heimatlosigkeit in Verbindung gebracht wurde.</p>
+                <p>Im 20. Jahrhundert erhielt noch vor der Staatsgründung Israels die jüdische
+                    Konnotation des Diasporabegriffes eine neue Wendung: Der im heutigen Belarus
+                    geborene Historiker Simon Dubnow (1860–1941) und andere jüdische Intellektuelle
+                    entwickelten die Idee eines ,Diaspora-Nationalismus‘ im Osten Europas, die
+                    zeigte, dass sie sich bewusst für ein nationales Programm in der Diaspora
+                    entschieden. Diese Idee erweiterte den Diaspora-Begriff um eine aktiv
+                    gestaltbare, politische Dimension und zeigt, dass jüdische Identität auch
+                    außerhalb eines staatlichen Zentrums bestehen kann. Diaspora wurde hier nicht
+                    mehr nur als Folge von Zerstreuung, sondern auch als Raum kultureller und
+                    sozialer Handlungsmöglichkeiten verstanden.</p>
+                <p>Der Begriff Diaspora hat in der Forschung verschiedene Bedeutungsebenen
+                    durchlaufen. Das gilt auch für die jüdische Geschichte und Historiografie. Denn
+                    nicht nur als beschreibender Begriff, sondern auch als Analysekategorie erlebt
+                    er seit den 1980er Jahren eine Konjunktur in verschiedenen
+                    Wissenschaftsdisziplinen, nachdem Diaspora zuvor vorwiegend in einer
+                    jüdisch-religiösen und meist negativen Bedeutung als erzwungenes Exil verstanden
+                    worden ist. Auch wir wollen mit dem Konzept der Diaspora über <hi rendition="#i"
+                        >galut</hi> und Exil hinausgehen und die konkreten sozialen Praktiken und
+                    dynamischen Gruppenbildungsprozesse der historischen Akteur:innen stärker in den
+                    Blick nehmen.</p>
+                <p>Der Historiker Steven M. Lowenstein (1945–2020) hat für die sich ab 1933
+                    entstehenden Diasporagemeinden deutschsprachiger Jüdinnen und Juden den Begriff
+                    der deutsch-jüdischen Diaspora geprägt. Er selbst wurde in New York als Kind
+                    jüdischer Flüchtlinge aus Deutschland geboren. Lowensteins Rede von einer
+                    „deutsch-jüdischen Diaspora“<note type="editorial" place="foot">Steven M.
+                        Lowenstein, „Epilog: Die deutsch-jüdische Diaspora“, in: Avraham Barkei/Paul
+                        Mendes-Flohr (Hg.), <hi rendition="#i">Deutsch-Jüdische Geschichte in der
+                            Neuzeit</hi>, Bd. 4, München 2000, S. 372-381.</note> in seinem Epilog
+                    zum vierten Band der <hi rendition="#i">Deutsch-jüdischen Geschichte in der
+                        Neuzeit</hi> (1997) greifen wir dabei als Fortsetzungsprojekt dieser
+                    Geschichte in doppelter Weise programmatisch auf.</p>
+                <p>So werden wir erstens das Exil-Verständnis von Diaspora insofern weiten, als wir
+                    betrachten, wie jüdische Exilant:innen sich in ein gewissermaßen diasporisches
+                    Verhältnis zu ihren deutschen bzw. deutschsprachigen Herkunftsgemeinschaften
+                    setzten. Dabei geht es zweitens darum, inwiefern für diese Akteur:innen die
+                    deutsch(sprachig)-jüdische Kultur weiterhin eine Rolle spielte. Wir beschäftigen
+                    uns hier also auch mit dem kollektiven Fortleben eines deutsch-jüdischen
+                    Selbstverständnisses außerhalb des deutschsprachigen Raumes. Auch andere
+                    jüdische Gruppen haben in dieser Hinsicht eine gleichsam doppelte Diaspora
+                    ausgebildet. An dieser Stelle ist eine zweite Gruppe zu erwähnen, die eine
+                    doppelte Diaspora bildete – die sogenannten sephardischen Jüdinnen und Juden,
+                    deren Vergemeinschaftung und Rückbezug auf die Vertreibung von der iberischen
+                    Halbinsel 1492 aus Spanien und 1496 aus Portugal sich bis heute unter anderem in
+                    einer gemeinsamen Sprache (Ladino) und in religiösen Bräuchen zeigen.</p>
+                <p>In der Forschung zu diasporischen Minderheiten existieren verschiedene
+                    Definitionsvorschläge für diese Zuschreibung. Wiederkehrende Merkmale in allen
+                    Begriffsbestimmungen sind dabei in unterschiedlicher Weise:</p>
+                <p>Ein zeitlich scharf umrissener Anfangspunkt, meist einhergehend mit der
+                    Vertreibung einer großen Anzahl von Menschen oder ganzer Gemeinschaften bildet
+                    den Ursprung einer Diaspora. Durch die Ansiedlung dieser Gruppe außerhalb eines
+                    Herkunftslandes oder einer Herkunftsregion gibt er zugleich den örtlichen
+                    Rückbezug vor. Hinzu kommen die im Exilland dann aufrechterhaltenen oder sogar
+                    dort erst entstehenden Vergemeinschaftungspraktiken etwa in Form
+                    landsmannschaftlicher Organisierung, ein fortwährend spannungsreiches Verhältnis
+                    zum neuen Lebensumfeld sowie ein Rückbezug auf die ,verlorene Heimat‘. Mit ihm
+                    geht oft eine vage Sehnsucht nach der herkunftsgeprägten Vergangenheit einher,
+                    verbunden mit der Hoffnung auf eine Überwindung der schmerzlichen Vertreibung –
+                    und sei es auch nur in der Imagination.</p>
+                <p>Diese erste Überblicksdarstellung der deutsch-jüdischen Diaspora soll auf
+                    Grundlage bereits bestehender Forschungen und neuer Archivrecherchen
+                    untersuchen, welche historischen Umstände zur Entstehung einer deutsch-jüdischen
+                    Migration geführt haben und inwiefern deutschsprachige Jüdinnen und Juden
+                    versuchten, in den verschiedenen Zufluchtsländern ihre Herkunftskulturen und
+                    Zugehörigkeit(en) zu bewahren und diese zugleich in Form eines deutsch-jüdischen
+                    Kulturerbes zu sichern. Angesichts der daraus entstehenden hybriden, häufig
+                    fragmentierten Zugehörigkeiten interessiert uns besonders, inwieweit diese
+                    Gruppe gemeinsame Identitäten im jeweiligen Zielland ausbildete, die sich aus
+                    Distanz, Heimweh und Verlust, aber auch aus Nähe, Ankommen und Beheimatung
+                    speisten.</p>
+                <p>Über derartige Gruppenbildungsprozesse geraten die Beziehungen zur
+                    Mehrheitsgesellschaft und anderen Minderheiten (darunter auch jüdische Gruppen)
+                    in den Fokus. Sie waren häufig durch Spannungen gekennzeichnet, die die
+                    Institutionalisierung eigener Orte, Organisationen und Vertretungen beförderten.
+                    Neben einer solchen gruppenspezifischen Pluralität kultureller Zugehörigkeit
+                    lassen sich durch die Analysekategorie Diaspora aber auch länderübergreifende
+                    Netzwerke nachzeichnen. Die Beziehungen zwischen deutschsprachigen Jüdinnen und
+                    Juden, die sich über Kontinente hinweg als Teil einer großen (imaginierten)
+                    Gemeinschaft verstanden, eröffnen so eine weitere, überaus erkenntnisreiche
+                    Analyseebene. Sie ermöglicht in zweifacher Weise eine Transnationalisierung der
+                    deutsch-jüdischen Geschichte, indem sie auch die in den Herkunftsländern
+                    Verbliebenen in den Blick nimmt.</p>
+                <p>Dabei reflektieren wir den Diasporabegriff für jede Region mit signifikanter
+                    deutsch-jüdischer Einwanderung neu. Nicht immer entwickelte sich ein von
+                    Reminiszenz und Rückbezügen auf das Herkunftsland geprägtes Selbstverständnis.
+                    Auch mögliche Auflösungs- und Loslösungsprozesse werden adressiert. Ebenso sind
+                    Fragen der Rückkehr und der Remigration, etwa in einen der beiden deutschen
+                    Staaten, Thema dieses Projektes. Obwohl nach dem Zweiten Weltkrieg nur maximal
+                    fünf Prozent der ehemals rund 450.000 deutschsprachigen Jüdinnen und Juden in
+                    ihre Herkunftsländer zurückkehrten, zeigen viele Beispiele, wie intensiv sich
+                    die Emigrierten im zeitlichen Verlauf mit dieser Möglichkeit beschäftigten und
+                    teils versuchsweise oder temporär in ihre Herkunftsorte zurückkehrten.<note
+                        type="editorial" place="foot"> Sheer Ganor, <hi rendition="#i">Somewhere
+                            from Long Ago: The Global Displacement of German-Speaking Jewry</hi>, S.
+                        4 (im Erscheinen).</note></p>
+                <p>Neben den politischen, gesellschaftlichen und sozialen Herausforderungen in den
+                    jeweiligen Zielorten werden die Möglichkeiten deutschsprachiger Jüdinnen und
+                    Juden und ihre jeweilige Teilhabe an den dortigen Umgebungsgesellschaften
+                    untersucht. Die Entstehung einer weit verstreuten deutsch-jüdischen Diaspora und
+                    ihre transterritorialen Bezüge thematisieren wir dabei ebenfalls.</p>
+                <p>Durch eine länderübergreifende Perspektive, die die deutsch-jüdische Geschichte
+                    außerhalb des deutschsprachigen Raums bedingt, können neue Facetten der
+                    jüdischen Erfahrung aufgezeigt und eine methodische Fixierung auf den
+                    Nationalstaat aufgelöst werden. Indem die deutsch-jüdische Diaspora unter
+                    Berücksichtigung ihrer Spezifika als Bestandteil globaler Migrationsbewegungen
+                    aufgefasst wird, die das 20. Jahrhundert und auch unsere Gegenwart prägen,
+                    lassen sich darüber hinaus thematische Anknüpfungspunkte zu den <hi
+                        rendition="#i">Diaspora-</hi> und <hi rendition="#i">(Global) Migration
+                        Studies</hi> herausarbeiten.</p>
+                <p>Das Thema der Diaspora ist auch heute unverändert aktuell. Viele Jüdinnen und
+                    Juden in der Diaspora, unter ihnen Nachkommen deutschsprachiger Geflüchteter,
+                    loten seit dem Überfall der Terrororganisation Hamas am 7. Oktober 2023 und dem
+                    Gazakrieg ihre jüdische Identität mit Blick auf ihre familiären Herkunftsländer
+                    und Israel derzeit neu aus. Dieses Projekt greift die zentrale Bedeutung von
+                    Migration und Diaspora für die jüdische Geschichte auf und erkennt ihre Relevanz
+                    auch für gegenwärtige Entwicklungen. Ein wachsender Antisemitismus, der in der
+                    Vergangenheit als ein zentraler migrationsauslösender Faktor fungierte, trägt
+                    neben politischen Rahmenbedingungen wie dem Rechtsruck in der israelischen
+                    Politik und dem Krieg in der Ukraine dazu bei, dass Migrationsbewegungen
+                    zunehmen. Die Zahl aller Menschen, die aufgrund von Kriegen, Konflikten und
+                    Verfolgungen ihre Heimat verlassen mussten, erreichte 2024 einen historischen
+                    Höchststand. Migrationsbewegungen – vielfach unter Zwang – reichen somit tief in
+                    unsere Gegenwart hinein und neue, auch nichtjüdische diasporische Gemeinschaften
+                    entstehen in deren Folge.</p>
+            </div>
+            <div xml:id="was-heit-deutschsprachig-jdisch" n="2">
+                <head>Was heißt ,deutsch(sprachig)-jüdisch‘?</head>
+                <lb/>
+                <p>Das Begriffspaar ,deutsch-jüdisch‘ erinnert an die Idee einer kulturellen
+                    Symbiose im Deutschland des ausgehenden 19. und frühen 20. Jahrhunderts, die mit
+                    der Machtübertragung an die Nationalsozialisten 1933 erschüttert und durch die
+                    Schoa zerstört wurde. Die politische Theoretikerin und Philosophin Hannah Arendt
+                    (1906–1975) hat diese Problematik in ihrer Biografie <hi rendition="#i">Rahel
+                        Varnhagen</hi> (1938/1957) deutlich gemacht. Sie bezeichnete die Idee einer
+                    ,deutsch-jüdischen Symbiose‘ als Illusion und zeigte, wie die Anpassungsversuche
+                    jüdischer Bürger:innen im 19. Jahrhundert am fortdauernden Antisemitismus
+                    scheiterten. Für Arendt bot allein die gemeinsame Sprache eine kulturelle
+                    Kontinuität. Viele der auf dem Portal behandelten Personen verstanden sich nicht
+                    in erster Linie als ,Deutsche’, sondern als Teil einer mitteleuropäischen,
+                    kulturell vielfältigen Öffentlichkeit. ,Deutschsprachig‘ verweist auf diese
+                    intellektuelle Weite – zwischen Prag, Wien, Breslau (Wrocław) und darüber
+                    hinaus.</p>
+                <p>Im Kontext der diasporischen Lebensrealitäten, die das Diaspora-Portal
+                    dokumentiert, geht es deshalb weniger um eine nationale oder staatliche
+                    Zugehörigkeit, mit der sich viele spätere Emigrant:innen nach der Neuordnung
+                    Mitteleuropas nach Ende des Ersten Weltkriegs ohnehin nicht (mehr)
+                    identifizierten oder – nach der Machtübertragung an die Nationalsozialisten und
+                    dem ,Anschluss‘ Österreichs  – bewusst davon distanzierten. Für sie war die deutsche
+                    Sprache weniger Ausdruck nationaler Zugehörigkeit als vielmehr kulturelle
+                    Heimat. In der Diaspora wurden Sprache, Bildung, Religion und kulturelle Praxis
+                    zu Elementen der Identitätsbildung, wobei individuelle Erfahrungen und
+                    Perspektiven stark variierten. ‚Deutsch’ war häufig fester Bestandteil des
+                    Alltags – in Familie, Schule, religiösem und kulturellem Leben, zumindest in der
+                    ersten Generation. Oft wurde die Sprache über Generationen hinweg
+                    weitergegeben.</p>
+                <p>Überblickt man die deutschsprachige jüdische Diaspora, so war sie durch
+                    vielfältige biografische Hintergründe, Migrationserfahrungen und
+                    Selbstidentifikationen geprägt. Herkunftsorte wie Czernowitz (Cherniwtsi),
+                    Lemberg (Lwiw), Wien, Prag oder Breslau (Wrocław) zeigen, dass ,Deutsch’ oft
+                    eher kulturelle als nationale Zugehörigkeit bedeutete – ein Verständnis, das der
+                    Begriff ,deutschsprachig’ treffender wiedergibt. Lebenswege zwischen diesen
+                    Orten verdeutlichen die innereuropäischen Verflechtungen dieser vielfältigen
+                    Gemeinschaft – etwa in Form zahlreicher binationaler, oft auch deutschsprachiger
+                    Ehen, in denen sich manchmal auch sogenannte ost- und westjüdische Traditionen
+                    verbanden.</p>
+                <p>Eine besondere Erfahrung prägte deutschsprachige Jüdinnen und Juden im
+                    Mandatsgebiet Palästina und dem späteren Israel. Viele von ihnen aus Deutschland
+                    fanden dort ab 1933 Zuflucht, brachten – wie alle Einwanderungsgruppen – ihre
+                    Sprache und Kultur mit und prägten damit das dortige gesellschaftliche Leben.
+                    Die deutsche Sprache blieb dabei oft ein zentrales Element ihrer Identität, doch
+                    als ,Tätersprache‘ ging dies mit einer besonderen Haltung der Scham einher. Die
+                    mit der Umschreibung ,Jeckes’ bezeichneten deutschsprachigen Einwander:innen
+                    lebten mit der Erfahrung, dass andere jüdische Gruppen ihnen mit Skepsis und der
+                    sprichwörtlichen Frage begegneten, ob sie „aus zionistischer Überzeugung oder
+                    aus Deutschland“ kämen.</p>
+                <p>Wenn wir also von ,deutschsprachig-jüdisch‘ sprechen, wollen wir den Blick dafür
+                    schärfen, dass es auch sprachlich-kulturelle Zugehörigkeiten jenseits
+                    staatlicher Kategorien gab. Sprache funktionierte als kulturelle Heimat und das
+                    Begriffspaar deutsch<hi rendition="#i">sprachig</hi>-jüdisch reflektiert die
+                    spezifische diasporische Erfahrung, die im Zentrum dieses Portals steht. Diese
+                    Erfahrung kann auch von Nachfahren geteilt werden, die weder die Sprache
+                    sprechen, noch sich selbst als jüdisch bezeichnen würden.</p>
+            </div>
+            <div xml:id="wo-entsteht-deutsch-jdische-diaspora-rumlicher-rahmen" n="2">
+                <head>Wo entsteht deutsch-jüdische Diaspora? Räumlicher Rahmen</head>
+                <lb/>
+                <p>Das Diaspora-Portal ist den Lebenswelten deutschsprachiger Jüdinnen und Juden
+                    gewidmet, die sich vor allem ab 1933 in verschiedenen (Transit)Ländern – von A
+                    wie Argentinien bis Z wie Zypern – eine neue Existenz aufbauten. Die wichtigsten
+                    Zentren dieser deutsch-jüdischen Diaspora wie die USA oder <ref
+                        target="../beitrag/gjd:article-1">Palästina/Israel</ref> sind als einzelne
+                    Orte und teils in ihrer jeweiligen Entwicklung über einen längeren Zeitraum
+                    hinweg gut erforscht. Auch unbekanntere Destinationen wie Kenia, Shanghai, die
+                    Karibik oder die Philippinen sind zuletzt in erkenntnisreichen Einzelstudien
+                    analysiert worden. Eine vergleichende Darstellung dieser äußerst heterogenen
+                    Durchgangs- und Zielländer fehlt bislang allerdings. Mit dem Diaspora-Portal
+                    wollen wir die geografische Bandbreite der deutsch-jüdischen Zerstreuung
+                    möglichst zusammenhängend herausstellen und ein breites Panorama ihrer
+                    transnationalen Verwobenheit aufbereiten. Neben den klassischen Zielländern, in
+                    denen sich eine deutschsprachige jüdische Community langfristig etablieren
+                    konnte, berücksichtigen wir auch sogenannte Transitländer und damit
+                    vorübergehende Diasporastrukturen, etwa in Zwischenstationen wie Shanghai. Dort
+                    haben sich zeitweise ebenfalls spezifische Gruppenstrukturen herausgebildet, die
+                    als eine ,erinnerte Diaspora‘ auch dann noch im kollektiven Gedächtnis
+                    fortleben, wenn die Exilant:innen längst nicht mehr in den jeweiligen
+                    Zwischenstationen leben.</p>
+                <p>Die wichtigsten außereuropäischen Emigrationsländer deutschsprachiger Jüdinnen
+                    und Juden während des Nationalsozialismus waren die USA, Großbritannien und das
+                        <ref target="../beitrag/gjd:article-1">Mandatsgebiet Palästina</ref>. Von
+                    den rund 100 Ländern, in denen sie permanent oder zeitweise Zuflucht fanden, war
+                    zudem Argentinien von zentraler Bedeutung. Rund 75 Prozent der deutschsprachigen
+                    Jüdinnen und Juden ließen sich allein in diesen vier Diasporazentren nieder.
+                    Nach Beginn des Zweiten Weltkrieges boten sich immer weniger Möglichkeiten zur
+                    Emigration und Ziele wie Kuba, Shanghai, die Türkei oder Iran wurden zu
+                    lebensrettenden Zufluchtsorten.<note type="editorial" place="foot"> Lowenstein,
+                        „Epilog: Die deutsch-jüdische Diaspora“, S. 372.</note></p>
+                <div xml:id="und-was-ist-mit-israel" n="3">
+                    <head>Und was ist mit Israel?</head>
+                    <lb/>
+                    <p>Neben den drei großen Zentren USA, Großbritannien und Argentinien nehmen wir
+                        auch <ref target="../beitrag/gjd:article-1">Palästina/Israel</ref> in den
+                        Blick. Gemessen an seiner Gesamtbevölkerung sind zwischen 1933 und 1945
+                        nirgendwo so viele Menschen aus dem deutschen Sprachraum eingewandert wie in
+                        das Mandatsgebiet Palästina. Es hob sich dabei grundsätzlich von allen
+                        anderen Zuwanderungsländern ab, da die Einwanderung nach <hi rendition="#i"
+                            >Eretz Israel</hi> nach jüdischer Tradition als Rückkehr verstanden
+                        wird. Der Begriff der Diaspora lässt sich somit nicht umstandslos auf Israel
+                        übertragen. Und doch führten die großen Widrigkeiten vor Ort und der Verlust
+                        des früheren Lebens in Europa, das selbst die meisten Zionist:innen nicht
+                        freiwillig für <hi rendition="#i">Eretz Israel</hi> aufgegeben hätten, bei
+                        vielen deutschsprachigen Jüdinnen und Juden zu Gefühlen von Fremdheit und
+                        Differenz. Bezeichnenderweise bildete sich gerade im zionistisch geprägten
+                        Gemeinwesen, das besonders hohe Anpassungsforderungen an die Neuankömmlinge
+                        stellte, ein starker landsmannschaftlicher Zusammenhalt unter Rückbezug auf
+                        eine ,gemeinsame‘ deutsch-jüdische Herkunft aus.</p>
+                    <p>Denn mit Gründung des Staates Israel 1948 verwandelte sich das imaginäre
+                        Heimatland, das sich bis dahin nur in Heinrich Heines (1797–1856) Bild von
+                        der Bibel als tragbarem ,Vaterland‘ manifestiert hatte, in einen realen
+                        Staat für Jüdinnen und Juden. Der Begriff Diaspora erfuhr daraufhin eine
+                        Zionisierung, die innerjüdisch intensiv diskutiert wurde und bis heute wird.
+                        Im zionistischen Selbstverständnis war nun von einem Ende der
+                        Diasporasituation die Rede, wenn nicht jüdische Existenz außerhalb Israels
+                        gar infrage gestellt wurde. Dem setzte man von nicht-zionistischer Seite
+                        entgegen, dass eine positive Vereinnahmung der Diasporaexistenz eine
+                        geradezu welthistorische Bedeutung haben könne. Das jüdische
+                        Diasporaverständnis selbst pluralisierte sich folglich geradezu als Reaktion
+                        auf seine vermeintliche Aufhebung infolge der ,Rückkehr ins Heimatland‘
+                        durch die Staatsgründung.</p>
+                    <p>Deutsche Jüdinnen und Juden, die in Israel bis heute als ,Jecke‘ bekannt
+                        sind, prägten die jüdische Gesellschaft des Mandatsgebiets Palästina seit
+                        der ersten Hälfte des 20. Jahrhunderts in allen Bereichen auf signifikante
+                        Weise. Zentren ihrer Migration stellten unter anderem die Hafenstadt Haifa,
+                        die nördliche Stadt Naharija sowie der Jerusalemer Stadtteil Rechavia dar,
+                        zu denen jeweils eigenständige Forschung erschienen ist. Darüber hinaus
+                        machte sich auch in Tel Aviv der deutsch-jüdische Einfluss bemerkbar, der
+                        seinen sichtbarsten Ausdruck in der Migration der Architektur – dem <hi
+                            rendition="#i">Bauhaus</hi> – gefunden hat.<note type="editorial"
+                            place="foot">Siehe für das Beispiel Haifa den umfangreichen, von Anja
+                            Siegemund herausgegebenen Sammelband <hi rendition="#i">Deutsche und
+                                zentraleuropäische Juden in Palästina und Israel. Kulturtransfer,
+                                Lebenswelten, Identitäten. Beispiele aus Haifa</hi>, Berlin 2016;
+                            für Naharija Klaus Kreppel, <hi rendition="#i">Nahariyya und die
+                                deutsche Einwanderung nach Eretz Israel. Die Geschichte seiner
+                                Einwohner von 1935 bis 1941</hi>, Tefen 2010 sowie <hi
+                                rendition="#i">Nahariyya – das Dorf der „Jeckes“. Die Gründung der
+                                Mittelstandssiedlung für deutsche Einwanderer in Eretz Israel
+                                1934/1935</hi>, Tefen 2005. Für Rechavia siehe zuletzt Thomas Sparr,
+                                <hi rendition="#i">Grunewald im Orient. Das deutsch-jüdische
+                                Jerusalem</hi>, Berlin, 2. Aufl., 2018 sowie Christian Kraft, <hi
+                                rendition="#i">Aschkenas in Jerusalem. Die religiösen Institutionen
+                                der Einwanderer aus Deutschland im Jerusalemer Stadtviertel
+                                Rechavia</hi> (1933–2004) – <hi rendition="#i">Transfer und
+                                Transformation</hi>, Göttingen 2014. Zur Stadtgeschichte Tel Avivs –
+                            und darüber hinaus – haben u.a. Joachim Schlör und Ita Heinze-Greenberg
+                            verschiedentlich geforscht.</note></p>
+                </div>
+            </div>
+            <div xml:id="wann-beginnt-eine-deutschsprachig-jdische-diaspora-zeitlicher-rahmen" n="2">
+                <head>Wann beginnt eine deutschsprachig-jüdische Diaspora? Zeitlicher Rahmen</head>
+                <lb/>
+                <p>Das Diaspora-Portal nimmt die verschiedenen historischen Phasen der
+                    deutsch-jüdischen Migration möglichst ganzheitlich in den Blick. Die
+                    historischen Ausgangspunkte, Kontinuitäten und Brüche der deutsch-jüdischen
+                    Diaspora sollen so über einen längeren Zeitraum sichtbar gemacht werden.</p>
+                <p>Bereits seit den 1830er Jahren, also lange vor der Machtübertragung an die
+                    Nationalsozialisten, setzte eine Migration deutscher Jüdinnen und Juden ein, vor
+                    allem nach Nordamerika. Auch die Mehrheit der mehr als zwei Millionen Jüdinnen
+                    und Juden, die zwischen 1881 und den 1920er-Jahren aus Osteuropa in die USA
+                    emigrierten, reiste über Deutschland als Transitland. In der Folge entwickelten
+                    sich die USA um 1900 zum bedeutendsten Zentrum des Judentums jenseits von
+                    Europa. Neu eingewanderte deutsche Jüdinnen und Juden machten schon im 19.
+                    Jahrhundert vielerorts einen signifikanten Anteil der jüdischen Bevölkerung
+                    aus.</p>
+                <div xml:id="exil-und-emigration-19331945" n="3">
+                    <head>Exil und Emigration: 1933–1945</head>
+                    <lb/>
+                    <p>Eine völlig ungeahnte Dimension nahm das Anwachsen einer deutsch-jüdischen
+                        Diaspora ab 1933 an. Zwischen 250.000 und 300.000 deutsche Jüdinnen und
+                        Juden konnten nach der Machtübertragung an die Nationalsozialisten
+                        emigrieren, nachdem sie oftmals ihren Besitz verloren, lange Wartezeiten
+                        hinter sich gebracht und verschiedene Transitorte in Europa durchlaufen
+                        hatten. Weitere etwa 150.000 deutschsprachige Jüdinnen und Juden folgten im
+                        Gefolge des ,Anschluss‘ Österreichs und der deutschen Besetzung der
+                        Tschechoslowakei 1938 im Zuge einer wachsenden Radikalisierung der
+                        nationalsozialistischen Verfolgungs- und Vertreibungspolitik.</p>
+                    <p>Nach Kriegsbeginn im September 1939 wurde die Auswanderung erst recht
+                        erschwert und viele Jüdinnen und Juden in ihren Zufluchtsländern von den
+                        Kriegshandlungen eingeholt; im Oktober 1941 schließlich verboten die
+                        Nationalsozialisten jegliche Emigration.</p>
+                    <p>Zwischen 1933 und 1941 sahen sich insgesamt rund 400.000 bis 430.000
+                        deutschsprachige Jüdinnen und Juden gezwungen, ihre Herkunftsländer in
+                        Zentraleuropa infolge wachsender antisemitischer Diskriminierung und
+                        Verfolgung zu verlassen. Die Zahl der Frauen, Kinder und Männer, die aus
+                        ihrer Heimat fliehen mussten, lässt sich bis heute nicht eindeutig
+                        beziffern. Es ist anzunehmen, dass neben 270.000 bis 300.000 deutschen
+                        Jüdinnen und Juden insgesamt rund 130.000 von ihnen aus Österreich sowie
+                        25.000 aus dem sogenannten Sudetengau und Protektorat Böhmen und Mähren im
+                        heutigen Tschechien kamen.<note type="editorial" place="foot">Sheer Ganor,
+                                <hi rendition="#i">Somewhere from Long Ago</hi>, S. 4.</note> In all
+                        diesen Gebieten waren sie der nationalsozialistischen Gewaltherrschaft
+                        schutzlos ausgeliefert, die im Mai 1945 mit der bedingungslosen Kapitulation
+                        der Wehrmacht ihr Ende fand.</p>
+                    <p>Die historische Zäsur des Nationalsozialismus für die jüdische Geschichte
+                        wird auch im Diaspora-Portal schwerpunktmäßig sichtbar, ohne dass wir uns
+                        auf die Zeit des Nationalsozialismus beschränken. Wo es historisch
+                        zutreffend ist und Quellen- und Forschungslage es zulassen, nehmen wir auch
+                        deutsch-jüdische Lebenswelten außerhalb des deutschsprachigen Raums vor 1933
+                        wie nach 1945 in den Blick. So lässt sich das transgenerationale Potenzial
+                        von Diaspora erkenntnisfördernd nutzen, indem mehrere Generationen in ihrer
+                        jeweiligen historischen Entwicklung und Verschränkung bedacht werden.</p>
+                    <p>Dieser breitere Zeitrahmen ist nicht auf alle Länder gleichermaßen
+                        anzuwenden. Und doch beziehen wir Orte mit ein, in denen sich vor 1933 keine
+                        deutschsprachige jüdische Community etabliert und in denen sich auch später
+                        keine dauerhafte solche Gemeinschaft entwickelte. Um die vielfach von
+                        Transmigration geprägte deutsch-jüdische Diaspora im Sinne einer
+                        länderübergreifenden Verflechtungs- und Beziehungsgeschichte in ihrer
+                        zeiträumlichen Vielfalt erfassen zu können, werden bewusst auch zeitlich
+                        begrenzte Diasporastrukturen in den Blick genommen.</p>
+                    <p>Miriam Rürup</p>
+                </div>
+                <div xml:id="weiterfhrende-literatur-zum-einstieg" n="3">
+                    <head>Weiterführende Literatur zum Einstieg</head>
+                    <lb/>
+                    <p> Liliana Ruth Feierstein, „Diaspora“, in: Christina von Braun/Micha Brumlik
+                        (Hg.), <hi rendition="#i">Handbuch Jüdische Studien</hi>, Wien, Köln, Weimar
+                        2017, S. 99-109. </p>
+                    <p> Sheer Ganor, <hi rendition="#i">Somewhere from Long Ago: The Global
+                            Displacement of German-Speaking Jewry</hi> (im Erscheinen). </p>
+                    <p> Grit Jilek, <hi rendition="#i">Nation ohne Territorium. Über die
+                            Organisierung der jüdischen Diaspora bei Simon Dubnow </hi>, Baden-Baden
+                        2013. </p>
+                    <p> Steven M. Lowenstein, „Epilog: Die deutsch-jüdische Diaspora“, in: Avraham
+                        Barkei/Paul Mendes-Flohr (Hg.), <hi rendition="#i">Deutsch-Jüdische
+                            Geschichte in der Neuzeit</hi>, Bd. 4, München 2000, S. 372-381. <ref
+                            target="https://diaspora.juedische-geschichte-online.net/viewer/media/lowenstein-epilog-deutsch-juedische-diaspora.pdf"
+                            >PDF-Datei</ref></p>
+                    <p> Miriam Rürup (Hg.), <hi rendition="#i">Praktiken der Differenz.
+                            Diasporakulturen in der Zeitgeschichte</hi>, Göttingen 2009. </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

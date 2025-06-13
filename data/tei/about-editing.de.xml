@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Redaktionsmodell und Editionsrichtlinien</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>diaspora@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="redaktionsmodell" n="2">
+                <head><hi rendition="#b">Redaktionsmodell</hi></head><lb/>
+                <p>Das Diaspora-Portal ist ein internationales und interdisziplinäres Gemeinschaftswerk.
+                    Zwar sind die redaktionelle Betreuung und Koordination sowie die technische Umsetzung am
+                    Moses Mendelssohn Zentrum in Potsdam angesiedelt. Doch das Projekt wird wesentlich von den
+                    aktuell über 100 Autorinnen und Autoren von Beiträgen aus den verschiedenen Textgattungen
+                    eigenverantwortlich mitgestaltet. Sie kommen aus über 20 Ländern, wobei neben
+                    Wissenschaftler:innen auch Journalist:innen und Schriftsteller:innen Fallstudien verfasst
+                    haben. Das Diaspora-Portal soll damit langfristig auch zu einem Ort der internationalen,
+                    interdisziplinären und partnerschaftlichen Vernetzung werden. Bildlich imaginiert als
+                    ,Diaspora-Baum‘ wollen wir zukünftig verschiedene Gedächtnisinstitutionen in den
+                    jeweiligen Zuwanderungsländern zusammentragen, um ihre Arbeit und Bestände sichtbar zu
+                    machen und gezielt miteinander zu verknüpfen.</p>
+                <p>Die Autorinnen und Autoren der Länderstudien begutachten gemeinsam mit der Redaktion die
+                    Biografien und Quellenpräsentationen für ihre Ländersektion. In mehreren digitalen
+                    Kick-off-Meetings, die gleichzeitig der Vernetzung dienten, wurden die Richtlinien
+                    gemeinsam besprochen und diskutiert.</p>
+                <p>Zusätzlich zu diesem zweistufigen Begutachtungsverfahren haben teils – je nach Expertise
+                    – auch externe Gutachter:innen einzelne Textbeiträge geprüft. Dieses mehrstufige
+                    Begutachtungsverfahren und die enge Zusammenarbeit von Redaktion und Autor:innen sichern
+                    die hohe wissenschaftliche Qualität aller Beiträge.</p>
+                <p>Die Redaktion am MMZ ist für die Koordination des Vorhabens zuständig. Sie prüft zudem
+                    die rechtlichen Aspekte der Veröffentlichungen und überwacht die gesamten Abläufe.</p>
+            </div>
+            <div xml:id="editionsrichtlinien" n="2">
+                <head>Editionsrichtlinien</head><lb/>
+                <p>Die verschiedenen Textgattungen dieses Portals folgen einem einheitlichen Schema: Eine
+                    knappe Zusammenfassung nennt zu Beginn die bedeutendsten Aspekte von Land, Person oder
+                    Quelle in Bezug zur deutsch-jüdischen Diaspora. In allen Texten werden Namen von Personen
+                    und Organisationen sowie Ortsbezeichnungen mit Normdatensätzen verknüpft. Auf diese Art
+                    und Weise entsteht ein umfassendes Register sowohl innerhalb des Portals als auch
+                    Verknüpfungen mit anderen digitalen Projekten. Zu sämtlichen Quellen wurden Metadatensätze
+                    erstellt. Bei als digitale Faksimiles abgebildeten Quellen stellen wir zudem eine
+                    Transkription und bei fremdsprachigen Texten eine Übersetzung der jeweiligen Quelle bereit.
+                    Dies erleichtert zum Beispiel die Lesbarkeit handschriftlicher Texte und macht die Quellen
+                    zusätzlich durchsuchbar.</p>
+                <p>Für die XML-Transkripte in der Online-Version wurden Metadatensätze erstellt, alle
+                    historischen Dokumente sind mit Metadaten versehen.</p>
+                <p><!--Zur Erklärung von möglicherweise unbekannten Begriffen oder erwähnten Organisationen
+                    entsteht zukünftig ein fortlaufend ergänztes Glossar.--> Zudem bieten alle Texte am Ende eine
+                    kleine Auswahlbibliografie und weiterführende Inhalte an. Letztere umfassen Links zu
+                    anderen digitalen Inhalten (Artikel, Online-Ausstellungen, Digitalisate, Podcasts, Filme
+                    etc.).</p>
+                <p>Die Transkriptionen wurden möglichst originalgetreu von der Redaktion erstellt. Dazu
+                    gehört auch die weitgehende Beibehaltung der ursprünglichen Interpunktion und Orthografie.
+                    Rechtschreibefehler und Abkürzungen werden aufgelöst, Unklarheiten in Anmerkungen
+                    vermerkt. Hervorhebungen und Streichungen sind sichtbar gelassen, insbesondere wenn sie
+                    eine inhaltliche Bedeutung haben.</p>
+                <p>Die Originalsprache der Länderstudien, Biografien und Quelleninterpretationen ist jeweils
+                    Deutsch oder Englisch. Bei englischen Textbeiträgen haben wir uns an den Schreibweisen der
+                    jeweiligen Autor:innen (amerikanisches bzw. britisches Englisch) orientiert.</p>
+                <p>Sowohl die Nutzeroberfläche als auch die Inhalte des Portals sind durchgängig
+                    zweisprachig (Englisch und Deutsch) angedacht. Aktuell noch fehlende Übersetzungen
+                    befinden sich in redaktioneller Bearbeitung und werden sukzessive ergänzt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

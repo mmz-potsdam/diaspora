@@ -42,113 +42,138 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
-            <div n="3">
-                <head>Team</head>
+            <p>Das Online-Portal ,Geschichte[n] der deutsch-jüdischen Diaspora‘ wird vom Moses
+                Mendelssohn Zentrum für europäisch-jüdische Studien (MMZ) in Potsdam herausgegeben
+                und vom dortigen Projektteam betreut. Es ist Teil des am MMZ angesiedelten
+                Verbundportals zur europäisch-jüdischen Geschichte ,<ref
+                    target="https://portal.juedische-geschichte-online.net/">Jüdische Geschichte
+                    online</ref>‘ und ergänzt den voraussichtlich Anfang 2027 erscheinenden
+                Sammelband des Leo Baeck Instituts in der Buchreihe zur ‚Deutsch-jüdischen
+                Geschichte in der Neuzeit‘.</p>
+            <div xml:id="team-portal" n="2">
+                <head>Team Portal</head>
                 <lb/>
-                <p>Das Online-Quellenportal „Geschichte[n] der deutsch-jüdischen Diaspora“ wird vom
-                    Moses Mendelssohn Zentrum für europäisch-jüdische Studien (MMZ) in Potsdam
-                    herausgegeben und vom dortigen Projektteam betreut. Das digitale Portal ist Teil
-                    der größeren, vom MMZ und dem Institut für die Geschichte der deutschen Juden
-                    (IGdJ) gemeinsam realisierten Plattform zur europäisch-jüdischen Geschichte. Dieses
-                    am MMZ angesiedelte neue Angebot mit dem Diaspora-Quellenportal als einem
-                    Kernmodul soll zu einer zentralen Plattform für das Fach Jüdische Geschichte
-                    ausgebaut werden. Weitere Informationen zur Umsetzung der modular aufgebauten
-                    Plattform „Jüdische Geschichte Online“ finden Sie unter <ref
-                        target="https://portal.juedische-geschichte-online.net/"
-                        >portal.juedische-geschichte-online.net</ref>.</p>
-
-                <p><hi rendition="#b">Prof. Dr. Miriam Rürup (MMZ, Projektleitung)</hi>
-                    <lb/>
-                     ist seit 2020 Direktorin des Moses Mendelssohn Zentrums für europäisch-jüdische
-                    Studien in Potsdam. Als Vorsitzende der Wissenschaftlichen Arbeitsgemeinschaft
-                    des Leo Baeck Instituts leitet sie die konzeptionelle Ausgestaltung des
-                    Buchprojekts und Online-Quellenportals „Geschichte[n] der deutsch-jüdischen
-                    Diaspora“. Davor war sie Direktorin des Instituts für die Geschichte der
-                    deutschen Juden in Hamburg. In dieser Funktion war sie Initiatorin und
-                    konzeptverantwortliche Herausgeberin der „Hamburger Schlüsseldokumente zur
-                    deutsch-jüdischen Geschichte“. Ihre Forschungsinteressen umfassen die
-                    deutsch-jüdische Geschichte, Zeitgeschichte, Geschichte des Nationalsozialismus,
-                    Gedenkpolitik, Geschlechtergeschichte sowie die Geschichte von Migration,
-                    Staatsbürgerschaft und Staatenlosigkeit. </p>
-
-                <p><hi rendition="#b">Dr. Sheer Ganor (University of Minnesota,
-                        Mitherausgeberin)</hi>
-                    <lb/>
-                     ist Historikerin und Assistant Professor am College of Liberal Arts an der
-                    University of Minnesota in Minneapolis. Sie ist Mitherausgeberin des geplanten
-                    Sammelbands im hybriden Forschungsvorhaben „Geschichte[n] der deutsch-jüdischen
-                    Diaspora“. Sie hat in Berkeley, Berlin und Tel Aviv studiert und wurde 2019 an
-                    der University of California promoviert. In ihrer Forschung befasst sie
-                    sich mit Themen der erzwungenen Migration, Erinnerung und kulturellen
-                    Identitäten. Ihre Dissertation thematisiert die transnationale Geschichte
-                    diasporischer Netzwerke deutschsprachiger Jüdinnen und Juden im 20. Jahrhundert.
-                    Sie hat u.a. am Deutschen Historischen Institut in Washington D.C. gearbeitet.
-                    Ihre Forschung wurde von verschiedenen Institutionen unterstützt, darunter der
-                    Central European History Society und der Studienstiftung des deutschen
-                    Volkes.</p>
                 <p>
-                    <hi rendition="#b">Dr. Lisa Sophie Gebhard (MMZ, Koordination)</hi>
-                    <lb/>
-                     ist seit 2023 wissenschaftliche Mitarbeiterin am Moses Mendelssohn Zentrum für
-                    europäisch-jüdische Studien in Potsdam und dort für die Koordination des
-                    hybriden Publikationsprojekts „Geschichte[n] der deutsch-jüdischen Diaspora“
-                    zuständig. Sie hat in Berlin, Jerusalem, Kiel und Mailand studiert und wurde
-                    2022 an der Freien Universität Berlin mit einer biografischen Studie zum
-                    Frühzionismus promoviert. Ihre Dissertation, die u.a. von der Studienstiftung
-                    des deutschen Volkes gefördert wurde, ist in der Schriftenreihe
-                    wissenschaftlicher Abhandlungen des LBI erschienen. Zuvor hat sie im
-                    Wissenschaftszentrum Berlin für Sozialforschung, im Deutschen Historischen
-                    Museum und im Hentrich&amp;Hentrich Verlag für jüdische Kultur und
-                    Zeitgeschichte gearbeitet. Sie lebt mit ihrer Familie in Berlin. </p>
+                    <hi rendition="#b">Daniel Burckhardt, M.A. (Technische Umsetzung)</hi>
+                    <lb/> ist seit 2021 wissenschaftlicher Mitarbeiter am Moses Mendelssohn Zentrum
+                    für europäisch-jüdische Studien in Potsdam und dort für die technische
+                    Entwicklung aller digitalen Projekte verantwortlich, insbesondere des Portals
+                    ,Jüdische Geschichte online‘, in das auch dieses Portal einfließt. Zuvor hat er
+                    am <hi rendition="#i">Institut für die Geschichte der deutschen Juden</hi> in
+                    Hamburg die sogenannte Schlüsseldokumente-Edition technisch betreut. Er hat in
+                    Zürich und Berlin studiert und war als wissenschaftlicher Mitarbeiter am <hi
+                        rendition="#i">Institut für Geschichtswissenschaften</hi> der
+                    Humboldt-Universität zu Berlin, am <hi rendition="#i">Zentrum für
+                        Zeithistorische Forschung</hi> Potsdam sowie am <hi rendition="#i">Deutschen
+                        Historischen Institut</hi> in Washington, D.C. tätig. Er ist außerdem
+                    Mitglied der Redaktion und Steuerungsgruppe von <hi rendition="#i"
+                        >H-Soz-Kult</hi>.</p>
+
                 <p>
-                    <hi rendition="#b">Daniel Burckhardt (MMZ, technische Umsetzung)</hi>
-                    <lb/>
-                     ist seit 2021 wissenschaftlicher Mitarbeiter am Moses Mendelssohn Zentrum für
-                    europäisch-jüdische Studien in Potsdam und dort u.a. für die technische
-                    Umsetzung des Online-Quellenportals „Geschichte[n] der deutsch-jüdischen Diaspora“
-                    verantwortlich. Zuvor hat er am Institut für die Geschichte der deutschen Juden
-                    die „Hamburger Schlüsseldokumente zur deutsch-jüdischen Geschichte“ technisch
-                    betreut. Er hat in Zürich und Berlin Mathematik und Wissenschaftsgeschichte
-                    studiert und war als wissenschaftlicher Mitarbeiter am Institut für
-                    Geschichtswissenschaften der Humboldt-Universität zu Berlin, am Zentrum für
-                    Zeithistorische Forschung Potsdam sowie am Deutschen Historischen Institut in
-                    Washington, D.C. tätig. Er ist außerdem Mitglied der Redaktion und
-                    Steuerungsgruppe von H-Soz-Kult. </p>
+                    <hi rendition="#b">Dr. Lisa Sophie Gebhard (Koordination und Redaktion)</hi>
+                    <lb/> ist Historikerin und wissenschaftliche Mitarbeiterin am Moses Mendelssohn
+                    Zentrum für europäisch-jüdische Studien in Potsdam, wo sie das internationale
+                    Publikationsprojekt ,Geschichte[n] der deutsch-jüdischen Diaspora‘ koordiniert.
+                    Sie hat in Berlin, Jerusalem, Kiel und Mailand studiert und wurde 2022 an der
+                    Freien Universität Berlin promoviert. Zu ihren Forschungsinteressen zählt die
+                    Geschichte des Zionismus, zu der sie den Sammelband <hi rendition="#i"
+                        >Deutschsprachige Zionismen. Verfechter, Kritiker und Gegner, Organisationen
+                        und Medien (1890–1938)</hi> (mit David Hamann; Peter Lang, 2019)
+                    herausgegeben hat. Zuletzt ist ihre Dissertation erschienen, die unter dem Titel
+                        <hi rendition="#i">Davis Trietsch – Der vergessene Visionär. Zionistische
+                        Zukunftsentwürfe zwischen Deutschland, Palästina und den USA</hi> (Mohr
+                    Siebeck, 2022) auf der Leipziger Buchmesse 2023 vorgestellt wurde. Sie lebt mit
+                    ihrer Familie in Berlin. </p>
+                <p>
+                    <hi rendition="#b">Verena Kurz, M.A. (Redaktion)</hi><lb/> ist seit 2024 externe
+                    wissenschaftliche Mitarbeiterin im Publikationsprojekt ,Geschichte[n] der
+                    deutsch-jüdischen Diaspora‘ am Moses Mendelssohn Zentrum für europäisch-jüdische
+                    Studien in Potsdam. Sie studierte Kulturwissenschaften, Spanische Philologie und
+                    Lateinamerikastudien in Potsdam und Berlin. Studien- und Forschungsaufenthalte,
+                    gefördert durch DAAD-Stipendien, führten sie nach Argentinien, Bolivien und
+                    Spanien. In Buenos Aires leitete sie das <hi rendition="#i">Liaison Office</hi>
+                    der Universität Potsdam und arbeitete in einem historischen Archiv an der
+                    Dokumentation der ,antifaschistischen‘ Gründungsgeschichte der
+                    Pestalozzi-Schule. </p>
+                <p>
+                    <hi rendition="#b">Paul-Levi Mydlach (Redaktionsassistenz)</hi><lb/> ist
+                    studentische Hilfskraft am Moses Mendelssohn Zentrum in Potsdam. Er studiert
+                    Geschichte und Germanistik an der Universität Potsdam mit dem
+                    Interessenschwerpunkt deutsch-jüdische Geschichte und Literatur.<lb/></p>
+                <p><hi rendition="#b">Prof. Dr. Miriam Rürup (Projektleitung)</hi>
+                    <lb/> ist seit 2020 Direktorin des Moses Mendelssohn Zentrums für
+                    europäisch-jüdische Studien in Potsdam. Als Vorsitzende der <hi rendition="#i"
+                        >Wissenschaftlichen Arbeitsgemeinschaft</hi> des <hi rendition="#i">Leo
+                        Baeck Instituts</hi> leitet sie die konzeptionelle Ausgestaltung des
+                    Buchprojekts und Online-Portals ,Geschichte[n] der
+                    deutsch-jüdischen Diaspora‘. Zuvor war sie Direktorin des <hi rendition="#i"
+                        >Instituts für die Geschichte der deutschen Juden</hi> in Hamburg und dort
+                    Initiatorin und konzeptverantwortliche Herausgeberin und Projektleiterin der
+                    sogenannten Schlüsseldokumente-Edition. </p>
+                <p>
+                    <hi rendition="#b">Übersetzer</hi><lb/> Andreas Bredenfeld, Berlin<lb/> Jake
+                    Schneider, Berlin <lb/>
+                </p>
             </div>
-            <div n="3">
-                <head>Wissenschaftlicher Beirat</head><lb/>
+            <div xml:id="team-buchpublikation" n="2">
+                <head>Team Buchpublikation</head>
+                <lb/>
+                <p>
+                    <hi rendition="#b">Autor:innen</hi><lb/> Prof. Dr. Michael Brenner<lb/> Dr.
+                    Sheer Ganor (hauptverantwortliche Autorin und Herausgeberin)<lb/> Prof. Dr.
+                    Marion A. Kaplan<lb/> Prof. Dr. Guy Miron<lb/> Prof. Dr. Miriam Rürup
+                    (hauptverantwortliche Autorin und Herausgeberin)<lb/></p>
+
+                <p>
+                    <hi rendition="#b">Redaktion</hi><lb/> Dr. Lisa Sophie Gebhard (Koordination und
+                    Redaktion)<lb/> Verena Kurz<lb/> Paul-Levi Mydlach (Redaktionsassistenz)<lb/>
+                </p>
+            </div>
+            <div n="2">
+                <head>Beirat</head>
+                <lb/>
+                <p>Inhaltliche Unterstützung erhält dieses hybride Projekt zudem durch einen
+                    renommierten, international besetzten Fachbeirat. In ihm sind
+                    Wissenschaftler:innen aus den drei Ländern vertreten, in denen sich seit 1955
+                    die <hi rendition="#i">Leo Baeck Institute</hi> befinden und die darüber hinaus
+                    zum Teil an den Vorgängerbänden <hi rendition="#i">Deutsch-jüdische Geschichte
+                        in der Neuzeit</hi> mitgewirkt haben.</p>
                 <list>
-                    <item>
-                        Ofer Ashkenazi, Direktor des Koebner Minerva Research Center for German History an der Hebrew University of Jerusalem
-                    </item>
-                    <item>
-                        Atina Grossmann, Professorin für Geschichte an der Faculty of Humanities and Social Sciences der Cooper Union in New York City
-                    </item>
-                    <item>
-                        Simone Lässig, Direktorin des Deutschen Historischen Instituts in Washington, D.C.
-                    </item>
-                    <item>
-                        Jeffrey Lesser, Samuel Candler Dobbs Professor und Direktor des Halle Institute for Global Research and Learning an der Emory University, Atlanta
-                    </item>
-                    <item>
-                        Michael A. Meyer, Adolph S. Ochs Professor Emeritus für Jüdische Geschichte am Hebrew Union College in Cincinnati
-                    </item>
-                    <item>
-                        David Rechter, Professor für Jüdische Geschichte an der Faculty of Asian and Middle Eastern Studies, University of Oxford
-                    </item>
-                    <item>
-                        Katrin Steffen, Professorin für europäische und jüdische Geschichte an der University of Sussex                      </item>
+                    <item>Prof. Ofer Ashkenazi, PhD, Direktor des Koebner Minerva Research Center
+                        for German History an der Hebrew University of Jerusalem </item>
+                    <item> Prof. Atina Grossmann, PhD, Professorin für Geschichte an der Faculty of
+                        Humanities and Social Sciences der Cooper Union in New York City </item>
+                    <item> Prof. Dr. Simone Lässig, Direktorin des Deutschen Historischen Instituts
+                        in Washington, D.C. </item>
+                    <item> Prof. Jeffrey Lesser, PhD, Samuel Candler Dobbs Professor und Direktor
+                        des Halle Institute for Global Research and Learning an der Emory
+                        University, Atlanta </item>
+                    <item> Prof. Michael A. Meyer, PhD, Adolph S. Ochs Professor Emeritus für
+                        Jüdische Geschichte am Hebrew Union College in Cincinnati </item>
+                    <item> Prof. David Rechter, PhD, Professor für Jüdische Geschichte an der
+                        Faculty of Asian and Middle Eastern Studies, University of Oxford </item>
+                    <item> PD Dr. Katrin Steffen, DAAD Professorin für europäische und jüdische
+                        Geschichte an der University of Sussex </item>
                 </list>
             </div>
             <div n="3">
-                <head>Förderer und Partner</head><lb/>
-                <p>Die <ref target="https://www.volkswagenstiftung.de/de">VolkswagenStiftung</ref> fördert seit 2023 die Realisierung des hybriden Publikationsprojekts der Wissenschaftlichen Arbeitsgemeinschaft des Leo Baeck Instituts (LBI) unter Federführung ihrer Vorsitzenden Prof. Dr. Miriam Rürup am Moses Mendelssohn Zentrum für europäisch-jüdische Studien in Potsdam.</p>
-                <p>Das Forschungsvorhaben  wird in Kooperation mit verschiedenen internationalen Einrichtungen, darunter Archive, Bibliotheken und Museen, durchgeführt:</p>
+                <head>Förderer<!-- und Partner--></head>
+                <lb/>
+                <p>Die <ref target="https://www.volkswagenstiftung.de/de">VolkswagenStiftung</ref>
+                    fördert seit 2023 die Realisierung des hybriden Publikationsprojekts der <hi
+                        rendition="#i">Wissenschaftlichen Arbeitsgemeinschaft</hi> des <hi
+                        rendition="#i">Leo Baeck Instituts</hi> (LBI) unter Federführung ihrer
+                    Vorsitzenden Prof. Dr. Miriam Rürup am Moses Mendelssohn Zentrum für
+                    europäisch-jüdische Studien in Potsdam.</p>
+                <!--
+                <p>Das Forschungsvorhaben wird in Kooperation mit verschiedenen internationalen
+                    Einrichtungen, darunter Archive, Bibliotheken und Museen, durchgeführt:</p>
                 <list>
-                    <item>
-                        Centro de Documentación de la Inmigración de Habla Alemana en la Argentina | Dokumentationszentrum der deutschsprachigen Immigration in Argentinien, Buenos Aires
-                    </item>
+                    <item> Centro de Documentación de la Inmigración de Habla Alemana en la
+                        Argentina | Dokumentationszentrum der deutschsprachigen Immigration in
+                        Argentinien, Buenos Aires </item>
                 </list>
+                -->
             </div>
         </body>
     </text>

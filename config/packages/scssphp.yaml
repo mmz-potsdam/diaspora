@@ -12,7 +12,8 @@ scssphp:
                 - "assets/scss"                        # main directory
         # for the diaspora theme
         "css/diaspora.css":
-            src: "sites/diaspora-site/assets/scss/base.scss"
+            src: "assets/scss/base.scss"
+            #src: "sites/diaspora-site/assets/scss/base.scss"
             sourceMap: true
             # Array of import paths, relative to Symfony's project directory.
             importPaths:

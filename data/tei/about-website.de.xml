@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Über diese Website</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>diaspora@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:id="inhalte-und-aufbau-webseite" n="2">
+                <head>Inhalte und Aufbau der Webseite</head>
+                <lb/>
+                <p>Mit dem Diaspora-Portal möchten wir ein benutzerfreundliches Online-Angebot mit
+                    umfassenden Suchoptionen bereitstellen. Über verschiedene Textebenen,
+                    Quellenarten und Videocontent sollen Inhalte zur deutsch-jüdischen Geschichte
+                    außerhalb des deutschsprachigen Raums vermittelt werden. Die unterschiedlichen
+                    Darstellungsformen ermöglichen dabei mehrere Vertiefungsebenen. Das gesamte
+                    Portal ist modular aufgebaut, so dass sich die Besucher:innen von der Einführung
+                    in die Gesamtthematik aus durch die unterschiedlichen Länder klicken und ,lesen‘
+                    können.</p>
+                <p>Unser Portal wird fortlaufend erweitert und geht zunächst mit einer kleinen
+                    Vorschau online. Bislang wurden mehr als 30 Überblickstexte zu einzelnen Ländern
+                    eingeworben, darunter für die deutsch-jüdische Geschichte weithin unbekannte
+                    Orte wie Curaçao, Sri Lanka oder Suriname. Sie waren häufig in koloniale
+                    Strukturen eingebunden und geben so gleichzeitig den Blick darauf frei, wie
+                    koloniale Strukturen von Jüdinnen und Juden im Kontext eigener Diskriminierungs-
+                    und Verfolgungserfahrungen bewertet wurden. Die Fallstudien – Quellen ebenso wie
+                    biografische Porträts – sind hier als Schlüsseldokumente zu verstehen, mit denen
+                    wir beispielhaft thematische Schlaglichter auf zentrale Aspekte der
+                    deutsch(sprachigen)-jüdischen Diaspora richten. Im Hintergrund sind außerdem
+                    weitere Texte zu historischen Personen und Quellen in Vorbereitung, die
+                    ebenfalls fortlaufend ergänzt werden.</p>
+            </div>
+            <div xml:id="zielgruppe" n="2">
+                <head>Zielgruppe</head><lb/>
+                <p>Das Diaspora-Portal richtet sich an Studierende, Forschende und Lehrende, aber auch
+                    an Schüler:innen, interessierte Laien sowie nicht zuletzt an die Nachfahren der hier in
+                    den Blick genommenen deutschsprachigen Jüdinnen und Juden. Dem Thema einer
+                    deutsch-jüdischen Diaspora und ihren transnationalen Netzwerken entsprechend ist es
+                    aktuell mehrsprachig angelegt – aktuell auf Deutsch und Englisch. Um möglichst viele
+                    Besucher:innen zu erreichen, soll das Portal zukünftig möglichst auch auf Hebräisch und
+                    Spanisch verfügbar werden. Denn gerade die Nachfahren – viele von ihnen aus Südamerika –
+                    haben zwar häufig keine Zugänge mehr zur deutschen Sprache, sind jedoch mit den
+                    Erzählspuren der Vergangenheit ihrer Eltern, Großeltern und Urgroßeltern aufgewachsen.
+                    Auch ihnen möchten wir mit diesem Portal Zugänge zur Geschichte ihrer Vorfahren
+                    ermöglichen. Zudem können sie als Kenner:innen ihrer eigenen Familiengeschichte über die
+                    Kategorie <hi rendition="#i">Bring Your Own Story</hi> selbst zu Wort kommen.</p>
+                <p>So weiten wir unseren Kreis an Nutzer:innen über das regionale und nationale Zielpublikum
+                    hinaus aus und nutzen die grenzüberschreitenden Möglichkeiten von Online-Angeboten
+                    bestmöglich.</p>
+                <p>Mit dem Diaspora-Portal sprechen wir über das akademische Fachpublikum hinaus eine
+                    breitere interessierte Öffentlichkeit an. Neben einer enzyklopädischen Dichte an Zahlen
+                    und Details werden komplexe Zusammenhänge und Hintergründe verständlich vermittelt,
+                    übergreifende Fragestellungen und zentrale Aspekte reflektiert und Sachinformationen mit
+                    analytischer Interpretation verknüpft.</p>
+                <p>Das Diaspora-Portal eignet sich besonders für den Schulunterricht. Einerseits können die
+                    komplexen historischen, sozialen und politischen Gründe, die zur Entstehung einer
+                    deutsch(sprachigen)-jüdischen Diaspora geführt haben, am Beispiel von Einzelschicksalen
+                    durch Schüler:innen entschlüsselt werden. Gleichzeitig wird ein historisches Verstehen
+                    über die existenziellen Beschwerlichkeiten und Herausforderungen des Heimatverlusts und
+                    Neuanfangs ermöglicht.</p>
+            </div>
+            <div xml:id="textgattungen" n="2">
+                <head>Textgattungen</head><lb/>
+                <p>Das Diaspora-Portal setzt sich aus insgesamt <hi rendition="#b">drei
+                        Textebenen</hi> sowie einer Sonderrubrik zusammen, die durch
+                    Querverbindungen in Form von Links miteinander in Beziehung gesetzt werden.</p>
+                <p>
+                    Überblickscharakter haben dabei als erste Gattung die sogenannten <hi
+                        rendition="#b">Länderstudien</hi>. Sie bilden die längsten Textbeiträge und
+                    sollen den notwendigen historischen Kontext vermitteln, um die Fallbeispiele
+                    besser einordnen zu können.</p>
+                <p>Eine zweite Ebene stellen die <hi rendition="#b">Biografien</hi>
+                    deutschsprachiger Jüdinnen und Juden in der Emigration dar. Eine dritte Ebene
+                    bilden <hi rendition="#b">Quellen</hi>, die als Schlüsseldokumente für eine
+                    Geschichte der deutsch-jüdischen Diaspora gelten können und mit
+                    Interpretationstexten präsentiert werden.</p>
+                <p>In einer Sonderrubrik – <hi rendition="#i"><hi rendition="#b">Bring Your Own
+                            Story</hi></hi> – können zudem einzelne besondere Objekte mit
+                    einer persönlichen Geschichte verbunden werden.</p>
+                <div xml:id="lnderstudien" n="3">
+                    <head>Länderstudien</head><lb/>
+                    <p>Die geografischen Überblickstexte zu verschiedenen Durchgangs- und
+                        Zielländern deutschsprachiger Jüdinnen und Juden dienen der Einführung und
+                        sollen Forschungsfragen benennen. Wie in einem Handbuch werden
+                        Entwicklungslinien und zentrale Aspekte aufgezeigt. Dabei werden
+                        Sachinformationen mit einer analytischen Deutung der
+                        deutsch-jüdischen Diaspora verknüpft, die sich im jeweiligen Land möglicherweise
+                        herausgebildet hat. Die Länderstudien sind möglichst einheitlich
+                        entlang verschiedener Themenbereiche strukturiert und benennen die für die
+                        jüdische Geschichte jeweils relevanten nationalen Gegebenheiten vor und nach
+                        1933.</p>
+                    <p>Der Umfang der geografischen Überblickstexte variiert je nach Land und stellt
+                        verschiedene Varianten diasporischer Lebenswelten vor – von Zentren einer
+                        deutschsprachigen Diaspora bis hin zu Transitländern mit nur vorübergehender
+                        deutsch(sprachig)-jüdischer Präsenz. Die Länderstudien orientieren sich an
+                        thematischen Schwerpunktkategorien behandeln mithin
+                        mehrere Themen wiederkehrend, um eine möglichst einheitliche
+                        Textstruktur generieren und einen Vergleich zwischen den einzelnen Ländern
+                        ermöglichen zu können. Die äußerst vielfältige deutsch-jüdische Diaspora
+                        sollte dabei nicht allein auf nationalstaatlicher Ebene dargestellt, sondern
+                        auch einzelne Städte oder Viertel sowie die Peripherie beachtet werden. Dies
+                        ermöglicht, die Erfahrungsgeschichte deutschsprachiger Jüdinnen und Juden
+                        auch im Lokalen sichtbar zu machen.</p>
+                    <p>Mögliche Themenfelder, entlang derer sich die Länderstudien lesen lassen,
+                        sind:</p>
+                    <p>1. <hi rendition="#b">Alltag</hi> | 2. <hi rendition="#b">Institutionen</hi>
+                        | 3. <hi rendition="#b">Identität und Religiosität</hi> | 4. <hi
+                            rendition="#b">Geschlecht und Generation</hi> | 5. <hi rendition="#b"
+                            >Transnationale Netzwerke</hi> | 6. <hi rendition="#b">Sprache</hi> | 7.
+                            <hi rendition="#b">Begegnungen</hi> | 8. <hi rendition="#b">Kultur- und
+                            Wissenstransfer</hi> | 9. <hi rendition="#b">Rückkehr</hi> | 10. <hi
+                            rendition="#b">Erbe und Erinnern</hi></p>
+                    <p>Mit ihren spezifischen Unterkategorien dienen die zehn Themenkategorien nicht
+                        als strikte Vorgabe, die in jeder Länderstudie bearbeitet wurden.
+                        Stattdessen haben die verantwortlichen Autor:innen die für das jeweilige
+                        Land relevanten Themen selbständig herausgegriffen und in ihren
+                        Überblickstexten erläutert.</p>
+                    <p>Was in allen Länderstudien jedoch möglichst wiederkehrend behandelt wurde,
+                        sind die jeweilige Institutionalisierung der deutsch-jüdischen Diaspora etwa
+                        durch entsprechende Vereine oder Zeitschriften, die zu bewältigenden
+                        Herausforderungen im Alltag sowie die Begegnungen mit anderen
+                        Minderheitengruppen und der Mehrheitsgesellschaft. Hinzu kommen die Bedeutung
+                        von Erinnerung und Nostalgie für die Konstruktion einer gemeinsamen
+                        ,Diaspora-Identität‘ sowie die über das jeweilige Land hinausgehenden
+                        transnationalen Netzwerke bis hin zu Rückbezügen zur früheren Heimat. Durch
+                        diese relevanten Themenfelder lassen sich im geografischen Längsschnitt
+                        Parallelen und Unterschiede aufzeigen.</p>
+                </div>
+                <div xml:id="biografien" n="3">
+                    <head>Biografien</head><lb/>
+                    <p>Neben den verschiedenen Zielorten werden historische Akteur:innen
+                        porträtiert, die den deutschsprachigen Raum verließen. Durch Einzel- oder
+                        Gruppenbiografien soll der deutsch-jüdischen Diaspora so gewissermaßen ein
+                        Gesicht gegeben und einer Entpersönlichung der Migrationsthematik
+                        entgegengetreten werden. Dabei ist nicht entscheidend, ob die Person bekannt
+                        ist. Neben ,prominenten‘ historischen Akteur:innen nehmen wir auch bisher
+                        unbekanntere Lebenswege in den Blick, wenn sie besondere Aspekte der
+                        deutschsprachigen jüdischen Diaspora in ihrer Bandbreite beleuchten.</p>
+                    <p>Die Biografien vertiefen den Gesamtkontext der jeweiligen Länderstudien am
+                        Einzelbeispiel. Im Fokus dabei steht das Leben in der Diaspora. Ebenso finden sich
+                        viele Bezüge zu einer erhofften oder vorübergehenden sowie einer realen
+                        Rückkehr in das Herkunftsland. Gerade über solche Fallstudien wird deutlich,
+                        wie sich die hybriden, oft fragmentierten Zugehörigkeiten der Betroffenen
+                        herausbildeten und im Laufe des Lebens auch wandelten. In den Kurzbiografien
+                        kehren die thematischen Schwerpunkte der Länderstudien wieder und können
+                        exemplarisch beleuchtet werden.</p>
+                </div>
+                <div xml:id="quelleninterpretationen" n="3">
+                    <head>Quelleninterpretationen</head><lb/>
+                    <p>Quellen, die wir als Text-, Bild-, Ton- oder audiovisuelle Dokumente –
+                        darunter Abbildungen dreidimensionaler Objekte – im Diaspora-Portal
+                        einbinden, dienen dazu, sogenannte Tiefenbohrungen vorzunehmen. Sie
+                        beleuchten einzelne Lebensabschnitte und Themenfelder. Jede
+                        Quelle (oder ein zusammenhängendes Konvolut) wird durch eine Beschreibung
+                        und Interpretation textlich aufbereitet, um sie in ihrem Entstehungs- und
+                        Gebrauchskontext zu verorten. Zur Quelleninterpretation gehört neben einer
+                        Transkription und Übersetzung ein digitales Faksimile. Wie in den Biografien
+                        sollen auch mit den Quellen und Interpretationstexten die Themenkategorien
+                        der Länderstudien am konkreten Beispiel vertieft werden.</p>
+                    <p>Die Herkunft der Quellen variiert dabei: Sie stammen sowohl aus öffentlichen
+                        Archiven, Bibliotheken oder Museen wie auch aus privaten Sammlungen und
+                        Nachlässen. In einigen Fällen zeigen wir nur Auszüge aus einer Quelle – dann
+                        aber immer mit Verweis auf die Zugänglichkeit des gesamten Dokuments und (wo
+                        technisch möglich) auch mit entsprechender Verlinkung zu einer
+                        Gesamtversion.</p>
+                    <p>Bei der Auswahl der Quellen haben wir uns an der Idee der sogenannten
+                        Schlüsseldokumente orientiert, die Miriam Rürup zusammen mit Anna Menny und
+                        Daniel Burckhardt im Rahmen der <ref target="https://schluesseldokumente.net">Hamburger Schlüsseldokumente zur deutsch-jüdischen Geschichte</ref> entwickelt hat.</p>
+                    <p>Als Schlüsseldokument wird dabei eine Quelle verstanden, die exemplarisch
+                        Einblicke in historische Zusammenhänge und Ereignisse gibt – gewissermaßen
+                        als ,Türöffner‘. Diese quellenbasierte Textebene
+                        bildet ein zentrales Element der Website.</p>
+                </div>
+                <div xml:id="bring-your-own-story" n="3">
+                    <head><hi rendition="#i">Bring Your Own
+                        Story</hi></head><lb/>
+                    <p>Neben herkömmlichen Texten wollen wir sukzessive Menschen zu Wort kommen
+                        lassen, die selbst Teil der Geschichte sind. Über die Rubrik ,<hi
+                            rendition="#i">Bring Your Own Story</hi>‘ sollen ihre Lebenswege in der
+                        Diaspora anhand einzelner sogenannter Storytelling-Objekte erfahrbar gemacht
+                        werden. Sie umfassen Alltagsgegenstände, Briefe, Fotos oder Karten, aber
+                        auch angewandte Kunst oder besondere textile Objekte. Die verschiedenen
+                        Gegenstände verbinden dabei persönlich Erlebtes mit der Geschichte der
+                        deutsch-jüdischen Diaspora. Als einzigartige Erinnerungsträger, in denen
+                        sich oft mehrfache Migrationserfahrungen innerhalb einer Familie spiegeln,
+                        besitzen sie tiefe, generationenübergreifende Bedeutungen. In 10 bis
+                        15-minütigen persönlichen Videos reflektieren unsere Gesprächspartner:innen
+                        ihre eigene Migrationsbiografie und die Rolle der deutsch-jüdischen Diaspora
+                        für ihre Familiengeschichte.</p>
+                </div>
+            </div>
+            <!--
+            <div xml:id="navigation" n="2">
+                <head>Navigation</head><lb/>
+                <p>Das Diaspora-Portal bietet vielfältige Zugänge zu einzelnen Ländern, historischen
+                    Personen, und Quellen. Die Biografien und Quellenpräsentationen sind dabei über drei
+                    Reiter mit den Titeln <hi rendition="#i">Zeitstrahl</hi>, <hi rendition="#i">Karte</hi>
+                    und <hi rendition="#i">Themen</hi> ansteuerbar. Alle Quellen sind über die Metadaten mit
+                    einem Primärdatum versehen. Dies ist in der Regel der feststellbare Entstehungszeitpunkt
+                    der Quelle. Bei lebensgeschichtlichen Interviews und Lebenserinnerungen hat sich die
+                    Redaktion dafür entschieden, zwei Daten zu vergeben – den Zeitpunkt des Verfassens der
+                    Quelle sowie den feststellbar historisch behandelten Zeitpunkt. Anhand dieser Daten sind
+                    sie auf einem Zeitstrahl angeordnet.</p>
+                <p>Neben einem Primärdatum, das den feststellbaren Entstehungszeitpunkt etwa einer Quelle
+                    angibt, sind sie mit einem Primärort ausgezeichnet, der ihre Anordnung innerhalb einer
+                    Karte ermöglicht. Die Kartengrundlage ist dabei bewusst keine historische, sondern eine
+                    abstrahierte Karte, die in erster Linie der räumlichen Orientierung dienen soll.</p>
+                <p>Der dritte Zugang erfolgt schließlich über unsere zehn Themenkategorien, durch die sich
+                    die Biografien und Quellenpräsentationen thematisch verorten lassen. Über Schlagworte
+                    können Besucher:innen des Portals gezielt nach für sie interessanten Personen und Quellen
+                    suchen.</p>
+            </div>
+            -->
+        </body>
+    </text>
+</TEI>

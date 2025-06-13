@@ -3,12 +3,10 @@
  * used defining text fonts
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
-$font-stack-display-typeface: 'Jost', Arial, sans-serif;
-$font-stack-sans: 'Jost', Arial, sans-serif;
+$font-stack-display-typeface: 'Work Sans', Arial, sans-serif;
+$font-stack-sans: 'Work Sans', Arial, sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-$font-stack-book-typeface: 'Lora', serif;
-$font-stack-serif: 'Lora', serif;
+$font-stack-book-typeface: 'Work Sans', Arial, sans-serif;
+$font-stack-serif: 'Work Sans', Arial, sans-serif;

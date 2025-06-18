@@ -45,7 +45,7 @@ Installation
 
 In a fitting directory (e.g. `/var/www`), clone the project
 
-    git clone https://github.com/burki/diaspora.git
+    git clone https://github.com/mmz-potsdam/diaspora.git
 
 If you don't have `git` installed, you can also download the project as ZIP-file
 and extract it manually.

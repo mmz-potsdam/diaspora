@@ -80,7 +80,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 biography that remained visibly or audibly German-Jewish. In many cases, diasporic
                 contexts only emerged by way of the longing for this linguistic homeland.</p>
             <div xml:id="what-does-diaspora-mean" n="2">
-                <head>What does Diaspora mean?</head><lb/>
+                <head>What does Diaspora mean?</head>
+                <lb/>
                 <p>‘Diaspora’ is both a descriptive term and a scholarly one. As an analytical
                     concept, it ideally captures the manifold, dynamic, and complex nature of
                     German-speaking Jews’ migrations and the processes by which they made themselves
@@ -143,16 +144,17 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     formation among historical actors.</p>
                 <p>The historian Steven M. Lowenstein (1945–2020), himself a New York-born child of
                     Jewish refugees from Germany, coined the phrase ‘German-Jewish Diaspora’<note
-                        type="editorial" place="foot">Steven M. Lowenstein, “Epilogue: The German-Jewish Diaspora,”
-                        in: Michael E. Meyer, ed., <hi rendition="#i">German-Jewish History in
-                            Modern Times</hi>, vol. 4: Renewal and Destruction, 1918-1945, New York:
-                        Columbia UP, 1998, 393–402. Published in German as “Epilog: Die
-                        deutsch-jüdische Diaspora,” Avraham Barkei and Paul Mendes-Flohr, eds., <hi
-                            rendition="#i">Deutsch-Jüdische Geschichte in der Neuzeit</hi>, vol. 4,
-                        Munich: C.H. Beck, 2000, p. 372-381.</note> for the communities that formed
-                    from 1933 onward. We have adopted his articulation from the epilogue to the
-                    fourth volume of <hi rendition="#i">German-Jewish History in Modern Times</hi>
-                    (1997) as a systematic tool for continuing that history in a dual sense.</p>
+                        type="editorial" place="foot">Steven M. Lowenstein, “Epilogue: The
+                        German-Jewish Diaspora,” in: Michael E. Meyer, ed., <hi rendition="#i"
+                            >German-Jewish History in Modern Times</hi>, vol. 4: Renewal and
+                        Destruction, 1918-1945, New York: Columbia UP, 1998, 393–402. Published in
+                        German as “Epilog: Die deutsch-jüdische Diaspora,” Avraham Barkei and Paul
+                        Mendes-Flohr, eds., <hi rendition="#i">Deutsch-Jüdische Geschichte in der
+                            Neuzeit</hi>, vol. 4, Munich: C.H. Beck, 2000, p. 372-381.</note> for
+                    the communities that formed from 1933 onward. We have adopted his articulation
+                    from the epilogue to the fourth volume of <hi rendition="#i">German-Jewish
+                        History in Modern Times</hi> (1997) as a systematic tool for continuing that
+                    history in a dual sense.</p>
                 <p>In doing so, we will first seek to broaden the exile-based understanding of
                     Diaspora by examining how Jewish exiles developed a sort of diasporic
                     relationship to their German or German-speaking communities of origin. Second,
@@ -209,8 +211,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     Country. Nevertheless, numerous examples attest to how intensely those who had
                     emigrated wrestled with the possibility of returning to their countries of
                     origin, often for years. In some cases, they went through with it, temporarily
-                    or on an exploratory basis.<note type="editorial" place="foot">Sheer Ganor, <hi rendition="#i"
-                            >Somewhere from Long Ago:</hi>
+                    or on an exploratory basis.<note type="editorial" place="foot">Sheer Ganor, <hi
+                            rendition="#i">Somewhere from Long Ago:</hi>
                         <hi rendition="#i">The Global Displacement of German-Speaking Jewry</hi>, 4
                         (forthcoming).</note></p>
                 <p>Besides examining the political, societal, and social challenges that newcomers
@@ -243,7 +245,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     wake.</p>
             </div>
             <div xml:id="what-does-germanspeaking-jewish-mean" n="2">
-                <head>What does ‘German(speaking)-Jewish’ mean?</head><lb/>
+                <head>What does ‘German(speaking)-Jewish’ mean?</head>
+                <lb/>
                 <p>The term ‘German-Jewish’ calls to mind the idea of a cultural symbiosis in
                     Germany during the late nineteenth and early twentieth centuries – an idea that
                     was rattled by Nazis’ taking power in 1933 and then obliterated by the Shoah.
@@ -301,7 +304,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     identify as Jewish.</p>
             </div>
             <div xml:id="where-does-a-german-jewish-diaspora-emerge-spatial-scope" n="2">
-                <head>Where does a German-Jewish Diaspora emerge? Spatial scope</head><lb/>
+                <head>Where does a German-Jewish Diaspora emerge? Spatial scope</head>
+                <lb/>
                 <p>The <hi rendition="#i">Diaspora</hi> Portal is devoted to the lifeworlds of
                     German-speaking Jews who, especially from 1933 onwards, built new lives in a
                     range of countries, both transit stops and longer-term destinations – from
@@ -328,8 +332,9 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     75 percent of German-speaking Jews settled in these four diasporic centers
                     alone. After the outbreak of the Second World War, opportunities to emigrate
                     grew increasingly scarce, and destinations such as Cuba, Shanghai, Turkey, and
-                    Iran became life-saving havens.<note type="editorial" place="foot">Lowenstein, “Epilogue: The
-                        German-Jewish Diaspora,” 372 in the German edition.</note></p>
+                    Iran became life-saving havens.<note type="editorial" place="foot">Lowenstein,
+                        “Epilogue: The German-Jewish Diaspora,” 372 in the German
+                    edition.</note></p>
                 <p><hi rendition="#b">What about Israel?</hi></p>
                 <p>In addition to the three major centers – the US, the UK, and Argentina – we also
                     consider Palestine/Israel. Between 1933 and 1945, no territory received as many
@@ -364,9 +369,9 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     – each of which has been the subject of dedicated research. German-Jewish
                     influence made itself felt in Tel Aviv, too, perhaps most visibly in the
                     migration of architecture: the <hi rendition="#i">Bauhaus</hi> style.<note
-                        type="editorial" place="foot"> For the case of Haifa, the comprehensive volume edited by Anja
-                        Siegemund, <hi rendition="#i">Deutsche und zentraleuropäische Juden in
-                            Palästina und Israel.</hi>
+                        type="editorial" place="foot"> For the case of Haifa, the comprehensive
+                        volume edited by Anja Siegemund, <hi rendition="#i">Deutsche und
+                            zentraleuropäische Juden in Palästina und Israel.</hi>
                         <hi rendition="#i">Kulturtransfer, Lebenswelten, Identitäten. Beispiele aus
                             Haifa</hi> (Berlin: Neofelis, 2016). For Nahariya, see Klaus Kreppel,
                             <hi rendition="#i">Nahariyya und die deutsche Einwanderung nach Eretz
@@ -384,7 +389,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                         others.</note></p>
             </div>
             <div xml:id="when-did-the-germanophone-jewish-diaspora-begin-temporal-scope" n="2">
-                <head>When did the Germanophone Jewish Diaspora begin? Temporal scope</head><lb/>
+                <head>When did the Germanophone Jewish Diaspora begin? Temporal scope</head>
+                <lb/>
                 <p>The Diaspora Portal strives to paint a holistic picture of the various historical
                     phases of German-Jewish migration, so as to lend visibility to the historical
                     points of departure, continuities, and ruptures of the German-Jewish Diaspora
@@ -416,10 +422,11 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     countries and regions where they were raised. Estimates suggest that in addition
                     to the 270,000 to 300,000 Jews from Germany, roughly 130,000 came from Austria
                     and around 25,000 from the ‘Sudetenland’ and the Protectorate of Bohemia and
-                    Moravia, now in the Czech Republic.<note type="editorial" place="foot">Sheer Ganor, <hi
-                            rendition="#i">Somewhere from Long Ago</hi>, 4.</note> In all of these
-                    regions, they were unprotected and at the mercy of Nazi tyranny, which came to
-                    an end in May 1945 with the unconditional surrender of the Wehrmacht.</p>
+                    Moravia, now in the Czech Republic.<note type="editorial" place="foot">Sheer
+                        Ganor, <hi rendition="#i">Somewhere from Long Ago</hi>, 4.</note> In all of
+                    these regions, they were unprotected and at the mercy of Nazi tyranny, which
+                    came to an end in May 1945 with the unconditional surrender of the
+                    Wehrmacht.</p>
                 <p>The role of the Nazi period as a turning point in Jewish history is a visible
                     focus of the Diaspora Portal, but we do not restrict the project to the period
                     of Nazi rule. Where it is historically accurate and supported by sources and
@@ -436,6 +443,22 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     space – we also make a point of including diasporic structures that were
                     short-lived.</p>
                 <p>Miriam Rürup</p>
+            </div>
+            <div xml:id="further-introductory-reading" n="3">
+                <head>Further Introductury Reading</head>
+                <lb/>
+                <p> Liliana Ruth Feierstein, “Diaspora,” in: Christina von Braun/Micha Brumlik
+                    (ed.), <hi rendition="#i">Handbuch Jüdische Studien</hi>, Wien, Köln, Weimar:
+                    Böhlau, 2017, 99-109. </p>
+                <p> Sheer Ganor, <hi rendition="#i">Somewhere from Long Ago: The Global Displacement
+                        of German-Speaking Jewry</hi> (forthcoming). </p>
+                <p> Grit Jilek, <hi rendition="#i">Nation ohne Territorium. Über die Organisierung
+                        der jüdischen Diaspora bei Simon Dubnow</hi>, Baden-Baden: Nomos, 2013. </p>
+                <p> Steven M. Lowenstein, “Epilogue: The German-Jewish Diaspora,” in: Michael E.
+                    Meyer, ed., German-Jewish History in Modern Times, vol. 4: Renewal and
+                    Destruction, 1918-1945, New York: Columbia UP, 1998, 393–402.</p>
+                <p> Miriam Rürup (ed.), <hi rendition="#i">Praktiken der Differenz. Diasporakulturen
+                        in der Zeitgeschichte</hi>, Göttingen: Wallstein 2009. </p>
             </div>
         </body>
     </text>

@@ -45,61 +45,58 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
             <div xml:id="redaktionsmodell" n="2">
                 <head><hi rendition="#b">Editorial Model</hi></head>
                 <lb/>
-                <p>The Diaspora Portal is an international and interdisciplinary collaborative
-                    effort. The Moses Mendelssohn Center in Potsdam is responsible for the editorial
-                    oversight and coordination as well as the technical implementation. However, the
-                    project is largely co-created by the currently more than 100 authors of
-                    contributions in various genres. They come from more than 20 countries, with
-                    journalists, writers and academics contributing case studies. In the long term,
-                    the Diaspora Portal is also intended to become a place for international,
-                    interdisciplinary and collaborative networking. Imagined as a 'Diaspora Tree',
-                    we want to bring together different memory institutions in the respective
-                    countries of immigration in order to make their work and collections visible and
-                    to link them with each other in a targeted way.</p>
-                <p>The authors of the country surveys work with the editors to review the
-                    biographies and source presentations to be included in their country section.
-                    The guidelines were discussed and debated at several digital kick-off meetings,
-                    which also served as networking events.</p>
-                <p> In addition to this two-stage review process, external reviewers were also asked
-                    to review individual articles, depending on their expertise. This multi-stage
-                    review process and the close collaboration between editors and authors ensure
-                    the high quality of all contributions.</p>
-                <p>The editorial team at the MMZ is responsible for coordinating the project. It
-                    also checks the legal aspects of the publications and monitors the entire
-                    process.</p>
+                <p> The Diaspora portal is a collaborative international and interdisciplinary
+                    effort. While editorial oversight and technical development are based at the
+                    Moses Mendelssohn Center for European-Jewish Studies (MMZ) in Potsdam, the
+                    project is shaped by the initiative of over a hundred authors from more than
+                    twenty countries who are contributing their writing in the different categories.
+                    The authors of case studies include not only scholars, but also journalists and
+                    professional writers. For the long term, the Diaspora platform is envisioned as
+                    a platform for international, interdisciplinary, and collaborative exchange.
+                    Visualized metaphorically as a ‘tree of the Diaspora,’ it aims to bring together
+                    institutions of memory in countries where émigrés lived, making their work and
+                    their holdings visible and strategically connecting them. </p>
+                <p> Authors of the geographical overviews work together with the editorial team to
+                    review biographies and source interpretations within their country or region.
+                    These collaborative editorial processes were discussed during several digital
+                    preliminary meetings, which also served as networking opportunities. </p>
+                <p> In some cases, on top of these two stages of editorial oversight, additional
+                    peer reviewers with relevant expertise checked individual essays. This
+                    multi-stage review process and the close collaboration between editors and
+                    authors ensure the scholarly quality of all content. </p>
+                <p> The MMZ editorial team coordinates the project, but also reviews legal aspects
+                    of publication and oversees all workflows. </p>
             </div>
             <div xml:id="editorial-guidelines" n="2">
                 <head>Editorial Guidelines</head>
                 <lb/>
-                <p>The various text genres of this portal follow a standardized scheme: A brief
-                    summary at the beginning lists the most important aspects of a country, person
-                    or source in relation to the German-Jewish diaspora. In all texts, names of
-                    persons and organizations as well as place names are linked to standard data
-                    records. This creates a comprehensive index both within the portal and links to
-                    other digital projects. Metadata records have been created for all sources. We
-                    also provide a transcription for sources reproduced as digital facsimiles and a
-                    translation of the respective source for foreign-language texts. This makes it
-                    easier to read handwritten texts, for example, and also makes the sources
-                    searchable.</p>
-                <p>Metadata records have been created for the XML transcripts in the online version,
-                    and all historical documents are provided with metadata.</p>
+                <p> All text categories in this online portal follow a consistent structure. A short
+                    summary at the beginning highlights key aspects of the country, person, or
+                    source in relation to the German-Jewish Diaspora. The names of people,
+                    institutions, and places are linked to standardized datasets, creating an
+                    internal index and connecting the portal to other digital projects. Metadata is
+                    compiled for all sources. For sources represented as digital facsimiles, the
+                    online portal includes both transcriptions and translations (for texts in other
+                    languages). This makes handwritten documents more legible and also allows users
+                    to search the text of a source for keywords. </p>
+                <p> Metadata has also been compiled for the XML transcriptions in the online
+                    version, and all historical documents are annotated with metadata. </p>
                 <p><!--Zur Erklärung von möglicherweise unbekannten Begriffen oder erwähnten Organisationen
-                    entsteht zukünftig ein fortlaufend ergänztes Glossar.--> In
-                    addition, all texts offer a small selected bibliography and further resources at
-                    the end. The latter include links to other digital content (articles, online
-                    exhibitions, digital copies, podcasts, films, etc.).</p>
-                <p>The transcriptions were created by the editorial team as faithfully as possible
-                    to the original. This includes preserving most of the original punctuation and
-                    spelling. Spelling mistakes and abbreviations have been corrected. Any
-                    ambiguities are explained in the notes. Emphasis and deletions are left visible,
-                    especially if they have a substantive meaning.</p>
-                <p> The original language of the country surveys, biographies, and source
-                    interpretations is German or English. In the case of English-language
-                    contributions, we have followed the spelling of the respective authors (American
-                    or British English).</p>
-                <p>Both the user interface and the content of the portal are intended to be
-                    bilingual (English and German) throughout. Translations that are currently
-                    missing are being worked on and will be added gradually.</p>
+                    entsteht zukünftig ein fortlaufend ergänztes Glossar.--> Also,
+                    each article concludes with a short selected bibliography and links to further
+                    digital resources, such as articles, online exhibitions, digitized documents,
+                    podcasts, and films. </p>
+                <p> Transcripts have been prepared by the editorial team as faithfully as possible,
+                    largely preserving original punctuation and spelling. However, spelling mistakes
+                    and abbreviations are annotated for clarity, noting any uncertainties. Emphases
+                    and crossed-out text are preserved, especially when relevant to the content. </p>
+                <p> The geographical overviews, biographies, and source interpretations are originally
+                    written in either German or English. Contributions composed in English retain
+                    the spelling conventions of their respective authors (either US or
+                    UK/Commonwealth English). </p>
+                <p> The interface and content of the online portal are designed to be fully
+                    bilingual (German and English). Any missing translations are currently in
+                    progress and will be added on a rolling basis. </p>
             </div>
         </body>
     </text>

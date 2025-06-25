@@ -45,180 +45,169 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
             <div xml:id="contents-and-strucutre-webseite" n="2">
                 <head>Contents and Structure of the Website</head>
                 <lb/>
-                <p>With the Diaspora Portal, we aim to provide a user-friendly online resource with
-                    comprehensive search capabilities. Content on German-Jewish history outside the
-                    German-speaking world will be presented through various text levels, source
-                    types, and video content. The different forms of presentation allow for
-                    different degrees of specialization. The entire portal has a modular structure,
-                    so that visitors can click and "read" their way from the introduction to the
-                    overall topic through the different countries.</p>
-                <p>Our portal is constantly being expanded and will start with a limited preview. So
-                    far, more than 30 overview texts on individual countries have been acquired,
-                    including places largely unknown to German-Jewish history such as Curaçao, Sri
-                    Lanka and Suriname. These places were often integrated into colonial structures
-                    and at the same time provide an insight into how colonial structures were
-                    perceived by Jews in the context of their own experiences of discrimination and
-                    persecution. The case studies - sources as well as biographical portraits - are
-                    to be understood here as key documents with which we shine a thematic spotlight
-                    on central aspects of the German(-speaking) Jewish diaspora. In the background,
-                    additional texts on historical figures and sources are in preparation and will
-                    be added on an ongoing basis.</p>
+                <p>This online portal is designed as a user-friendly, web-based resource with
+                    extensive search options. It uses a diverse range of texts, primary sources, and
+                    videos to convey content related to the history of German-speaking Jews outside
+                    the German-speaking regions of Europe. The different formats enable visitors to
+                    delve into the subjects at multiple levels of detail. The website as a whole has
+                    a modular structure, allowing visitors and readers to navigate from the general
+                    introduction to the individual country sections.</p>
+                <p>Our portal is an expanding work in progress and has been launched with a
+                    preliminary selection of articles. To date, we have commissioned more than
+                    thirty individual country studies, some of which cover locations such as
+                    Curaçao, Sri Lanka, and Suriname that have not previously been investigated in
+                    the context of German-Jewish history. These places were often embedded in
+                    colonial structures, and these investigations therefore shed light on how Jewish
+                    individuals evaluated such structures in light of their own experiences of
+                    discrimination and persecution. The case studies – both primary sources and
+                    biographical portraits – should be read as key documents, through which we
+                    spotlight themes and aspects of the German(-speaking) Jewish Diaspora. For
+                    further background, additional texts on historical figures and primary sources
+                    are also being prepared and will be added on an ongoing basis.</p>
             </div>
             <div xml:id="zielgruppe" n="2">
                 <head>Target Audience</head>
                 <lb/>
-                <p> The online source portal is aimed primarily at university students, teachers and
-                    scholars in the field of Jewish history, but also at high school students and
-                    interested members of the general public, and, last but not least, the
-                    descendants of the German-speaking Jews who are the focus of attention here. In
-                    keeping with the theme of a German-Jewish diaspora and its transnational
-                    networks, it is currently bilingual - in German and English. In order to reach
-                    as many visitors as possible, the portal will also be available in Hebrew and
-                    Spanish in the future. Especially the descendants - many of them from South
-                    America - often do not have access to the German language, but have grown up
-                    with the stories of their parents, grandparents and great-grandparents. With
-                    this portal we would like to give them access to the history of their ancestors.
-                    As experts on their own family history, they can also have their say through the
-                        <hi rendition="#i">Bring Your Own Story</hi> section. </p>
-                <p>In this way, we expand our user group beyond the regional and national target
-                    audience and make the best possible use of the transnational possibilities of
-                    online offerings.</p>
-                <p>With the Diaspora Portal, we are addressing a broader public beyond the academic
-                    specialist audience. In addition to an encyclopedic density of figures and
-                    details, complex interrelationships and backgrounds are conveyed in a
-                    comprehensible manner, overarching questions and central aspects are reflected
-                    upon, and factual information is combined with analytical interpretations.</p>
-                <p>The Diaspora Portal is particularly suitable for teaching in schools. On the one
-                    hand, the complex historical, social and political reasons that led to the
-                    emergence of a German(-speaking) Jewish diaspora can be discovered by students on
-                    the basis of individual fates. At the same time, a historical understanding of
-                    the existential difficulties and challenges of losing one's homeland and
-                    starting anew is made possible.</p>
+                <p> The Diaspora portal is intended for university students, researchers, and
+                    educators, as well as for school classes, interested laypeople, and, of course,
+                    the descendants of the German-speaking Jews in question. In keeping with the
+                    transnational nature of the German-Jewish Diaspora, the platform is multilingual
+                    – currently in German and English. To reach as many users as possible, there are
+                    plans to expand the website to Hebrew and Spanish. Many descendants – especially
+                    those in South America – can no longer understand German, yet have grown up with
+                    narrative traces of their parents’, grandparents’, or great-grandparents’ pasts.
+                    We also want this website to give them access to their ancestors’ history.
+                    Moreover, they are invited to contribute in their own voices via the <hi
+                        rendition="#i">Bring Your Own Story</hi> section. </p>
+                <p> In this way, we will extend the reach beyond a regional and national audience,
+                    making full use of the cross-border opportunities posed by digital formats.</p>
+                <p> The Diaspora portal addresses not only an academic readership but also a wider
+                    public. Alongside an encyclopedic wealth of facts and detail, it offers clear
+                    explanations of complex historical contexts, reflects on overarching questions
+                    and key issues, and connects facts with analysis. </p>
+                <p> It is particularly well suited for use in schools, where students can explore
+                    the complex historical, social, and political reasons for the emergence of a
+                    German(-speaking) Jewish Diaspora through individual life stories. At the same
+                    time, the project fosters an understanding of the existential challenges of
+                    leaving one’s birthplace behind and starting life afresh.</p>
             </div>
             <div xml:id="textual-genres" n="2">
                 <head>Textual Genres</head>
                 <lb/>
-                <p> The diaspora portal is made up of a total of <hi rendition="#b">three levels of
-                        text</hi> and a special section, which are linked to each other by
-                    cross-references in the form of links. </p>
-                <p> The first genre is the so-called <hi rendition="#b">Geographical Overview</hi>. These
-                    articles form the longest contributions and are intended to provide the necessary
-                    historical context in order to better situate the case studies. </p>
-                <p>
-                    <hi rendition="#b">Biographies</hi> of German-speaking Jews in emigration
-                    represent a second level. The third level consists of <hi rendition="#b"
-                        >Sources</hi> that can be regarded as key documents for a history of the
-                    German-Jewish diaspora and are presented together with accompanying
-                    interpretations. </p>
-                <p>In a special section – <hi rendition="#i"><hi rendition="#b">Bring Your Own
-                            Story</hi></hi> – singular objects can be connected with a personal
-                    story.</p>
+                <p> The Diaspora portal consists of <hi rendition="#b">three categories of
+                        texts</hi>, conceived as ‘layers,’ and one special section, all
+                    cross-referenced and interconnected through links. </p>
+                <p> The first category, <hi rendition="#b">Geographical Overviews</hi>, provides the
+                    longest articles, offering the historical context necessary to understand the
+                    case studies </p>
+                <p> The second category comprises <hi rendition="#b">Biographies</hi> of
+                    German-speaking Jewish émigrés. The third category consists of <hi
+                        rendition="#b">Sources</hi> that serve as key documents of German-Jewish
+                    Diaspora history and are presented alongside analysis. </p>
+                <p> In a special section, <hi rendition="#i"><hi rendition="#b">Bring Your Own
+                            Story</hi></hi>, allows individuals to contribute unique objects
+                    connected to their personal histories.</p>
                 <div xml:id="geographical-overviews" n="3">
                     <head>Geographical Overviews</head>
                     <lb/>
-                    <p>The geographical overview articles on various transit and destination countries of
-                        German-speaking Jews serve as introductions and are intended to identify
-                        research questions. As in a handbook, lines of development and core aspects
-                        are presented. Factual information is combined with an analytical
-                        interpretation of the German-Jewish diaspora that may have developed in each
-                        country. The country studies are structured as consistently as possible
-                        according to different thematic areas and identify the relevant national
-                        circumstances for Jewish history before and after 1933.</p>
-                    <p>The scope of the geographical overviews varies from country to country,
-                        presenting different variants of diasporic lifeworlds - from centres of a
-                        German-speaking diaspora to transit countries with only a temporary
-                        German-speaking Jewish presence. The geographical overviews are based on thematic
-                        focus categories. Therefore, they deal with several recurring themes in
-                        order to create a coherent text structure and to allow for comparisons
-                        between the individual countries. The extremely diverse German-Jewish
-                        diaspora is to be presented not only on a national level, but also in
-                        individual cities or neighbourhoods as well as in the periphery. In this
-                        way, the history of the experiences of German-speaking Jews can be revealed
-                        on a local level.</p>
-                    <p>Possible topics along which the geographical overviews can be read are:</p>
+                    <p> The geographical overviews examine various countries where German-speaking
+                        Jews resided, either while in transit or as long-term destinations. As
+                        reference guides, they outline developments and key themes, combining
+                        factual information with analytical insights into the German-Jewish Diaspora
+                        as it took shape in the context of each country. They follow a consistent
+                        thematic structure, highlighting relevant national circumstances before and
+                        after 1933 that are relevant to Jewish history.</p>
+                    <p> Their length varies by country or region and reflects various types of
+                        diasporic lifeworlds – from centers of German-speaking Jewish life to
+                        transit countries that only hosted temporary local communities of
+                        German(-speaking) Jews. The format focuses on thematic focus areas, thus
+                        considering several topics on a recurring basis to create a consistent
+                        textual structure and facilitate comparisons between individual countries.
+                        The project does not limit its portrayal of the highly diverse German-Jewish
+                        Diaspora to the national level, but also considers individual cities,
+                        neighborhoods, and peripheral areas. This also makes it possible to showcase
+                        the history of German-speaking Jews’ day-to-day local experiences.</p>
+                    <p> Recurring thematic categories in the geographical overviews include: </p>
                     <p>1. <hi rendition="#b">Everyday Life</hi> | 2. <hi rendition="#b"
                             >Institutions</hi> | 3. <hi rendition="#b">Identity and Religiosity
-                        </hi> | 4. <hi rendition="#b">Gender and Generation</hi> | 5. <hi
+                        </hi> | 4. <hi rendition="#b">Gender and Generations</hi> | 5. <hi
                             rendition="#b">Transnational Networks</hi> | 6. <hi rendition="#b"
                             >Language</hi> | 7. <hi rendition="#b">Encounters</hi> | 8. <hi
                             rendition="#b">Cultural and Knowledge Transfer</hi> | 9. <hi
-                            rendition="#b">Return</hi> | 10. <hi rendition="#b">Heritage and
-                            Remembrance.</hi></p>
-                    <p>With their specific subcategories, the ten thematic categories do not serve
-                        as a strict guideline for each geographical overview. Instead, the authors
-                        responsible have individually identified the topics relevant to each country
-                        and discussed them in their overview texts.</p>
-                    <p>However, what was dealt with as recurrently as possible in all country
-                        studies was the respective institutionalization of the German-Jewish
-                        diaspora, for example through corresponding associations or magazines, the
-                        challenges to be overcome in everyday life and the encounters with other
-                        minority groups and the majority society. In addition, the importance of
-                        memory and nostalgia for the construction of a common 'diaspora identity' as
-                        well as the transnational networks that extend beyond the respective
-                        country, including links back to the former homeland. Parallels and
-                        differences can be identified in the geographical longitudinal section
-                        through these relevant topics.</p>
+                            rendition="#b">Return</hi> | 10. <hi rendition="#b">Legacy and
+                            Memory.</hi></p>
+                    <p> The ten thematic categories and their defined subcategories are not intended
+                        as strict templates to be addressed for every region. Instead, the assigned
+                        authors have independently selected the themes relevant to a given country
+                        and addressed them in their overviews. </p>
+                    <p> However, certain topics have been covered as consistently as possible across
+                        all studies, in particular the institutionalization of the German-Jewish
+                        Diaspora through clubs or periodicals; the everyday challenges community
+                        members faced; and encounters with other minority groups and mainstream
+                        society. In addition, the texts address the significance of memory and
+                        nostalgia for constructing a shared ‘diasporic identity’ as well as
+                        transnational networks extending beyond the country in question – including
+                        ongoing ties to the Old Country. These key thematic areas make it possible
+                        to identify parallels and differences in a geographic cross-section. </p>
                 </div>
                 <div xml:id="biographies" n="3">
                     <head>Biographies</head>
                     <lb/>
-                    <p>In addition to the various destinations, historical actors who left the
-                        German-speaking world are portrayed. Individual or group biographies are
-                        intended to give the German-Jewish diaspora a face, so to speak, and to
-                        counteract the depersonalization associated with the subject of migration.
-                        It is not important whether the person is known. In addition to 'prominent'
-                        historical figures, we also take a look at previously unknown biographies if
-                        they shed light on particular aspects of the German-speaking Jewish diaspora
-                        in all its diversity.</p>
-                    <p>The biographies delve deeper into the overall context of the respective
-                        geographical overview articles using individual examples. The focus is on life in the
-                        diaspora. There are also many references to a hoped-for, temporary or actual
-                        return to the country of origin. It is precisely through such case studies
-                        that it becomes clear how the hybrid, often fragmented belongings of those
-                        affected emerged and also changed over the course of their lives. In the
-                        short biographies, the thematic focal points of the geographical overview articles recur
-                        and can be illuminated by way of example.</p>
+                    <p> In addition to exploring the various destinations, the portal portrays
+                        individuals who left the German-speaking world. Through individual and group
+                        biographies, the German-Jewish Diaspora is given a human face, countering
+                        the depersonalization of migration discourse. Familiarity or renown is not
+                        the basis for inclusion. Alongside ‘famous’ historical figures, we also
+                        consider less familiar life stories to illuminate particular aspects of the
+                        German-speaking Jewish Diaspora in all their breadth. </p>
+                    <p> These biographies expand the overall scope of the geographical overviews
+                        through individual examples. They center on life in the Diaspora, but also
+                        include many references to dreams of return to the country of origin, which
+                        were occasionally fulfilled. These case studies particularly make clear how
+                        hybrid, fragmented affiliations developed and changed over the course of a
+                        person’s life. The thematic categories of the geographical overviews are
+                        also reflected in the short biographies. </p>
                 </div>
                 <div xml:id="source-interpretations" n="3">
                     <head>Source Interpretations</head>
                     <lb/>
-                    <p>Sources that we incorporate into the Diaspora Portal as text, image, sound or
-                        audiovisual documents - including images of three-dimensional objects - are
-                        used to conduct in-depth explorations. They shed light on individual periods
-                        of life and subject areas. Each source (or a coherent set of sources) is
-                        described and interpreted in order to place it in its context of origin and
-                        use. In addition to a transcription and translation, the source
-                        interpretation includes a digital facsimile. As in the biographies, the
-                        sources and interpretation texts are also intended to deepen the thematic
-                        categories of the geographical overviews using specific examples.</p>
-                    <p>The origin of the sources varies: they come from public archives, libraries
-                        or museums as well as from private collections and estates. In some cases,
-                        we only show excerpts from a source - but then always with a reference to
-                        the accessibility of the entire document and (where technically possible)
-                        with a corresponding link to a complete version.</p>
-                    <p> In selecting the sources, we were guided by the idea of so-called key
-                        documents, as developed by Miriam Rürup together with Anna Menny and Daniel
-                        Burckhardt in the context of the <ref target="https://keydocuments.net">Key
-                            Documents of German-Jewish History</ref>. </p>
-                    <p>The term key documents describes selected sources which are used as examples
-                        to provide insight into historical contexts and events. - as a kind of 'door
-                        opener'. This source-based text level forms a central element of the
-                        website.</p>
+                    <p> The Diaspora portal incorporates sources – textual, visual, audio, or
+                        audiovisual documents, including photographs of three-dimensional objects –
+                        to ‘drill down’ into the specifics. These sources shed light on individual
+                        periods of a person’s life as well as thematic areas. Each source (or group
+                        of related sources) is accompanied by a description and interpretation that
+                        situates it in its historical and functional context. The ‘source
+                        interpretation’ rubric includes transcription and translation, as well as a
+                        digital facsimile. As with the biographies, the source interpretations are
+                        linked to the thematic categories used in the geographical overviews. </p>
+                    <p> The sources have been located in a variety of places: public archives,
+                        libraries, and museums, as well as private collections and estates. In some
+                        cases, only excerpts of a source are shown, but then always along with
+                        instructions on how to access the full document and a hyperlink when
+                        technically feasible. </p>
+                    <p> The source selection is inspired by the concept of ‘key documents’ developed
+                        by Miriam Rürup, Anna Menny, and Daniel Burckhardt for the <ref
+                            target="https://keydocuments.net/">Key Documents of German-Jewish
+                            History</ref> project. </p>
+                    <p> Key documents are defined as sources that provide exemplary insights into
+                        historical developments and events – serving as entry points into larger
+                        stories. This source-based layer is a centerpiece of the website. </p>
                 </div>
                 <div xml:id="bring-your-own-story" n="3">
                     <head><hi rendition="#i">Bring Your Own Story</hi></head>
                     <lb/>
-                    <p> In addition to conventional texts, we want to gradually give people who are
-                        themselves part of this history a voice. The section '<hi rendition="#i"
-                            >Bring Your Own Story</hi>' section aims to make their lives in the
-                        diaspora tangible by means of individual storytelling objects. They include
-                        everyday objects, letters, photos or maps, but also applied art or special
-                        textile objects. The various objects combine personal experiences with the
-                        history of the German-Jewish diaspora. As unique carriers of memory, which
-                        often reflect multiple migration experiences within a family, they have
-                        deep, cross-generational meanings. In 10 to 15-minute personal videos, our
-                        interviewees reflect on their own migration biography and the role of the
-                        German-Jewish diaspora in their family history.</p>
+                    <p> Alongside traditional articles, the online portal invites contributions from
+                        individuals with personal connections to Diaspora history. The <hi
+                            rendition="#i">Bring Your Own Story</hi> section aims to make
+                        individuals’ life trajectories in the Diaspora tangible using ‘storytelling
+                        objects.’ These include everyday items, letters, photographs, or postcards,
+                        as well as applied art or distinctive fabric items. Such objects link
+                        personal experiences to the broader history of the German-Jewish Diaspora.
+                        As distinctive vessels of memory – often reflecting multiple migration
+                        experiences within a single family – they hold deep, intergenerational
+                        significance. In short personal videos (of 10–15 minutes each), participants
+                        reflect on their own migration stories and the role of the German-Jewish
+                        Diaspora in their family histories.</p>
                 </div>
             </div>
             <!--

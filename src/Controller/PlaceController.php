@@ -42,10 +42,11 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
      * Override map to force list of articles with mentioned places for the moment
      */
     #[Route(path: '/map/popup-content/{ids}', name: 'place-map-popup-content')]
-    public function mapPopupContentAction(Request $request,
-                                          EntityManagerInterface $entityManager,
-                                          $ids)
-    {
+    public function mapPopupContentAction(
+        Request $request,
+        EntityManagerInterface $entityManager,
+        $ids
+    ) {
         if (empty($ids)) {
             $articles = [];
         }
@@ -61,13 +62,13 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
                     ->getRepository(in_array($mode, [ 'mentioned', 'landmark' ])
                                              ? '\TeiEditionBundle\Entity\Article' : '\TeiEditionBundle\Entity\SourceArticle')
                     ->createQueryBuilder('A')
-                    ;
+            ;
 
             $qb->select('A')
                     ->distinct()
                     ->andWhere('A.status IN (1) AND P.id IN (:ids)')
                     ->setParameter('ids', $ids)
-                    ;
+            ;
 
             if ('mentioned' == $mode) {
                 $qb
@@ -83,7 +84,7 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
                 if (!empty($geo)) {
                     $qb->andWhere('P.geo = :geo')
                         ->setParameter('geo', $geo)
-                        ;
+                    ;
                 }
             }
             else {
@@ -93,7 +94,7 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
                 if (!empty($geo)) {
                     $qb->andWhere('A.geo = :geo OR (A.geo IS NULL AND P.geo = :geo)')
                         ->setParameter('geo', $geo)
-                        ;
+                    ;
                 }
             }
 
@@ -101,7 +102,7 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
             if (!empty($locale)) {
                 $qb->andWhere('A.language = :lang')
                     ->setParameter('lang', \TeiEditionBundle\Utils\Iso639::code1to3($locale))
-                    ;
+                ;
             }
 
             $qb->addOrderBy('A.dateCreated', 'ASC')
@@ -110,7 +111,7 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
             $articles = $qb
                     ->getQuery()
                     ->getResult();
-                    ;
+            ;
         }
 
         return $this->render('@TeiEdition/Place/map-popup-content.html.twig', [

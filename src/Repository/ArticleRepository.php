@@ -4,7 +4,6 @@ namespace App\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
-
 use TeiEditionBundle\Entity\Article;
 
 /**
@@ -34,21 +33,21 @@ class ArticleRepository extends ServiceEntityRepository
         }
 
         $sort = 'creator'
-            ?  'A.creator' : '-A.datePublished';
+            ? 'A.creator' : '-A.datePublished';
 
         $qb =  $this->getEntityManager()
                 ->createQueryBuilder();
 
         $qb->select([ 'A',
-                $sort . ' HIDDEN articleSort'
-            ])
+            $sort . ' HIDDEN articleSort',
+        ])
             ->from('\TeiEditionBundle\Entity\Article', 'A')
             ->where('A.status = 1')
             ->andWhere('A.language = :language')
             ->andWhere("A.articleSection IN ('background', 'interpretation')")
             ->andWhere('A.creator IS NOT NULL') // TODO: set for background
             ->orderBy('articleSort, A.creator, A.name')
-            ;
+        ;
         $query = $qb->getQuery();
         if (!empty($language)) {
             $query->setParameter('language', $language);

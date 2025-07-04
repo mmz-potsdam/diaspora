@@ -2721,12 +2721,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "702e70630840d870d3e39e2a3839b69fa30c836b"
+                "reference": "878573b9e1603a15f57fbd9d1c8ba3d526ca586f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/702e70630840d870d3e39e2a3839b69fa30c836b",
-                "reference": "702e70630840d870d3e39e2a3839b69fa30c836b",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/878573b9e1603a15f57fbd9d1c8ba3d526ca586f",
+                "reference": "878573b9e1603a15f57fbd9d1c8ba3d526ca586f",
                 "shasum": ""
             },
             "require": {
@@ -2802,7 +2802,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-06-18T13:10:45+00:00"
+            "time": "2025-07-04T09:22:50+00:00"
         },
         {
             "name": "jms/translation-bundle",
@@ -7563,16 +7563,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v2.7.1",
+            "version": "v2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "4ae50d368415a06820739e54d38a4a29d6df9155"
+                "reference": "68cdcde0b7e36b008a08bcf3709c07a20e757a29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/4ae50d368415a06820739e54d38a4a29d6df9155",
-                "reference": "4ae50d368415a06820739e54d38a4a29d6df9155",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/68cdcde0b7e36b008a08bcf3709c07a20e757a29",
+                "reference": "68cdcde0b7e36b008a08bcf3709c07a20e757a29",
                 "shasum": ""
             },
             "require": {
@@ -7611,7 +7611,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v2.7.1"
+                "source": "https://github.com/symfony/flex/tree/v2.8.0"
             },
             "funding": [
                 {
@@ -7627,7 +7627,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-28T14:22:54+00:00"
+            "time": "2025-07-04T06:30:46+00:00"
         },
         {
             "name": "symfony/form",

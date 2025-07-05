@@ -586,9 +586,12 @@ body.route-genre-index, body.route-topic-index {
     }
 }
 
-/* don't show tei-license on about-pages */
-body[class*="route-about"], body.route-terms {
+body[class*="route-about"],
+body.route-contact,
+body.route-terms
+{
     #license {
+        /* don't show tei-license on about-pages */
         display: none;
     }
 

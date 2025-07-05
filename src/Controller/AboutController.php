@@ -31,6 +31,36 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
                  . '</div>';
         }
 
+        $crawler = new \Symfony\Component\DomCrawler\Crawler();
+        $crawler->addHtmlContent($html);
+
+        // headers for TOC
+        $adjusted = false;
+        $sectionHeaders = $crawler->filterXPath('//h2')->each(function ($node, $i) use (&$adjusted) {
+            $id = $node->attr('id');
+            if (empty($id)) {
+                $adjusted = true;
+                $id = 'section-' . $i;
+                $node->getNode(0)->setAttribute('id', $id);
+            }
+
+            return [
+                'id' => $id,
+                'text' => $this->extractTextFromNode($node),
+            ];
+        });
+
+        if ($adjusted) {
+            $html = preg_replace('/<\/?body>/', '', $crawler->html());
+        }
+
+        if (count($sectionHeaders) > 0) {
+            $html = $this->renderView('About/wrap-section-toc.html.twig', [
+                'section_headers' => $sectionHeaders,
+                'content' => $html,
+            ]);
+        }
+
         return $html;
     }
 
@@ -77,7 +107,6 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
     }
 
     #[Route(path: '/about/team', name: 'about-us')]
-    // #[Route(path: '/about/editors', name: 'about-editors')]
     public function renderAboutUs(Request $request, $title = null)
     {
         return $this->renderTitleContent($request, 'About/sitetext.html.twig', $title);

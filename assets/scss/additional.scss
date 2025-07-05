@@ -590,8 +590,8 @@ body[class*="route-about"],
 body.route-contact,
 body.route-terms
 {
-    #license {
-        /* don't show tei-license on about-pages */
+    #license, #authors:empty {
+        /* don't show tei-license or empty authors on about-pages */
         display: none;
     }
 

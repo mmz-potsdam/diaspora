@@ -26,6 +26,7 @@ parameters:
         api-key: "%env(string:TEXTRAZOR_API_KEY)%"
     app.zotero.options:
         api-key: "%env(string:ZOTERO_API_KEY)%"
+    app.googleapis.key: "%env(string:GOOGLE_API_KEY)%"
     app.xsl_converter.saxonc_enable: "%env(bool:SAXONC_ENABLE)%"
     app.xsl_converter_adapter.arguments: "%env(string:JAVA_BIN)% -jar %kernel.project_dir%/bin/saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
     # imagemagick settings

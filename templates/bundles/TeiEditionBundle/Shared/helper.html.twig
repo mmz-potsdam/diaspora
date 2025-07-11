@@ -504,8 +504,8 @@
         ({% if birthPlace is not empty or person.birthDate is not empty %}
                 {{- person.birthDate|dateincomplete -}}
                 {% if birthPlace is not empty %}{% if person.birthDate is not empty %}{{- ',' }}{% endif %}
-                    {% if birthPlace.id is not empty %}
-                        <a href="{% if birthPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : birthPlace.tgn }) }}{% else %}{{ path('place', { 'id' : birthPlace.id }) }}{% endif %}">
+                    {% if birthPlace.id is defined and birthPlace.id is not empty %}
+                        <a href="{% if birthPlace.tgn is defined and birthPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : birthPlace.tgn }) }}{% else %}{{ path('place', { 'id' : birthPlace.id }) }}{% endif %}">
                         {{ birthPlace['name'] }}
                         </a>
                     {% else %}
@@ -517,7 +517,7 @@
             -
                 {{ person.deathDate|dateincomplete -}}
                 {% if deathPlace is not empty %}{% if person.deathDate is not empty %}{{- ',' }}{% endif %}
-                    {% if deathPlace.id is defined and deathPlace.id is not empty %}<a href="{% if deathPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : deathPlace.tgn }) }}{% else %}{{ path('place', { 'id' : deathPlace.id }) }}{% endif %}">
+                    {% if deathPlace.id is defined and deathPlace.id is not empty %}<a href="{% if deathPlace.tgn is defined and deathPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : deathPlace.tgn }) }}{% else %}{{ path('place', { 'id' : deathPlace.id }) }}{% endif %}">
                         {{ deathPlace['name'] -}}</a>{% else %}{{ deathPlace['name'] -}}
                     {% endif -%}
                 {% endif -%}

@@ -68,10 +68,24 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
         $articles = $repository->findPublished($request->getLocale(), 'newest', 20);
         shuffle($articles);
 
+        $pageMeta = [];
+        // Set the site name
+        // https://developers.google.com/search/docs/appearance/site-names
+        if ('/' == $request->getRequestUri()) {
+            // we can only set the site name on the root URI
+            $pageMeta['jsonLd'] = [
+                '@context' => 'https://schema.org',
+                '@type' => 'WebSite',
+                'name' => $translator->trans($this->getGlobal('siteName'), [], 'additional'),
+                'url' => $this->generateUrl('home', [], \Symfony\Component\Routing\Generator\UrlGeneratorInterface::ABSOLUTE_URL),
+            ];
+        }
+
         return $this->render(
             'Default/home.html.twig',
             [
                 'pageTitle' => $translator->trans('Welcome'),
+                'pageMeta' => $pageMeta,
                 // 'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
                 'articles' => $articles,
                 'markers' => $markers,

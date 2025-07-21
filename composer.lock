@@ -361,16 +361,16 @@
         },
         {
             "name": "citation-style-language/locales",
-            "version": "v0.0.27",
+            "version": "v0.0.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/locales.git",
-                "reference": "e27762505af6bfeedb68e0fb02c444b5f310b4e2"
+                "reference": "3bad433936712a0c41ffe300442e7f519b51c89f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/locales/zipball/e27762505af6bfeedb68e0fb02c444b5f310b4e2",
-                "reference": "e27762505af6bfeedb68e0fb02c444b5f310b4e2",
+                "url": "https://api.github.com/repos/citation-style-language/locales/zipball/3bad433936712a0c41ffe300442e7f519b51c89f",
+                "reference": "3bad433936712a0c41ffe300442e7f519b51c89f",
                 "shasum": ""
             },
             "type": "library",
@@ -393,7 +393,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/locales/issues",
-                "source": "https://github.com/citation-style-language/locales/tree/v0.0.27"
+                "source": "https://github.com/citation-style-language/locales/tree/v0.0.43"
             },
             "funding": [
                 {
@@ -401,20 +401,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-01T06:34:23+00:00"
+            "time": "2025-07-10T22:17:44+00:00"
         },
         {
             "name": "citation-style-language/styles",
-            "version": "v0.0.669",
+            "version": "v0.0.681",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/styles.git",
-                "reference": "589c4d5d1b37b432ac75506c03b00520a604e761"
+                "reference": "59f124dc67441738d8823bc59d517edef8f43e06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/589c4d5d1b37b432ac75506c03b00520a604e761",
-                "reference": "589c4d5d1b37b432ac75506c03b00520a604e761",
+                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/59f124dc67441738d8823bc59d517edef8f43e06",
+                "reference": "59f124dc67441738d8823bc59d517edef8f43e06",
                 "shasum": ""
             },
             "type": "library",
@@ -432,7 +432,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/styles/issues",
-                "source": "https://github.com/citation-style-language/styles/tree/v0.0.669"
+                "source": "https://github.com/citation-style-language/styles/tree/v0.0.681"
             },
             "funding": [
                 {
@@ -440,7 +440,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-24T19:46:07+00:00"
+            "time": "2025-07-11T14:20:28+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -864,28 +864,31 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.9.5",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "4a4e2eed3134036ee36a147ee0dac037dfa17868"
+                "reference": "1cf840d696373ea0d58ad0a8875c0fadcfc67214"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4a4e2eed3134036ee36a147ee0dac037dfa17868",
-                "reference": "4a4e2eed3134036ee36a147ee0dac037dfa17868",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/1cf840d696373ea0d58ad0a8875c0fadcfc67214",
+                "reference": "1cf840d696373ea0d58ad0a8875c0fadcfc67214",
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2",
-                "doctrine/cache": "^1.11|^2.0",
                 "doctrine/deprecations": "^0.5.3|^1",
                 "doctrine/event-manager": "^1|^2",
                 "php": "^7.4 || ^8.0",
                 "psr/cache": "^1|^2|^3",
                 "psr/log": "^1|^2|^3"
             },
+            "conflict": {
+                "doctrine/cache": "< 1.11"
+            },
             "require-dev": {
+                "doctrine/cache": "^1.11|^2.0",
                 "doctrine/coding-standard": "13.0.0",
                 "fig/log-test": "^1",
                 "jetbrains/phpstorm-stubs": "2023.1",
@@ -955,7 +958,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.9.5"
+                "source": "https://github.com/doctrine/dbal/tree/3.10.0"
             },
             "funding": [
                 {
@@ -971,7 +974,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-15T22:40:05+00:00"
+            "time": "2025-07-10T21:11:04+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2506,16 +2509,16 @@
         },
         {
             "name": "halaxa/json-machine",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/halaxa/json-machine.git",
-                "reference": "ca1e2fc61d3596655e5480e192ef30ad67478ad4"
+                "reference": "d0f84abf79ac98145d478b66d2bcf363d706477c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/halaxa/json-machine/zipball/ca1e2fc61d3596655e5480e192ef30ad67478ad4",
-                "reference": "ca1e2fc61d3596655e5480e192ef30ad67478ad4",
+                "url": "https://api.github.com/repos/halaxa/json-machine/zipball/d0f84abf79ac98145d478b66d2bcf363d706477c",
+                "reference": "d0f84abf79ac98145d478b66d2bcf363d706477c",
                 "shasum": ""
             },
             "require": {
@@ -2556,7 +2559,7 @@
             "description": "Efficient, easy-to-use and fast JSON pull parser",
             "support": {
                 "issues": "https://github.com/halaxa/json-machine/issues",
-                "source": "https://github.com/halaxa/json-machine/tree/1.2.4"
+                "source": "https://github.com/halaxa/json-machine/tree/1.2.5"
             },
             "funding": [
                 {
@@ -2564,7 +2567,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2025-06-16T07:42:34+00:00"
+            "time": "2025-07-07T13:38:34+00:00"
         },
         {
             "name": "hedii/zotero-api",
@@ -2714,12 +2717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "69d56dad655029a21b8f2818c4707659f0157a5c"
+                "reference": "e38daa2ce89d57f445887372a33bb20fc9ddeb96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/69d56dad655029a21b8f2818c4707659f0157a5c",
-                "reference": "69d56dad655029a21b8f2818c4707659f0157a5c",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/e38daa2ce89d57f445887372a33bb20fc9ddeb96",
+                "reference": "e38daa2ce89d57f445887372a33bb20fc9ddeb96",
                 "shasum": ""
             },
             "require": {
@@ -2794,7 +2797,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-07-06T11:13:41+00:00"
+            "time": "2025-07-21T11:44:53+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -12225,16 +12228,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.78.0",
+            "version": "v3.84.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "effd5edddae2fc202028f63e515db21815100fd2"
+                "reference": "38dad0767bf2a9b516b976852200ae722fe984ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/effd5edddae2fc202028f63e515db21815100fd2",
-                "reference": "effd5edddae2fc202028f63e515db21815100fd2",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/38dad0767bf2a9b516b976852200ae722fe984ca",
+                "reference": "38dad0767bf2a9b516b976852200ae722fe984ca",
                 "shasum": ""
             },
             "require": {
@@ -12318,7 +12321,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.78.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.84.0"
             },
             "funding": [
                 {
@@ -12326,20 +12329,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-06T11:06:25+00:00"
+            "time": "2025-07-15T18:21:57+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.17",
+            "version": "2.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "89b5ef665716fa2a52ecd2633f21007a6a349053"
+                "reference": "ee1f390b7a70cdf74a2b737e554f68afea885db7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/89b5ef665716fa2a52ecd2633f21007a6a349053",
-                "reference": "89b5ef665716fa2a52ecd2633f21007a6a349053",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ee1f390b7a70cdf74a2b737e554f68afea885db7",
+                "reference": "ee1f390b7a70cdf74a2b737e554f68afea885db7",
                 "shasum": ""
             },
             "require": {
@@ -12384,7 +12387,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-21T20:55:28+00:00"
+            "time": "2025-07-17T17:22:31+00:00"
         },
         {
             "name": "react/cache",

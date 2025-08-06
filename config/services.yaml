@@ -5,15 +5,15 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
     app.locales: ['de', 'en']
-    locales: ['de', 'en']        # without app. prefix for TeiEditionBundle
+    locales: ['de', 'en']       # without app. prefix for TeiEditionBundle
     app.default_locale: 'de'
-    default_locale: 'de' # without app. prefix for TeiEditionBundle
+    default_locale: 'de'        # without app. prefix for TeiEditionBundle
     app.hosts.de: "%env(string:HOSTS_DE)%"
     app.hosts.en: "%env(string:HOSTS_EN)%"
 
     app.site.key: 'gjd'
     app.site.name: '[Hi]stories of the German-Jewish Diaspora'
-    app.site.byline: 'A Publication Project' # "An Online Source Portal"
+    app.site.byline: 'A Publication Project'
     app.site.email: 'diaspora@juedische-geschichte-online.net'
     app.site.publisher: 'Moses Mendelssohn Center for European-Jewish Studies'
     app.site.publisher.address: 'Am Neuen Markt 8, 14467 Potsdam'
@@ -106,6 +106,7 @@ services:
         resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle'
         exclude: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/{Entity,Migrations,Tests}'
 
+    # Doctrine DBAL connection for admin database
     dbconn.admin:
         class: Doctrine\DBAL\Connection
         factory: Doctrine\DBAL\DriverManager::getConnection
@@ -119,11 +120,6 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-
-    # The following is now registered by twig/extra-bundle
-    # Twig\Extra\String\StringExtension:
-    #    tags:
-    #        - { name: twig.extension }
 
     Armin\ScssphpBundle\Twig\AssetExtension:
         arguments:

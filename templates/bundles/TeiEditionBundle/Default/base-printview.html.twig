@@ -43,8 +43,8 @@
             /*
             size: 210mm 297mm;
             */
-            margin-header: 10mm;
-            margin-top: 22mm;
+            margin-header: 8mm;
+            margin-top: 28mm;
             /*
             margin-left: 24mm;
             margin-right: 24mm;
@@ -62,14 +62,15 @@
 
         /* shared styles for source- and article-printview */
         #header-wrapper {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #03465F;
         }
 
         #author-line {
             text-align: right;
+            padding-top: 20px; /* add height for logo_top */
             line-height: 20px;
-            // background: url(var:logo_top) /* no-repeat */;
-            // background-image-resize: 2;
+            background: url(var:logo_top) no-repeat;
+            background-image-resize: 2; // 2 - Shrink-to-fit h (keep aspect ratio)
             padding-left: 100px; /* so text doesn't run into logo_top */
             margin-bottom: 8px;
         }
@@ -102,6 +103,7 @@
         }
 
         header {
+            display: none; /* we only show logo */
             color: inherit;
             background-color: inherit;
             margin-top: 0;
@@ -115,8 +117,8 @@
 
         h1#title {
             margin-top: 4px;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            border-top: 1px solid #03465F;
+            border-bottom: 1px solid #03465F;
             font-size: 24px;
             font-weight: bold;
             padding-top: 16px;
@@ -140,7 +142,9 @@
             margin-bottom: 4px;
         }
 
-        .source-description, .source-description-head, h3, .appendix {
+        .source-description, .source-description-head,
+        /* h3, */
+        .appendix {
             color: #6E6E6E;
         }
 
@@ -158,7 +162,11 @@
         }
 
         .article div.dta-list {
-            padding-left:0em;
+            padding-left: 0em;
+        }
+
+        .article .dta-list-bibl {
+            margin-bottom: 16px; /* same as p.dta-p */
         }
 
         .article > div.dta-endnote {

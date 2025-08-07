@@ -2717,12 +2717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "e38daa2ce89d57f445887372a33bb20fc9ddeb96"
+                "reference": "2aba638304c7cad2767a79e516e7d3bcd8516373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/e38daa2ce89d57f445887372a33bb20fc9ddeb96",
-                "reference": "e38daa2ce89d57f445887372a33bb20fc9ddeb96",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/2aba638304c7cad2767a79e516e7d3bcd8516373",
+                "reference": "2aba638304c7cad2767a79e516e7d3bcd8516373",
                 "shasum": ""
             },
             "require": {
@@ -2797,7 +2797,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-07-21T11:44:53+00:00"
+            "time": "2025-08-07T18:40:36+00:00"
         },
         {
             "name": "illuminate/collections",

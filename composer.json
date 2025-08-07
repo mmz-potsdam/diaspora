@@ -99,7 +99,6 @@
         "novaway/feature-flag-bundle": "^2.7",
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",
-        "sylius/theme-bundle": "^2.4",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^1.17|^2",
@@ -130,7 +129,10 @@
     "replace": {
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php73": "*",
+        "symfony/polyfill-php74": "*",
+        "symfony/polyfill-php80": "*"
     },
     "scripts": {
         "auto-scripts": {

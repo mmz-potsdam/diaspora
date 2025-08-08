@@ -6,7 +6,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Overall project</title>
+                <title type="main">Overall Project</title>
             </titleStmt>
             <publicationStmt>
                 <publisher>
@@ -18,7 +18,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     </address>
                 </publisher>
                 <pubPlace>Potsdam</pubPlace>
-                <date type="publication">2023-09-06</date>
+                <date type="publication">2025-05-08</date>
                 <!--
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
@@ -94,7 +94,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <p>The anthology will include essays by the historians Michael Brenner, Sheer Ganor,
                     Marion A. Kaplan, Guy Miron, and Miriam Rürup, with Sheer Ganor and Miriam Rürup
                     serving as lead authors and editors. The volume is slated to be published in
-                    early 2027. </p>
+                    2027. </p>
             </div>
         </body>
     </text>

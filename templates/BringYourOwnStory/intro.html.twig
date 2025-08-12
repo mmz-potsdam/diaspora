@@ -18,10 +18,18 @@
             </p>
             {% endif %}
             <div class="embed-responsive embed-responsive-16by9 mb-4">
-                <video class="embed-responsive-item"  preload="none" controls poster="{{ app.request.basepath }}/viewer/bring-your-own-story/muehlberger-hochzeitskleid-poster.jpg">
-                    <source src="{{ app.request.basepath }}/viewer/bring-your-own-story/muehlberger-hochzeitskleid.mp4" type="video/mp4">
+                <video class="embed-responsive-item" preload="metadata" controls poster="{{ app.request.basepath }}/viewer/bring-your-own-story/muehlberger-hochzeitskleid-poster.jpg" src="{{ app.request.basepath }}/viewer/bring-your-own-story/muehlberger-hochzeitskleid.mp4" type="video/mp4">
+                    {% if 'en' == app.request.locale %}
+                    <track
+                        label="English"
+                        kind="subtitles"
+                        srclang="en"
+                        src="{{ app.request.basepath }}/viewer/bring-your-own-story/muehlberger-hochzeitskleid.en.vtt"
+                        default />
+                    {% endif %}
                 </video>
             </div>
+
             {% if 'de' == app.request.locale %}
             <p>
                 Autorin: Lisa Sophie Gebhard<br/>

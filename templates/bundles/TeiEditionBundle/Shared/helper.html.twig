@@ -499,7 +499,7 @@
 
 {% macro person_list_item(person) %}
     <a href="{% if person.gnd is not empty %}{{ path('person-by-gnd', { 'gnd' : person.gnd }) }}{% else %}{{ path('person', { 'id' : person.id }) }}{% endif %}">
-        {{ person.fullname }}
+        {{- person.fullname -}}
     </a>
 
     {% set birthPlace = person.birthPlaceInfo(app.request.locale) %}
@@ -511,7 +511,7 @@
                 {% if birthPlace is not empty %}{% if person.birthDate is not empty %}{{- ',' }}{% endif %}
                     {% if birthPlace.id is defined and birthPlace.id is not empty %}
                         <a href="{% if birthPlace.tgn is defined and birthPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : birthPlace.tgn }) }}{% else %}{{ path('place', { 'id' : birthPlace.id }) }}{% endif %}">
-                        {{ birthPlace['name'] }}
+                        {{- birthPlace['name'] -}}
                         </a>
                     {% else %}
                         {{ birthPlace['name'] }}
@@ -519,12 +519,14 @@
                 {% endif %}
         {% endif %}
         {% if deathPlace is not empty or person.deathDate is not empty %}
-            -
+            –
                 {{ person.deathDate|dateincomplete -}}
                 {% if deathPlace is not empty %}{% if person.deathDate is not empty %}{{- ',' }}{% endif %}
-                    {% if deathPlace.id is defined and deathPlace.id is not empty %}<a href="{% if deathPlace.tgn is defined and deathPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : deathPlace.tgn }) }}{% else %}{{ path('place', { 'id' : deathPlace.id }) }}{% endif %}">
-                        {{ deathPlace['name'] -}}</a>{% else %}{{ deathPlace['name'] -}}
-                    {% endif -%}
+                    {% if deathPlace.id is defined and deathPlace.id is not empty %}
+                        <a href="{% if deathPlace.tgn is defined and deathPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : deathPlace.tgn }) }}{% else %}{{ path('place', { 'id' : deathPlace.id }) }}{% endif %}">
+                        {{- deathPlace['name'] -}}
+                        </a>{% else %}{{ deathPlace['name'] -}}
+                    {%- endif -%}
                 {% endif -%}
         {% endif -%})
     {% endif %}

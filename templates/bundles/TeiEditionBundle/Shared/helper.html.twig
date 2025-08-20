@@ -72,7 +72,7 @@
     <h3 id="author">{{ helper.article_author_aboutlabel(authors) }}</h3>
         {% for author in authors %}
             {% if author.description is defined %}
-            <p>{{ author.description|converturls }}</p>
+            {{ author.description|markdown_to_html }}
             {% endif %}
         {% endfor %}
     {% endif %}

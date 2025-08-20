@@ -175,6 +175,10 @@ services:
     TeiEditionBundle\Utils\PdfGenerator:
         arguments: [ "%app.pdf-generator.arguments%" ]
 
+    League\CommonMark\ConverterInterface:
+        class: MinimalMark\MinimalMarkConverter
+        # arguments: [ '%app.minimal-mark.arguments%' ]
+
     App\Menu\Builder:
         arguments: [ "@knp_menu.factory", "@translator.default", "@request_stack", "@router"  ]
         tags:

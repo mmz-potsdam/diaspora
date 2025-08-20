@@ -69,6 +69,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/minimal-mark"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
@@ -96,6 +100,7 @@
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-attributes",
+        "mmz-potsdam/minimal-mark": "dev-master",
         "novaway/feature-flag-bundle": "^2.7",
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",

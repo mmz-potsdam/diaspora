@@ -1976,16 +1976,16 @@
         },
         {
             "name": "gedmo/doctrine-extensions",
-            "version": "v3.20.0",
+            "version": "v3.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine-extensions/DoctrineExtensions.git",
-                "reference": "ea1d37586b8e4bae2a815feb38b177894b12c44c"
+                "reference": "3ca38e8fa4439c4849c8bd5f75bfdde41239c0a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine-extensions/DoctrineExtensions/zipball/ea1d37586b8e4bae2a815feb38b177894b12c44c",
-                "reference": "ea1d37586b8e4bae2a815feb38b177894b12c44c",
+                "url": "https://api.github.com/repos/doctrine-extensions/DoctrineExtensions/zipball/3ca38e8fa4439c4849c8bd5f75bfdde41239c0a0",
+                "reference": "3ca38e8fa4439c4849c8bd5f75bfdde41239c0a0",
                 "shasum": ""
             },
             "require": {
@@ -2082,7 +2082,7 @@
             "support": {
                 "docs": "https://github.com/doctrine-extensions/DoctrineExtensions/tree/main/doc",
                 "issues": "https://github.com/doctrine-extensions/DoctrineExtensions/issues",
-                "source": "https://github.com/doctrine-extensions/DoctrineExtensions/tree/v3.20.0"
+                "source": "https://github.com/doctrine-extensions/DoctrineExtensions/tree/v3.20.1"
             },
             "funding": [
                 {
@@ -2102,7 +2102,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-04T17:19:27+00:00"
+            "time": "2025-09-14T06:37:47+00:00"
         },
         {
             "name": "geissler/converter",
@@ -2791,12 +2791,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "17bccd770073af60eb26938e4b7e4337963aeaf6"
+                "reference": "f8e4614603e65a0f83a174fc2ba68d4fc38dd5c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/17bccd770073af60eb26938e4b7e4337963aeaf6",
-                "reference": "17bccd770073af60eb26938e4b7e4337963aeaf6",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/f8e4614603e65a0f83a174fc2ba68d4fc38dd5c8",
+                "reference": "f8e4614603e65a0f83a174fc2ba68d4fc38dd5c8",
                 "shasum": ""
             },
             "require": {
@@ -2871,7 +2871,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2025-09-11T06:22:57+00:00"
+            "time": "2025-09-15T09:30:25+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -12898,16 +12898,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.23",
+            "version": "2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5"
+                "reference": "4087d28bd252895874e174d65e26b2c202ed893a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
-                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4087d28bd252895874e174d65e26b2c202ed893a",
+                "reference": "4087d28bd252895874e174d65e26b2c202ed893a",
                 "shasum": ""
             },
             "require": {
@@ -12952,7 +12952,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-10T11:42:22+00:00"
+            "time": "2025-09-12T14:26:42+00:00"
         },
         {
             "name": "react/cache",

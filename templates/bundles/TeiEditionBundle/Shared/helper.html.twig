@@ -93,16 +93,16 @@
 {% endmacro %}
 
 {% macro keywords_linked(keywords, route = 'topic-background', wrap_col = true) %}
-    {% for topic in keywords %}
-        {% set slug = slugify.slugify(topic|trans({}, 'additional')) %}
+    {% for keyword in keywords %}
+        {% set slug = slugify.slugify(keyword|trans({}, 'additional')) %}
         {% set attr_class = '' %}
         {% if 'genre-index' == route %}
-            {% set attr_class = ' class="genre-underlined genre-' ~ topic ~ '"' %}
+            {% set attr_class = ' class="genre-underlined genre-' ~ keyword ~ '"' %}
         {% endif %}
         {% if wrap_col and loop.first %}
         <div class="col-sm-12">
         {% endif %}
-            <p><a href="{{ path(route) }}#{{ slug }}"{{ attr_class|raw }}>{{ topic|trans({}, 'additional') }}</a></p>
+            <p><a href="{{ path(route) }}#{{ slug }}"{{ attr_class|raw }}>{{ keyword|trans({}, 'additional') }}</a></p>
         {% if wrap_col and loop.last %}
         </div>
         {% endif %}

@@ -471,11 +471,41 @@ body.route-home {
     .row#current {
         #articlesCarousel {
             .carousel-item {
-                height: 8rem;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
-                overflow: hidden;
+                height: 5lh;
+                small > p {
+                    margin-bottom: 0.05rem;
+                }
+
+                a.name {
+                    display: block;
+                    max-height: 3lh;
+                    overflow: hidden;
+                    font-weight: bold;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                a.genre-underlined {
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &.genre-biography {
+                        color: $color-color-biography;
+                    }
+                    &.genre-country {
+                        color: $color-color-country;
+                    }
+                    &.genre-source {
+                        color: $color-color-source;
+                    }
+                }
             }
+
             .carousel-control-prev-icon {
                 background-image: url("../img/icon/arrow-right.svg") !important;
                 transform: rotate(180deg);
@@ -601,7 +631,25 @@ body.route-genre-index, body.route-topic-index {
         .btn-link {
             color: $color-color-medium !important;
         }
+
+        &.genre-biography {
+            .btn-link {
+                color: $color-color-biography !important;
+            }
+        }
+        &.genre-country {
+            .btn-link {
+                color: $color-color-country !important;
+            }
+        }
+
+        &.genre-source {
+            .btn-link {
+                color: $color-color-source !important;
+            }
+        }
     }
+
 }
 
 body[class*="route-about"],

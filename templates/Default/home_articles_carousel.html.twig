@@ -1,3 +1,5 @@
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
+
 {% block multicarousel %}
     {% if articles is not empty %}
     <div class="row" id="current">
@@ -16,12 +18,17 @@
                     <div class="carousel-inner row w-100 mx-auto">
                         {% for article in articles %}
                         <div class="carousel-item{% if loop.first %} active{%endif %} col-md-4">
-                            {% if article.author|length > 0 %}
-                            {{ article.authorDisplay(true) }}
+                            {% if article.keywords|extract_genres is not empty %}
+                                <small>
+                                {{ helper.keywords_linked(article.keywords|extract_genres, 'genre-index', false) }}
+                                </small>
                             {% endif %}
-                            <a style="display: block" href="{{ path('article', { 'slug' : article.getSlug(true) }) }}">
+                            <a class="name" href="{{ path('article', { 'slug' : article.getSlug(true) }) }}">
                                 {{ article.name }}
                             </a>
+                            {% if article.author|length > 0 %}
+                                <small>{{ article.authorDisplay(true) }}</small>
+                            {% endif %}
                         </div>
                         {% endfor %}
                     </div>

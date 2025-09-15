@@ -34,10 +34,10 @@
                             {% for article in articles %}
                                 <div class="article col-md-3 pt-2 pb-2">
                                     {% if article.author|length > 0 %}
-                                    <div><b>{{ article.authorDisplay(true) }}</b></div>
+                                    <small>{{ article.authorDisplay(true) }}</small>
                                     {% endif %}
                                     {% set path = url('article', { 'slug' : article.getSlug(true) }) %}
-                                    <a href="{{ path }}">
+                                    <a class="name" href="{{ path }}">
                                         {{ article.name }}
                                     </a>
                                 </div>

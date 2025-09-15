@@ -398,6 +398,7 @@ h2, h3, h4 {
         }
     }
 }
+
 /* since we moved the source description before the source */
 a[href="#description"]{
     display: none;
@@ -410,6 +411,24 @@ a[href="#description"]{
 
     #license {
         font-style: italic;
+    }
+}
+
+a.genre {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.genre-biography {
+        color: $color-color-biography;
+    }
+    &.genre-country {
+        color: $color-color-country;
+    }
+    &.genre-source {
+        color: $color-color-source;
     }
 }
 
@@ -484,24 +503,9 @@ body.route-home {
                     overflow: hidden;
                     font-weight: bold;
                     text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
 
-                a.genre-underlined {
-                    text-decoration: none;
                     &:hover {
                         text-decoration: underline;
-                    }
-                    &.genre-biography {
-                        color: $color-color-biography;
-                    }
-                    &.genre-country {
-                        color: $color-color-country;
-                    }
-                    &.genre-source {
-                        color: $color-color-source;
                     }
                 }
             }
@@ -629,6 +633,7 @@ body.route-genre-index, body.route-topic-index {
     .card {
         border-radius: 0;
         .btn-link {
+            font-weight: bold;
             color: $color-color-medium !important;
         }
 
@@ -648,8 +653,17 @@ body.route-genre-index, body.route-topic-index {
                 color: $color-color-source !important;
             }
         }
-    }
 
+        a.name {
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 body[class*="route-about"],

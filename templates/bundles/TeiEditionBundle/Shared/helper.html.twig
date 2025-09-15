@@ -97,7 +97,7 @@
         {% set slug = slugify.slugify(keyword|trans({}, 'additional')) %}
         {% set attr_class = '' %}
         {% if 'genre-index' == route %}
-            {% set attr_class = ' class="genre-underlined genre-' ~ keyword ~ '"' %}
+            {% set attr_class = ' class="genre genre-' ~ keyword ~ '"' %}
         {% endif %}
         {% if wrap_col and loop.first %}
         <div class="col-sm-12">

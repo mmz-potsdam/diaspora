@@ -414,6 +414,18 @@ a[href="#description"]{
     }
 }
 
+span.genre {
+    &.genre-biography {
+        color: $color-color-biography;
+    }
+    &.genre-country {
+        color: $color-color-country;
+    }
+    &.genre-source {
+        color: $color-color-source;
+    }
+}
+
 a.genre {
     text-decoration: none;
 
@@ -626,6 +638,16 @@ body.route-place-map {
 body[class*="route-place"] {
     .smaller + h1 {
         margin-top: 1rem;
+    }
+}
+body.route-article-index, body.route-article-index-date {
+    li.article {
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 

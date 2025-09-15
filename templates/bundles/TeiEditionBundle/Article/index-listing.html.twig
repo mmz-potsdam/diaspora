@@ -1,0 +1,52 @@
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
+{% macro article_linked_toc(article) %}
+    {% if 'interpretation' == article.genre %}
+        {% if 'background' == article.articleSection %}
+            {% set path = path('topic-background', { 'slug' : article.getSlug(true) }) %}
+        {% else %}
+            {% set path = url('article', { 'slug' : article.getSlug(true) }) %}
+        {% endif %}
+        <small>
+        {% for keyword in article.keywords|extract_genres %}
+            {% set attr_class = ' class="genre genre-' ~ keyword ~ '"' %}
+            <span {{ attr_class|raw }}>{{ keyword|trans({}, 'additional') }}</span>
+        {% endfor %}
+        </small>
+        <a href="{{ path }}" class="d-block">
+            {% if article.author|length > 0 %}
+            {{ article.authorDisplay(true) }},
+            {% endif %}
+            <b>{{ article.name }}</b>
+            {%- if article.datePublished is not empty %}, {{ article.datePublished|dateincomplete }}{% if article.dateModified is not empty and article.dateModified != article.datePublished %} ({{'as of'|trans }} {{ article.dateModified|dateincomplete }}){% endif %}{% endif %}.
+        </a>
+    {% elseif 'source' == article.genre %}
+        <a href="{{ path('source', { 'uid' : article.uid }) }}">{{ article.name }}</a>
+    {% endif %}
+{% endmacro %}
+
+        <div class="col-sm-8">
+        {% if articles is not empty %}
+            {% set last_initial = null %}
+            {% for article in articles %}
+                {% if app.request.attributes.get('_route') == 'article-index-date' %}
+                    {% set initial = article.datePublished|date("m.Y") %}
+                {% else %}
+                    {% set initial = slugify.slugify(article.creator|first)|upper %}
+                {% endif %}
+                {% if initial != last_initial %}
+                    {% if last_initial != '' %}
+            </ul>
+                    {% endif %}
+                <h2>{{ initial }} </h2>
+                {% set last_initial = initial %}
+            <ul class="list-unstyled">
+                {% endif %}
+                <li class="mb-3 article">
+                    {{ _self.article_linked_toc(article) }}
+                </li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            {{ 'No articles could be found'|trans }}
+        {% endif %}
+        </div><!-- .col-sm-8-->

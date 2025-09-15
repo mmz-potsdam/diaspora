@@ -89,12 +89,6 @@
             </div>
             {% endif %}
 
-            {% if article.keywords|extract_genres is not empty %}
-            <div class="mt-3">
-            {{ helper.keywords_linked(article.keywords|extract_genres, 'genre-index', false) }}
-            </div>
-            {% endif %}
-
             <div class="container-fluid box top-buffer">
                 <div class="row box-color-title">
                     <div class="col-sm-12">
@@ -116,6 +110,12 @@
                     </div>
                 </div>
             </div>
+
+            {% if article.keywords|extract_genres is not empty %}
+            <div class="mt-3">
+            {{ helper.keywords_linked(article.keywords|extract_genres, 'genre-index', false) }}
+            </div>
+            {% endif %}
 
             {% if article.keywords|extract_topics is not empty %}
             <div class="container-fluid box top-buffer">

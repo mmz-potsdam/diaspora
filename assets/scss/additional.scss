@@ -205,6 +205,24 @@ header {
             }
         }
 
+        #menu-article-index {
+            a {
+                display: inline-block;
+                /*
+                background: url("../img/icon/menu-article.svg") no-repeat;
+                background-position: right 6px center;
+                background-color: $color-color-article;
+                */
+                padding-right: 33px;
+                font-weight: bold;
+                color: $color-color-medium;
+            }
+            &:hover, &.current {
+                z-index: 999 !important;
+                border-bottom: 3px solid $color-color-light;
+            }
+        }
+
         #menu-item-chronology {
             a {
                 display: inline-block;

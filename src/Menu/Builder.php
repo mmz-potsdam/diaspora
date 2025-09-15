@@ -189,6 +189,12 @@ class Builder
         ])
             ->setAttribute('class', 'list-inline-item');
 
+        $menu->addChild('article-index', [
+                'label' => $this->translator->trans('Articles'),
+                'route' => 'article-index',
+        ])
+            ->setAttribute('class', 'list-inline-item');
+
         $menu->addChild('_lookup', [
             'label' => $this->translator->trans('Look-up'),
             'uri' => '#',
@@ -223,11 +229,6 @@ class Builder
                 'label' => $this->translator->trans('Bibliography'),
                 'route' => 'bibliography-index',
             ]);
-        $menu['_lookup']
-            ->addChild('article-index', [
-                'label' => $this->translator->trans('Articles'),
-                'route' => 'article-index',
-            ]);
 
         /*
         // the following is currently not yet in use
@@ -242,8 +243,9 @@ class Builder
         }
         else {
             // $menu['topic-index']->setAttribute('id', 'menu-item-topic');
-            $menu['place-map']->setAttribute('id', 'menu-item-map');
             // $menu['date-chronology']->setAttribute('id', 'menu-item-chronology');
+            $menu['place-map']->setAttribute('id', 'menu-item-map');
+            $menu['article-index']->setAttribute('id', 'menu-article-index');
             $menu['_lookup']->setAttribute('id', 'menu-item-lookup');
 
             // find the matching parent

@@ -12,7 +12,7 @@ parameters:
     app.hosts.en: "%env(string:HOSTS_EN)%"
 
     app.site.key: 'gjd'
-    app.site.name: '[Hi]stories of the German-Jewish Diaspora'
+    app.site.name: '(Hi)stories of the German-Jewish Diaspora'
     app.site.byline: 'A Publication Project'
     app.site.email: 'diaspora@juedische-geschichte-online.net'
     app.site.publisher: 'Moses Mendelssohn Center for European-Jewish Studies'

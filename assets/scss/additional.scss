@@ -28,6 +28,11 @@ header {
         font-size: 24px;
         font-weight: bold;
 
+        #logo {
+            height: 86px;
+            width: auto;
+        }
+
         #site-tagline {
            font-size: 14px;
            font-weight: normal;
@@ -145,7 +150,7 @@ header {
 
     #menu-main {
         margin-left: 0;
-        margin-bottom: -5px;
+        margin-bottom: 0px;
 
         & > li {
             margin-right: 2px;

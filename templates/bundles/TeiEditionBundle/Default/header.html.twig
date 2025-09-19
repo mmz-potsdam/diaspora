@@ -35,7 +35,7 @@
                     </div>
                     <div class="col-md-5 col-lg-4" id="site-name">
                         <h1>
-                            <a href="{{ path('home') }}"><img src="{{ app.request.basepath }}/img/mockup/logo.{{ app.request.locale }}.png" alt="{{ siteName|trans({}, 'additional') }}" /></a>
+                            <a href="{{ path('home') }}"><img id="logo" src="{{ app.request.basepath }}/img/logo.{{ app.request.locale }}.svg" alt="{{ siteName|trans({}, 'additional') }}" /></a>
                             {#
                             <a href="{{ path('home') }}" id="site-tagline">{{ siteTagline|trans({}, 'additional') }}</a>
                             #}

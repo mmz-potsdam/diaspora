@@ -42,8 +42,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
-            <div xml:id="inhalte-und-aufbau-webseite" n="2">
-                <head>Inhalte und Aufbau der Webseite</head>
+            <div xml:id="inhalte-und-aufbau-website" n="2">
+                <head>Inhalte und Aufbau der Website</head>
                 <lb/>
                 <p>Mit dem Diaspora-Portal möchten wir ein benutzerfreundliches Online-Angebot mit
                     umfassenden Suchoptionen bereitstellen. Über verschiedene Textebenen,

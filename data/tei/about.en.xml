@@ -47,7 +47,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <lb/>
             -->
             <div xml:id="overall-project" n="2">
-                <p> The online portal ‘[Hi]stories of the German-Jewish Diaspora’ is part of a
+                <p> The online portal ‘(Hi)stories of the German-Jewish Diaspora’ is part of a
                     hybrid publication project of the <hi rendition="#i"><ref
                         target="http://wag-leobaeck.de/">Academic Working Group</ref></hi> (link in German) of
                     the <hi rendition="#i">Leo Baeck Institute</hi> (LBI). This project’s origins

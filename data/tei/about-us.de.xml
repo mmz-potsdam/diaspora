@@ -42,7 +42,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
-            <p>Das Online-Portal ,Geschichte[n] der deutsch-jüdischen Diaspora‘ wird vom Moses
+            <p>Das Online-Portal ,Geschichte(n) der deutsch-jüdischen Diaspora‘ wird vom Moses
                 Mendelssohn Zentrum für europäisch-jüdische Studien (MMZ) in Potsdam herausgegeben
                 und vom dortigen Projektteam betreut. Es ist Teil des am MMZ angesiedelten
                 Verbundportals zur europäisch-jüdischen Geschichte ,<ref
@@ -73,7 +73,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <hi rendition="#b">Dr. Lisa Sophie Gebhard (Koordination und Redaktion)</hi>
                     <lb/> ist Historikerin und wissenschaftliche Mitarbeiterin am Moses Mendelssohn
                     Zentrum für europäisch-jüdische Studien in Potsdam, wo sie das internationale
-                    Publikationsprojekt ,Geschichte[n] der deutsch-jüdischen Diaspora‘ koordiniert.
+                    Publikationsprojekt ,Geschichte(n) der deutsch-jüdischen Diaspora‘ koordiniert.
                     Sie hat in Berlin, Jerusalem, Kiel und Mailand studiert und wurde 2022 an der
                     Freien Universität Berlin promoviert. Zu ihren Forschungsinteressen zählt die
                     Geschichte des Zionismus, zu der sie den Sammelband <hi rendition="#i"
@@ -86,7 +86,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     ihrer Familie in Berlin. </p>
                 <p>
                     <hi rendition="#b">Verena Kurz, M.A. (Redaktion)</hi><lb/> ist seit 2024 externe
-                    wissenschaftliche Mitarbeiterin im Publikationsprojekt ,Geschichte[n] der
+                    wissenschaftliche Mitarbeiterin im Publikationsprojekt ,Geschichte(n) der
                     deutsch-jüdischen Diaspora‘ am Moses Mendelssohn Zentrum für europäisch-jüdische
                     Studien in Potsdam. Sie studierte Kulturwissenschaften, Spanische Philologie und
                     Lateinamerikastudien in Potsdam und Berlin. Studien- und Forschungsaufenthalte,
@@ -105,7 +105,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     europäisch-jüdische Studien in Potsdam. Als Vorsitzende der <hi rendition="#i"
                         >Wissenschaftlichen Arbeitsgemeinschaft</hi> des <hi rendition="#i">Leo
                         Baeck Instituts</hi> leitet sie die konzeptionelle Ausgestaltung des
-                    Buchprojekts und Online-Portals ,Geschichte[n] der
+                    Buchprojekts und Online-Portals ,Geschichte(n) der
                     deutsch-jüdischen Diaspora‘. Zuvor war sie Direktorin des <hi rendition="#i"
                         >Instituts für die Geschichte der deutschen Juden</hi> in Hamburg und dort
                     Initiatorin und konzeptverantwortliche Herausgeberin und Projektleiterin der

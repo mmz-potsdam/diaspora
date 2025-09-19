@@ -42,7 +42,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
-            <p> The online portal <hi rendition="#i">[Hi]stories of the German-Jewish Diaspora</hi>
+            <p> The online portal <hi rendition="#i">(Hi)stories of the German-Jewish Diaspora</hi>
                 is published by the Moses Mendelssohn Center for European-Jewish Studies (MMZ) in
                 Potsdam and maintained by the center’s project team. The website forms part of the
                 MMZ’s collaborative platform on European-Jewish history, <ref
@@ -69,7 +69,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <hi rendition="#b">Dr. Lisa Sophie Gebhard (Coordination and Editor)</hi>
                     <lb/> is a historian and research associate at the Moses Mendelssohn Center,
                     where she coordinates the international publication project <hi rendition="#i"
-                        >[Hi]stories of the German-Jewish Diaspora.</hi> She studied at institutions
+                        >(Hi)stories of the German-Jewish Diaspora.</hi> She studied at institutions
                     in Berlin, Jerusalem, Kiel, and Milan, and earned her doctorate at Freie
                     Universität Berlin in 2022. Her research interests include the history of
                     Zionism, on which she co-edited the volume <hi rendition="#i">Deutschsprachige
@@ -82,7 +82,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <p>
                     <hi rendition="#b">Verena Kurz, M.A. (Editor)</hi>
                     <lb/> has served as external research assistant in the publication project <hi
-                        rendition="#i">[Hi]stories of the German-Jewish Diaspora</hi> at the Moses
+                        rendition="#i">(Hi)stories of the German-Jewish Diaspora</hi> at the Moses
                     Mendelssohn Center since 2024. She studied cultural studies, Spanish philology,
                     and Latin American studies at universities in Potsdam and Berlin and has
                     received DAAD fellowships for study and research in Argentina, Bolivia, and
@@ -100,7 +100,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <lb/> has served as the director of the Moses Mendelssohn Center since 2020. As
                     chair of the Academic Working Group of the Leo Baeck Institute, she supervises
                     the conceptual development of the book and online portal <hi rendition="#i"
-                        >[Hi]stories of the German-Jewish Diaspora.</hi> She previously directed the
+                        >(Hi)stories of the German-Jewish Diaspora.</hi> She previously directed the
                     Institute for the History of the German Jews in Hamburg, where she initiated and
                     ran the <hi rendition="#i">Key Documents</hi> project. </p>
                 <p>

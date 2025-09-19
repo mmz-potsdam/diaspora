@@ -47,7 +47,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <lb/>
             -->
             <div xml:id="gesamtprojekt" n="2">
-                <p> Das Online-Portal ,Geschichte[n] der deutsch-jüdischen Diaspora‘ ist Teil eines
+                <p> Das Online-Portal ,Geschichte(n) der deutsch-jüdischen Diaspora‘ ist Teil eines
                     hybriden Publikationsprojekts der <hi rendition="#i"><ref
                             target="http://wag-leobaeck.de/">Wissenschaftlichen
                             Arbeitsgemeinschaft</ref></hi> des <hi rendition="#i">Leo Baeck

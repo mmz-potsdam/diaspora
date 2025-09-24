@@ -44,7 +44,7 @@
             size: 210mm 297mm;
             */
             margin-header: 8mm;
-            margin-top: 28mm;
+            margin-top: 30mm;
             /*
             margin-left: 24mm;
             margin-right: 24mm;
@@ -67,10 +67,11 @@
 
         #author-line {
             text-align: right;
-            padding-top: 20px; /* add height for logo_top */
+            padding-top: 35px; /* add height for logo_top */
             line-height: 20px;
             background: url(var:logo_top) no-repeat;
-            background-image-resize: 2; // 2 - Shrink-to-fit h (keep aspect ratio)
+            //  0: No resizing (default), 2: Shrink-to-fit h (keep aspect ratio)
+            background-image-resize: 0;
             padding-left: 100px; /* so text doesn't run into logo_top */
             margin-bottom: 8px;
         }

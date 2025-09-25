@@ -49,11 +49,11 @@ use function Symfony\Component\String\u;
  */
 class AddUserCommand extends Command
 {
-    private /* SymfonyStyle */ $io;
-    private /* EntityManagerInterface */ $entityManager;
-    private /* UserPasswordHasherInterface */ $passwordHasher;
-    private /* Validator */ $validator;
-    private /* UserRepository */ $users;
+    /* SymfonyStyle */ private $io;
+    /* EntityManagerInterface */ private $entityManager;
+    /* UserPasswordHasherInterface */ private $passwordHasher;
+    /* Validator */ private $validator;
+    /* UserRepository */ private $users;
 
     public function __construct(
         EntityManagerInterface $entityManager,

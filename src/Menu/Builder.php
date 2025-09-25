@@ -190,8 +190,8 @@ class Builder
             ->setAttribute('class', 'list-inline-item');
 
         $menu->addChild('article-index', [
-                'label' => $this->translator->trans('Articles'),
-                'route' => 'article-index',
+            'label' => $this->translator->trans('Articles'),
+            'route' => 'article-index',
         ])
             ->setAttribute('class', 'list-inline-item');
 

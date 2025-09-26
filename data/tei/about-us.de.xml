@@ -105,14 +105,14 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     europäisch-jüdische Studien in Potsdam. Als Vorsitzende der <hi rendition="#i"
                         >Wissenschaftlichen Arbeitsgemeinschaft</hi> des <hi rendition="#i">Leo
                         Baeck Instituts</hi> leitet sie die konzeptionelle Ausgestaltung des
-                    Buchprojekts und Online-Portals ,Geschichte(n) der
-                    deutsch-jüdischen Diaspora‘. Zuvor war sie Direktorin des <hi rendition="#i"
-                        >Instituts für die Geschichte der deutschen Juden</hi> in Hamburg und dort
-                    Initiatorin und konzeptverantwortliche Herausgeberin und Projektleiterin der
-                    sogenannten Schlüsseldokumente-Edition. </p>
+                    Buchprojekts und Online-Portals ,Geschichte(n) der deutsch-jüdischen Diaspora‘.
+                    Zuvor war sie Direktorin des <hi rendition="#i">Instituts für die Geschichte der
+                        deutschen Juden</hi> in Hamburg und dort Initiatorin und
+                    konzeptverantwortliche Herausgeberin und Projektleiterin der sogenannten
+                    Schlüsseldokumente-Edition. </p>
                 <p>
-                    <hi rendition="#b">Übersetzer</hi><lb/> Andreas Bredenfeld, Berlin<lb/> Jake
-                    Schneider, Berlin <lb/>
+                    <hi rendition="#b">Übersetzer</hi><lb/> Andreas Bredenfeld, Berlin<lb/> Tim
+                    Corbett, Wien<lb/> Jake Schneider, Berlin <lb/>
                 </p>
             </div>
             <div xml:id="team-buchpublikation" n="2">
@@ -126,7 +126,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
 
                 <p>
                     <hi rendition="#b">Redaktion</hi><lb/> Dr. Lisa Sophie Gebhard (Koordination und
-                    Redaktion)<lb/> Verena Kurz (Redaktion)<lb/> Paul-Levi Mydlach (Redaktionsassistenz)<lb/>
+                    Redaktion)<lb/> Verena Kurz (Redaktion)<lb/> Paul-Levi Mydlach
+                    (Redaktionsassistenz)<lb/>
                 </p>
             </div>
             <div n="2">

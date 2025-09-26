@@ -104,21 +104,22 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     Institute for the History of the German Jews in Hamburg, where she initiated and
                     ran the <hi rendition="#i">Key Documents</hi> project. </p>
                 <p>
-                    <hi rendition="#b">Translators</hi><lb/> Andreas Bredenfeld, Berlin<lb/> Jake
-                    Schneider, Berlin <lb/>
+                    <hi rendition="#b">Translators</hi><lb/> Andreas Bredenfeld, Berlin<lb/> Tim
+                    Corbett, Vienna<lb/> Jake Schneider, Berlin <lb/>
                 </p>
             </div>
             <div xml:id="team-book" n="2">
                 <head>Book Publication Team</head>
                 <lb/>
                 <p>
-                    <hi rendition="#b">Authors</hi><lb/> Prof. Michael Brenner<lb/> Dr. Sheer
-                    Ganor (lead author and editor)<lb/> Prof. Marion A. Kaplan<lb/> Prof. 
-                    Guy Miron<lb/> Prof. Miriam Rürup (lead author and editor)<lb/></p>
+                    <hi rendition="#b">Authors</hi><lb/> Prof. Michael Brenner<lb/> Dr. Sheer Ganor
+                    (lead author and editor)<lb/> Prof. Marion A. Kaplan<lb/> Prof. Guy Miron<lb/>
+                    Prof. Miriam Rürup (lead author and editor)<lb/></p>
 
                 <p>
                     <hi rendition="#b">Editorial Team</hi><lb/> Dr. Lisa Sophie Gebhard (coordinator
-                    and editor)<lb/> Verena Kurz (editor)<lb/> Paul-Levi Mydlach (editorial assistant)<lb/>
+                    and editor)<lb/> Verena Kurz (editor)<lb/> Paul-Levi Mydlach (editorial
+                    assistant)<lb/>
                 </p>
             </div>
             <div n="3">
@@ -132,17 +133,16 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <list>
                     <item> Prof. Ofer Ashkenazi – Director, Richard Koebner Minerva Center for
                         German History at Hebrew University of Jerusalem</item>
-                    <item> Prof. Atina Grossmann – Professor of History at the Faculty of
-                        Humanities and Social Sciences at Cooper Union in New York City </item>
+                    <item> Prof. Atina Grossmann – Professor of History at the Faculty of Humanities
+                        and Social Sciences at Cooper Union in New York City </item>
                     <item> Prof. Dr. Simone Lässig – Director of the German Historical Institute in
                         Washington, DC </item>
-                    <item> Prof. Jeffrey Lesser – Samuel Candler Dobbs Professor and Director of
-                        the Halle Institute for Global Research and Learning, Emory University,
-                        Atlanta </item>
+                    <item> Prof. Jeffrey Lesser – Samuel Candler Dobbs Professor and Director of the
+                        Halle Institute for Global Research and Learning, Emory University, Atlanta </item>
                     <item> Prof. Michael A. Meyer – Adolph S. Ochs Professor of Jewish History
                         Emeritus at Hebrew Union College – Jewish Institute of Religion, Cincinnati </item>
-                    <item> Prof. David Rechter – Professor of Modern Jewish History at the
-                        Faculty of Asian and Middle Eastern Studies, University of Oxford </item>
+                    <item> Prof. David Rechter – Professor of Modern Jewish History at the Faculty
+                        of Asian and Middle Eastern Studies, University of Oxford </item>
                     <item> PD Katrin Steffen – DAAD Professor of European and Jewish History and
                         Culture at the University of Sussex </item>
                 </list>

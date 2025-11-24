@@ -99,12 +99,13 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     cross-referenced and interconnected through links. </p>
                 <p> The first category, <hi rendition="#b">Geographical Overviews</hi>, provides the
                     longest articles, offering the historical context necessary to understand the
-                    case studies </p>
+                    case studies. </p>
                 <p> The second category comprises <hi rendition="#b">Biographies</hi> of
-                    German-speaking Jewish émigrés. The third category consists of <hi
-                        rendition="#b">Sources</hi> that serve as key documents of German-Jewish
-                    Diaspora history and are presented alongside analysis. </p>
-                <p> In a special section, <hi rendition="#i"><hi rendition="#b">Bring Your Own
+                    German-speaking Jewish émigrés. </p>
+                <p> The third category consists of <hi rendition="#b">Sources</hi> that serve as key
+                    documents of German-Jewish diaspora history and are presented alongside
+                    analysis. </p>
+                <p> A special section, <hi rendition="#i"><hi rendition="#b">Bring Your Own
                             Story</hi></hi>, allows individuals to contribute unique objects
                     connected to their personal histories.</p>
                 <div xml:id="geographical-overviews" n="3">
@@ -113,7 +114,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <p> The geographical overviews examine various countries where German-speaking
                         Jews resided, either while in transit or as long-term destinations. As
                         reference guides, they outline developments and key themes, combining
-                        factual information with analytical insights into the German-Jewish Diaspora
+                        factual information with analytical insights into the German-Jewish diaspora
                         as it took shape in the context of each country. They follow a consistent
                         thematic structure, highlighting relevant national circumstances before and
                         after 1933 that are relevant to Jewish history.</p>
@@ -124,7 +125,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                         considering several topics on a recurring basis to create a consistent
                         textual structure and facilitate comparisons between individual countries.
                         The project does not limit its portrayal of the highly diverse German-Jewish
-                        Diaspora to the national level, but also considers individual cities,
+                        diaspora to the national level, but also considers individual cities,
                         neighborhoods, and peripheral areas. This also makes it possible to showcase
                         the history of German-speaking Jews’ day-to-day local experiences.</p>
                     <p> Recurring thematic categories in the geographical overviews include: </p>
@@ -142,7 +143,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                         and addressed them in their overviews. </p>
                     <p> However, certain topics have been covered as consistently as possible across
                         all studies, in particular the institutionalization of the German-Jewish
-                        Diaspora through clubs or periodicals; the everyday challenges community
+                        diaspora through clubs or periodicals; the everyday challenges community
                         members faced; and encounters with other minority groups and mainstream
                         society. In addition, the texts address the significance of memory and
                         nostalgia for constructing a shared ‘diasporic identity’ as well as
@@ -155,13 +156,13 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <lb/>
                     <p> In addition to exploring the various destinations, the portal portrays
                         individuals who left the German-speaking world. Through individual and group
-                        biographies, the German-Jewish Diaspora is given a human face, countering
+                        biographies, the German-Jewish diaspora is given a human face, countering
                         the depersonalization of migration discourse. Familiarity or renown is not
                         the basis for inclusion. Alongside ‘famous’ historical figures, we also
                         consider less familiar life stories to illuminate particular aspects of the
-                        German-speaking Jewish Diaspora in all their breadth. </p>
+                        German-speaking Jewish diaspora in all their breadth. </p>
                     <p> These biographies expand the overall scope of the geographical overviews
-                        through individual examples. They center on life in the Diaspora, but also
+                        through individual examples. They center on life in the diaspora, but also
                         include many references to dreams of return to the country of origin, which
                         were occasionally fulfilled. These case studies particularly make clear how
                         hybrid, fragmented affiliations developed and changed over the course of a
@@ -197,17 +198,17 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <head><hi rendition="#i">Bring Your Own Story</hi></head>
                     <lb/>
                     <p> Alongside traditional articles, the online portal invites contributions from
-                        individuals with personal connections to Diaspora history. The <hi
+                        individuals with personal connections to diaspora history. The <hi
                             rendition="#i">Bring Your Own Story</hi> section aims to make
-                        individuals’ life trajectories in the Diaspora tangible using ‘storytelling
+                        individuals’ life trajectories in the diaspora tangible using ‘storytelling
                         objects.’ These include everyday items, letters, photographs, or postcards,
                         as well as applied art or distinctive fabric items. Such objects link
-                        personal experiences to the broader history of the German-Jewish Diaspora.
+                        personal experiences to the broader history of the German-Jewish diaspora.
                         As distinctive vessels of memory – often reflecting multiple migration
                         experiences within a single family – they hold deep, intergenerational
                         significance. In short personal videos (of 10–15 minutes each), participants
                         reflect on their own migration stories and the role of the German-Jewish
-                        Diaspora in their family histories.</p>
+                        diaspora in their family histories.</p>
                 </div>
             </div>
             <!--

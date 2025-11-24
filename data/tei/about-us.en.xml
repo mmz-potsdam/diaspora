@@ -56,19 +56,21 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <lb/>
                 <p>
                     <hi rendition="#b">Daniel Burckhardt, M.A. (Technical Implementation)</hi>
-                    <lb/> has been a research associate at the Moses Mendelssohn Center since 2021,
-                    where he is responsible for the technical development of all digital projects.
-                    He previously oversaw the technical aspects of the <hi rendition="#i">Key
-                        Documents of German-Jewish History</hi> at the Institute for the History of
-                    German Jews (IGdJ). He studied in Zurich and Berlin and held posts as a
-                    researcher at ETH Zurich, Humboldt University, the Leibniz Centre for
-                    Contemporary History Potsdam, and the German Historical Institute in Washington,
-                    D.C. He is also a member of the editorial board and steering committee of
-                    H-Soz-Kult.<lb/></p>
+                    <lb/>
+                     has been a research associate at the Moses Mendelssohn Center since 2021, where
+                    he is responsible for the technical development of all digital projects. He
+                    previously oversaw the technical aspects of the <hi rendition="#i">Key Documents
+                        of German-Jewish History</hi> at the Institute for the History of German
+                    Jews (IGdJ). He studied in Zurich and Berlin and held posts as a researcher at
+                    ETH Zurich, Humboldt University, the Leibniz Centre for Contemporary History
+                    Potsdam, and the German Historical Institute in Washington, D.C. He is also a
+                    member of the editorial board and steering committee of H-Soz-Kult.<lb/>
+                </p>
                 <p>
                     <hi rendition="#b">Dr. Lisa Sophie Gebhard (Coordination and Editor)</hi>
-                    <lb/> is a historian and research associate at the Moses Mendelssohn Center,
-                    where she coordinates the international publication project <hi rendition="#i"
+                    <lb/>
+                     is a historian and research associate at the Moses Mendelssohn Center, where
+                    she coordinates the international publication project <hi rendition="#i"
                         >(Hi)stories of the German-Jewish Diaspora.</hi> She studied at institutions
                     in Berlin, Jerusalem, Kiel, and Milan, and earned her doctorate at Freie
                     Universität Berlin in 2022. Her research interests include the history of
@@ -81,7 +83,8 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     Leipzig Book Fair. She lives in Berlin with her family. </p>
                 <p>
                     <hi rendition="#b">Verena Kurz, M.A. (Editor)</hi>
-                    <lb/> has served as external research assistant in the publication project <hi
+                    <lb/>
+                     has served as an external research assistant in the publication project <hi
                         rendition="#i">(Hi)stories of the German-Jewish Diaspora</hi> at the Moses
                     Mendelssohn Center since 2024. She studied cultural studies, Spanish philology,
                     and Latin American studies at universities in Potsdam and Berlin and has
@@ -91,35 +94,44 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     Pestalozzi School. </p>
                 <p>
                     <hi rendition="#b">Paul-Levi Mydlach (Editorial Assistant)</hi>
-                    <lb/> is a student assistant at the Moses Mendelssohn Center. He studies history
-                    and German studies at the University of Potsdam, focusing on German-Jewish
-                    history and literature. <lb/>
+                    <lb/>
+                     is a student assistant at the Moses Mendelssohn Center. He studies history and
+                    German studies at the University of Potsdam, focusing on German-Jewish history
+                    and literature. <lb/>
                 </p>
 
                 <p><hi rendition="#b">Prof. Miriam Rürup (Project Leader)</hi>
-                    <lb/> has served as the director of the Moses Mendelssohn Center since 2020. As
-                    chair of the Academic Working Group of the Leo Baeck Institute, she supervises
-                    the conceptual development of the book and online portal <hi rendition="#i"
+                    <lb/>
+                     has served as the director of the Moses Mendelssohn Center since 2020. As chair
+                    of the Academic Working Group of the Leo Baeck Institute, she supervises the
+                    conceptual development of the book and online portal <hi rendition="#i"
                         >(Hi)stories of the German-Jewish Diaspora.</hi> She previously directed the
                     Institute for the History of the German Jews in Hamburg, where she initiated and
                     ran the <hi rendition="#i">Key Documents</hi> project. </p>
                 <p>
-                    <hi rendition="#b">Translators</hi><lb/> Andreas Bredenfeld, Berlin<lb/> Tim
-                    Corbett, Vienna<lb/> Jake Schneider, Berlin <lb/>
+                    <hi rendition="#b">Translators</hi><lb/>
+                     Andreas Bredenfeld, Berlin<lb/>
+                     Tim Corbett, Vienna<lb/>
+                     Jake Schneider, Berlin <lb/>
                 </p>
             </div>
             <div xml:id="team-book" n="2">
                 <head>Book Publication Team</head>
                 <lb/>
                 <p>
-                    <hi rendition="#b">Authors</hi><lb/> Prof. Michael Brenner<lb/> Dr. Sheer Ganor
-                    (lead author and editor)<lb/> Prof. Marion A. Kaplan<lb/> Prof. Guy Miron<lb/>
-                    Prof. Miriam Rürup (lead author and editor)<lb/></p>
+                    <hi rendition="#b">Authors</hi><lb/>
+                     Prof. Michael Brenner<lb/>
+                     Dr. Sheer Ganor (lead author and editor)<lb/>
+                     Prof. Marion A. Kaplan<lb/>
+                     Prof. Guy Miron<lb/>
+                     Prof. Miriam Rürup (lead author and editor)<lb/>
+                </p>
 
                 <p>
-                    <hi rendition="#b">Editorial Team</hi><lb/> Dr. Lisa Sophie Gebhard (coordinator
-                    and editor)<lb/> Verena Kurz (editor)<lb/> Paul-Levi Mydlach (editorial
-                    assistant)<lb/>
+                    <hi rendition="#b">Editorial Team</hi><lb/>
+                     Dr. Lisa Sophie Gebhard (coordinator and editor)<lb/>
+                     Verena Kurz (editor)<lb/>
+                     Paul-Levi Mydlach (editorial assistant)<lb/>
                 </p>
             </div>
             <div n="3">

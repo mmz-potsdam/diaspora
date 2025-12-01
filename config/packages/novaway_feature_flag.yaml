@@ -1,4 +1,9 @@
-# see https://github.com/novaway/NovawayFeatureFlagBundle/tree/2.x
+# see https://github.com/novaway/NovawayFeatureFlagBundle?tab=readme-ov-file#configuration
 novaway_feature_flag:
-    features:
-        limited_navigation: '%app.limited_navigation%'
+    default_manager: default
+    managers:
+        default:
+            factory: novaway_feature_flag.factory.array
+            options:
+                features:
+                    limited_navigation: '%app.limited_navigation%'

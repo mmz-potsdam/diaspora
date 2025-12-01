@@ -101,7 +101,7 @@
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-attributes",
         "mmz-potsdam/minimal-mark": "dev-master",
-        "novaway/feature-flag-bundle": "^2.7",
+        "novaway/feature-flag-bundle": "^3.0",
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",

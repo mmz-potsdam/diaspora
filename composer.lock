@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3d9c037cc53ac9134c346d6dafa4775",
+    "content-hash": "6a3e26a7c3fc00505758d6fbfe5a0173",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -1759,12 +1759,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/FeedBundle.git",
-                "reference": "4889cee671c11574136e8e95a39b8bc8d9059d60"
+                "reference": "0cf3dfa565bee0b0093cc04e1545c63cc03e3dc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/FeedBundle/zipball/4889cee671c11574136e8e95a39b8bc8d9059d60",
-                "reference": "4889cee671c11574136e8e95a39b8bc8d9059d60",
+                "url": "https://api.github.com/repos/burki/FeedBundle/zipball/0cf3dfa565bee0b0093cc04e1545c63cc03e3dc8",
+                "reference": "0cf3dfa565bee0b0093cc04e1545c63cc03e3dc8",
                 "shasum": ""
             },
             "require": {
@@ -1807,7 +1807,7 @@
             "support": {
                 "source": "https://github.com/burki/FeedBundle/tree/master"
             },
-            "time": "2025-03-17T08:26:02+00:00"
+            "time": "2025-12-01T11:27:27+00:00"
         },
         {
             "name": "fale/isbn",
@@ -4347,16 +4347,16 @@
         },
         {
             "name": "mpdf/mpdf",
-            "version": "v8.2.6",
+            "version": "v8.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpdf/mpdf.git",
-                "reference": "dd30e3b01061cf8dfe65e7041ab4cc46d8ebdd44"
+                "reference": "b59670a09498689c33ce639bac8f5ba26721dab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/dd30e3b01061cf8dfe65e7041ab4cc46d8ebdd44",
-                "reference": "dd30e3b01061cf8dfe65e7041ab4cc46d8ebdd44",
+                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/b59670a09498689c33ce639bac8f5ba26721dab3",
+                "reference": "b59670a09498689c33ce639bac8f5ba26721dab3",
                 "shasum": ""
             },
             "require": {
@@ -4424,7 +4424,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-08-18T08:51:51+00:00"
+            "time": "2025-12-01T10:18:02+00:00"
         },
         {
             "name": "mpdf/psr-http-message-shim",
@@ -5016,37 +5016,35 @@
         },
         {
             "name": "novaway/feature-flag-bundle",
-            "version": "2.8.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novaway/NovawayFeatureFlagBundle.git",
-                "reference": "b2f3380cd4a24c4209ece589b0d07ee83817e826"
+                "reference": "43be20ba1ca606c121cae5cf38e6292f33358e67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novaway/NovawayFeatureFlagBundle/zipball/b2f3380cd4a24c4209ece589b0d07ee83817e826",
-                "reference": "b2f3380cd4a24c4209ece589b0d07ee83817e826",
+                "url": "https://api.github.com/repos/novaway/NovawayFeatureFlagBundle/zipball/43be20ba1ca606c121cae5cf38e6292f33358e67",
+                "reference": "43be20ba1ca606c121cae5cf38e6292f33358e67",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "^1.12|^2.0",
                 "ext-json": "*",
-                "php": ">= 7.3",
-                "symfony/framework-bundle": "~4.4|~5.0|~6.0|~7.0",
-                "symfony/yaml": "~4.4|~5.0|~6.0|~7.0"
+                "php": ">= 8.1",
+                "symfony/console": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
+                "symfony/options-resolver": "^5.4|^6.0|^7.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^1.7",
-                "phpunit/phpunit": "^9.5",
-                "symfony/asset": "~3.0|~4.0|~5.0|~6.0|~7.0",
-                "symfony/browser-kit": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/css-selector": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/expression-language": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/templating": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/twig-bundle": "~4.0|~5.0|~6.0|~7.0",
-                "twig/twig": "^2.15|^3.0"
+                "phpunit/phpunit": "^10.1",
+                "symfony/asset": "^5.4|^6.0|^7.0",
+                "symfony/browser-kit": "^5.4|^6.0|^7.0",
+                "symfony/css-selector": "^5.4|^6.0|^7.0",
+                "symfony/expression-language": "^5.4|^6.0|^7.0",
+                "symfony/templating": "^5.4|^6.0|^7.0",
+                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
+                "symfony/yaml": "^5.4|^6.0|^7.0",
+                "twig/twig": "^3.0"
             },
             "suggest": {
                 "twig/twig": "To check feature in your Twig templates"
@@ -5055,10 +5053,7 @@
             "autoload": {
                 "psr-4": {
                     "Novaway\\Bundle\\FeatureFlagBundle\\": "src/"
-                },
-                "exclude-from-classmap": [
-                    "src/Tests/"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5067,7 +5062,11 @@
             "authors": [
                 {
                     "name": "Jérémy DECOOL",
-                    "email": "jeremy@novaway.fr"
+                    "email": "jeremy@activinnov.fr"
+                },
+                {
+                    "name": "Novaway Team",
+                    "email": "git@novaway.fr"
                 }
             ],
             "description": "Very KISS bundle to manage features flag",
@@ -5078,9 +5077,9 @@
             ],
             "support": {
                 "issues": "https://github.com/novaway/NovawayFeatureFlagBundle/issues",
-                "source": "https://github.com/novaway/NovawayFeatureFlagBundle/tree/2.8.0"
+                "source": "https://github.com/novaway/NovawayFeatureFlagBundle/tree/3.0.1"
             },
-            "time": "2025-08-19T09:04:48+00:00"
+            "time": "2025-11-24T20:24:52+00:00"
         },
         {
             "name": "openspout/openspout",
@@ -12761,16 +12760,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.91.0",
+            "version": "v3.91.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "c4a25f20390337789c26b693ae46faa125040352"
+                "reference": "b075d845594a90763c480589174f7f90b3aec15f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/c4a25f20390337789c26b693ae46faa125040352",
-                "reference": "c4a25f20390337789c26b693ae46faa125040352",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/b075d845594a90763c480589174f7f90b3aec15f",
+                "reference": "b075d845594a90763c480589174f7f90b3aec15f",
                 "shasum": ""
             },
             "require": {
@@ -12852,7 +12851,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.91.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.91.1"
             },
             "funding": [
                 {
@@ -12860,7 +12859,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-28T22:07:42+00:00"
+            "time": "2025-12-01T11:09:57+00:00"
         },
         {
             "name": "phpstan/phpstan",

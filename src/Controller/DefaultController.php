@@ -3,7 +3,8 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Novaway\Bundle\FeatureFlagBundle\Manager\FeatureManager;
@@ -24,7 +25,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
         TranslatorInterface $translator,
         ?ArticleRepository $repository = null,
         ?FeatureManager $featureManager = null
-    ) {
+    ): Response {
         [$markers, $bounds] = $this->buildMap($entityManager, $request->getLocale(), 'mentioned');
 
         $news = [];

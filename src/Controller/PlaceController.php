@@ -5,7 +5,8 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 
@@ -24,7 +25,7 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
         Request $request,
         EntityManagerInterface $entityManager,
         TranslatorInterface $translator
-    ) {
+    ): Response {
         [$markers, $bounds] = $this->buildMap(
             $entityManager,
             $request->getLocale(),
@@ -46,7 +47,7 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
         Request $request,
         EntityManagerInterface $entityManager,
         $ids
-    ) {
+    ): Response {
         if (empty($ids)) {
             $articles = [];
         }

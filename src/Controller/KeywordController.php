@@ -5,7 +5,8 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 
@@ -236,7 +237,7 @@ class KeywordController extends \TeiEditionBundle\Controller\TopicController
         Request $request,
         EntityManagerInterface $entityManager,
         TranslatorInterface $translator
-    ) {
+    ): Response {
         $articlesByGenre = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$GENRES, false);
 
         return $this->render('Keyword/genre-index.html.twig', [
@@ -252,7 +253,7 @@ class KeywordController extends \TeiEditionBundle\Controller\TopicController
         Request $request,
         EntityManagerInterface $entityManager,
         TranslatorInterface $translator
-    ) {
+    ): Response {
         $articlesByTopic = $this->fetchArticlesByKeyword($entityManager, $translator, $request->getLocale(), self::$TOPICS);
 
         return $this->render('Keyword/topic-index.html.twig', [

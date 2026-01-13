@@ -70,7 +70,7 @@ parameters:
         </fundingReferences>'
     app.datacite.url_production_adjust: '%env(json:DATACITE_URL_PRODUCTION_ADJUST)%'
 
-    #app.wordpress.url: 'https://diaspora.juedische-geschichte-online.net/cms/'
+    app.wordpress.url: 'https://juedische-geschichte-online.net/projekt/diaspora/'
 
     env(FEATURE_LIMITED_NAVIGATION_ENV): true  # default to limited functionality
     # except in /vorschau, where FEATURE_LIMITED_NAVIGATION_ENV=0

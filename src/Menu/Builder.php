@@ -102,7 +102,6 @@ class Builder
                         ],
                     ]);
 
-
                 $menu['about']
                     ->addChild('about', [
                         'label' => $this->translator->trans('The Project'),

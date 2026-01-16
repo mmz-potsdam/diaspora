@@ -130,6 +130,15 @@ class Builder
                     ]);
 
                 $menu['about']
+                    ->addChild('about-news', [
+                        'label' => $this->translator->trans('Project News'),
+                        'route' => 'about-news',
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
+
+                $menu['about']
                     ->addChild('about-us', [
                         'label' => $this->translator->trans('About us'),
                         'route' => 'about-us',

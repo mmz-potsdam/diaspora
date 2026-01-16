@@ -504,20 +504,19 @@ body.route-home {
         min-height: 240px;
     }
 
-    .row#current {
-        #articlesCarousel {
+    .row#featured, .row#current
+    {
+        #featuredCarousel, #articlesCarousel
+        {
             .carousel-item {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
-                height: 5lh;
                 small > p {
                     margin-bottom: 0.05rem;
                 }
 
                 a.name {
                     display: block;
-                    max-height: 3lh;
-                    overflow: hidden;
                     font-weight: bold;
                     text-decoration: none;
 
@@ -628,7 +627,32 @@ body.route-home {
             }
         }
 
-        // multi-item-carousel
+        #featuredCarousel
+        {
+            // we have a max of 3 items, so  no contrl needed
+            .carousel-control-prev, .carousel-control-next {
+                display: none;
+            }
+        }
+    }
+
+    .row#featured {
+        background-color: $color-color-country-survey;
+    }
+
+    .row#current
+    {
+       #articlesCarousel
+        {
+            .carousel-item {
+                height: 5lh;
+
+                a.name {
+                    max-height: 3lh;
+                    overflow: hidden;
+                }
+            }
+        }
     }
 }
 

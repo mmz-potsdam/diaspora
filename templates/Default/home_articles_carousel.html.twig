@@ -1,6 +1,53 @@
 {% import '@TeiEdition/Shared/helper.html.twig' as helper %}
 
 {% block multicarousel %}
+    <div class="row" id="featured">
+        <div class="col-12">
+            <div class="container">
+                <div class="carousel slide multi-item-carousel" id="featuredCarousel">
+                    <div class="carousel-inner row w-100 mx-auto pt-2">
+                        <div class="carousel-item active col-md-4">
+                            <a class="name" href="{{ path('about-news') }}">
+                                <img src="{{ app.request.basepath }}/img/carousel/project-news.jpg" class="w-100 pb-2" alt="">
+                                {{ 'Project News'|trans }}
+                            </a>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                            {% if 'de' == app.request.locale %}
+                            <a class="name" href="{{ path('source', { 'uid': 'gjd:source-2' }) }}">
+                                <img src="{{ app.request.basepath }}/viewer/source-of-the-month/schocken-library.jpg" class="w-100 pb-2" alt="" title="Die Schocken-Bibliothek in Jerusalem">
+                                Quelle des Monats
+                            </a>
+                            {% else %}
+                            <a class="name" href="{{ path('source', { 'uid': 'gjd:source-6' }) }}">
+                                <img src="{{ app.request.basepath }}/viewer/source-of-the-month/ajr-information.jpg" class="w-100 pb-2" alt="" title="AJR Information Vol. XV No. 5, May, 1960">
+                                Source of the Month
+                            </a>
+                            {%  endif %}
+                        </div>
+                        <div class="carousel-item col-md-4">
+                            <a class="name" href="{{ path('bring-your-own-story') }}">
+                                <img src="{{ app.request.basepath }}/img/carousel/bring-your-own-story.jpg" class="w-100 pb-2" alt="">
+                                {% if 'de' == app.request.locale %}
+                                    <i>Bring your Own Story</i>
+                                {% else %}
+                                    Bring your Own Story
+                                {% endif %}
+                            </a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#featuredCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">{{ 'Previous'|trans }}</span>
+                    </a>
+                    <a class="carousel-control-next" href="#featuredCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">{{ 'Next' }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     {% if articles is not empty %}
     <div class="row" id="current">
         <div class="col-12">
@@ -44,6 +91,7 @@
             </div>
         </div>
     </div>
+    {% endif %}
     <script>
     // Developed at agap2
     // Based on:
@@ -64,5 +112,4 @@
         }
     });
     </script>
-    {% endif %}
 {% endblock %}

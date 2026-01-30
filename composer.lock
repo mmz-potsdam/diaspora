@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a3e26a7c3fc00505758d6fbfe5a0173",
+    "content-hash": "d2b10c84eec94c7020030507cf92499a",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -1755,23 +1755,23 @@
         },
         {
             "name": "eko/feedbundle",
-            "version": "dev-master",
+            "version": "dev-symfony-8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/FeedBundle.git",
-                "reference": "0cf3dfa565bee0b0093cc04e1545c63cc03e3dc8"
+                "reference": "a5516e872cc122db518aa11f32461b21423b7479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/FeedBundle/zipball/0cf3dfa565bee0b0093cc04e1545c63cc03e3dc8",
-                "reference": "0cf3dfa565bee0b0093cc04e1545c63cc03e3dc8",
+                "url": "https://api.github.com/repos/burki/FeedBundle/zipball/a5516e872cc122db518aa11f32461b21423b7479",
+                "reference": "a5516e872cc122db518aa11f32461b21423b7479",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-feed": "^2.4",
-                "php": "^7.2 || ^8.0",
-                "symfony/framework-bundle": "^4.4|^5.3|^6.0|^7.0",
-                "symfony/translation": "^4.4|^5.3|^6.0|^7.0"
+                "php": "^8.0",
+                "symfony/framework-bundle": "^4.4|^5.3|^6.0|^7.0|^8.0",
+                "symfony/translation": "^4.4|^5.3|^6.0|^7.0|^8.0"
             },
             "require-dev": {
                 "doctrine/orm": "^2.17",
@@ -1780,7 +1780,6 @@
             "suggest": {
                 "doctrine/orm": "~2.17"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -1805,9 +1804,9 @@
                 "rss"
             ],
             "support": {
-                "source": "https://github.com/burki/FeedBundle/tree/master"
+                "source": "https://github.com/burki/FeedBundle/tree/symfony-8"
             },
-            "time": "2025-12-01T11:27:27+00:00"
+            "time": "2026-01-27T09:04:12+00:00"
         },
         {
             "name": "fale/isbn",
@@ -13982,9 +13981,9 @@
     "aliases": [
         {
             "package": "eko/feedbundle",
-            "version": "9999999-dev",
-            "alias": "2.2.1",
-            "alias_normalized": "2.2.1.0"
+            "version": "dev-symfony-8",
+            "alias": "2.3",
+            "alias_normalized": "2.3.0.0"
         },
         {
             "package": "fluentdom/fluentdom",

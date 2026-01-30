@@ -106,7 +106,7 @@
         "igdj/tei-edition-bundle": "dev-attributes",
         "mmz-potsdam/minimal-mark": "dev-master",
         "novaway/feature-flag-bundle": "^3.0",
-        "presta/sitemap-bundle": "^4.1",
+        "presta/sitemap-bundle": "^4.2",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",

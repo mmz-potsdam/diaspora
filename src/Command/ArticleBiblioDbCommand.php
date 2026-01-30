@@ -56,7 +56,9 @@ class ArticleBiblioDbCommand extends BaseCommand
             ;
 
             $items = array_flip(array_map(
-                function ($res) { return $res['slug']; },
+                function ($res) {
+                    return $res['slug'];
+                },
                 array_values($query->getResult())
             ));
         }

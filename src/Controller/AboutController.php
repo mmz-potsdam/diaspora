@@ -167,9 +167,10 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
      * through Wordpress-API
      */
     #[Route(path: '/about/news', name: 'about-news')]
-    public function newsAction(Request $request,
-                               TranslatorInterface $translator)
-    {
+    public function newsAction(
+        Request $request,
+        TranslatorInterface $translator
+    ) {
         try {
             /* the following can fail */
             $url = $this->getParameter('app.wordpress.url');
@@ -178,7 +179,8 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
                 try {
                     $client = new \Vnn\WpApiClient\WpClient(
                         new \Vnn\WpApiClient\Http\GuzzleAdapter(new \GuzzleHttp\Client()),
-                            $url);
+                        $url
+                    );
                     // $client->setCredentials(new \Vnn\WpApiClient\Auth\WpBasicAuth($this->getParameter('app.wordpress.user'), $this->getParameter('app.wordpress.password')));
 
                     $posts = $client->posts()->get(null, [

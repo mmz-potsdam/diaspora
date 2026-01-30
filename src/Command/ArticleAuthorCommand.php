@@ -205,7 +205,9 @@ class ArticleAuthorCommand extends BaseCommand
             $output->writeln(sprintf(
                 '<error>More than one user found for %s (IDs %s)</error>',
                 trim($slug),
-                join(', ', array_map(function ($user) { return $user['id']; }, $users))
+                join(', ', array_map(function ($user) {
+                    return $user['id'];
+                }, $users))
             ));
         }
 
@@ -225,7 +227,9 @@ class ArticleAuthorCommand extends BaseCommand
             $output->writeln(sprintf(
                 '<error>More than one user found for %s (IDs %s)</error>',
                 trim($gnd),
-                join(', ', array_map(function ($user) { return $user['id']; }, $users))
+                join(', ', array_map(function ($user) {
+                    return $user['id'];
+                }, $users))
             ));
         }
 

@@ -2742,12 +2742,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "8a7462690798cc65a2a288a26e9db38914e2163f"
+                "reference": "d81dcfdd111c18438dfe977b17cbc3e01c53ba9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/8a7462690798cc65a2a288a26e9db38914e2163f",
-                "reference": "8a7462690798cc65a2a288a26e9db38914e2163f",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/d81dcfdd111c18438dfe977b17cbc3e01c53ba9f",
+                "reference": "d81dcfdd111c18438dfe977b17cbc3e01c53ba9f",
                 "shasum": ""
             },
             "require": {
@@ -2822,7 +2822,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
             },
-            "time": "2026-01-17T13:01:07+00:00"
+            "time": "2026-01-30T13:54:38+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -5350,33 +5350,33 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v4.2.0",
+            "version": "v4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "61eb5f2b5810a4f2f52bbc6a63186750c7d1f528"
+                "reference": "2fc8845e5cc0dfa2911615eb3aec1d4a1bd95eff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/61eb5f2b5810a4f2f52bbc6a63186750c7d1f528",
-                "reference": "61eb5f2b5810a4f2f52bbc6a63186750c7d1f528",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/2fc8845e5cc0dfa2911615eb3aec1d4a1bd95eff",
+                "reference": "2fc8845e5cc0dfa2911615eb3aec1d4a1bd95eff",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "php": ">=8.0",
-                "symfony/console": "^6.4|^7.0",
-                "symfony/framework-bundle": "^6.4|^7.0"
+                "symfony/console": "^6.4|^7.0|^8.0",
+                "symfony/framework-bundle": "^6.4|^7.0|^8.0"
             },
             "require-dev": {
                 "doctrine/annotations": "^1.0",
-                "phpstan/phpstan": "^1.4",
-                "phpunit/phpunit": "^7.5|^8.0",
+                "phpstan/phpstan": "^1.12",
+                "phpunit/phpunit": "^10.0",
                 "squizlabs/php_codesniffer": "^3.5",
-                "symfony/browser-kit": "^6.4|^7.0",
-                "symfony/messenger": "^6.4|^7.0",
-                "symfony/phpunit-bridge": "^6.4|^7.0",
-                "symfony/yaml": "^6.4|^7.0"
+                "symfony/browser-kit": "^6.4|^7.0|^8.0",
+                "symfony/messenger": "^6.4|^7.0|^8.0",
+                "symfony/phpunit-bridge": "^6.4|^7.0|^8.0",
+                "symfony/yaml": "^6.4|^7.0|^8.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -5412,9 +5412,9 @@
             ],
             "support": {
                 "issues": "https://github.com/prestaconcept/PrestaSitemapBundle/issues",
-                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v4.2.0"
+                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v4.3.0"
             },
-            "time": "2025-07-31T12:29:35+00:00"
+            "time": "2025-12-16T16:40:00+00:00"
         },
         {
             "name": "psr/cache",

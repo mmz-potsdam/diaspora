@@ -1,5 +1,5 @@
 tei-edition-bundle:
-    resource: '@TeiEditionBundle/Controller/'
+    resource: '@TeiEditionBundle/src/Controller/'
     type: attribute
 
 controllers:

@@ -103,8 +103,8 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     # TODO: expose this in bundle configuration: https://symfony.com/doc/current/bundles/extension.html
     TeiEditionBundle\:
-        resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle'
-        exclude: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/{Entity,Migrations,Tests}'
+        resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src/'
+        exclude: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src/{Entity,Migrations,Tests}'
 
     # Doctrine DBAL connection for admin database
     dbconn.admin:

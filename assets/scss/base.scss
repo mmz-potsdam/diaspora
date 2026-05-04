@@ -669,6 +669,11 @@ ul.typeahead.dropdown-menu {
     font-size: 13px !important;
 }
 
+/* hide ukranian flag */
+#map .leaflet-control-attribution svg {
+    display: none !important;
+}
+
 .popover {
     .popover-body {
         width: 240px;

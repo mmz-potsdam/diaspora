@@ -4,6 +4,7 @@
 
 namespace App\Command;
 
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -452,6 +453,7 @@ class ArticleAdjustCommand extends BaseCommand
                 foreach ($teiHelper->getErrors() as $error) {
                     fwrite(STDERR, trim($error->message) . "\n");
                 }
+
                 /*
                 // TODO: use Symfony's method to write to STDERR
                 $output->writeln('<info> Invalid XML according to basisformat.rng</info>');
@@ -470,6 +472,6 @@ class ArticleAdjustCommand extends BaseCommand
 
         $output->write($xmlAsString);
 
-        return 0;
+        return Command::SUCCESS;
     }
 }

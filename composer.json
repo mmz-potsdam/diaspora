@@ -111,6 +111,7 @@
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^2",
+        "symfony/http-kernel": "6.4.35",
         "symfony/form": "6.4.*",
         "symfony/runtime": "6.4.*",
         "symfony/security-bundle": "6.4.*",

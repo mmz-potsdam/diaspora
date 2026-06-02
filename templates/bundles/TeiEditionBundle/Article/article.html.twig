@@ -77,7 +77,7 @@
                 <div class="row box-color-content-inverse">
                     <div class="col-sm-4">
                         {% set thumb = '/viewer/source-%05d/thumb.jpg'|format(source.uid|u.replaceMatches('/.*source\-/', '').__toString) %}
-                        {% if file_exists(webDir ~ thumb) %}
+                        {% if file_exists(public_dir ~ thumb) %}
                             <a href="{{ path('source', { 'uid' : source.uid }) }}"><img src="{{ app.request.basepath }}{{ thumb }}" alt="" style="width: 100%; height: auto;"></a>
                         {% endif %}
                     </div>

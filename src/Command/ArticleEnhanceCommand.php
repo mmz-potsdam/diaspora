@@ -4,6 +4,7 @@
 
 namespace App\Command;
 
+use LodService\Provider\WikidataProvider;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -50,8 +51,11 @@ class ArticleEnhanceCommand extends BaseCommand
         if (!$fs->exists($fname)) {
             $output->writeln(sprintf('<error>%s does not exist</error>', $fname));
 
-            return  Command::FAILURE;
+            return Command::FAILURE;
         }
+
+        // TODO: add option
+        WikidataProvider::setSparqlEndpoint('https://qlever.dev/api/wikidata');
 
         $xmlAsString = file_get_contents($fname);
 
@@ -154,6 +158,7 @@ class ArticleEnhanceCommand extends BaseCommand
                 if (is_null($entity)) {
                     // lookup sameAs
                     $identifer = \LodService\Identifier\Factory::fromUri($uri);
+                    sleep(1); // be nice to the endpoint
                     $sameAs = $wikidataService->lookupSameAs($identifer);
                     foreach ($sameAs as $identifer) {
                         if (array_key_exists($uri, $uris) && false !== $uris[$uri]) {

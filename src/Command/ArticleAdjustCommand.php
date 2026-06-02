@@ -387,7 +387,7 @@ class ArticleAdjustCommand extends BaseCommand
         if (!$fs->exists($fname)) {
             $output->writeln(sprintf('<error>%s does not exist</error>', $fname));
 
-            return 1;
+            return Command::FAILURE;
         }
 
         $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
@@ -432,7 +432,7 @@ class ArticleAdjustCommand extends BaseCommand
         if (false === $xml) {
             $output->writeln(sprintf('<error>%s could not be loaded</error>', $fname));
 
-            return 1;
+            return Command::FAILURE;
         }
 
         $xmlAsString = (string) $xml;

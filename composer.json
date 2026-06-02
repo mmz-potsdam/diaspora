@@ -121,6 +121,7 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.94",
         "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-doctrine": "^2.0",
         "symfony/debug-bundle": "6.4.*",
         "symfony/maker-bundle": "^1.67",
         "symfony/stopwatch": "6.4.*",

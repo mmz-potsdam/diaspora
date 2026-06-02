@@ -32,7 +32,7 @@ class ArticleRepository extends ServiceEntityRepository
             $language = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
         }
 
-        $sort = 'creator'
+        $sort = 'creator' == $order
             ? 'A.creator' : '-A.datePublished';
 
         $qb =  $this->getEntityManager()

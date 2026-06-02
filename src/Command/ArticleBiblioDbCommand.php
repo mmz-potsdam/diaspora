@@ -4,6 +4,7 @@
 
 namespace App\Command;
 
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -44,11 +45,12 @@ class ArticleBiblioDbCommand extends BaseCommand
     {
         $fname = $input->getArgument('file');
 
+        $teiHelper = null;
         if ('all' == $fname) {
             if (!$input->getOption('update')) {
                 $output->writeln(sprintf('<error>all only works in combination with --update</error>'));
 
-                return 1;
+                return Command::FAILURE;
             }
 
             $query = $this->em
@@ -67,7 +69,8 @@ class ArticleBiblioDbCommand extends BaseCommand
 
             if (!$fs->exists($fname)) {
                 $output->writeln(sprintf('<error>%s does not exist</error>', $fname));
-                return 1;
+
+                return Command::FAILURE;
             }
 
             $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
@@ -77,11 +80,13 @@ class ArticleBiblioDbCommand extends BaseCommand
 
         if (false === $items) {
             $output->writeln(sprintf('<error>%s could not be loaded</error>', $fname));
+            if (!is_null($teiHelper)) {
             foreach ($teiHelper->getErrors() as $error) {
-                $output->writeln(sprintf('<error>  %s</error>', trim($error->message)));
+                    $output->writeln(sprintf('<error>  %s</error>', trim($error->message)));
+                }
             }
 
-            return 1;
+            return Command::FAILURE;
         }
 
         if ($input->getOption('update') || $input->getOption('insert-missing')) {
@@ -167,7 +172,7 @@ class ArticleBiblioDbCommand extends BaseCommand
             $output->writeln($this->jsonPrettyPrint($items));
         }
 
-        return 0;
+        return Command::SUCCESS;
     }
 
     protected function findBibitemBySlug($slug)

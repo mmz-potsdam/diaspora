@@ -80,7 +80,7 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
         if (is_null($title)) {
             $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
             $meta = $teiHelper->analyzeHeader($this->locateTeiResource($fnameTei));
-            if (!is_null($meta)) {
+            if (false !== $meta) {
                 $title = $meta->name;
             }
         }

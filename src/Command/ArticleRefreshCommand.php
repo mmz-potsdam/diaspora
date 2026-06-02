@@ -4,6 +4,7 @@
 
 namespace App\Command;
 
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -12,7 +13,6 @@ use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 /**
  * Meta command that calls article:* commands in a single run.
@@ -48,14 +48,14 @@ class ArticleRefreshCommand extends BaseCommand
         if (!$fs->exists($fnameInput)) {
             $output->writeln(sprintf('<error>%s does not exist</error>', $fnameInput));
 
-            return 1;
+            return Command::FAILURE;
         }
 
         $basename = pathinfo($fnameInput, PATHINFO_FILENAME);
         if (!preg_match('/\.([a-z]+)$/', $basename, $matches)) {
             $output->writeln(sprintf('<error>%s is missing a language code</error>', $fnameInput));
 
-            return 1;
+            return Command::FAILURE;
         }
 
         $langIso2 = $matches[1];
@@ -89,7 +89,7 @@ class ArticleRefreshCommand extends BaseCommand
                 $output->writeln('<info> [FAIL]</info>');
                 $output->writeln(sprintf('<error>article:adjust on %s failed</error>', $fnameInput));
 
-                return 2;
+                return Command::INVALID;
             }
 
             $output->writeln('<info> [OK]</info>');
@@ -108,13 +108,13 @@ class ArticleRefreshCommand extends BaseCommand
                 $fnameInput
             ));
 
-            return 1;
+            return Command::FAILURE;
         }
 
         // TODO: switch to LanguageStrategy (since not every locale might have a translation)
         if (!in_array($langIso2, $this->getParameter('app.locales'))) {
             // alternate source languages don't have a article-entity that needs to be updated
-            return 0;
+            return Command::SUCCESS;
         }
 
         $commands = [
@@ -159,6 +159,6 @@ class ArticleRefreshCommand extends BaseCommand
             }
         }
 
-        return 0;
+        return Command::SUCCESS;
     }
 }

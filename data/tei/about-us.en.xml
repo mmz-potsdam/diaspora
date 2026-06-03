@@ -82,6 +82,23 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                         Palästina und den USA</hi> (Mohr Siebeck, 2022) and presented at the 2023
                     Leipzig Book Fair. She lives in Berlin with her family. </p>
                 <p>
+                    <hi rendition="#b">Dr. David Jünger (Editor)</hi><lb/>
+                     is a historian and research associate at the Moses Mendelssohn Center in
+                    Potsdam. He earned his doctorate at the University of Leipzig in 2013 and has
+                    since worked at institutions including Freie Universität Berlin, the University
+                    of Sussex, and the University of Rostock. His postdoctoral dissertation on the
+                    German-American rabbi Joachim Prinz (1902–1988) was completed in late 2025 and
+                    will be published in 2026. His publications include <hi
+                        rendition="#i">Jahre der Ungewissheit. Emigrationspläne deutscher Juden
+                        1933–1938</hi> (Göttingen: Vandenhoeck &amp; Ruprecht, 2016); <hi
+                        rendition="#i">Kulturen des Verdrängens und Erinnerns. Perspektiven auf die
+                        rassistische Gewalt in Rostock-Lichtenhagen 1992</hi> (ed.  with Gudrun
+                    Heinrich, Oliver Plessow, and Cornelia Sylla; Berlin: Neofelis, 2024) and
+                    “Historische Erfahrung und politisches Handeln. Rabbiner Joachim Prinz, der
+                    Nationalsozialismus und die afroamerikanische Bürgerrechtsbewegung,” in:
+                    Vierteljahrshefte für Zeitgeschichte Jg. 70, H. 1 (January 2022), 1–30. </p>
+
+                <p>
                     <hi rendition="#b">Verena Kurz, M.A. (Editor)</hi>
                     <lb/>
                      has served as an external research assistant in the publication project <hi
@@ -112,6 +129,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <hi rendition="#b">Translators</hi><lb/>
                      Andreas Bredenfeld, Berlin<lb/>
                      Tim Corbett, Vienna<lb/>
+                     Felix Kurz, Berlin<lb/>
                      Jake Schneider, Berlin <lb/>
                 </p>
             </div>
@@ -134,7 +152,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                      Paul-Levi Mydlach (editorial assistant)<lb/>
                 </p>
             </div>
-            <div n="3">
+            <div n="2">
                 <head>Advisory Board</head>
                 <lb/>
                 <p> The content of the hybrid project benefits from the support and oversight of an
@@ -147,8 +165,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                         German History at Hebrew University of Jerusalem</item>
                     <item> Prof. Atina Grossmann – Professor of History at the Faculty of Humanities
                         and Social Sciences at Cooper Union in New York City </item>
-                    <item> Prof. Dr. Simone Lässig – Director of the German Historical Institute in
-                        Washington, DC </item>
+                    <item> Prof. Dr. Simone Lässig – Professor of History at Technische Universität Braunschweig </item>
                     <item> Prof. Jeffrey Lesser – Samuel Candler Dobbs Professor and Director of the
                         Halle Institute for Global Research and Learning, Emory University, Atlanta </item>
                     <item> Prof. Michael A. Meyer – Adolph S. Ochs Professor of Jewish History

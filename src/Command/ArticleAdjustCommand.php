@@ -107,12 +107,15 @@ class ArticleAdjustCommand extends BaseCommand
 
                 if (!empty($result['section'])) {
                     $sql = "SELECT name, term_code FROM Term WHERE id IN (?) AND status <> -1";
+                    $paramIntArray = defined('\Doctrine\DBAL\Connection::PARAM_INT_ARRAY')
+                        ? \Doctrine\DBAL\Connection::PARAM_INT_ARRAY
+                        : \Doctrine\DBAL\ArrayParameterType::INTEGER; // DBAL 4
                     $stmt = $this->dbconnAdmin->executeQuery(
                         $sql,
                         [ explode(',', $result['section']) ],
-                        [ \Doctrine\DBAL\Connection::PARAM_INT_ARRAY ]
+                        [ $paramIntArray ]
                     );
-                    $terms = $stmt->fetchAll();
+                    $terms = $stmt->fetchAllAssociative();
 
                     $topics = [];
                     foreach ($terms as $term) {

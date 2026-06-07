@@ -108,11 +108,7 @@ services:
 
     # Doctrine DBAL connection for admin database
     dbconn.admin:
-        class: Doctrine\DBAL\Connection
-        factory: Doctrine\DBAL\DriverManager::getConnection
-        arguments:
-            $params:
-                url: '%env(resolve:ADMIN_DATABASE_URL)%'
+        "@doctrine.dbal.admin_connection"
 
     # override command in bundle, see https://stackoverflow.com/a/57107379
     App\Command\ArticleRefreshCommand:

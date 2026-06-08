@@ -13,11 +13,6 @@
         "platform": {
             "php": "8.3.0"
         },
-        "policy": {
-            "advisories": {
-                "ignore-id": ["PKSA-dw7n-x7f5-zf63"]
-            }
-        },
         "preferred-install": {
             "*": "dist"
         },
@@ -126,7 +121,6 @@
         "symfony/dotenv": "7.4.*",
         "symfony/flex": "^2",
         "symfony/form": "7.4.*",
-        "symfony/http-kernel": "7.4.7",
         "symfony/runtime": "7.4.*",
         "symfony/security-bundle": "7.4.*",
         "textrazor/textrazor-php": "*@dev",

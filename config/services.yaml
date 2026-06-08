@@ -138,6 +138,12 @@ services:
        tags:
           - { name: kernel.event_listener, event: kernel.exception, method: setLocale }
 
+    locale_listener:
+        # override to keep host-based locale selection in JMSI18nRoutingBundle working
+        class: App\EventListener\LocaleListener
+        tags:
+          - { name: kernel.event_subscriber }
+
     App\Service\ZoteroApiService:
         arguments:
             $options: "%app.zotero.options%"

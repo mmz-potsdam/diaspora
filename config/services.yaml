@@ -76,7 +76,7 @@ parameters:
     # except in /vorschau, where FEATURE_LIMITED_NAVIGATION_ENV=0
     app.limited_navigation: '%env(bool:FEATURE_LIMITED_NAVIGATION_ENV)%'
 
-    jms_i18n_routing.hosts.de: "%env(string:SITE_HOST)%"
+    jms_i18n_routing.hosts.de: "%env(string:HOSTS_DE)%"
 
 services:
     # default configuration for services in *this* file

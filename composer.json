@@ -111,7 +111,7 @@
         "gjuric/i18n-routing-bundle": "dev-php-file-loader as 3.2.99",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
-        "igdj/tei-edition-bundle": "dev-attributes-only",
+        "igdj/tei-edition-bundle": "dev-diaspora",
         "jms/translation-bundle": "dev-symfony-8 as 2.7.99",
         "mmz-potsdam/minimal-mark": "dev-master",
         "novaway/feature-flag-bundle": "^3.0",

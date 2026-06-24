@@ -16,6 +16,10 @@ use Symfony\Component\Filesystem\Filesystem;
  */
 class ArticleAdjustCommand extends BaseCommand
 {
+    protected $NAMESPACE_PREFIXES = [
+        'tgn' => 'http://vocab.getty.edu/tgn/',
+    ];
+
     protected function configure(): void
     {
         $this
@@ -98,6 +102,7 @@ class ArticleAdjustCommand extends BaseCommand
 
         switch ($result['query_type']) {
             case 'article':
+                $locale = $this->getLocaleCode1();
                 $genre = 'Interpretation';
                 if (preg_match('/^Einführung/', $result['subject'])) {
                     $genre = 'Introduction';
@@ -174,6 +179,53 @@ class ArticleAdjustCommand extends BaseCommand
 
                 if (!empty($dates)) {
                     $data['dates'] = $dates;
+                }
+
+                if (!empty($result['place_identifier'])) {
+                    $place = $this->findPlaceByUri($result['place_identifier']);
+                    $identifier = null;
+                    if (is_null($place)) {
+                        // TODO: use lod service to lookup info for $result['place_identifier']);
+                        $identifier = [
+                            '@ref' => $result['place_identifier'],
+                            '@value' => $result['place'],
+                        ];
+                    }
+                    else {
+                        $identifier = [
+                            '@ref' => $result['place_identifier'],
+                            '@value' => $place->getNameLocalized($locale),
+                        ];
+                    }
+
+                    if (!is_null($identifier)) {
+                        if (!array_key_exists('coverage', $data)) {
+                            $data['coverage'] = [];
+                        }
+
+                        $data['coverage'][] = $identifier;
+                    }
+                }
+
+                if (!empty($result['tags'])) {
+                    foreach (explode(', ', $result['tags']) as $identifier) {
+                        if (!preg_match('#^https?://#', $identifier)) {
+                            foreach ($this->NAMESPACE_PREFIXES as $ns => $uriPrefix) {
+                                if (str_starts_with($identifier, $ns . ':')) {
+                                    $identifier = str_replace($ns . ':', $uriPrefix, $identifier);
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (preg_match('#^https?://#', $identifier)) {
+                            if (!array_key_exists('coverage', $data)) {
+                                $data['coverage'] = [];
+                            }
+
+                            $data['coverage'][] = $identifier;
+                        }
+                    }
                 }
 
                 if (!empty($result['license'])) {
@@ -264,7 +316,7 @@ class ArticleAdjustCommand extends BaseCommand
                 if (!empty($result['place_identifier'])) {
                     $place = $this->findPlaceByUri($result['place_identifier']);
                     if (is_null($place)) {
-                        // TODO: lookup info for $result['place_identifier']);
+                        // TODO: use lod service to lookup info for $result['place_identifier']);
                         $bibl['placeName'] = [
                             '@ref' => $result['place_identifier'],
                             '@value' => $result['place'],

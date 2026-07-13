@@ -19,3 +19,8 @@ scssphp:
             importPaths:
                 - "sites/diaspora-site/assets/scss"    # theme-specific settings come first
                 - "assets/scss"                        # main directory
+
+when@prod:
+    scssphp:
+        enabled: true
+        autoUpdate: false

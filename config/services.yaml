@@ -55,9 +55,8 @@ parameters:
 
     app.wordpress.url: 'https://juedische-geschichte-online.net/projekt/diaspora/'
 
-    env(FEATURE_LIMITED_NAVIGATION_ENV): true  # default to limited functionality
-    # except in /vorschau, where FEATURE_LIMITED_NAVIGATION_ENV=0
-    app.limited_navigation: '%env(bool:FEATURE_LIMITED_NAVIGATION_ENV)%'
+    env(FEATURE_PREVIEW_ENV): false  # default to regular display
+    app.preview: '%env(bool:FEATURE_PREVIEW_ENV)%'
 
     jms_i18n_routing.hosts.de: "%env(string:HOSTS_DE)%"
 

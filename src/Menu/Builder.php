@@ -56,8 +56,7 @@ class Builder
 
         // add menu items
         if (!array_key_exists('part', $options) || 'left' == $options['part']) {
-            if ((is_null($this->featureManager) || $this->featureManager->isEnabled('limited_navigation'))
-                || (array_key_exists('position', $options) && 'footer' == $options['position'])) {
+            if ((array_key_exists('position', $options) && 'footer' == $options['position'])) {
                 // flat about
                 $menu->addChild('about', [
                     'label' => $this->translator->trans('The Project'),

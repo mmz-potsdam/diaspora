@@ -20,7 +20,7 @@ class ThemeRequestListener
     /** @var FeatureManager|null */
     private $featureManager;
 
-    private $siteTheme = 'mmz-potsdam/diaspora-site';
+    private $siteTheme = null;
 
     public function __construct(
         ThemeRepositoryInterface $themeRepository,
@@ -35,12 +35,17 @@ class ThemeRequestListener
     public function onKernelRequest(RequestEvent $event): void
     {
         if (!$event->isMainRequest()) {
-            // don't do anything if it's not the master request
+            // don't do anything if it's not the main request
             return;
         }
 
-        if (is_null($this->featureManager) || $this->featureManager->isEnabled('limited_navigation')) {
-            // go with the default theme
+        if (!is_null($this->featureManager) && $this->featureManager->isEnabled('preview')) {
+            // we set the theme only if the preview feature is enabled, otherwise we use the default theme
+            $this->siteTheme = 'mmz-potsdam/diaspora-site';
+        }
+
+        if (is_null($this->siteTheme)) {
+            // no theme to set, return
             return;
         }
 

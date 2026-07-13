@@ -6,4 +6,4 @@ novaway_feature_flag:
             factory: novaway_feature_flag.factory.array
             options:
                 features:
-                    limited_navigation: '%app.limited_navigation%'
+                    preview: '%app.preview%'

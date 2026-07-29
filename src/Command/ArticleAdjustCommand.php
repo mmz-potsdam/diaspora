@@ -295,7 +295,7 @@ class ArticleAdjustCommand extends BaseCommand
                      . " ORDER BY Message.id DESC";
 
                 $stmt = $this->dbconnAdmin->executeQuery($sql, [ $result['id'] ]);
-                $articles = $stmt->fetchAll();
+                $articles = $stmt->fetchAllAssociative();
                 $seriesStmt = [];
                 $siteKey = $this->getParameter('app.site.key');
                 foreach ($articles as $article) {

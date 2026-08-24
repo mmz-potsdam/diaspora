@@ -27,8 +27,6 @@ parameters:
     app.public_dir: '%kernel.project_dir%/public'
     app.textrazor.options:
         api-key: "%env(string:TEXTRAZOR_API_KEY)%"
-    app.zotero.options:
-        api-key: "%env(string:ZOTERO_API_KEY)%"
     app.googleapis.key: "%env(string:GOOGLE_API_KEY)%"
     app.xsl_converter.saxonc_enable: "%env(bool:SAXONC_ENABLE)%"
     app.xsl_converter.commandline.template: "%env(string:JAVA_BIN)% -jar %kernel.project_dir%/bin/saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
@@ -120,10 +118,6 @@ services:
         class: App\EventListener\LocaleListener
         tags:
           - { name: kernel.event_subscriber }
-
-    App\Service\ZoteroApiService:
-        arguments:
-            $options: "%app.zotero.options%"
 
     League\CommonMark\ConverterInterface:
         class: MinimalMark\MinimalMarkConverter

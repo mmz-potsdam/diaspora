@@ -45,23 +45,11 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/jtl-software/connector-iso-639"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/burki/FluentDOM"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/scssphp-bundle"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/burki/OaiPmh"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/burki/minimal-mark"
+            "url": "https://github.com/lfiweb/OaiPmh"
         },
         {
             "type": "vcs",
@@ -69,15 +57,27 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/FeedBundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/jtl-software/connector-iso-639"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/minimal-mark"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/JMSI18nRoutingBundle"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/wordpress-rest-api-client"
+            "url": "https://github.com/burki/scssphp-bundle"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/FeedBundle"
+            "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
             "type": "package",
@@ -98,8 +98,6 @@
         "ext-iconv": "*",
         "ext-intl": "*",
         "armin/scssphp-bundle": "dev-master",
-        "eko/feedbundle": "dev-symfony-8 as 2.2.99",
-        "fluentdom/fluentdom": "dev-master as 8.0",
         "gjuric/i18n-routing-bundle": "dev-php-file-loader as 3.2.99",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "igdj/tei-edition-bundle": "dev-bundle-configuration",
@@ -107,7 +105,6 @@
         "mmz-potsdam/minimal-mark": "dev-master",
         "novaway/feature-flag-bundle": "^3.0",
         "presta/sitemap-bundle": "^4.3",
-        "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "7.4.*",
         "symfony/flex": "^2",
